@@ -1,0 +1,439 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: LightWord 1.6.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-07-22 19:10+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Andrei Luca <andrei.luca@info.uaic.ro>\n"
+"Language-Team: Andrei Luca <andrei.luca@info.uaic.ro>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Polish\n"
+"X-Poedit-Country: POLAND\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: G:\\WWW\\www\\jocuri\\wp-content\\themes\\lightword\n"
+"X-Poedit-Bookmarks: 70,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
+"X-Poedit-SearchPath-0: G:\\WWW\\www\\jocuri\\wp-content\\themes\\lightword\n"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/archives.php:12
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/index.php:9
+msgid "Continue reading"
+msgstr "Czytaj dalej"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/archives.php:63
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/archives.php:73
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/index.php:17
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/page.php:13
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/single.php:36
+msgid "Not Found"
+msgstr "Nie znaleziono"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/archives.php:63
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/archives.php:74
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/index.php:18
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/page.php:14
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/single.php:37
+msgid "Sorry, but you are looking for something that isn't here."
+msgstr "Przepraszam, ale nic tu nie ma."
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:6
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:6
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Ta wiadomość jest zabezpieczona hasłem. Wprowadź hasło aby zobaczyć komentarze."
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:15
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/index.php:9
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:17
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/single.php:28
+msgid "Comments"
+msgstr "Komentarze"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:16
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:18
+msgid "Trackbacks"
+msgstr ""
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:16
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:18
+msgid "( subscribe to comments on this post )"
+msgstr "( subskrybuj komentarze w tej wiadomości )"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:26
+#, fuzzy
+msgid "&laquo; Older Comments"
+msgstr "&laquo; Nowsze Wpisy"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:27
+#, fuzzy
+msgid "Newer Comments &raquo;"
+msgstr "Starsze Wpisy &raquo;"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:33
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:52
+msgid "No comments yet."
+msgstr "Brak komentarzy."
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:35
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:96
+msgid "Sorry, the comment form is closed at this time."
+msgstr "Przepraszam, dodawanie komentarzy zablokowane."
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:42
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:57
+msgid "Leave a comment"
+msgstr "Dodaj komentarz"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:45
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:60
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Musisz być <a href=\"%s\">zalogowany</a> aby dodać komentarz."
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:50
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:67
+#, php-format
+msgid "Logged in as %s."
+msgstr "Zalogowany jako %s."
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:50
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:67
+msgid "Log out of this account"
+msgstr "Wyloguj z konta"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:50
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:67
+msgid "Log out &raquo;"
+msgstr "Wyloguj &raquo;"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:57
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:72
+msgid "Name"
+msgstr "Nazwa"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:57
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:60
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:72
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:75
+msgid "(required)"
+msgstr "(wymagany)"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:60
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:75
+msgid "Mail (will not be published)"
+msgstr "Mail (nie będzie widoczny)"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:63
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:78
+msgid "Website"
+msgstr "Strona"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:69
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:86
+msgid "Submit"
+msgstr "Zatwierdź"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:69
+#, fuzzy
+msgid "( Click here to cancel reply )"
+msgstr "Kliknij aby wrócić do ustawień domyślnych"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:79
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:101
+msgid "No trackbacks yet."
+msgstr "Brak trackbacków."
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/footer.php:7
+#, php-format
+msgid "Copyright %s %s %s &middot; Powered by %s and developed by %s for you."
+msgstr ""
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/footer.php:10
+msgid "Go to top"
+msgstr "Idź do góry"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:19
+msgid "Disable Cufon"
+msgstr "Zablokuj Cufon"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:20
+msgid "Check this box if you would like to DISABLE <em>Cufon</em><br/>"
+msgstr "Zaznacz box jeśli chcesz ZABLOKOWAĆ <em>Cufon</em><br/>"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:25
+msgid "Activate Extra Cufon"
+msgstr "Aktywuj Extra Cufon"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:26
+#, fuzzy
+msgid "Check this box if you would like to ENABLE <em>Extra Cufon</em> feature.<br/><b>For umlauts (german) and other special characters.</b>"
+msgstr "Zaznacz box jeśli chcesz WŁĄCZYĆ dodatek <em>Extra Cufon</em><b>Dla piolskich czcionek oraz innych znaków specjalnych</b></code>"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:32
+msgid "Enjoy this post"
+msgstr ""
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:33
+msgid "Check this box if you would like to ACTIVATE <em>Enjoy this post</em> feature"
+msgstr "Zaznacz box jeśli chcesz WŁĄCZYC dodatek <em>Enjoy this post</em>"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:38
+msgid "Show categories on top"
+msgstr "Pokaż kategorie w nagłówku"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:39
+msgid "Check this box if you would like to SHOW CATEGORIES instead pages on top bar"
+msgstr "Zaznacz box jeśli chcesz WYŚWIETLIĆ KATEGORIE w nagłówku"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:44
+msgid "Disable comments on pages"
+msgstr "Zablokuj komentarze"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:45
+msgid "Check this box if you would like to DISABLE COMMENTS on pages"
+msgstr "Zaznacz box jeśli chcesz ZABLOKOWAĆ KOMENTARZE na strone"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:50
+msgid "Image instead text on header"
+msgstr "Obrazek w nagłówku zamiast tekstu"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:51
+#, fuzzy
+msgid "Check this box if you would like to SHOW IMAGE instead Cufon text on header.<br/>Image location: <code>lightword/images/header-image.png</code> / Dimensions: <code>600x56px</code>"
+msgstr "Lokalizacja obrazka: <code>lightword/images/header-image.png</code> / Wymiary: <code>600x56px</code>"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:56
+msgid "Post author"
+msgstr "Autor wiadomości"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:57
+msgid "Add information about post author on post footer"
+msgstr "Dodaj informację o autorze w stopce wiadomości"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:62
+msgid "Take out tags in posts footer"
+msgstr ""
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:63
+#, fuzzy
+msgid "Show only categories in posts footer"
+msgstr "Pokaż kategorie w nagłówku"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:97
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:107
+msgid "LightWord Settings"
+msgstr "Ustawienia LightWord"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:102
+msgid "settings saved"
+msgstr ""
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:103
+msgid "settings reset"
+msgstr ""
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:111
+msgid "Support the developer"
+msgstr "Wsparcie dla dewelopera"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:122
+msgid "Theme version check"
+msgstr "Sprawdź wersję motywu"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:131
+#, fuzzy
+msgid "Version check failed."
+msgstr "Sprawdź wersję motywu"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:133
+msgid "Cool! You have the latest version."
+msgstr "SUPER! Masz najnowszą wersję."
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:133
+msgid "You have"
+msgstr "Masz"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:133
+msgid "Latest version"
+msgstr "Najnowsze wydanie"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:133
+msgid "Get the latest version"
+msgstr "Pobierz najnowszą wersję"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:140
+msgid "General settings"
+msgstr "Ustawienia główne"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:160
+msgid "Save changes"
+msgstr "Zapisz zmiany"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:166
+msgid "Search for help"
+msgstr "Wyszukaj w pomocy"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:166
+msgid "or"
+msgstr "lub"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:179
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:193
+msgid "No updates available."
+msgstr "Brak dostępnych aktualizacji."
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:201
+msgid "What is Cufon?"
+msgstr "Czym jest Cufon?"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:210
+msgid "Click here to reset all settings"
+msgstr "Kliknij aby wrócić do ustawień domyślnych"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:348
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:31
+msgid "F jS, Y"
+msgstr ""
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:348
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:31
+msgid "edit this comment"
+msgstr "edytuj komentarz"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:351
+msgid "( REPLY )"
+msgstr ""
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:353
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:38
+msgid "Your comment is awaiting moderation."
+msgstr "Twój komentarz czeka na zatwierdzenie przez moderatora."
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/header.php:36
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/sidebar.php:43
+msgid "Syndicate this site using RSS"
+msgstr "Subskrybuj tę stronę korzystając z RSS"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/header.php:36
+msgid "Subscribe via RSS"
+msgstr "Subskrybcja RSS"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/header.php:40
+msgid "Home"
+msgstr ""
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/header.php:43
+msgid "Search"
+msgstr "Szukaj"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/index.php:8
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/single.php:27
+msgid "Filed under:"
+msgstr "Zakres tematyczny:"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/index.php:8
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/single.php:27
+msgid "Tagged as:"
+msgstr ""
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/index.php:9
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/single.php:28
+msgid "1 Comment"
+msgstr "1 Komentarz"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/index.php:9
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/single.php:28
+msgid "No Comments"
+msgstr "Brak komentarzy"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/index.php:9
+msgid "Read more about"
+msgstr "Przeczytaj więcej"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/index.php:23
+msgid "&laquo; Newer Entries"
+msgstr "&laquo; Nowsze Wpisy"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/index.php:24
+msgid "Older Entries &raquo;"
+msgstr "Starsze Wpisy &raquo;"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:82
+#, php-format
+msgid "You can use these tags: %s"
+msgstr "Możesz używać następujących tagów: %s"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/page.php:6
+msgid "Edit this page"
+msgstr "Edystuj stronę"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/sidebar.php:11
+msgid "Pages"
+msgstr "Strony"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/sidebar.php:18
+msgid "Categories"
+msgstr "Kategorie"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/sidebar.php:25
+msgid "Blogroll"
+msgstr ""
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/sidebar.php:32
+msgid "Archive"
+msgstr "Archiwum"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/sidebar.php:39
+msgid "Meta"
+msgstr ""
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/sidebar.php:43
+msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr ""
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/sidebar.php:44
+msgid "The latest comments to all posts in RSS"
+msgstr "Ostatnie komentarze we wszystkich wiadomościach przez RSS"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/sidebar.php:44
+msgid "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr "Komentarze <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/single.php:7
+msgid "Edit this post"
+msgstr "Edytuj wiadomość"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/single.php:13
+msgid "Enjoy this article?"
+msgstr "Enjoy this article?"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/single.php:14
+msgid "Consider subscribing to our rss feed!"
+msgstr "Rozpocznij subskrybcję dzięki RSS!"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/single.php:24
+msgid "Author"
+msgstr "Autor"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/single.php:25
+msgid "No description. Please complete your profile."
+msgstr "Brak opisu. Proszę uzupełnij profil."
+
+#~ msgid "% Comments"
+#~ msgstr "% Komentarzy"
+
+#, fuzzy
+#~ msgid "Reply to this comment"
+#~ msgstr "edytuj komentarz"
+#~ msgid ""
+#~ "Check this box if you would like to ENABLE <em>Extra Cufon</em> feature"
+#~ msgstr "Zaznacz box jeśli chcesz WŁĄCZYĆ <em>EXTRA Cufon</em>"
+#~ msgid "For umlauts (german) and other special characters"
+#~ msgstr "Dla polskich czcionek lub innych znaków specjalnych"
+#~ msgid ""
+#~ "Check this box if you would like to SHOW IMAGE instead Cufon text on "
+#~ "header."
+#~ msgstr ""
+#~ "Zaznacz box jeśli chcesz w nagłówku WYSWIETLIĆ OBRAZEK zamiast Cufon-a."
+

@@ -1,0 +1,414 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: LightWord 1.4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-07-22 19:09+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Andrei Luca <andrei.luca@info.uaic.ro>\n"
+"Language-Team: Andrei Luca <andrei.luca@info.uaic.ro>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: G:\\WWW\\www\\jocuri\\wp-content\\themes\\lightword\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: archives.php:12
+#: index.php:9
+msgid "Continue reading"
+msgstr ""
+
+#: archives.php:63
+#: archives.php:73
+#: index.php:17
+#: page.php:13
+#: single.php:36
+msgid "Not Found"
+msgstr ""
+
+#: archives.php:63
+#: archives.php:74
+#: index.php:18
+#: page.php:14
+#: single.php:37
+msgid "Sorry, but you are looking for something that isn't here."
+msgstr ""
+
+#: comments.php:6
+#: legacy.comments.php:6
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: comments.php:15
+#: index.php:9
+#: legacy.comments.php:17
+#: single.php:28
+msgid "Comments"
+msgstr ""
+
+#: comments.php:16
+#: legacy.comments.php:18
+msgid "Trackbacks"
+msgstr ""
+
+#: comments.php:16
+#: legacy.comments.php:18
+msgid "( subscribe to comments on this post )"
+msgstr ""
+
+#: comments.php:26
+msgid "&laquo; Older Comments"
+msgstr ""
+
+#: comments.php:27
+msgid "Newer Comments &raquo;"
+msgstr ""
+
+#: comments.php:33
+#: legacy.comments.php:52
+msgid "No comments yet."
+msgstr ""
+
+#: comments.php:35
+#: legacy.comments.php:96
+msgid "Sorry, the comment form is closed at this time."
+msgstr ""
+
+#: comments.php:42
+#: legacy.comments.php:57
+msgid "Leave a comment"
+msgstr ""
+
+#: comments.php:45
+#: legacy.comments.php:60
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: comments.php:50
+#: legacy.comments.php:67
+#, php-format
+msgid "Logged in as %s."
+msgstr ""
+
+#: comments.php:50
+#: legacy.comments.php:67
+msgid "Log out of this account"
+msgstr ""
+
+#: comments.php:50
+#: legacy.comments.php:67
+msgid "Log out &raquo;"
+msgstr ""
+
+#: comments.php:57
+#: legacy.comments.php:72
+msgid "Name"
+msgstr ""
+
+#: comments.php:57
+#: comments.php:60
+#: legacy.comments.php:72
+#: legacy.comments.php:75
+msgid "(required)"
+msgstr ""
+
+#: comments.php:60
+#: legacy.comments.php:75
+msgid "Mail (will not be published)"
+msgstr ""
+
+#: comments.php:63
+#: legacy.comments.php:78
+msgid "Website"
+msgstr ""
+
+#: comments.php:69
+#: legacy.comments.php:86
+msgid "Submit"
+msgstr ""
+
+#: comments.php:69
+msgid "( Click here to cancel reply )"
+msgstr ""
+
+#: comments.php:79
+#: legacy.comments.php:101
+msgid "No trackbacks yet."
+msgstr ""
+
+#: footer.php:7
+#, php-format
+msgid "Copyright %s %s %s &middot; Powered by %s and developed by %s for you."
+msgstr ""
+
+#: footer.php:10
+msgid "Go to top"
+msgstr ""
+
+#: functions.php:19
+msgid "Disable Cufon"
+msgstr ""
+
+#: functions.php:20
+msgid "Check this box if you would like to DISABLE <em>Cufon</em><br/>"
+msgstr ""
+
+#: functions.php:25
+msgid "Activate Extra Cufon"
+msgstr ""
+
+#: functions.php:26
+msgid "Check this box if you would like to ENABLE <em>Extra Cufon</em> feature.<br/><b>For umlauts (german) and other special characters.</b>"
+msgstr ""
+
+#: functions.php:32
+msgid "Enjoy this post"
+msgstr ""
+
+#: functions.php:33
+msgid "Check this box if you would like to ACTIVATE <em>Enjoy this post</em> feature"
+msgstr ""
+
+#: functions.php:38
+msgid "Show categories on top"
+msgstr ""
+
+#: functions.php:39
+msgid "Check this box if you would like to SHOW CATEGORIES instead pages on top bar"
+msgstr ""
+
+#: functions.php:44
+msgid "Disable comments on pages"
+msgstr ""
+
+#: functions.php:45
+msgid "Check this box if you would like to DISABLE COMMENTS on pages"
+msgstr ""
+
+#: functions.php:50
+msgid "Image instead text on header"
+msgstr ""
+
+#: functions.php:51
+msgid "Check this box if you would like to SHOW IMAGE instead Cufon text on header.<br/>Image location: <code>lightword/images/header-image.png</code> / Dimensions: <code>600x56px</code>"
+msgstr ""
+
+#: functions.php:56
+msgid "Post author"
+msgstr ""
+
+#: functions.php:57
+msgid "Add information about post author on post footer"
+msgstr ""
+
+#: functions.php:62
+msgid "Take out tags in posts footer"
+msgstr ""
+
+#: functions.php:63
+msgid "Show only categories in posts footer"
+msgstr ""
+
+#: functions.php:97
+#: functions.php:107
+msgid "LightWord Settings"
+msgstr ""
+
+#: functions.php:102
+msgid "settings saved"
+msgstr ""
+
+#: functions.php:103
+msgid "settings reset"
+msgstr ""
+
+#: functions.php:111
+msgid "Support the developer"
+msgstr ""
+
+#: functions.php:122
+msgid "Theme version check"
+msgstr ""
+
+#: functions.php:131
+msgid "Version check failed."
+msgstr ""
+
+#: functions.php:133
+msgid "Cool! You have the latest version."
+msgstr ""
+
+#: functions.php:133
+msgid "You have"
+msgstr ""
+
+#: functions.php:133
+msgid "Latest version"
+msgstr ""
+
+#: functions.php:133
+msgid "Get the latest version"
+msgstr ""
+
+#: functions.php:140
+msgid "General settings"
+msgstr ""
+
+#: functions.php:160
+msgid "Save changes"
+msgstr ""
+
+#: functions.php:166
+msgid "Search for help"
+msgstr ""
+
+#: functions.php:166
+msgid "or"
+msgstr ""
+
+#: functions.php:179
+#: functions.php:193
+msgid "No updates available."
+msgstr ""
+
+#: functions.php:201
+msgid "What is Cufon?"
+msgstr ""
+
+#: functions.php:210
+msgid "Click here to reset all settings"
+msgstr ""
+
+#: functions.php:348
+#: legacy.comments.php:31
+msgid "F jS, Y"
+msgstr ""
+
+#: functions.php:348
+#: legacy.comments.php:31
+msgid "edit this comment"
+msgstr ""
+
+#: functions.php:351
+msgid "( REPLY )"
+msgstr ""
+
+#: functions.php:353
+#: legacy.comments.php:38
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: header.php:36
+#: sidebar.php:43
+msgid "Syndicate this site using RSS"
+msgstr ""
+
+#: header.php:36
+msgid "Subscribe via RSS"
+msgstr ""
+
+#: header.php:40
+msgid "Home"
+msgstr ""
+
+#: header.php:43
+msgid "Search"
+msgstr ""
+
+#: index.php:8
+#: single.php:27
+msgid "Filed under:"
+msgstr ""
+
+#: index.php:8
+#: single.php:27
+msgid "Tagged as:"
+msgstr ""
+
+#: index.php:9
+#: single.php:28
+msgid "1 Comment"
+msgstr ""
+
+#: index.php:9
+#: single.php:28
+msgid "No Comments"
+msgstr ""
+
+#: index.php:9
+msgid "Read more about"
+msgstr ""
+
+#: index.php:23
+msgid "&laquo; Newer Entries"
+msgstr ""
+
+#: index.php:24
+msgid "Older Entries &raquo;"
+msgstr ""
+
+#: legacy.comments.php:82
+#, php-format
+msgid "You can use these tags: %s"
+msgstr ""
+
+#: page.php:6
+msgid "Edit this page"
+msgstr ""
+
+#: sidebar.php:11
+msgid "Pages"
+msgstr ""
+
+#: sidebar.php:18
+msgid "Categories"
+msgstr ""
+
+#: sidebar.php:25
+msgid "Blogroll"
+msgstr ""
+
+#: sidebar.php:32
+msgid "Archive"
+msgstr ""
+
+#: sidebar.php:39
+msgid "Meta"
+msgstr ""
+
+#: sidebar.php:43
+msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr ""
+
+#: sidebar.php:44
+msgid "The latest comments to all posts in RSS"
+msgstr ""
+
+#: sidebar.php:44
+msgid "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr ""
+
+#: single.php:7
+msgid "Edit this post"
+msgstr ""
+
+#: single.php:13
+msgid "Enjoy this article?"
+msgstr ""
+
+#: single.php:14
+msgid "Consider subscribing to our rss feed!"
+msgstr ""
+
+#: single.php:24
+msgid "Author"
+msgstr ""
+
+#: single.php:25
+msgid "No description. Please complete your profile."
+msgstr ""
+
