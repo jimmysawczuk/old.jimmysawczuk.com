@@ -11,3 +11,18 @@
 		<h1><?=get_bloginfo('name') ?></h1>
 		<p id="description"><?=get_bloginfo('description') ?></p>
 	</div>
+
+	<div id="nav_container">
+		<div id="nav">
+			<ul id="navbar">
+				<li><a href="">Home</a></li>
+				<li><a href="">Projects</a></li>
+			</ul>
+
+			<div id="search">
+
+			</div>
+		</div>
+	</div>
+
+	<div id="body">
