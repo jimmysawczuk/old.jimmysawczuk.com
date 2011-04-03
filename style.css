@@ -2,7 +2,6 @@
 Theme Name: LightWord - JimmySawczuk.com
 Description: Simply clever theme with two columns, right-sidebar, fixed-width, widget-ready and threaded comments. Compatible with Wordpress 2.8, valid XHTML & CSS. What's new? No sprites, transparent background, header image, version check and much more. Forked for JimmySawczuk.com.
 Author: Andrei Luca
-Author URI: http://students.info.uaic.ro/~andrei.luca/
 Template: lightword
 Version: 1.9.9.7
 Tags: white, light, two-columns, right-sidebar, fixed-width, theme-options, translation-ready, threaded-comments, custom-header
@@ -13,6 +12,23 @@ Released under the <a href="http://www.opensource.org/licenses/gpl-license.php">
 
 /* RESET */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;outline:0;vertical-align:baseline;background:transparent;margin:0;padding:0;}
+
+/* FONTS */
+@font-face {
+	font-family: 'MyriadProRegular';
+	src: url('type/myriadpro-regular-webfont.eot');
+	src: local('☺'), url('type/myriadpro-regular-webfont.woff') format('woff'), url('type/myriadpro-regular-webfont.ttf') format('truetype'), url('type/myriadpro-regular-webfont.svg#webfontKRuFdoUH') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MyriadProBold';
+	src: url('type/myriadpro-bold-webfont.eot');
+	src: local('☺'), url('type/myriadpro-bold-webfont.woff') format('woff'), url('type/myriadpro-bold-webfont.ttf') format('truetype'), url('type/myriadpro-bold-webfont.svg#webfontmA01BkvU') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
 /* BASIC */
 *:focus{outline:none;}
@@ -32,12 +48,13 @@ pre{width:540px; white-space:pre-wrap;}
 
 /* LAYOUT */
 #body{width:811px;text-align:left;margin:0 auto;color:#2C2C29;}
-#top{margin-left:5px;height:56px;}
-h1#logo,h1#logo a{font-family:Helvetica,Georgia;padding-top:3px;font-size:32px;color:#FFF;text-decoration:none;text-transform:uppercase;}
-h1#logo small{color:#FFF;font-size:11px;display:block;margin:-6px 2px;height:14px;}
+#top{margin-left:5px;height:36px;}
+h1#logo,h1#logo a{font-family:'MyriadProBold',Helvetica,Georgia;padding-top:3px;font-size:32px;color:#FFF;text-decoration:none;text-transform:uppercase;font-weight:normal;}
+h1#logo a { line-height: 28px;}
+h1#logo small{color:#FFF;font-size:11px;display:block;margin:-6px 2px;height:14px;font-weight:normal;}
 #rss-feed{margin-bottom:-15px;float:right;width:190px;position:relative;bottom:21px;left:8px;font-weight:700;}
 #rss-feed a,.comm_date .nr_comm a{color:#FFF;text-decoration:none;}
-#header{background:transparent url(images/content_top.png) no-repeat;height:113px;}
+#header{background:transparent url(images/content_top_no_rss.png) no-repeat 0px -20px;height:93px;}
 #top_bar{padding:18px 23px 0 20px;}
 #searchform{float:right;width:191px;height:26px;background:url(images/searchbox.png) no-repeat;position:relative;top:1px;}
 #header #s{border:1px solid #000;float:left;border:0;width:154px;background:none;color:#ACACAB;margin:4px 0 0 4px;}

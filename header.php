@@ -51,7 +51,9 @@
 
 <?php top_header_image(); ?>
 
+<? /*
 <div id="rss-feed"><a title="<?php _e('Subscribe via RSS','lightword'); ?>" href="<?php bloginfo('rss2_url'); ?>"><?php _e('Subscribe via RSS','lightword'); ?></a></div>
+*/ ?>
 
 <div id="top_bar">
 <ul id="front_menu">
