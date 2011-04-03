@@ -115,7 +115,7 @@ blockquote{margin:20px 10px 10px 5px;border-left:4px solid #DDD;padding:0 5px 0 
 .cat_tags a:hover{color:#ACACAB;}
 * html .cat_tags{padding:9px 8px 0;margin-bottom:-3px;}
 *:first-child+html .cat_tags{padding:9px 8px 0;margin-bottom:-3px;}
-.post h2 { font-family: 'MyriadProRegular' }
+.post h2 { font-family: 'MyriadProRegular'; font-weight: normal; }
 
 /* SIDEBAR */
 .content-sidebar{padding:5px 15px;}
