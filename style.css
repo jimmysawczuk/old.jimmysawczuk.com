@@ -54,7 +54,7 @@ h1#logo a { line-height: 28px;}
 h1#logo small{color:#FFF;font-size:11px;display:block;margin:-6px 2px;height:14px;font-weight:normal;}
 #rss-feed{margin-bottom:-15px;float:right;width:190px;position:relative;bottom:21px;left:8px;font-weight:700;}
 #rss-feed a,.comm_date .nr_comm a{color:#FFF;text-decoration:none;}
-#header{background:transparent url(images/content_top_no_rss.png) no-repeat 0px -20px;height:93px;}
+#header{background:transparent url(images/content_top_no_rss.png) no-repeat 0px -20px;height:93px; margin-top:5px;}
 #top_bar{padding:18px 23px 0 20px;}
 #searchform{float:right;width:191px;height:26px;background:url(images/searchbox.png) no-repeat;position:relative;top:1px;}
 #header #s{border:1px solid #000;float:left;border:0;width:154px;background:none;color:#ACACAB;margin:4px 0 0 4px;}
@@ -115,7 +115,7 @@ blockquote{margin:20px 10px 10px 5px;border-left:4px solid #DDD;padding:0 5px 0 
 .cat_tags a:hover{color:#ACACAB;}
 * html .cat_tags{padding:9px 8px 0;margin-bottom:-3px;}
 *:first-child+html .cat_tags{padding:9px 8px 0;margin-bottom:-3px;}
-.post h2 { font-family: 'MyriadProRegular'; font-weight: normal; }
+.post h2 { font-family: 'MyriadProRegular'; font-weight: normal; line-height: 20px; }
 
 /* SIDEBAR */
 .content-sidebar{padding:5px 15px;}
