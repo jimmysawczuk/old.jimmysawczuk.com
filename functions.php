@@ -374,7 +374,7 @@ if(is_single()||is_page()){
 load_theme_textdomain('lightword', get_template_directory() . '/lang');
 
 // CUFON SETTINGS
-
+/*
 if ($lw_cufon == "false") $cufon_enabled = 1; else $cufon_enabled = 0;
 if ($lw_cufon_extra == "true") $cufon_extra = 1; else $cufon_extra = 0;
 
@@ -387,9 +387,10 @@ if($cufon_enabled == 1) echo $cufon_header_script;
 
 function cufon_footer(){
 global $cufon_enabled;
-$cufon_footer_script = "\n<script type=\"text/javascript\">/* <![CDATA[ */ Cufon.now(); /* ]]> */ </script>\n";
+$cufon_footer_script = "\n<script type=\"text/javascript\">/* <![CDATA[ * / Cufon.now(); /* ]]> * / </script>\n";
 if($cufon_enabled == 1) echo $cufon_footer_script;
 }
+*/
 
 function nested_comments($comment, $args, $depth) { $GLOBALS['comment'] = $comment; ?>
 <li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>"><div id="comment-<?php comment_ID(); ?>">
@@ -410,7 +411,5 @@ function nested_comments($comment, $args, $depth) { $GLOBALS['comment'] = $comme
 // ENABLE FUNCTIONS
 
 add_action('admin_menu', 'mytheme_add_admin');
-add_action('wp_head',    'cufon_header');
-add_action('wp_footer',  'cufon_footer');
 add_action('wp_footer',  'comment_tabs');
 ?>
