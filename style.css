@@ -201,3 +201,9 @@ ul.project_info li { list-style-type: none; list-style-image: none; padding: 0px
 img.wp-smiley { vertical-align: middle; border-width: 0px; }
 
 #twitter_update_list { overflow-x: hidden; }
+
+#contact_page #right_box { float: right; width: 218px; background: #f9f9f9; border: 1px solid #555; margin-left: 10px; padding: 10px; }
+#contact_page #contact_info { margin: 0px; padding: 0px; }
+#contact_page #contact_info li { list-style-type: none; padding: 0px; }
+#contact_page #contact_info li img { border: 0px solid black; vertical-align: middle; }
+#contact_page a img { border-width: 0px; }
