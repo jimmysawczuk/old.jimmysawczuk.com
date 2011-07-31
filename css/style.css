@@ -41,7 +41,7 @@ background-height: 100%; background-attachment: fixed; }
 /* post styles */
 .post { position: relative; margin-bottom: 3em; }
 .post .post_header { clear: both; vertical-align: middle; margin-bottom: 1em; }
-.post h2 { font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', 'sans-serif'; font-size: 166%; line-height: 24px; text-decoration: none; }
+.post h2 { font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', 'sans-serif'; font-size: 166%; text-decoration: none; }
 .post h2 a { color: #333; text-decoration: none; }
 .post h2 a:hover { color: #333; text-decoration: none; }
 
