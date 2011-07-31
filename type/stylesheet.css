@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'ArvoBold';
+    src: url('arvo-bold-webfont.eot');
+    src: url('arvo-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('arvo-bold-webfont.woff') format('woff'),
+         url('arvo-bold-webfont.ttf') format('truetype'),
+         url('arvo-bold-webfont.svg#ArvoBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ArvoBoldItalic';
+    src: url('arvo-bolditalic-webfont.eot');
+    src: url('arvo-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('arvo-bolditalic-webfont.woff') format('woff'),
+         url('arvo-bolditalic-webfont.ttf') format('truetype'),
+         url('arvo-bolditalic-webfont.svg#ArvoBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ArvoItalic';
+    src: url('arvo-italic-webfont.eot');
+    src: url('arvo-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('arvo-italic-webfont.woff') format('woff'),
+         url('arvo-italic-webfont.ttf') format('truetype'),
+         url('arvo-italic-webfont.svg#ArvoItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ArvoRegular';
+    src: url('arvo-regular-webfont.eot');
+    src: url('arvo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('arvo-regular-webfont.woff') format('woff'),
+         url('arvo-regular-webfont.ttf') format('truetype'),
+         url('arvo-regular-webfont.svg#ArvoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MakoRegular';
+    src: url('mako-regular-webfont.eot');
+    src: url('mako-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('mako-regular-webfont.woff') format('woff'),
+         url('mako-regular-webfont.ttf') format('truetype'),
+         url('mako-regular-webfont.svg#MakoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
