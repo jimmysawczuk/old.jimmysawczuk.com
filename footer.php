@@ -1,9 +1,10 @@
-			</div>
-			<div id="sidebar">
-				<? dynamic_sidebar(1); ?>
-			</div>
-			<div id="footer">
+				</div>
+				<div id="sidebar">
+					<? dynamic_sidebar(1); ?>
+				</div>
+				<div id="footer">
 				
+				</div>
 			</div>
 		</div>
 		<div id="copyright">

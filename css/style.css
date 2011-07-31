@@ -22,6 +22,7 @@ background: linear-gradient(top, #9a9a9a 42%,#555555 100%); /* W3C */
 background-height: 100%; background-attachment: fixed; }
 
 #container { width: 860px; margin: 0px auto; background-color: #eee; padding: 0px 20px 20px; -webkit-box-shadow: 2px 2px 10px 0px #555; -moz-box-shadow: 2px 2px 10px 0px #555; box-shadow: 2px 2px 10px 0px #555; -webkit-border-radius: 1px; -moz-border-radius: 1px; border-radius: 1px; z-index: 100; }
+#tab_container { }
 #content { float: left; width: 575px; padding-right: 15px; }
 #sidebar { padding-left: 20px; width: 250px; float: left; }
 #footer { clear: both; }
@@ -47,12 +48,14 @@ background-height: 100%; background-attachment: fixed; }
 
 .post .post_header h2 { border-bottom: 1px solid #aaa; }
 
-.post .post_info { position: absolute; left: -97px; top: 0px; background-color: #ccc; border: 1px solid #666; border-right-width: 0px; -moz-border-radius: 5px 0px 0px 5px; -webkit-border-radius: 5px 0px 0px 5px; border-radius: 5px 0px 0px 5px; z-index: 90; width: 75px; }
-.post .post_info >  div { text-align: center; padding: 8px; }
+.post .post_info { position: absolute; left: -84px; top: 0px; background-color: #ccc; border: 1px solid #666; border-right-width: 0px; -moz-border-radius: 5px 0px 0px 5px; -webkit-border-radius: 5px 0px 0px 5px; border-radius: 5px 0px 0px 5px; z-index: 90; width: 62px; }
+.post .post_info >  div { text-align: center; padding: 5px; }
 .post .post_info .post_date { background-color: #ccc; border-radius: 5px 0px 0px; }
 .post .post_info .post_comments { overflow: hidden; border-radius: 0px 0px 0px 0px; background-color: #dedede; }
+.post .post_info .post_comments small { font-size: 77%; }
+.post .post_info .post_comments a { text-decoration: none; color: #333; }
 .post .post_info .post_social { background-color: #ccc; border-radius: 0px 0px 0px 5px; text-align: center; }
-.post .post_info .post_social div.aligncenter span { margin: 0px auto; display: block; margin-bottom: 10px; }
+.post .post_info .post_social div.aligncenter span { margin: 0px auto; display: block; margin-bottom: 10px; width: 50px; }
 .post .post_info div big { font-size: 24px; font-weight: bold; display: block; line-height: 24px; }
 .post .post_info div small { font-size: 12px; font-weight: normal; text-transform: uppercase; display: block; line-height: 12px; }
 
