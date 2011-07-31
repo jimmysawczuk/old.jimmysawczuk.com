@@ -43,6 +43,9 @@ background-height: 100%; background-attachment: fixed; }
 .post .post_header { clear: both; vertical-align: middle; margin-bottom: 1em; }
 .post h2 { font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', 'sans-serif'; font-size: 166%; line-height: 24px; text-decoration: none; }
 .post h2 a { color: #333; text-decoration: none; }
+.post h2 a:hover { color: #333; text-decoration: none; }
+
+.post .post_header h2 { border-bottom: 1px solid #aaa; }
 
 .post .post_info { position: absolute; left: -97px; top: 0px; background-color: #ccc; border: 1px solid #666; border-right-width: 0px; -moz-border-radius: 5px 0px 0px 5px; -webkit-border-radius: 5px 0px 0px 5px; border-radius: 5px 0px 0px 5px; z-index: 90; width: 75px; }
 .post .post_info >  div { text-align: center; padding: 8px; }
