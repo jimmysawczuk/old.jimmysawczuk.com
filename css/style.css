@@ -45,7 +45,15 @@ body{font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-s
 
 body { background-color: #ddd; }
 
-#container { width: 900px; margin: 0px auto; padding: 15px 25px; background-color: white; }
+#container { width: 900px; margin: 0px auto; padding: 0px; }
 
-#header h1 { font-size: 312%; font-family: 'MyriadProBold', Helvetica, Arial; text-transform: uppercase; color: #484848; }
-#header #description { text-transform: uppercase; font-family: 'MyriadProBold'; color: #484848; }
+#header h1 { font-size: 52px; font-family: 'LeagueGothicRegular', Helvetica, Arial; text-transform: uppercase; color: #484848; line-height: 44px; padding-top: 6px; }
+#header #description { text-transform: uppercase; font-family: 'MyriadProBold'; color: #484848; font-size: 12px; line-height: 14px; }
+
+#nav { background-color: white; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; overflow: hidden; }
+
+#body { background-color: white; -webkit-border-bottom-left-radius: 5px; -webkit-border-bottom-right-radius: 5px; overflow: hidden; }
+
+#navbar { background-color: #ccc; border-width: 1px 0px; border-style: solid; border-color: #fff; margin: 10px 0px; overflow: hidden; padding-left: 7px; }
+#navbar li { float: left; padding: 3px 10px; background-color: #eee; margin: 3px; }
+#navbar li a { text-decoration: none; text-transform: uppercase; color: #484848; font-family: 'MyriadProBold'; line-height: 100%; }
