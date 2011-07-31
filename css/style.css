@@ -34,8 +34,8 @@ background-height: 100%; background-attachment: fixed; }
 #header h1 a { text-decoration: none; color: #333; }
 
 /* copyright footer */
-#copyright { font-size: 85%; text-align: center; margin: 1em 0px; color: #111; }
-#copyright a { color: #111; text-decoration: underline; }
+#copyright { font-size: 85%; text-align: center; margin: 1em 0px; color: #dcdcdc; }
+#copyright a { color: #dcdcdc; text-decoration: underline; }
 
 
 /* post styles */
