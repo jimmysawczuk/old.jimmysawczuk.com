@@ -5,7 +5,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Arvo:400,700|Mako' rel='stylesheet' type='text/css'>
 		<link href="<? bloginfo('stylesheet_directory'); ?>/css/style.css" type="text/css" rel="stylesheet" />
 		<script src="<? bloginfo('stylesheet_directory'); ?>/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-		<meta name="viewport" content="width=1100, maximum-scale=1.0" />
+		<meta name="viewport" content="width=1050, maximum-scale=1.0" />
 		<? wp_head(); ?>
 	</head>
 	<body>
