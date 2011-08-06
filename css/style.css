@@ -45,10 +45,10 @@ background-height: 100%; background-attachment: fixed; }
 #nav ul li a { padding: 10px 5px; display: block; border-radius: 1px; -webkit-border-radius: 1px; -moz-border-radius: 1px; }
 #nav ul li:hover a { color: #9cf; background-color: #555; padding: auto 5px; }
 
-#search { position: absolute; right: 0px; padding: 10px 0px; }
-#search input { font-size: 125%; background: rgba(230, 230, 230, 0.4); }
+#search { position: absolute; right: 0px; padding: 7px 0px; }
+#search input { font-size: 125%; background: rgba(230, 230, 230, 0.4); padding: 3px 0px; }
 #search .input_wrapper { float: left; width: 150px; }
-#search #s_submit { float: left; width: 16px; padding: 2px; }
+#search #s_submit { float: left; width: 16px; padding: 5px; }
 .input_wrapper input { width: 100%; border-width: 0px; }
 
 /* copyright footer */
