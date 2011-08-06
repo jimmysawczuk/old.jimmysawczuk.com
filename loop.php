@@ -2,6 +2,8 @@
 	while (have_posts()): 
 		
 	the_post();
+	
+//	var_dump($post); continue;
 ?>
 	<div class="post" id="post-<? the_ID(); ?>">
 		<div class="post_header">
@@ -34,8 +36,8 @@
 				<hr class="recommendation-divider" />
 				<div class="original">
 					Originally posted on <a href="<?=bloginfo('url'); ?>"><?=bloginfo('site_name') ?></a> on 
-					<?=date("F j, Y \a\\t g:i A", strtotime(get_the_date())); ?>. Post text content &copy; 
-					<?=date("Y", strtotime(get_the_date())); ?> Jimmy Sawczuk. All rights reserved.
+					<?=date("F j, Y \a\\t g:i A", strtotime($post->post_date)); ?>. Post text content &copy; 
+					<?=date("Y", strtotime($post->post_date)); ?> Jimmy Sawczuk. All rights reserved.
 				</div>
 			<? endif; ?>
 			<div class="meta">

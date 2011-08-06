@@ -102,7 +102,7 @@ background-height: 100%; background-attachment: fixed; }
 .post .more-link { background-color: #333; float: right; white-space: nowrap; height: 100%; vertical-align: middle; top: 0; bottom: 0; position: absolute; right: 0px; text-align: right; width: 90px; }
 .post .more-link a { color: #eee; text-decoration: none; font-weight: bold; display: block; padding: 5px; }
 .post .tags { padding: 5px; background-color: #ddd; width: 465px; }
-.post .meta .original { margin: 1em 0px; font-style: italic; }
+.post .original { margin: 1em 0px; font-style: italic; clear: both; }
 
 
 /* comments */
