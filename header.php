@@ -20,7 +20,7 @@
 				<div id="nav">
 					<ul>
 						<li class="first"><a href="<? bloginfo('url'); ?>" title="Home">Home</a></li>
-						<li><a href="<? bloginfo('url'); ?>/contact" title="Contact">Contact</a></li>
+						<li><a href="<? bloginfo('url'); ?>/contact" title="About Me">About Me</a></li>
 						<li><a href="<? bloginfo('url'); ?>/projects" title="Projects">Projects</a></li>
 						<li><a href="http://code.jimmysawczuk.com" target="_blank" title="Code">Code</a></li>
 						<li class="last"><a href="<? bloginfo('url'); ?>/resume" target="_blank" title="Resume">Resum&eacute;</a></li>
@@ -35,4 +35,4 @@
 						</form>
 					</div>
 				</div>
-				<div id="content">
+				<div id="content" class="<?=defined('PAGE_TEMPLATE')? PAGE_TEMPLATE : '' ?> <?=defined('HIDE_SIDEBAR') && HIDE_SIDEBAR? 'hide_sidebar' : '' ?>" >

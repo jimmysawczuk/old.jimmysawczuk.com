@@ -24,6 +24,7 @@ background-height: 100%; background-attachment: fixed; }
 #container { width: 860px; margin: 0px auto; background-color: #eee; padding: 0px 20px 20px; -webkit-box-shadow: 2px 2px 10px 0px #555; -moz-box-shadow: 2px 2px 10px 0px #555; box-shadow: 2px 2px 10px 0px #555; -webkit-border-radius: 1px; -moz-border-radius: 1px; border-radius: 1px; z-index: 100; }
 #tab_container { }
 #content { float: left; width: 575px; padding-right: 15px; clear: left; }
+#content.hide_sidebar { width: 860px; }
 #sidebar { padding-left: 20px; width: 250px; float: left; }
 #footer { clear: both; }
 
@@ -102,8 +103,13 @@ background-height: 100%; background-attachment: fixed; }
 .post .meta { background-color: #ddd; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; width: 100%; overflow: hidden; position: relative; }
 .post .more-link { background-color: #333; float: right; white-space: nowrap; height: 100%; vertical-align: middle; top: 0; bottom: 0; position: absolute; right: 0px; text-align: right; width: 90px; }
 .post .more-link a { color: #eee; text-decoration: none; font-weight: bold; display: block; padding: 5px; }
-.post .tags { padding: 5px; background-color: #ddd; width: 465px; }
+.post .tags { padding: 5px; background-color: #ddd; width: 465px; min-height: 17px; }
 .post .original { margin: 1em 0px; font-style: italic; clear: both; }
+
+.post .content ul.nobullet { padding: 0px; }
+.post .content ul.nobullet li { list-style-type: none; }
+
+.page .post_info { display: none; }
 
 
 /* comments */
@@ -131,3 +137,19 @@ background-height: 100%; background-attachment: fixed; }
 
 /* about me styles */
 #sidebar .widget_aboutmewidget p { font-style: italic; font-size: 108%; margin: 1em 0px; }
+
+#content.contact #big_image_container { width: 860px; height: 367px; background: url('../images/about_jimmy_widescreen.jpg'); position: relative; }
+#content.contact #big_image_padding { padding: 20px; }
+
+#content.contact #left_box { position: absolute; left: 10px; top: 10px; width: 210px; text-align: justify; border: 1px solid #888; padding: 5px; border-radius: 1px; -moz-border-radius: 1px; -webkit-border-radius: 1px; background-color: #f9f9f9; }
+#content.contact #right_box { position: absolute; right: 10px; bottom: 10px; width: 310px; background-color: #444; background: rgba(40, 40, 40, 0.7); border: 1px solid #222; padding: 10px; border-radius: 1px; -moz-border-radius: 1px; -webkit-border-radius: 1px;  color: #F9F9F9; }
+#content.contact #right_box a { color: #d9d9d9; }
+
+#content.contact h1 { font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', 'sans-serif'; font-size: 150%; text-decoration: none; font-weight: bold; }
+
+#content.contact #contact_info { margin: 0px; padding: 0px; }
+#content.contact #contact_info li { list-style-type: none; padding: 0px; font-size: 93%; margin: 3px 0px; line-height: 16px; }
+#content.contact #contact_info li.first { margin-top: 0px; }
+#content.contact #contact_info li img { border: 0px solid black; vertical-align: middle; width: 16px; height: 16px; }
+#content.contact a { text-decoration: underline; color: #369; }
+#content.contact a:hover { text-decoration: none; color: #369; }

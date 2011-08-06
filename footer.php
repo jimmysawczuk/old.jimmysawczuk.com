@@ -1,7 +1,9 @@
 				</div>
-				<div id="sidebar">
-					<? dynamic_sidebar(1); ?>
-				</div>
+				<? if (!defined('HIDE_SIDEBAR') || !HIDE_SIDEBAR): ?>
+					<div id="sidebar">
+						<? dynamic_sidebar(1); ?>
+					</div>
+				<? endif; ?>
 				<div id="footer">
 				
 				</div>

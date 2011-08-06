@@ -2,10 +2,8 @@
 	while (have_posts()): 
 		
 	the_post();
-	
-//	var_dump($post); continue;
 ?>
-	<div class="post" id="post-<? the_ID(); ?>">
+	<div class="<?=get_post_type() == 'post'? 'post' : 'post page'; ?>" id="<?=get_post_type() == 'post'? 'post' : 'page'; ?>-<? the_ID(); ?>">
 		<div class="post_header">
 			<div class="post_info">
 				<div class="post_date">
@@ -40,22 +38,24 @@
 					<?=date("Y", strtotime($post->post_date)); ?> Jimmy Sawczuk. All rights reserved.
 				</div>
 			<? endif; ?>
-			<div class="meta">
-				<div class="more-link">
-					<? if (has_more_link() && !is_single()): ?>						
-						<a href="<? the_permalink(); ?>#more-<? the_ID(); ?>">Read more &raquo;</a>
-					<? else: ?>
-						<a href="<? the_permalink(); ?>#comments"><fb:comments-count href="<? the_permalink(); ?>"></fb:comments-count> Comments</a>
-					<? endif; ?>
-				</div>
+			<? if (!is_page()): ?>
+				<div class="meta">
+					<div class="more-link">
+						<? if (has_more_link() && !is_single()): ?>						
+							<a href="<? the_permalink(); ?>#more-<? the_ID(); ?>">Read more &raquo;</a>
+						<? else: ?>
+							<a href="<? the_permalink(); ?>#comments"><fb:comments-count href="<? the_permalink(); ?>"></fb:comments-count> Comments</a>
+						<? endif; ?>
+					</div>
 
-				<div class="tags">
-					<? the_tags("Tags: ", ", "); ?>
+					<div class="tags">
+						<? the_tags("Tags: ", ", "); ?>
+					</div>
 				</div>
-			</div>
-		</div>		
+			<? endif; ?>
+		</div>
 		
-		<? if (is_single()): ?>
+		<? if (is_single() && !is_page()): ?>
 			<div id="comments">
 				<h1><fb:comment-count href="<? the_permalink(); ?>"></fb:comment:count></h1>
 				<fb:comments href="<? the_permalink(); ?>" num_posts="10" width="575"></fb:comments>
