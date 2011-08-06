@@ -8,7 +8,7 @@
 			</div>
 		</div>
 		<div id="copyright">
-			&copy; 2008-<?=date("Y"); ?> Jimmy Sawczuk &middot; This theme <a href="http://code.jimmysawczuk.com/blog-wordpress-theme">open-sourced under the MIT license</a>
+			&copy; 2008-<?=date("Y"); ?> Jimmy Sawczuk &middot; Theme <a href="http://code.jimmysawczuk.com/blog-wordpress-theme">open-sourced under the MIT license</a>
 		</div>
 		
 		<div id="fb-root"></div>

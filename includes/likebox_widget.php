@@ -10,8 +10,10 @@ class LikeBoxWidget extends WP_Widget {
 	function widget( $args, $instance ) {
 ?>
 	<?=$args['before_widget']; ?>
-		
-		<fb:like-box href="http://www.facebook.com/clevelandcurveballsandcommonsense" width="250" height="450" show_faces="true" border_color="#eee" stream="false" header="false"></fb:like-box>	
+		<?=$args['before_title'] ?>On Facebook<?=$args['after_title'] ?>
+		<div id="fanbox_container">
+			<fb:like-box href="http://www.facebook.com/clevelandcurveballsandcommonsense" width="250" height="450" show_faces="true" border_color="#eee" stream="false" header="false"></fb:like-box>
+		</div>
 			
 	<?=$args['after_widget']; ?>
 <?

@@ -32,7 +32,7 @@
 			<? the_content(''); ?>
 			<? if (is_single()): ?>
 				<hr class="recommendation-divider" />
-				<fb:recommendations site="http://www.jimmysawczuk.com" width="575" height="300" header="true" font="arial" border_color=""></fb:recommendations>
+				<fb:recommendations site="<?=bloginfo('url'); ?>" width="575" height="300" header="true" font="arial" border_color=""></fb:recommendations>
 				<hr class="recommendation-divider" />
 				<div class="original">
 					Originally posted on <a href="<?=bloginfo('url'); ?>"><?=bloginfo('site_name') ?></a> on 
