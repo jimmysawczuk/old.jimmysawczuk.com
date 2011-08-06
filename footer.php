@@ -17,7 +17,15 @@
 		<script type="text/javascript">
 			$(document).ready(function()
 			{
-				
+				/*
+				$('#header h1 a').mouseover(function()
+				{
+					$(this).animate({color: '#369'}, 1000);
+				}).mouseout(function()
+				{
+					$(this).animate({color: '#333'}, 1000);
+				});
+				*/
 			});
 		</script>
 		<? wp_footer(); ?>

@@ -6,8 +6,9 @@
 		<link href="<? bloginfo('stylesheet_directory'); ?>/css/style.css" type="text/css" rel="stylesheet" />
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 		<script src="<? bloginfo('stylesheet_directory'); ?>/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="<? bloginfo('stylesheet_directory'); ?>/js/jquery.ui.min.js" type="text/javascript" charset="utf-8"></script>
 		<meta name="viewport" content="width=1050, maximum-scale=1.0" />
-		<meta property="fb:admins" content="15504121" />
+		<? fb_og_tags(); ?>
 		<? wp_head(); ?>
 	</head>
 	<body>
@@ -27,7 +28,10 @@
 					
 					<div id="search">
 						<form method="get">
-							<input type="text" name="s" />
+							<div class="input_wrapper">
+								<input type="text" name="s" />
+							</div>
+							<input type="image" src="<? bloginfo('stylesheet_directory'); ?>/images/search.png" value="" id="s_submit" />
 						</form>
 					</div>
 				</div>

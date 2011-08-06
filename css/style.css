@@ -46,8 +46,10 @@ background-height: 100%; background-attachment: fixed; }
 #nav ul li:hover a { color: #9cf; background-color: #555; padding: auto 5px; }
 
 #search { position: absolute; right: 0px; padding: 10px 0px; }
-#search input { width: 100%; font-size: 125%; border-width: 0px; }
-
+#search input { font-size: 125%; background: rgba(230, 230, 230, 0.4); }
+#search .input_wrapper { float: left; width: 150px; }
+#search #s_submit { float: left; width: 16px; padding: 2px; }
+.input_wrapper input { width: 100%; border-width: 0px; }
 
 /* copyright footer */
 #copyright { font-size: 85%; text-align: center; margin: 1em 0px; color: #dcdcdc; }
