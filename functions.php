@@ -9,10 +9,21 @@ function pluralize($num, $sing, $plu)
 {
 	if ($num == 1)
 	{
-		return $sing;
+		$tbr = $sing;
 	}
 	else
 	{
-		return $plu;
+		$tbr = $plu;
 	}
+	
+	$tbr = str_replace('%', $num, $tbr);
+	
+	return $tbr;
+}
+
+function has_more_link()
+{
+	global $post;
+	
+	return strpos($post->post_content, "<!--more-->") !== false;
 }

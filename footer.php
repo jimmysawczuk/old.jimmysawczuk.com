@@ -12,9 +12,9 @@
 		</div>
 		
 		<div id="fb-root"></div>
-		<script src="http://connect.facebook.net/en_US/all.js#appId=169228513149223&amp;xfbml=1"></script>
-		<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-		<script type="text/javascript" charset="utf-8">
+		<script src="http://connect.facebook.net/en_US/all.js#appId=169228513149223&amp;xfbml=1" charset="utf-8"></script>
+		<script type="text/javascript" src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<script type="text/javascript">
 			$(document).ready(function()
 			{
 				

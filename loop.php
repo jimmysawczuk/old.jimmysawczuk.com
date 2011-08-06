@@ -1,18 +1,18 @@
 <? if (have_posts()): 
 	while (have_posts()): 
 		
-	the_post(); 
+	the_post();
 ?>
 	<div class="post" id="post-<? the_ID(); ?>">
 		<div class="post_header">
 			<div class="post_info">
 				<div class="post_date">
-					<big><?=date("j", strtotime(get_the_date())); ?></big>
-					<small><?=date("M y", strtotime(get_the_date())); ?></small>
+					<span class="big"><?=date("j", strtotime(get_the_date())); ?></span>
+					<span class="small"><?=date("M y", strtotime(get_the_date())); ?></span>
 				</div>
-				<div class="post_comments">
-					<big><a href="<? the_permalink(); ?>#comments"><?=$post->comment_count ?></a></big>
-					<small><?=pluralize($post->comment_count, "comment", "comments"); ?></small>
+				<div class="post_comments">				
+					<span class="big"><a href="<? the_permalink(); ?>#comments"><fb:comments-count href="<? the_permalink(); ?>"></fb:comments-count></a></span>
+					<span class="small">Comments</span>
 				</div>
 				<div class="post_social">
 					<div class="aligncenter">
@@ -27,8 +27,38 @@
 		</div>
 		
 		<div class="content">
-			<? the_content('Read more &raquo;'); ?>
-		</div>
+			<? the_content(''); ?>
+			<? if (is_single()): ?>
+				<hr class="recommendation-divider" />
+				<fb:recommendations site="http://www.jimmysawczuk.com" width="575" height="300" header="true" font="arial" border_color=""></fb:recommendations>
+				<hr class="recommendation-divider" />
+				<div class="original">
+					Originally posted on <a href="<?=bloginfo('url'); ?>"><?=bloginfo('site_name') ?></a> on 
+					<?=date("F j, Y \a\\t g:i A", strtotime(get_the_date())); ?>. Post text content &copy; 
+					<?=date("Y", strtotime(get_the_date())); ?> Jimmy Sawczuk. All rights reserved.
+				</div>
+			<? endif; ?>
+			<div class="meta">
+				<div class="more-link">
+					<? if (has_more_link() && !is_single()): ?>						
+						<a href="<? the_permalink(); ?>#more-<? the_ID(); ?>">Read more &raquo;</a>
+					<? else: ?>
+						<a href="<? the_permalink(); ?>#comments"><fb:comments-count href="<? the_permalink(); ?>"></fb:comments-count> Comments</a>
+					<? endif; ?>
+				</div>
+
+				<div class="tags">
+					<? the_tags("Tags: ", ", "); ?>
+				</div>
+			</div>
+		</div>		
+		
+		<? if (is_single()): ?>
+			<div id="comments">
+				<h1><fb:comment-count href="<? the_permalink(); ?>"></fb:comment:count></h1>
+				<fb:comments href="<? the_permalink(); ?>" num_posts="10" width="575"></fb:comments>
+			</div>
+		<? endif; ?>
 	</div>
 <? 
 	endwhile; 
