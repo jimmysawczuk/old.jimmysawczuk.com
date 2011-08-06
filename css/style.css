@@ -43,7 +43,7 @@ background-height: 100%; background-attachment: fixed; }
 #nav ul li.last { margin-right: 0px; }
 #nav ul li, #nav ul li a { font-weight: bold; color: #eee; font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif; text-decoration: none; }
 #nav ul li a { padding: 10px 5px; display: block; border-radius: 1px; -webkit-border-radius: 1px; -moz-border-radius: 1px; }
-#nav ul li:hover a { color: #9cf; background-color: #555; padding: auto 5px; }
+#nav ul li:hover a { color: white; background-color: #369; padding: auto 5px; }
 
 #search { position: absolute; right: 0px; padding: 7px 0px; }
 #search input { font-size: 125%; background: rgba(230, 230, 230, 0.4); padding: 3px 0px; }
