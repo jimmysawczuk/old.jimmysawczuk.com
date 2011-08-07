@@ -100,3 +100,14 @@ function switch_timezone($format, $time = null,
 
     return date($format, $time);
 }
+
+function truncate_string($str, $limit = 50)
+{
+	if (strlen($str) > 50)
+	{
+		$str = substr($str, 0, 50);
+		$str = substr($str, 0, strrpos($str, " ")) . '...';
+	}
+	
+	return $str;
+}

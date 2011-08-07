@@ -52,7 +52,7 @@ class BitBucket
 			switch ($event['event'])
 			{
 				case "commit":
-					$story .= substr($event['description'], 0, 50);
+					$story .= truncate_string($event['description']);
 					$url = self::getRepositoryURL($event['repository']['owner'], $event['repository']['name'])."/changeset/{$event['node']}";
 					
 					break;
