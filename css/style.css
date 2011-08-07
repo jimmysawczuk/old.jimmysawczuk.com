@@ -38,7 +38,7 @@ background-height: 100%; background-attachment: fixed; }
 
 /* nav */
 #nav { clear: both; margin: 0px 0px 30px; height: 40px; position: relative; }
-#nav ul { overflow: hidden; background-color: #222; color: white; clear: both; margin: 0px 0px 30px; height: 40px; padding: 0px 30px; position: absolute; left: -30px; width: 860px; border-radius: 1px; -webkit-border-radius: 1px; -moz-border-radius: 1px; }
+#nav ul { overflow: hidden; background-color: #444; color: white; clear: both; margin: 0px 0px 30px; height: 40px; padding: 0px 30px; position: absolute; left: -30px; width: 860px; border-radius: 1px; -webkit-border-radius: 1px; -moz-border-radius: 1px; }
 #nav ul li { float: left; line-height: 20px; padding: 0px 0px; margin: 0px 10px; }
 #nav ul li.first { margin-left: 0px; }
 #nav ul li.last { margin-right: 0px; }
@@ -132,7 +132,7 @@ background-height: 100%; background-attachment: fixed; }
 /* sidebar styles */
 .widget { margin: 0px 0px 2em; }
 
-#sidebar h2.widgettitle { font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', 'sans-serif'; font-size: 166%; font-weight: bold; border-bottom: 1px solid #aaa; margin-bottom: 1em; }
+#sidebar h2.widgettitle { font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', 'sans-serif'; font-size: 166%; font-weight: bold; border-bottom: 1px solid #aaa; margin-bottom: 0.5em; }
 
 #sidebar a { text-decoration: underline; color: #369; }
 #sidebar a:hover { text-decoration: none; color: #369; }
@@ -161,7 +161,11 @@ background-height: 100%; background-attachment: fixed; }
 #sidebar .widget_links li.odd { background-color: #e1e1e1; }
 #sidebar .widget_links li.even { background-color: #f9f9f9; }
 
-#sidebar .widget_aboutmewidget p { font-style: italic; font-size: 108%; margin: 1em 0px; }
+#sidebar .widget_aboutmewidget p { font-style: normal; font-size: 108%; margin: 1em 0px; }
+#sidebar .widget_aboutmewidget .more_link { float: right; clear: both; }
+
+#sidebar .widget_aboutmewidget .more_link { padding: 3px 5px; background-color: #ddd; border: 1px solid #aaa; border-radius: 1px; -moz-border-radius: 1px; -webkit-border-radius: 1px; }
+#sidebar .widget_aboutmewidget .more_link a { color: #333; font-weight: bold; text-decoration: none; }
 
 /* contact page */
 

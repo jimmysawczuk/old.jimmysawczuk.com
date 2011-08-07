@@ -24,9 +24,11 @@ class AboutMeWidget extends WP_Widget {
 			<a href="/tag/programming">programming</a>. He also enjoys a cup of great coffee and a good book.
 		</p>
 		
-		<p>
+		<div class="more_link">
 			<a href="<?=get_bloginfo('url'); ?>/contact">More &raquo;</a>
-		</p>
+		</div>
+		
+		<br class="clearboth" />
 			
 	<?=$args['after_widget']; ?>
 <?
