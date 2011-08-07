@@ -188,3 +188,6 @@ background-height: 100%; background-attachment: fixed; }
 #content.contact #contact_info li img { border: 0px solid black; vertical-align: middle; width: 16px; height: 16px; }
 #content.contact a { text-decoration: underline; color: #369; }
 #content.contact a:hover { text-decoration: none; color: #369; }
+
+/* projects page */
+#content.projects h1 { font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', 'sans-serif'; font-size: 150%; text-decoration: none; font-weight: bold; }
