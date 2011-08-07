@@ -16,7 +16,7 @@ class BitBucket
 		return json_decode($result, true);
 	}
 	
-	public static function ToUTC($format = "U", $time = false)
+	private static function toUTC($format = "U", $time = false)
 	{
 		if ($time === false)
 		{
@@ -75,12 +75,41 @@ class BitBucket
 					break;
 			}
 			
-			$story .= " &mdash; <span class=\"footer\">".self::getRepositoryURL($event['repository']['owner'], $event['repository']['name'], true)." &middot; <a href=\"{$url}\" class=\"timeago\" title=\"".self::ToUTC("c", $event['created_on'])."\"></a></span>";
+			$story .= " &mdash; <span class=\"footer\">".self::getRepositoryURL($event['repository']['owner'], $event['repository']['name'], true)." &middot; <a href=\"{$url}\" class=\"timeago\" title=\"".self::toUTC("c", $event['created_on'])."\"></a></span>";
 			
 			$event['story'] = $story;
 		}
 		unset($event);
 		
 		return $events;
+	}
+	
+	public static function RepositoryEvents($name, $limit = 30, $username = "jimmysawczuk")
+	{
+		$result = self::Request("/repositories/{$username}/{$name}/events/?limit={$limit}");
+		$result = $result['events'];
+		
+		usort($result, "self::sortByCreatedOn");
+		
+		return $result;
+	}
+	
+	private static function sortByCreatedOn($a, $b)
+	{
+		$_a = self::toUTC("U", $a['created_on']);
+		$_b = self::toUTC("U", $b['created_on']);
+		
+		if ($a == $b)
+		{
+			return 0;
+		}
+		elseif ($a > $b)
+		{
+			return -1;
+		}
+		else
+		{
+			return 1;
+		}
 	}
 }
