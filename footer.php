@@ -31,6 +31,25 @@
 				*/
 				
 				Search.init();
+				
+				$('.widget_links').each(function(idx, linkset)
+				{
+					id = $(linkset).attr('id');
+					
+					even = false;
+					$('#' + id + ' ul li').each(function(idx, link)
+					{
+						if (!even)
+						{
+							$(link).addClass('odd');
+						}
+						else
+						{
+							$(link).addClass('even');
+						}
+						even = !even;
+					});
+				});
 			});
 		</script>
 		<? wp_footer(); ?>

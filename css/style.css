@@ -137,7 +137,7 @@ background-height: 100%; background-attachment: fixed; }
 #sidebar a { text-decoration: underline; color: #369; }
 #sidebar a:hover { text-decoration: none; color: #369; }
 
-#wp-calendar { width: 100%; background-color: white; }
+#wp-calendar { width: 100%; background-color: #f9f9f9; }
 #wp-calendar caption { text-align: center; font-size: 115%; background-color: #333; color: white; padding: 3px 0px; font-weight: bold; }
 #wp-calendar th { font-weight: bold; text-align: center; padding: 2px 0px; }
 #wp-calendar td { text-align: center; padding: 2px 0px; }
@@ -146,11 +146,24 @@ background-height: 100%; background-attachment: fixed; }
 #wp-calendar #prev a, #wp-calendar #next a { font-weight: bold; text-decoration: none; }
 #wp-calendar #prev, #wp-calendar #next { padding-top: 1em; }
 
-#fanbox_container { background-color: white; overflow: hidden; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
-#twitter_update_list li { margin: 1em 0px; padding: 0.5em; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; background-color: white; }
+#fanbox_container { background-color: #f9f9f9; overflow: hidden; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+#twitter_update_list li { margin: 1em 0px; padding: 0.5em; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; background-color: #f9f9f9; }
 
-/* about me styles */
+#ballpark_resume li { font-size: 14px; line-height: 15px; font-weight: normal; padding: 5px 10px; position: relative; }
+#ballpark_resume li.odd { background-color: #e1e1e1; }
+#ballpark_resume li.even { background-color: #f9f9f9; }
+#ballpark_resume li a, #ballpark_resume li a:hover { text-decoration: none; color: #369; font-weight: bold; }
+#ballpark_resume li .rating { font-weight: bold; font-size: 140%; position: absolute; right: 10px; text-align: center; width: 20px; color: #333; }
+#ballpark_resume li .rating a { color: #333; }
+
+#sidebar .widget_links li { font-size: 14px; line-height: 15px; font-weight: normal; padding: 5px 10px; }
+#sidebar .widget_links li a, .widget_links li a:hover { color: #369; font-weight: bold; text-decoration: none; }
+#sidebar .widget_links li.odd { background-color: #e1e1e1; }
+#sidebar .widget_links li.even { background-color: #f9f9f9; }
+
 #sidebar .widget_aboutmewidget p { font-style: italic; font-size: 108%; margin: 1em 0px; }
+
+/* contact page */
 
 #content.contact #big_image_container { width: 860px; height: 367px; background: url('../images/about_jimmy_widescreen.jpg'); position: relative; }
 #content.contact #big_image_padding { padding: 20px; }
