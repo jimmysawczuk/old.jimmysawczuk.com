@@ -1,30 +1,30 @@
 var Search = {
 	config: {
-		search_container: '#search',
-		search_text: '#search_text',
-		search_submit: '#search_submit'
+		container: '#search',
+		text: '#search_text',
+		submit: '#search_submit'
 	},
 	
 	init: function()
 	{
-		$(Search.config.search_text).focus(function()
+		$(Search.config.text).focus(function()
 		{
-			if ($(Search.config.search_text).val() == $(Search.config.search_text).data('description'))
+			if ($(Search.config.text).val() == $(Search.config.text).data('description'))
 			{
-				$(Search.config.search_text).val('');
-				$(Search.config.search_container).removeClass('empty');
+				$(Search.config.text).val('');
+				$(Search.config.container).removeClass('empty');
 			}
 		});
 		
-		$(Search.config.search_text).blur(function()
+		$(Search.config.text).blur(function()
 		{		
-			if ($(Search.config.search_text).val() == '')
+			if ($(Search.config.text).val() == '')
 			{
-				$(Search.config.search_text).val($(Search.config.search_text).data('description'));
-				$(Search.config.search_container).addClass('empty');
+				$(Search.config.text).val($(Search.config.text).data('description'));
+				$(Search.config.container).addClass('empty');
 			}
 		});
 				
-		$(Search.config.search_text).blur();
+		$(Search.config.text).blur();
 	}
 };
