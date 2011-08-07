@@ -67,10 +67,9 @@ function fb_og_tags()
 		$description = "A blog about baseball, technology, politics and life by Jimmy Sawczuk, a software engineer from Cleveland living in Columbia, SC.";
 	
 		$meta_tags []= '<meta property="og:title" content="Cleveland, Curveballs and Common Sense"/>';
-		$meta_tags []= '<meta property="og:type" content="blog"/>';
+		$meta_tags []= '<meta property="og:type" content="website"/>';
 		$meta_tags []= '<meta property="og:url" content="'.get_bloginfo('url').'"/>';
 		$meta_tags []= '<meta property="og:image" content="'.get_bloginfo('stylesheet_directory').'/images/about_jimmy.jpg" />';
-		$meta_tags []= '<meta property="og:site_name" content="'.get_bloginfo().'"/>';
 		$meta_tags []= '<meta property="og:description" content="'.$description.'" />';
 	}
 	

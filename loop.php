@@ -63,7 +63,12 @@
 		<? endif; ?>
 	</div>
 <? 
-	endwhile; 
+	endwhile;
+?>
+
+	<div id="pagination"><? posts_nav_link(' ','<div class="prev">&laquo; Previous</div>','<div class="next">Next &raquo;</div>'); ?></div>
+
+<?
 else:	
 	echo '<h1>No posts matched your search.</h1>';
 endif; 
