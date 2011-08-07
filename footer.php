@@ -17,6 +17,7 @@
 		<script src="//connect.facebook.net/en_US/all.js#appId=169228513149223&amp;xfbml=1" charset="utf-8"></script>
 		<script type="text/javascript" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 		<script type="text/javascript" src="<? bloginfo('stylesheet_directory'); ?>/js/search.js" charset="utf-8"></script>
+		<script type="text/javascript" src="<? bloginfo('stylesheet_directory'); ?>/js/timeago.js" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(document).ready(function()
 			{
@@ -70,6 +71,8 @@
 						even = !even;
 					});
 				});
+				
+				$(".timeago").timeago();
 			});
 		</script>
 		<? wp_footer(); ?>

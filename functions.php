@@ -6,6 +6,9 @@ require('includes/aboutme_widget.php');
 require('includes/likebox_widget.php');
 require('includes/twitter_widget.php');
 require('includes/ballpark_widget.php');
+require('includes/bitbucket_widget.php');
+
+require('includes/bitbucket.php');
 
 function pluralize($num, $sing, $plu)
 {
@@ -75,4 +78,25 @@ function fb_og_tags()
 	}
 	
 	echo implode("\r\n", $meta_tags);
+}
+
+function switch_timezone($format, $time = null, 
+    $to = "America/Los_Angeles", $from = "America/Los_Angeles")
+{
+    if ($time == null) $time = time();
+
+    $from_tz = new DateTimeZone($from);
+    $to_tz = new DateTimeZone($to);
+
+    if (is_int($time)) $time = '@' . $time;
+
+    $dt = date_create($time, $from_tz);
+
+    if ($dt)
+    {
+        $dt->setTimezone($to_tz);
+        return $dt->format($format);
+    }
+
+    return date($format, $time);
 }
