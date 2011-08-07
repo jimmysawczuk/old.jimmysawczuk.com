@@ -16,6 +16,7 @@
 		<div id="fb-root"></div>
 		<script src="http://connect.facebook.net/en_US/all.js#appId=169228513149223&amp;xfbml=1" charset="utf-8"></script>
 		<script type="text/javascript" src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<script type="text/javascript" src="<? bloginfo('stylesheet_directory'); ?>/js/search.js" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(document).ready(function()
 			{
@@ -28,6 +29,8 @@
 					$(this).animate({color: '#333'}, 1000);
 				});
 				*/
+				
+				Search.init();
 			});
 		</script>
 		<? wp_footer(); ?>

@@ -26,12 +26,12 @@
 						<li class="last"><a href="<? bloginfo('url'); ?>/resume" target="_blank" title="Resume">Resum&eacute;</a></li>
 					</ul>
 					
-					<div id="search">
+					<div id="search" class="empty">
 						<form method="get">
-							<div class="input_wrapper">
-								<input type="text" name="s" />
+							<div id="search_text_wrapper" class="input_wrapper">
+								<input type="text" name="s" id="search_text" data-description="Search" />
 							</div>
-							<input type="image" src="<? bloginfo('stylesheet_directory'); ?>/images/search.png" value="" id="s_submit" />
+							<input type="image" src="<? bloginfo('stylesheet_directory'); ?>/images/search.png" value="" id="search_submit" />
 						</form>
 					</div>
 				</div>
