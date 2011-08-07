@@ -14,13 +14,13 @@
 		</div>
 		
 		<div id="fb-root"></div>
-		<script src="http://connect.facebook.net/en_US/all.js#appId=169228513149223&amp;xfbml=1" charset="utf-8"></script>
-		<script type="text/javascript" src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<script src="//connect.facebook.net/en_US/all.js#appId=169228513149223&amp;xfbml=1" charset="utf-8"></script>
+		<script type="text/javascript" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 		<script type="text/javascript" src="<? bloginfo('stylesheet_directory'); ?>/js/search.js" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(document).ready(function()
 			{
-				/*
+				<? /*
 				$('#header h1 a').mouseover(function()
 				{
 					$(this).animate({color: '#369'}, 1000);
@@ -28,7 +28,7 @@
 				{
 					$(this).animate({color: '#333'}, 1000);
 				});
-				*/
+				*/ ?>
 				
 				is_single = <?=is_single()? 'true' : 'false' ?>;
 				is_page = <?=is_page()? 'true' : 'false' ?>;
