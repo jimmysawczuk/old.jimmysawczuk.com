@@ -30,6 +30,26 @@
 				});
 				*/
 				
+				is_single = <?=is_single()? 'true' : 'false' ?>;
+				is_page = <?=is_page()? 'true' : 'false' ?>;
+				
+				if (is_single && !is_page)
+				{
+					(function() {
+						$(document).scroll(function()
+						{
+							if (window.scrollY > 210)
+							{
+								$('.post .post_info').css({'top': (window.scrollY - 200) + 'px'});
+							}
+							else
+							{
+								$('.post .post_info').css({'top': '0px'});
+							}
+						});
+					})();
+				}
+				
 				Search.init();
 				
 				$('.widget_links').each(function(idx, linkset)
