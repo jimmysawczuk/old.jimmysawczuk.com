@@ -4,7 +4,7 @@ This is a repository for the theme that runs my blog, which is located at [www.j
 
 ## Original ##
 
-The theme currently in the `production` branch is only slightly modified from an older version of [Andrei Luca's][2] [LightWord][3]. It has served me well for two years, however, I feel it's time for a change.
+The theme currently in the `lightword` branch is only slightly modified from an older version of [Andrei Luca's][2] [LightWord][3]. It has served me well for two years, however, I feel it's time for a change.
 
 ## In development ##
 
