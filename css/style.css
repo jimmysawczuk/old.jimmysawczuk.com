@@ -108,17 +108,20 @@ background-height: 100%; background-attachment: fixed; }
 .post .content h3 { font-size: 135%; }
 .post .content h4 { font-size: 120%; }
 
+.post .content hr { height: 0px; border-width: 1px 0px 0px 0px; border-top: 1px solid #aaa; }
+
 .post .meta { background-color: #ddd; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; width: 100%; overflow: hidden; position: relative; }
 .post .more-link { background-color: #333; float: right; white-space: nowrap; height: 100%; vertical-align: middle; top: 0; bottom: 0; position: absolute; right: 0px; text-align: right; width: 90px; }
 .post .more-link a { color: #eee; text-decoration: none; font-weight: bold; display: block; padding: 5px; }
 .post .tags { padding: 5px; background-color: #ddd; width: 465px; min-height: 17px; }
-.post .original { margin: 1em 0px; font-style: italic; clear: both; }
+.post .original { margin: 0px 0px 1em; font-style: italic; clear: both; }
 
 .post .content ul.nobullet { padding: 0px; }
 .post .content ul.nobullet li { list-style-type: none; }
 
 .page .post_info { display: none; }
 
+.post hr.recommendation-divider { border-top-style: dashed; }
 
 /* comments */
 #comments h1 { font-size: 150%; border-bottom: 1px solid #aaa; }
