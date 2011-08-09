@@ -6,11 +6,11 @@ This is a repository for the theme that runs my blog, which is located at [www.j
 
 The theme currently in the `lightword` branch is only slightly modified from an older version of [Andrei Luca's][2] [LightWord][3]. It has served me well for two years, however, I feel it's time for a change.
 
-## In development ##
+## In use ##
 
-The theme in development aims to be simple, clean, and able to integrate well with Facebook and other social networks. It uses HTML5.
+The theme in use now was written from scratch with some inspiration from [`lightword`][3], [Grantland][6], and the [New York Times][7]. My aim was to create a theme that was simple, attractive and clean. I also built it with Facebook integration in mind, and specifically, to respect the [Open Graph protocol][8]. It uses HTML5 and CSS3, with some jQuery.
 
-# License #
+## License ##
 
 The code in `production` is protected under the [GPL license][4]. The `default` branch is protected under the [MIT License][5], which is repeated below:
 
@@ -41,3 +41,6 @@ The code in `production` is protected under the [GPL license][4]. The `default` 
   [3]: http://wordpress.org/extend/themes/lightword
   [4]: http://www.opensource.org/licenses/gpl-license.php
   [5]: http://www.opensource.org/licenses/mit-license.php
+  [6]: http://www.grantland.com
+  [7]: http://www.nytimes.com
+  [8]: http://ogp.me
