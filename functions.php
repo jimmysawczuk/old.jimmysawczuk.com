@@ -62,7 +62,6 @@ function fb_og_tags()
 		$meta_tags []= '<meta property="og:title" content="'.str_replace("\"", "&quot;", $post->post_title).'"/>';
 		$meta_tags []= '<meta property="og:type" content="article"/>';
 		$meta_tags []= '<meta property="og:url" content="'.$post->post_permalink.'"/>';
-		$meta_tags []= '<meta property="og:image" content="'.''.'" />';
 		$meta_tags []= '<meta property="og:site_name" content="'.get_bloginfo().'"/>';
 		
 	}
