@@ -43,12 +43,6 @@ function fb_og_tags()
 	{
 		global $post;
 		
-		/*
-		echo "<!--\n";
-		var_dump($post);
-		echo "-->\n";
-		*/
-		
 		$matches = array();		
 		$matched = preg_match_all('#<img(?:.*)src\=\"(.+?)\"(?:.*)\/\>#i', $post->post_content, $matches);
 		
@@ -65,9 +59,9 @@ function fb_og_tags()
 		}
 		
 		
-		$meta_tags []= '<meta property="og:title" content="'.str_replace("\"", "&quot;", $post->post_title).'"/>';
+		$meta_tags []= '<meta property="og:title" content="'.str_replace("\"", "&quot;", get_title()).'"/>';
 		$meta_tags []= '<meta property="og:type" content="article"/>';
-		$meta_tags []= '<meta property="og:url" content="'.$post->post_permalink.'"/>';
+		$meta_tags []= '<meta property="og:url" content="'.get_permalink().'"/>';
 		$meta_tags []= '<meta property="og:site_name" content="'.get_bloginfo().'"/>';
 		
 	}
