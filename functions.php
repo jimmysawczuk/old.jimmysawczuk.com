@@ -43,6 +43,10 @@ function fb_og_tags()
 	{
 		global $post;
 		
+		echo "<!--\n";
+		var_dump($post);
+		echo "-->\n";
+		
 		$matches = array();		
 		$matched = preg_match_all('#<img(?:.*)src\=\"(.+?)\"(?:.*)\/\>#i', $post->post_content, $matches);
 		
