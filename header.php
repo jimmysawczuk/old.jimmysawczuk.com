@@ -2,11 +2,10 @@
 <html lang="en" xml:lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
 	<head>
 		<title><? bloginfo('name'); ?></title>
-		<link href='//fonts.googleapis.com/css?family=Arvo:400,700|Mako' rel='stylesheet' type='text/css'>
-		<link href="<? bloginfo('stylesheet_directory'); ?>/css/style.css?20110813-1" type="text/css" rel="stylesheet" />
+		<link href='//fonts.googleapis.com/css?family=Arvo:400,700|Mako' rel='stylesheet' type='text/css' />
+		<link href="<?=get_min_url('css/style.css'); ?>" type="text/css" rel="stylesheet" />
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-		<script src="<? bloginfo('stylesheet_directory'); ?>/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="<? bloginfo('stylesheet_directory'); ?>/js/jquery.ui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="<?=get_min_url(array('js/jquery.min.js', 'js/jquery.ui.min.js')); ?>" type="text/javascript" charset="utf-8"></script>
 		<meta name="viewport" content="width=1050, maximum-scale=1.0" />
 		<? fb_og_tags(); ?>
 		<? wp_head(); ?>

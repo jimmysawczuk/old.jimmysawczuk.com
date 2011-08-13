@@ -10,30 +10,22 @@
 			</div>
 		</div>
 		<div id="copyright">
-			&copy; 2008-<?=date("Y"); ?> Jimmy Sawczuk &middot; Theme <a href="http://code.jimmysawczuk.com/blog-wordpress-theme">open-sourced under the MIT license</a>
+			&copy; 2008-<?=date("Y"); ?> Jimmy Sawczuk 
+			&middot; 
+			Theme <a href="http://code.jimmysawczuk.com/blog-wordpress-theme">open-sourced under the MIT license</a>
+			&middot;
+			Special thanks to <a href="http://timeago.yarp.com/">TimeAgo</a>, <a href="http://code.google.com/p/minify/">Minify</a>, <a href="http://code.google.com/apis/webfonts/">Google Font API</a>
 		</div>
 		
 		<div id="fb-root"></div>
 		<script src="//connect.facebook.net/en_US/all.js#appId=193404464015012&amp;xfbml=1" charset="utf-8"></script>
 		<script type="text/javascript" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-		<script type="text/javascript" src="<? bloginfo('stylesheet_directory'); ?>/js/search.js" charset="utf-8"></script>
-		<script type="text/javascript" src="<? bloginfo('stylesheet_directory'); ?>/js/timeago.js" charset="utf-8"></script>
-		<script type="text/javascript" src="<? bloginfo('stylesheet_directory'); ?>/js/bitbucket.js" charset="utf-8"></script>
+		<script type="text/javascript" src="<?=get_min_url(array("js/search.js", "js/timeago.js", "js/bitbucket.js")); ?>" charset="utf-8"></script>
 		<script type="text/javascript">
 			var stylesheet_directory = '<? bloginfo("stylesheet_directory"); ?>';
 		
 			$(document).ready(function()
 			{
-				<? /*
-				$('#header h1 a').mouseover(function()
-				{
-					$(this).animate({color: '#369'}, 1000);
-				}).mouseout(function()
-				{
-					$(this).animate({color: '#333'}, 1000);
-				});
-				*/ ?>
-				
 				is_single = <?=is_single()? 'true' : 'false' ?>;
 				is_page = <?=is_page()? 'true' : 'false' ?>;
 				
@@ -42,14 +34,22 @@
 					(function() {
 						$(document).scroll(function()
 						{
-							if (window.scrollY > 210)
+							$('.post .post_info').stop();
+							
+							if (window.scrollY > $('#comments').position().top)
 							{
-								$('.post .post_info').css({'top': (window.scrollY - 200) + 'px'});
+								height = $('#comments').position().top;
+							}
+							else if (window.scrollY > 210)
+							{
+								height = (window.scrollY - 200) + 'px';
 							}
 							else
 							{
-								$('.post .post_info').css({'top': '0px'});
+								height = '0px';
 							}
+							
+							$('.post .post_info').animate({'top': height}, 300);
 						});
 					})();
 				}

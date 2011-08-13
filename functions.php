@@ -35,10 +35,7 @@ function fb_og_tags()
 		
 		if ($matched)
 		{
-			foreach (array_reverse($matches[1]) as $match)
-			{
-				$meta_tags []= '<meta property="og:image" content="'.$match.'" />';
-			}
+			$meta_tags []= '<meta property="og:image" content="'.$matches[1][0].'" />';
 		}
 		else
 		{

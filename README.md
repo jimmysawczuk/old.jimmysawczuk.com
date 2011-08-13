@@ -10,6 +10,14 @@ The theme currently in the `lightword` branch is only slightly modified from an 
 
 The theme in use now was written from scratch with some inspiration from [`lightword`][3], [Grantland][6], and the [New York Times][7]. My aim was to create a theme that was simple, attractive and clean. I also built it with Facebook integration in mind, and specifically, to respect the [Open Graph protocol][8]. It uses HTML5 and CSS3, with some jQuery.
 
+### Acknowledgements ###
+
+I used all or parts of these open-source projects in this theme:
+
+ * [TimeAgo][9], for the relative timestamps on the BitBucket widget
+ * [Minify][10], for the on-the-fly minification of my CSS and JS
+ * [Google Font API][11], for the gorgeous fonts, namely: **Arvo** and **Mako**
+
 ## License ##
 
 The code in `production` is protected under the [GPL license][4]. The `default` branch is protected under the [MIT License][5], which is repeated below:
@@ -44,3 +52,6 @@ The code in `production` is protected under the [GPL license][4]. The `default` 
   [6]: http://www.grantland.com
   [7]: http://www.nytimes.com
   [8]: http://ogp.me
+  [9]: http://timeago.yarp.com/
+  [10]: http://code.google.com/p/minify/
+  [11]: http://code.google.com/apis/webfonts/
