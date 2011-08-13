@@ -29,7 +29,7 @@ require_once 'Minify/Build.php';
  */ 
 function Minify_groupUri($group, $forceAmpersand = false)
 {
-    $path = $forceAmpersand
+	$path = $forceAmpersand
         ? "/g={$group}"
         : "/?g={$group}";
     return _Minify_getBuild($group)->uri(

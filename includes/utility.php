@@ -48,9 +48,9 @@ function pluralize($num, $sing, $plu)
 	return $tbr;
 }
 
-function get_min_url($urls)
+function get_min_url($urls, $group = false)
 {
-	if (!is_array($urls))
+	if (!is_array($urls) && !$group)
 	{
 		$urls = array($urls);
 	}
@@ -59,13 +59,14 @@ function get_min_url($urls)
 	
 	$root_dir = str_replace(get_bloginfo('url').'/', '', $root_dir);
 	
-	foreach ($urls as &$url)
+	if (!$group)
 	{
-		$url = "{$root_dir}/{$url}";
+		$str = get_bloginfo('stylesheet_directory').'/min/?b='.$root_dir.'&f='.implode(",", $urls);
 	}
-	unset($url);
-	
-	$str = get_bloginfo('stylesheet_directory').'/min/?f='.implode(",", $urls);
+	else
+	{
+		$str = get_bloginfo('stylesheet_directory').'/min/?g='.$urls;
+	}
 	
 	return $str;
 }

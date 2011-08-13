@@ -3,9 +3,9 @@
 	<head>
 		<title><? bloginfo('name'); ?></title>
 		<link href='//fonts.googleapis.com/css?family=Arvo:400,700|Mako' rel='stylesheet' type='text/css' />
-		<link href="<?=get_min_url('css/style.css'); ?>" type="text/css" rel="stylesheet" />
+		<link href="<?=get_min_url('css', true); ?>" type="text/css" rel="stylesheet" />
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-		<script src="<?=get_min_url(array('js/jquery.min.js', 'js/jquery.ui.min.js')); ?>" type="text/javascript" charset="utf-8"></script>
+		<script src="<?=get_min_url('jquery', true); ?>" type="text/javascript" charset="utf-8"></script>
 		<meta name="viewport" content="width=1050, maximum-scale=1.0" />
 		<? fb_og_tags(); ?>
 		<? wp_head(); ?>

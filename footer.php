@@ -20,7 +20,7 @@
 		<div id="fb-root"></div>
 		<script src="//connect.facebook.net/en_US/all.js#appId=193404464015012&amp;xfbml=1" charset="utf-8"></script>
 		<script type="text/javascript" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-		<script type="text/javascript" src="<?=get_min_url(array("js/search.js", "js/timeago.js", "js/bitbucket.js")); ?>" charset="utf-8"></script>
+		<script type="text/javascript" src="<?=get_min_url('js', true); ?>" charset="utf-8"></script>
 		<script type="text/javascript">
 			var stylesheet_directory = '<? bloginfo("stylesheet_directory"); ?>';
 		
