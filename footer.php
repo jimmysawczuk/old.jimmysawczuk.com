@@ -18,7 +18,10 @@
 		<script type="text/javascript" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 		<script type="text/javascript" src="<? bloginfo('stylesheet_directory'); ?>/js/search.js" charset="utf-8"></script>
 		<script type="text/javascript" src="<? bloginfo('stylesheet_directory'); ?>/js/timeago.js" charset="utf-8"></script>
+		<script type="text/javascript" src="<? bloginfo('stylesheet_directory'); ?>/js/bitbucket.js" charset="utf-8"></script>
 		<script type="text/javascript">
+			var stylesheet_directory = '<? bloginfo("stylesheet_directory"); ?>';
+		
 			$(document).ready(function()
 			{
 				<? /*
@@ -52,6 +55,8 @@
 				}
 				
 				Search.init();
+				
+				BitBucket.load('#bitbucket_events');
 				
 				$('.widget_links').each(function(idx, linkset)
 				{

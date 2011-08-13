@@ -16,11 +16,11 @@ class BitBucketWidget extends WP_Widget {
 		<?=$args['before_title'] ?>On BitBucket<?=$args['after_title'] ?>
 		
 		<ul id="bitbucket_events">
-			<? foreach ($events as $event): ?>
+			<?  /* foreach ($events as $event): ?>
 				<li>
 					<?=$event['story'] ?>		
 				</li>	
-			<? endforeach; ?>
+			<? endforeach; */ ?>
 		</ul>	
 			
 	<?=$args['after_widget']; ?>
