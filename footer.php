@@ -56,7 +56,10 @@
 				
 				Search.init();
 				
-				BitBucket.load('#bitbucket_events');
+				BitBucket.load('#bitbucket_events', function()
+				{
+					$("#bitbucket_events .timeago").timeago();
+				});
 				
 				$('.widget_links').each(function(idx, linkset)
 				{
@@ -76,8 +79,6 @@
 						even = !even;
 					});
 				});
-				
-				$(".timeago").timeago();
 			});
 		</script>
 		<? wp_footer(); ?>
