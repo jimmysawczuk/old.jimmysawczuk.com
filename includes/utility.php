@@ -47,3 +47,25 @@ function pluralize($num, $sing, $plu)
 	
 	return $tbr;
 }
+
+function get_min_url($urls)
+{
+	if (!is_array($urls))
+	{
+		$urls = array($urls);
+	}
+	
+	$root_dir = get_bloginfo('stylesheet_directory');
+	
+	$root_dir = str_replace(get_bloginfo('url').'/', '', $root_dir);
+	
+	foreach ($urls as &$url)
+	{
+		$url = "{$root_dir}/{$url}";
+	}
+	unset($url);
+	
+	$str = get_bloginfo('stylesheet_directory').'/min/?f='.implode(",", $urls);
+	
+	return $str;
+}
