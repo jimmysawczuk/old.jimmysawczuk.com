@@ -164,7 +164,7 @@ background-height: 100%; background-attachment: fixed; }
 #ballpark_resume li .rating { font-weight: bold; font-size: 140%; position: absolute; right: 10px; text-align: center; width: 20px; color: #333; }
 #ballpark_resume li .rating a { color: #333; }
 
-#bitbucket_events li { font-size: 100%; clear: both; padding: 3px 0px; background-color: #f9f9f9; }
+#bitbucket_events li { font-size: 100%; clear: both; margin: 0.5em 0px; padding: 0.5em; background-color: #f9f9f9; }
 #bitbucket_events li .footer { font-size: 93%; }
 
 #sidebar .widget_links li { font-size: 14px; line-height: 15px; font-weight: normal; padding: 5px 10px; }

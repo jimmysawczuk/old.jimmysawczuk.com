@@ -3,7 +3,7 @@
 	<head>
 		<title><? bloginfo('name'); ?></title>
 		<link href='//fonts.googleapis.com/css?family=Arvo:400,700|Mako' rel='stylesheet' type='text/css'>
-		<link href="<? bloginfo('stylesheet_directory'); ?>/css/style.css" type="text/css" rel="stylesheet" />
+		<link href="<? bloginfo('stylesheet_directory'); ?>/css/style.css?20110813" type="text/css" rel="stylesheet" />
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 		<script src="<? bloginfo('stylesheet_directory'); ?>/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="<? bloginfo('stylesheet_directory'); ?>/js/jquery.ui.min.js" type="text/javascript" charset="utf-8"></script>
