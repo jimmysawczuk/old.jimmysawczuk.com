@@ -1,9 +1,9 @@
 <? if (have_posts()): 
-	while (have_posts()): 
+	$i = 0; while (have_posts()): 
 		
 	the_post();
 ?>
-	<div class="<?=get_post_type() == 'post'? 'post' : 'post page'; ?>" id="<?=get_post_type() == 'post'? 'post' : 'page'; ?>-<? the_ID(); ?>">
+	<div class="<?=get_post_type() == 'post'? 'post' : 'post page'; ?> <?=(!is_page() && $paged < 2 && $i == 0 && !is_single())? 'post_first' : '' ?>" id="<?=get_post_type() == 'post'? 'post' : 'page'; ?>-<? the_ID(); ?>">
 		<div class="post_header">
 			<div class="post_info">
 				<div class="post_date">
@@ -30,7 +30,7 @@
 			<? the_content(''); ?>
 			<? if (is_single()): ?>
 				<hr class="recommendation-divider" />
-				<fb:recommendations site="<?=bloginfo('url'); ?>" width="575" height="300" header="true" font="arial" border_color=""></fb:recommendations>
+				<fb:recommendations site="<? bloginfo('url'); ?>" width="575" height="300" header="true" font="arial" border_color=""></fb:recommendations>
 				<hr class="recommendation-divider" />
 				<div class="original">
 					Originally posted on <a href="<?=bloginfo('url'); ?>"><?=bloginfo('site_name') ?></a> on 
@@ -57,13 +57,21 @@
 		
 		<? if (is_single() && !is_page()): ?>
 			<div id="comments">
-				<h1><fb:comment-count href="<? the_permalink(); ?>"></fb:comment:count></h1>
+				<h1>Comments</h1>
 				<fb:comments href="<? the_permalink(); ?>" num_posts="10" width="575"></fb:comments>
 			</div>
 		<? endif; ?>
 	</div>
+	
+	<? if (!is_page() && $paged < 2 && $i == 0 && !is_single()): ?>
+		<div id="interstitial_recommendations">
+			<div class="container">
+				<fb:activity site="<? bloginfo('url'); ?>" width="575" height="300" header="true" font="arial" border_color="#aaa" recommendations="false"></fb:activity>
+			</div>
+		</div>
+	<? endif; ?>	
 <? 
-	endwhile;
+	$i++; endwhile;
 ?>
 
 	<div id="pagination"><? posts_nav_link(' ','<div class="prev">&laquo; Previous</div>','<div class="next">Next &raquo;</div>'); ?></div>
