@@ -38,6 +38,7 @@ function fb_og_tags()
 	$meta_tags = array();
 	$meta_tags []= '<meta property="fb:admins" content="15504121" />';
 	$meta_tags []= '<meta property="fb:page_id" content="107775795674" />';
+	$meta_tags []= '<meta property="fb:app_id" content="193404464015012" />';
 	
 	if (is_single())
 	{
@@ -48,7 +49,7 @@ function fb_og_tags()
 		
 		if ($matched)
 		{
-			foreach ($matches[1] as $match)
+			foreach (array_reverse($matches[1]) as $match)
 			{
 				$meta_tags []= '<meta property="og:image" content="'.$match.'" />';
 			}
@@ -59,10 +60,9 @@ function fb_og_tags()
 		}
 		
 		
-		$meta_tags []= '<meta property="og:title" content="'.str_replace("\"", "&quot;", $post->post_title).'"/>';
+		$meta_tags []= '<meta property="og:title" content="'.str_replace("\"", "&quot;", get_the_title()).'"/>';
 		$meta_tags []= '<meta property="og:type" content="article"/>';
-		$meta_tags []= '<meta property="og:url" content="'.$post->post_permalink.'"/>';
-		$meta_tags []= '<meta property="og:image" content="'.''.'" />';
+		$meta_tags []= '<meta property="og:url" content="'.get_permalink().'"/>';
 		$meta_tags []= '<meta property="og:site_name" content="'.get_bloginfo().'"/>';
 		
 	}
