@@ -85,7 +85,7 @@ function parse_revision_information()
 	}
 	else
 	{
-		echo "<!-- ".dirname(__FILE__).'/../REVISION')."-->";
+		echo "<!-- ".dirname(__FILE__).'/../REVISION'."-->";
 		return false;
 	}
 }
