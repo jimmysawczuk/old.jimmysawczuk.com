@@ -14,7 +14,7 @@ The theme in use now was written from scratch with some inspiration from [`light
 
 Using the method from [this answer on Stack Overflow][12], I use the following hook in order to display the revision information in the site footer:
 
-    [hooks]
+	[hooks]
 	post-update = hg id -n -i -b > REVISION
 
 ### Acknowledgements ###
@@ -27,7 +27,7 @@ I used all or parts of these open-source projects in this theme:
 
 ## License ##
 
-The code in `production` is protected under the [GPL license][4]. The `default` branch is protected under the [MIT License][5], which is repeated below:
+The code in `lightword` is protected under the [GPL license][4], as it is a very slight deviation on the Lightword theme. The `default` and `production` branches are protected under the [MIT License][5], which is repeated below:
 
 	The MIT License (MIT)
 	Copyright (C) 2011 by Jimmy Sawczuk
