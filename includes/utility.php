@@ -73,14 +73,14 @@ function get_min_url($urls, $group = false)
 
 function parse_revision_information()
 {
-	if (file_exists('../REVISION'))
+	if (file_exists(dirname(__FILE__).'/../REVISION'))
 	{
-		$contents = explode(" ", file_get_contents('../REVISION'));
+		$contents = explode(" ", file_get_contents(dirname(__FILE__).'/../REVISION'));
 
 		return array(
-			'i' => $contents[0],
-			'n' => $contents[1],
-			'b' => $contents[2]
+			'i' => trim($contents[0]),
+			'n' => trim($contents[1]),
+			'b' => trim($contents[2])
 		);
 	}
 	else
