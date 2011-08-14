@@ -112,4 +112,27 @@ class BitBucket
 			return 1;
 		}
 	}
+	
+	private static function generateFooterStub($name, $username = "jimmysawczuk")
+	{
+		$rev_info = parse_revision_information();
+		
+		if ($rev_info)
+		{
+			$str = "";
+			$str.= '<a href="http://bitbucket.org/'.$username.'/'.$name.'/'.$rev_info['i'].'">'.$rev_info['i'].'</a>; ';
+			$str .= $rev_info['n'];
+			
+			if ($rev_info['b'] != 'production')
+			{
+				$str .= '; '.$rev_info['b'];
+			}
+			
+			return $str;
+		}
+		else
+		{
+			return false;
+		}
+	}
 }

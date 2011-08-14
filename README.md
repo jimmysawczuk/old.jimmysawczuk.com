@@ -10,6 +10,13 @@ The theme currently in the `lightword` branch is only slightly modified from an 
 
 The theme in use now was written from scratch with some inspiration from [`lightword`][3], [Grantland][6], and the [New York Times][7]. My aim was to create a theme that was simple, attractive and clean. I also built it with Facebook integration in mind, and specifically, to respect the [Open Graph protocol][8]. It uses HTML5 and CSS3, with some jQuery.
 
+### Repository Hooks ###
+
+Using the method from [this answer on Stack Overflow][12], I use the following hook in order to display the revision information in the site footer:
+
+    [hooks]
+	post-update = hg id -n -i -b > REVISION
+
 ### Acknowledgements ###
 
 I used all or parts of these open-source projects in this theme:
@@ -55,3 +62,4 @@ The code in `production` is protected under the [GPL license][4]. The `default` 
   [9]: http://timeago.yarp.com/
   [10]: http://code.google.com/p/minify/
   [11]: http://code.google.com/apis/webfonts/
+  [12]: http://stackoverflow.com/questions/6005751/how-to-display-current-working-copy-version-of-an-hg-repository-on-a-php-page

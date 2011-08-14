@@ -14,6 +14,10 @@
 			&middot; 
 			Theme <a href="http://code.jimmysawczuk.com/blog-wordpress-theme">open-sourced under the MIT license</a>
 			&middot;
+			<? if ($revStr = BitBucket::generateFooterStub('blog-wordpress-theme')): ?>
+				<?=$revStr ?>
+				&middot;
+			<? endif; ?>
 			Special thanks to <a href="http://timeago.yarp.com/">TimeAgo</a>, <a href="http://code.google.com/p/minify/">Minify</a>, <a href="http://code.google.com/apis/webfonts/">Google Font API</a>
 		</div>
 		

@@ -70,3 +70,21 @@ function get_min_url($urls, $group = false)
 	
 	return $str;
 }
+
+function parse_revision_information()
+{
+	if (file_exists('../REVISION'))
+	{
+		$contents = explode(" ", file_get_contents('../REVISION'));
+
+		return array(
+			'i' => $contents[0],
+			'n' => $contents[1],
+			'b' => $contents[2]
+		);
+	}
+	else
+	{
+		return false;
+	}
+}
