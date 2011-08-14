@@ -40,13 +40,15 @@
 						{
 							$('.post .post_info').stop();
 							
-							if (window.scrollY > $('#comments').position().top)
+							scroll_top = $(document).scrollTop();
+							
+							if (scroll_top > $('#comments').position().top)
 							{
 								height = $('#comments').position().top;
 							}
-							else if (window.scrollY > 210)
+							else if (scroll_top > 210)
 							{
-								height = (window.scrollY - 200) + 'px';
+								height = (scroll_top - 200) + 'px';
 							}
 							else
 							{
