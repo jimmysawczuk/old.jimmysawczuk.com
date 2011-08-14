@@ -120,8 +120,8 @@ class BitBucket
 		if ($rev_info)
 		{
 			$str = "";
-			$str .= '<a href="http://bitbucket.org/'.$username.'/'.$name.'/'.$rev_info['i'].'" ';
-			$str .= 'title="Branch: '.$rev_info['b'].'">'.$rev_info['n'];
+			$str .= '<a href="http://bitbucket.org/'.$username.'/'.$name.'/changeset/'.$rev_info['i'].'" ';
+			$str .= 'title="Branch: '.$rev_info['b'].'" target="_blank">'.$rev_info['n'];
 			$str .= ':'.$rev_info['i'].'</a>';
 			
 			
