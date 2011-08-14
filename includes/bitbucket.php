@@ -43,45 +43,50 @@ class BitBucket
 		$result = self::Request('/users/jimmysawczuk/events?limit='.$limit);
 		$events = $result['events'];
 		
-		foreach ($events as &$event)
-		{	
-			$story = "";
-			
-			// var_dump($event);
-		
-			switch ($event['event'])
-			{
-				case "commit":
-					$story .= truncate_string($event['description']);
-					$url = self::getRepositoryURL($event['repository']['owner'], $event['repository']['name'])."/changeset/{$event['node']}";
-					
-					break;
+		if ($events && is_array($events))
+		{
+			foreach ($events as &$event)
+			{	
+				$story = "";
+	
+				switch ($event['event'])
+				{
+					case "commit":
+						$story .= truncate_string($event['description']);
+						$url = self::getRepositoryURL($event['repository']['owner'], $event['repository']['name'])."/changeset/{$event['node']}";
+	
+						break;
+	
+					case "start_follow_repo":
+						$story .= "<i>Started following ".self::getRepositoryURL($event['repository']['owner'], $event['repository']['name'], true)."</i>";
+	
+						$url = "javascript: void(0);";
+	
+						break;
+	
+					case "create":
+						$story = "<i>Created ".self::getRepositoryURL($event['repository']['owner'], $event['repository']['name'], true)."</i>";
+	
+						$url = "javascript: void(0);";
+	
+						break;
+	
+					default:
+						break;
+				}
 				
-				case "start_follow_repo":
-					$story .= "<i>Started following ".self::getRepositoryURL($event['repository']['owner'], $event['repository']['name'], true)."</i>";
-					
-					$url = "javascript: void(0);";
-					
-					break;
-					
-				case "create":
-					$story = "<i>Created ".self::getRepositoryURL($event['repository']['owner'], $event['repository']['name'], true)."</i>";
-					
-					$url = "javascript: void(0);";
-					
-					break;
+				$story .= " &mdash; <span class=\"footer\">".self::getRepositoryURL($event['repository']['owner'], $event['repository']['name'], true)." &middot; <a href=\"{$url}\" class=\"timeago\" title=\"".self::toUTC("c", $event['created_on'])."\"></a></span>";
 				
-				default:
-					break;
+				$event['story'] = $story;
 			}
+			unset($event);
 			
-			$story .= " &mdash; <span class=\"footer\">".self::getRepositoryURL($event['repository']['owner'], $event['repository']['name'], true)." &middot; <a href=\"{$url}\" class=\"timeago\" title=\"".self::toUTC("c", $event['created_on'])."\"></a></span>";
-			
-			$event['story'] = $story;
+			return $events;
 		}
-		unset($event);
-		
-		return $events;
+		else
+		{
+			return false;
+		}
 	}
 	
 	public static function RepositoryEvents($name, $limit = 30, $username = "jimmysawczuk")
