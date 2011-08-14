@@ -113,7 +113,7 @@ class BitBucket
 		}
 	}
 	
-	private static function generateFooterStub($name, $username = "jimmysawczuk")
+	public static function generateFooterStub($name, $username = "jimmysawczuk")
 	{
 		$rev_info = parse_revision_information();
 		
