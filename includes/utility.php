@@ -74,7 +74,7 @@ function get_min_url($urls, $group = false)
 function parse_revision_information()
 {
 	if (file_exists('../REVISION'))
-	{
+	{	
 		$contents = explode(" ", file_get_contents('../REVISION'));
 
 		return array(
