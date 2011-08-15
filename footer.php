@@ -26,65 +26,21 @@
 		<script type="text/javascript" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 		<script type="text/javascript" src="<?=get_min_url('js', true); ?>" charset="utf-8"></script>
 		<script type="text/javascript">
-			var stylesheet_directory = '<? bloginfo("stylesheet_directory"); ?>';
+			var Config = { 
+				stylesheet_directory: '<? bloginfo("stylesheet_directory"); ?>',
+				is_single: <?=is_single()? 'true' : 'false' ?>,
+				is_page: <?=is_page()? 'true' : 'false' ?>
+			};
 		
 			$(document).ready(function()
 			{
-				is_single = <?=is_single()? 'true' : 'false' ?>;
-				is_page = <?=is_page()? 'true' : 'false' ?>;
-				
-				if (is_single && !is_page)
-				{
-					(function() {
-						$(document).scroll(function()
-						{
-							$('.post .post_info').stop();
-							
-							scroll_top = $(document).scrollTop();
-							
-							if (scroll_top > $('#comments').position().top)
-							{
-								height = $('#comments').position().top;
-							}
-							else if (scroll_top > 210)
-							{
-								height = (scroll_top - 200) + 'px';
-							}
-							else
-							{
-								height = '0px';
-							}
-							
-							$('.post .post_info').animate({'top': height}, 300);
-						});
-					})();
-				}
-				
 				Search.init();
-				
 				BitBucket.load('#bitbucket_events', function()
 				{
 					$("#bitbucket_events .timeago").timeago();
 				});
 				
-				$('.widget_links').each(function(idx, linkset)
-				{
-					id = $(linkset).attr('id');
-					
-					even = false;
-					$('#' + id + ' ul li').each(function(idx, link)
-					{
-						if (!even)
-						{
-							$(link).addClass('odd');
-						}
-						else
-						{
-							$(link).addClass('even');
-						}
-						even = !even;
-					});
-				});
+				Styling.init();
 			});
 		</script>
 		<? wp_footer(); ?>
