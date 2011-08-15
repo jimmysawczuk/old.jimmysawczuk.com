@@ -67,7 +67,7 @@ background-height: 100%; background-attachment: fixed; }
 
 
 /* post styles */
-.post { position: relative; margin-bottom: 3em; }
+.post { position: relative; margin-bottom: 3em; min-height: 300px; }
 .post_first { margin-bottom: 1.5em; }
 .post .post_header { clear: both; vertical-align: middle; margin-bottom: 1em; }
 .post h2 { font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', 'sans-serif'; font-size: 166%; text-decoration: none; }
