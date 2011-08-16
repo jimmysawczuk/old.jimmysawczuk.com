@@ -56,10 +56,13 @@ $min_cachePath = '/tmp';
  * second line. The third line might work on some Apache servers.
  */
 // $min_documentRoot = '';
-$min_documentRoot = dirname(__FILE__).'/../';
+// $min_documentRoot = dirname(__FILE__).'/../';
 // echo $min_documentRoot; exit;
-//$min_documentRoot = substr(__FILE__, 0, strlen(__FILE__) - 15);
-//$min_documentRoot = $_SERVER['SUBDOMAIN_DOCUMENT_ROOT'];
+// $min_documentRoot = substr(__FILE__, 0, strlen(__FILE__) - 15);
+// $min_documentRoot = $_SERVER['SUBDOMAIN_DOCUMENT_ROOT'];
+// 
+//
+// This is configured at the bottom of the file.
 
 
 /**

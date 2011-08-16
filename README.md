@@ -22,7 +22,9 @@ Using the method from [this answer on Stack Overflow][12], I use the following h
 I used all or parts of these open-source projects in this theme:
 
  * [TimeAgo][9], for the relative timestamps on the BitBucket widget
- * [Minify][10], for the on-the-fly minification of my CSS and JS
+ * [Minify][10], for the on-the-fly minification of my CSS and JS. There are a couple modifications to this Minify installation:
+   * Most notably, [this workaround][13] that enables Minify to run in a subdirectory of the document root
+   * Also, it's configured to use group loading rather than file loading, check `min/groupsConfig.php` for the configuration.
  * [Google Font API][11], for the gorgeous fonts, namely: **Arvo** and **Mako**
 
 ## License ##
@@ -63,3 +65,4 @@ The code in `lightword` is protected under the [GPL license][4], as it is a very
   [10]: http://code.google.com/p/minify/
   [11]: http://code.google.com/apis/webfonts/
   [12]: http://stackoverflow.com/questions/6005751/how-to-display-current-working-copy-version-of-an-hg-repository-on-a-php-page
+  [13]: http://code.google.com/p/minify/wiki/AlternateFileLayouts
