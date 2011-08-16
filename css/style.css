@@ -180,7 +180,7 @@ background-height: 100%; background-attachment: fixed; }
 
 /* contact page */
 
-#content.contact #big_image_container { width: 860px; height: 367px; background: url('images/about_jimmy_widescreen.jpg'); position: relative; }
+#content.contact #big_image_container { width: 860px; height: 367px; background: url('../images/about_jimmy_widescreen.jpg'); position: relative; }
 #content.contact #big_image_padding { padding: 20px; }
 
 #content.contact #left_box { position: absolute; left: 10px; top: 10px; width: 210px; text-align: justify; border: 1px solid #888; padding: 5px; border-radius: 1px; -moz-border-radius: 1px; -webkit-border-radius: 1px; background-color: #f9f9f9; }
