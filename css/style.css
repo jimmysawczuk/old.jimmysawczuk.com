@@ -198,3 +198,5 @@ background-height: 100%; background-attachment: fixed; }
 
 /* projects page */
 #content.projects h1 { font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', 'sans-serif'; font-size: 150%; text-decoration: none; font-weight: bold; }
+
+#wpstats { display: none; }

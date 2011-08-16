@@ -157,3 +157,19 @@ $min_libPath = dirname(__FILE__) . '/lib';
 
 // try to disable output_compression (may not have an effect)
 ini_set('zlib.output_compression', '0');
+
+
+
+/*
+Per http://code.google.com/p/minify/wiki/AlternateFileLayouts
+*/
+
+// Set the document root to be the path of the "site root"
+$min_documentRoot = substr(__FILE__, 0, -15);
+
+// Set $sitePrefix to the path of the site from the webserver's real docroot
+list($sitePrefix) = explode('/min/index.php', $_SERVER['SCRIPT_NAME'], 2);
+
+// Prepend $sitePrefix to the rewritten URIs in CSS files
+$min_symlinks['//' . ltrim($sitePrefix, '/')] = $min_documentRoot;
+
