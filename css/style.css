@@ -101,6 +101,9 @@ background-height: 100%; background-attachment: fixed; }
 .post .content ul { padding-left: 30px; }
 .post .content ul li { text-align: justify; list-style-type: disc; }
 
+.post .content blockquote { background-color: #CDCDCD; font-style: italic; margin: 10px; padding: 0 10px; overflow: hidden; }
+.post .content blockquote p { p}
+
 .post a { text-decoration: underline; color: #369; }
 .post a:hover { text-decoration: none; color: #369; }
 
