@@ -26,10 +26,14 @@ function page_title()
 	if (is_single() || is_page())
 	{
 		the_title();
+		echo ' - ';
+		bloginfo('name');
 	}
 	else
 	{
 		bloginfo('name');
+		echo ' - ';
+		bloginfo('description');
 	}
 }
 
