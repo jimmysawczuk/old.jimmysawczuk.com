@@ -19,6 +19,20 @@ function has_more_link()
 	return strpos($post->post_content, "<!--more-->") !== false;
 }
 
+function page_title()
+{
+	global $post;
+	
+	if (is_single() || is_page())
+	{
+		the_title();
+	}
+	else
+	{
+		bloginfo('name');
+	}
+}
+
 function fb_og_tags()
 {
 	$meta_tags = array();
