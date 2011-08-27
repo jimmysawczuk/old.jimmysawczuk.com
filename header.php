@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
 	<head>
-		<title><? bloginfo('name'); ?></title>
+		<title><? page_title(); ?></title>
 		<link href='//fonts.googleapis.com/css?family=Arvo:400,700|Mako' rel='stylesheet' type='text/css' />
 		<link href="<?=get_min_url('css', true); ?>&20110815" type="text/css" rel="stylesheet" />
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />

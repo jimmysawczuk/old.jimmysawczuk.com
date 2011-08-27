@@ -75,6 +75,7 @@ background-height: 100%; background-attachment: fixed; }
 .post h2 a:hover { color: #333; text-decoration: none; }
 
 .post .post_header h2 { border-bottom: 1px solid #aaa; }
+.post .post_header h3.subtitle { font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', 'sans-serif'; font-size: 120%; text-decoration: none; margin: 0.25em 0px; }
 
 .post .post_info { position: absolute; left: -84px; top: 0px; background-color: #ccc; border: 1px solid #aaa; border-right-width: 0px; -moz-border-radius: 5px 0px 0px 5px; -webkit-border-radius: 5px 0px 0px 5px; border-radius: 5px 0px 0px 5px; z-index: 90; width: 62px; }
 .post .post_info >  div { text-align: center; padding: 5px; }
