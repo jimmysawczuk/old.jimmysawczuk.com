@@ -24,7 +24,7 @@
 				</div>
 			</div>
 			<h2><a href="<? the_permalink(); ?>"><? the_title(); ?></a></h2>
-			<? if ($subtitle = get_post_custom_values('Subtitle')): ?>
+			<? if ($subtitle = get_post_custom_values('Subtitle') && !empty($subtitle) && count($subtitle) > 0): ?>
 				<h3 class="subtitle"><?=$subtitle[0]; ?></h3>
 			<? endif; ?>
 		</div>
