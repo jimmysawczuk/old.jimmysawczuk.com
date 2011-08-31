@@ -69,7 +69,7 @@
 	<? if (!is_page() && $paged < 2 && $i == 0 && !is_single()): ?>
 		<div id="interstitial_recommendations">
 			<div class="container">
-				<fb:activity site="<? bloginfo('url'); ?>" width="575" height="300" header="true" font="arial" border_color="#aaa" recommendations="false"></fb:activity>
+				<fb:activity site="<?=str_replace('http://', '', get_bloginfo('url')); ?>" width="575" height="300" header="true" font="arial" border_color="#aaa" recommendations="false"></fb:activity>
 			</div>
 		</div>
 	<? endif; ?>	
