@@ -11,7 +11,7 @@ get_header();
 	<div id="big_image_padding">
 		<div id="right_box">
 			<h1>My name is Jimmy Sawczuk.</h1>
-			<p>I'm a 2009 graduate of <a href="http://www.case.edu">Case Western Reserve University</a>, with a degree in Computer Science. Even though I'm a <a href="http://www.louddoor.com">web developer by day</a>, I <a href="http://code.jimmysawczuk.com">code on the side</a> and <a href="http://stackoverflow.com/users/350278/jimmy-sawczuk">troll around on Stack Overflow</a> regularly. I'm a diehard Indians fan, a respectable tennis player, and an "enthusiastic" disc golf player. If you’re looking for my resume, it's available as <a href="http://www.jimmysawczuk.com/resume">a printable web page</a> (last updated 5/14/2011). References available upon request.</p>
+			<p>I'm a 2009 graduate of <a href="http://www.case.edu">Case Western Reserve University</a>, with a degree in Computer Science. Even though I'm a <a href="http://www.louddoor.com">web developer by day</a>, I <a href="http://code.jimmysawczuk.com">code on the side</a> and <a href="http://stackoverflow.com/users/350278/jimmy-sawczuk">troll around on Stack Overflow</a> regularly. I'm a diehard Indians fan, a respectable tennis player, and an "enthusiastic" disc golf player. If you’re looking for my resume, it's available as <a href="http://www.jimmysawczuk.com/resume">a printable web page</a>. References available upon request.</p>
 		</div>
 	
 		<div id="left_box"> 
