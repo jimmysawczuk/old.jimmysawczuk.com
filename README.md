@@ -21,7 +21,7 @@ Using the method from [this answer on Stack Overflow][12], I use the following h
 
 I used all or parts of these open-source projects in this theme:
 
-* [TimeAgo][9], for the relative timestamps on the BitBucket widget
+* [TimeAgo][9], for the relative timestamps on the BitBucket widget.
 * [Minify][10], for the on-the-fly minification of my CSS and JS. There are a couple modifications to this Minify installation. The most notable one is [this workaround][13] that enables Minify to run in a subdirectory of the document root. It's also configured to use group loading rather than file loading, check `min/groupsConfig.php` for the configuration.
 
 Special thanks also to the [Google Font API][11], for the gorgeous fonts, namely: **Arvo** and **Mako**
