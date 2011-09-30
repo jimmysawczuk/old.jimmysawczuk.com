@@ -108,7 +108,7 @@ background-height: 100%; background-attachment: fixed; }
 .post a { text-decoration: underline; color: #369; }
 .post a:hover { text-decoration: none; color: #369; }
 
-.post .content h2, .post .content h3, .post .content h4 { font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', 'sans-serif'; }
+.post .content h2, .post .content h3, .post .content h4 { font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', 'sans-serif'; margin: 1em 0px; }
 .post .content h2 { font-size: 150%; }
 .post .content h3 { font-size: 135%; }
 .post .content h4 { font-size: 120%; }
