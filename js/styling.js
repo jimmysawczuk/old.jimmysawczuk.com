@@ -14,14 +14,17 @@ var Styling = {
 					if (scroll_top > $('#comments').position().top)
 					{
 						height = $('#comments').position().top;
+						$('.post .post_info .top_link').css({'display': 'block'});
 					}
 					else if (scroll_top > 210)
 					{
 						height = (scroll_top - 200) + 'px';
+						$('.post .post_info .top_link').css({'display': 'block'});
 					}
 					else
 					{
 						height = '0px';
+						$('.post .post_info .top_link').css({'display': 'none'});
 					}
 
 					$('.post .post_info').animate({'top': height}, 300);

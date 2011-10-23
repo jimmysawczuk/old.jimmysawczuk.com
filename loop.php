@@ -22,6 +22,9 @@
 						<a href="http://twitter.com/share" class="twitter-share-button" data-url="<? the_permalink(); ?>" data-count="vertical">Tweet</a>
 					</div>
 				</div>
+				<div class="top_link">
+					<a href="#container">Top</a>
+				</div>
 			</div>
 			<h2><a href="<? the_permalink(); ?>"><? the_title(); ?></a></h2>
 			<? $subtitle = get_post_custom_values('Subtitle'); if ($subtitle && !empty($subtitle) && count($subtitle) > 0): ?>
