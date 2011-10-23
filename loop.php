@@ -36,7 +36,9 @@
 			<? the_content(''); ?>
 			<? if (is_single()): ?>
 				<hr class="recommendation-divider" />
-				<fb:recommendations site="<? bloginfo('url'); ?>" width="575" height="300" header="true" font="arial" border_color=""></fb:recommendations>
+				<div class="recommendations">
+					<fb:recommendations site="<? bloginfo('url'); ?>" width="575" height="300" header="true" font="arial" border_color="" colorscheme="light"></fb:recommendations>
+				</div>
 				<hr class="recommendation-divider" />
 				<div class="original">
 					Originally posted on <a href="<?=bloginfo('url'); ?>"><?=bloginfo('site_name') ?></a> on 
