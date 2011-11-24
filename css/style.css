@@ -101,8 +101,9 @@ background-height: 100%; background-attachment: fixed; }
 .post .content .wp-caption img { padding: 5px; }
 .post .content p.wp-caption-text { margin: 0px; padding: 0px 5px 5px; font-size: 93%; }
 
-.post .content ul { padding-left: 30px; }
+.post .content ul, .post .content ol { padding-left: 30px; }
 .post .content ul li { text-align: justify; list-style-type: disc; }
+.post .content ol li { text-align: justify; list-style-type: decimal; }
 
 .post .content blockquote { background-color: #CDCDCD; font-style: italic; margin: 10px; padding: 0 10px; overflow: hidden; }
 .post .content blockquote p { p}
