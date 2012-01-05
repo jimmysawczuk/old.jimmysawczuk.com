@@ -26,7 +26,7 @@ get_header();
 				</li> 
 				<li>
 					<img src="<? bloginfo('stylesheet_directory') ?>/images/aim.png" alt="AIM" />
-					sniper506th
+					JimmySawczuk
 				</li>
 				<li>
 					<img src="<? bloginfo('stylesheet_directory') ?>/images/gtalk.png" alt="Google Talk" />
