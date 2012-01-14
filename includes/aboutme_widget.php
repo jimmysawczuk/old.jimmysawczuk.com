@@ -17,10 +17,9 @@ class AboutMeWidget extends WP_Widget {
 		<p>
 			Jimmy is a 2009 graduate of <a href="http://www.case.edu">Case Western Reserve University</a> in 
 			Cleveland, OH, and currently works as a software engineer for 
-			<a href="http://www.louddoor.com">LoudDoor</a> on a news feed optimization platform called 
-			<a href="http://www.socialadvantage.com">Social Advantage</a> in Columbia, SC. He mostly writes 
-			about <a href="/tag/mlb">baseball</a> (particularly the <a href="/tag/indians">Cleveland Indians</a>), 
-			<a href="/tag/politics">politics</a>, <a href="/tag/movies">movies</a> and 
+			<a href="http://www.louddoor.com">LoudDoor</a> on a Facebook Page optimization platform in Columbia, SC. 
+			He mostly writes about <a href="/tag/mlb">baseball</a> (particularly the <a href="/tag/indians">Cleveland 
+			Indians</a>), <a href="/tag/politics">politics</a>, <a href="/tag/movies">movies</a> and 
 			<a href="/tag/programming">programming</a>. He also enjoys a cup of great coffee and a good book.
 		</p>
 		
