@@ -12,10 +12,10 @@ The theme in use now was written from scratch with some inspiration from [`light
 
 ### Repository Hooks ###
 
-Using the method from [this answer on Stack Overflow][12], I use the following hook in order to display the revision information in the site footer:
+To display the current code revision in the footer, I use this hook on both `post-checkout` and `post-merge`:
 
-	[hooks]
-	post-update = hg id -n -i -b > REVISION
+	includes/update_revision.sh;
+	rm -rf /path/to/wp/cache/directory/*
 
 ### Acknowledgements ###
 
