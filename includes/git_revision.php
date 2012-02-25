@@ -14,7 +14,11 @@
 	
 		private static function parse()
 		{		
-			$info = @file(dirname(__FILE__ . '/..') . '/' . self::$filename);
+			$path = dirname(__FILE__ . '/..') . '/' . self::$filename;
+			
+			echo $path;
+			
+			$info = @file();
 			
 			if (!$info)
 			{
