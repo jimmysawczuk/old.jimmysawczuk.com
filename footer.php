@@ -15,7 +15,7 @@
 			Theme <a href="http://code.jimmysawczuk.com/blog-wordpress-theme">open-sourced under the MIT license</a>
 			&middot;
 			<?
-			$fmt = '<a href="http://bitbucket.org/jimmysawczuk/blog-wordpress-theme/changeset/%r">%r</a>; <span class="timeago" title="%U"></span> &middot;' 
+			$fmt = '<a href="http://bitbucket.org/jimmysawczuk/blog-wordpress-theme/changeset/%r">%r</a>; <span class="timeago" title="%U"></span> &middot;';
 			echo GitRevision::format($fmt);
 			?>
 			Special thanks to <a href="http://timeago.yarp.com/">TimeAgo</a>, <a href="http://code.google.com/p/minify/">Minify</a>, <a href="http://code.google.com/apis/webfonts/">Google Font API</a>
