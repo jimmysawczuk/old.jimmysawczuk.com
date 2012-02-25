@@ -120,14 +120,14 @@ class BitBucket
 	
 	public static function generateFooterStub($name, $username = "jimmysawczuk")
 	{
-		$rev_info = parse_revision_information();
+		$rev_info = GitRevision::load();
 		
 		if ($rev_info)
 		{
 			$str = "";
 			$str .= '<a href="http://bitbucket.org/'.$username.'/'.$name.'/changeset/'.$rev_info['i'].'" ';
-			$str .= 'title="Branch: '.$rev_info['b'].'" target="_blank">'.$rev_info['n'];
-			$str .= ':'.$rev_info['i'].'</a>';
+			$str .= 'title="Branch: '.$rev_info['branches'].'" target="_blank">'.$rev_info['hex'];
+			$str .= '</a>';
 			
 			
 			return $str;
