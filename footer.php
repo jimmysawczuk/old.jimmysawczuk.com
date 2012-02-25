@@ -48,7 +48,10 @@
 			$(document).ready(function()
 			{
 				Search.init();
-				BitBucket.load('#bitbucket_events');
+				BitBucket.load('#bitbucket_events', function()
+				{
+					$('#bitbucket_events .timeago').timeago();
+				});
 				Styling.init();
 				
 				$('.timeago').timeago();
