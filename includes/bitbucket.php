@@ -117,24 +117,4 @@ class BitBucket
 			return 1;
 		}
 	}
-	
-	public static function generateFooterStub($name, $username = "jimmysawczuk")
-	{
-		$rev_info = GitRevision::load();
-		
-		if ($rev_info)
-		{
-			$str = "";
-			$str .= '<a href="http://bitbucket.org/'.$username.'/'.$name.'/changeset/'.$rev_info['i'].'" ';
-			$str .= 'title="Branch: '.$rev_info['branches'].'" target="_blank">'.$rev_info['hex'];
-			$str .= '</a>';
-			
-			
-			return $str;
-		}
-		else
-		{
-			return false;
-		}
-	}
 }
