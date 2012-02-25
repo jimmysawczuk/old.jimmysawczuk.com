@@ -14,7 +14,7 @@
 	
 		private static function parse()
 		{		
-			$path = realpath(dirname(__FILE__) . '/../') . self::$filename;
+			$path = realpath(dirname(__FILE__) . '/../') . '/' . self::$filename;
 			
 			$info = @file($path);
 			
