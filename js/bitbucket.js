@@ -6,7 +6,10 @@ var BitBucket = {
 		{	
 			$(selector).html(response);
 			
-			cb();
+			if (typeof cb == "function")
+			{
+				cb();
+			}
 		});
 	}
 	

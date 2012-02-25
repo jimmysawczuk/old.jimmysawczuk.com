@@ -37,7 +37,7 @@
 			}());
 		</script>
 		<script type="text/javascript" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-		<script type="text/javascript" src="<?=get_min_url('js', true); ?>&20110815" charset="utf-8"></script>
+		<script type="text/javascript" src="<?=get_min_url('js', true); ?>" charset="utf-8"></script>
 		<script type="text/javascript">
 			var Config = { 
 				stylesheet_directory: '<? bloginfo("stylesheet_directory"); ?>',
@@ -48,12 +48,10 @@
 			$(document).ready(function()
 			{
 				Search.init();
-				BitBucket.load('#bitbucket_events', function()
-				{
-					$("#bitbucket_events .timeago").timeago();
-				});
-				
+				BitBucket.load('#bitbucket_events');
 				Styling.init();
+				
+				$('.timeago').timeago();
 			});
 		</script>
 		<? wp_footer(); ?>
