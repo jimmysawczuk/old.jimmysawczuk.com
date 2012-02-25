@@ -71,20 +71,7 @@ function get_min_url($urls, $group = false)
 	return $str;
 }
 
-function parse_revision_information()
+function git_revision()
 {
-	if (file_exists(dirname(__FILE__).'/../REVISION'))
-	{
-		$contents = explode(" ", file_get_contents(dirname(__FILE__).'/../REVISION'));
-
-		return array(
-			'i' => trim($contents[0]),
-			'n' => trim($contents[1]),
-			'b' => trim($contents[2])
-		);
-	}
-	else
-	{
-		return false;
-	}
+	return GitRevision::format("%r &middot; %b &middot; <time datetime=\"%d\"></time>");
 }

@@ -2,6 +2,7 @@
 
 register_sidebars(1, array('name' => 'Right sidebar'));
 
+require('includes/git_revision.php');
 require('includes/utility.php');
 
 require('includes/aboutme_widget.php');
