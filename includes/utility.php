@@ -77,12 +77,12 @@ function load_stylesheet($name, $override = false)
 
 	if (MODE == 'live' || $override)
 	{
-		echo '<link href="'.$dir.'/css/'.$name.'.min.css" type="text/css" rel="stylesheet" />';
+		echo '<link href="'.get_min_url('css', true).'" type="text/css" rel="stylesheet" />';
 	}
 	elseif (MODE == 'dev')
 	{
-		echo '<link href="'.$dir.'/less/'.$name.'.less" type="text/css" rel="stylesheet/less" />\n';
-		echo '<script type="text/javascript">var less = {env: "development"};</script>\n';
+		echo '<link href="'.$dir.'/less/'.$name.'.less" type="text/css" rel="stylesheet/less" />' . "\n";
+		echo '<script type="text/javascript">var less = {env: "development"};</script>' . "\n";
 		echo '<script src="'.$dir.'/js/less-1.3.0.min.js" type="text/javascript"></script>';
 	}
 }

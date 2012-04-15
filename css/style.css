@@ -133,22 +133,7 @@ tt {
 .nowrap {
   white-space: nowrap;
 }
-.clearboth {
-  clear: both;
-}
-.hidden {
-  display: none;
-}
-.nowrap {
-  white-space: nowrap;
-}
 @font-face {
-  font-family: 'Mako';
-  src: local('Mako');
-  src: url('../type/mako-webfont.eot');
-  src: url('../type/mako-webfont.eot?#iefix') format('embedded-opentype'), url('../type/mako-webfont.woff') format('woff'), url('../type/mako-webfont.ttf') format('truetype'), url('/../type/mako-webfont.svg#Mako') format('svg');
-  font-weight: normal;
-  font-style: normal;
   font-family: 'Mako';
   src: local('Mako');
   src: url('../type/mako-webfont.eot');
@@ -163,20 +148,8 @@ tt {
   src: url('../type/arvo-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../type/arvo-regular-webfont.woff') format('woff'), url('../type/arvo-regular-webfont.ttf') format('truetype'), url('/../type/arvo-regular-webfont.svg#Arvo') format('svg');
   font-weight: normal;
   font-style: normal;
-  font-family: 'Arvo';
-  src: local('Arvo');
-  src: url('../type/arvo-regular-webfont.eot');
-  src: url('../type/arvo-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../type/arvo-regular-webfont.woff') format('woff'), url('../type/arvo-regular-webfont.ttf') format('truetype'), url('/../type/arvo-regular-webfont.svg#Arvo') format('svg');
-  font-weight: normal;
-  font-style: normal;
 }
 @font-face {
-  font-family: 'Arvo';
-  src: local('Arvo');
-  src: url('../type/arvo-bold-webfont.eot');
-  src: url('../type/arvo-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../type/arvo-bold-webfont.woff') format('woff'), url('../type/arvo-bold-webfont.ttf') format('truetype'), url('/../type/arvo-bold-webfont.svg#Arvo') format('svg');
-  font-weight: bold;
-  font-style: normal;
   font-family: 'Arvo';
   src: local('Arvo');
   src: url('../type/arvo-bold-webfont.eot');
@@ -226,18 +199,6 @@ body {
   -webkit-box-shadow: 2px 2px 10px 0px #555555;
   -moz-box-shadow: 2px 2px 10px 0px #555555;
   box-shadow: 2px 2px 10px 0px #555555;
-  -webkit-box-shadow: 2px 2px 10px 0px #555555;
-  -moz-box-shadow: 2px 2px 10px 0px #555555;
-  box-shadow: 2px 2px 10px 0px #555555;
-  border-radius: 1px 1px 1px 1px;
-  -moz-border-radius: 1px 1px 1px 1px;
-  -webkit-border-radius: 1px 1px 1px 1px;
-  border-radius: 1px 1px 1px 1px;
-  -moz-border-radius: 1px 1px 1px 1px;
-  -webkit-border-radius: 1px 1px 1px 1px;
-  border-radius: 1px 1px 1px 1px;
-  -moz-border-radius: 1px 1px 1px 1px;
-  -webkit-border-radius: 1px 1px 1px 1px;
   border-radius: 1px 1px 1px 1px;
   -moz-border-radius: 1px 1px 1px 1px;
   -webkit-border-radius: 1px 1px 1px 1px;
@@ -262,10 +223,9 @@ body {
 }
 #footer {
   clear: both;
-  clear: both;
 }
 #header h1 {
-  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', 'sans-serif';
+  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 244%;
@@ -299,19 +259,6 @@ body {
 #nav {
   display: block;
 }
-#nav:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-#nav {
-  display: inline-block;
-}
-#nav {
-  display: block;
-}
 #nav ul {
   overflow: hidden;
   background-color: #444;
@@ -325,29 +272,7 @@ body {
   border-radius: 1px 1px 1px 1px;
   -moz-border-radius: 1px 1px 1px 1px;
   -webkit-border-radius: 1px 1px 1px 1px;
-  border-radius: 1px 1px 1px 1px;
-  -moz-border-radius: 1px 1px 1px 1px;
-  -webkit-border-radius: 1px 1px 1px 1px;
-  border-radius: 1px 1px 1px 1px;
-  -moz-border-radius: 1px 1px 1px 1px;
-  -webkit-border-radius: 1px 1px 1px 1px;
-  border-radius: 1px 1px 1px 1px;
-  -moz-border-radius: 1px 1px 1px 1px;
-  -webkit-border-radius: 1px 1px 1px 1px;
   z-index: 100;
-}
-#nav ul:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-#nav ul {
-  display: inline-block;
-}
-#nav ul {
-  display: block;
 }
 #nav ul:after {
   content: ".";
@@ -384,15 +309,6 @@ body {
 #nav ul li a {
   padding: 10px 5px;
   display: block;
-  border-radius: 1px 1px 1px 1px;
-  -moz-border-radius: 1px 1px 1px 1px;
-  -webkit-border-radius: 1px 1px 1px 1px;
-  border-radius: 1px 1px 1px 1px;
-  -moz-border-radius: 1px 1px 1px 1px;
-  -webkit-border-radius: 1px 1px 1px 1px;
-  border-radius: 1px 1px 1px 1px;
-  -moz-border-radius: 1px 1px 1px 1px;
-  -webkit-border-radius: 1px 1px 1px 1px;
   border-radius: 1px 1px 1px 1px;
   -moz-border-radius: 1px 1px 1px 1px;
   -webkit-border-radius: 1px 1px 1px 1px;
@@ -483,7 +399,7 @@ html.ie #search #search_text {
   min-height: 300px;
 }
 .post h2 {
-  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', 'sans-serif';
+  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
   font-size: 166%;
   text-decoration: none;
 }
@@ -494,7 +410,6 @@ html.ie #search #search_text {
 }
 .post .post_header {
   clear: both;
-  clear: both;
   vertical-align: middle;
   margin-bottom: 1em;
 }
@@ -502,7 +417,7 @@ html.ie #search #search_text {
   border-bottom: 1px solid #aaa;
 }
 .post .post_header h3.subtitle {
-  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', 'sans-serif';
+  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
   font-size: 120%;
   text-decoration: none;
   margin: 0.25em 0px;
@@ -514,9 +429,6 @@ html.ie #search #search_text {
   background-color: #ccc;
   border: 1px solid #aaa;
   border-right-width: 0px;
-  border-radius: 5px 0px 0px 5px;
-  -moz-border-radius: 5px 0px 0px 5px;
-  -webkit-border-radius: 5px 0px 0px 5px;
   border-radius: 5px 0px 0px 5px;
   -moz-border-radius: 5px 0px 0px 5px;
   -webkit-border-radius: 5px 0px 0px 5px;
@@ -536,9 +448,6 @@ html.ie #search #search_text {
   border-radius: 0px 0px 0px 5px;
   -moz-border-radius: 0px 0px 0px 5px;
   -webkit-border-radius: 0px 0px 0px 5px;
-  border-radius: 0px 0px 0px 5px;
-  -moz-border-radius: 0px 0px 0px 5px;
-  -webkit-border-radius: 0px 0px 0px 5px;
 }
 .post .post_info .top_link a {
   display: block;
@@ -550,21 +459,9 @@ html.ie #search #search_text {
   border-radius: 5px 0px 0px 0px;
   -moz-border-radius: 5px 0px 0px 0px;
   -webkit-border-radius: 5px 0px 0px 0px;
-  border-radius: 5px 0px 0px 0px;
-  -moz-border-radius: 5px 0px 0px 0px;
-  -webkit-border-radius: 5px 0px 0px 0px;
 }
 .post .post_info .post_comments {
   overflow: hidden;
-  border-radius: 0px 0px 0px 0px;
-  -moz-border-radius: 0px 0px 0px 0px;
-  -webkit-border-radius: 0px 0px 0px 0px;
-  border-radius: 0px 0px 0px 0px;
-  -moz-border-radius: 0px 0px 0px 0px;
-  -webkit-border-radius: 0px 0px 0px 0px;
-  border-radius: 0px 0px 0px 0px;
-  -moz-border-radius: 0px 0px 0px 0px;
-  -webkit-border-radius: 0px 0px 0px 0px;
   border-radius: 0px 0px 0px 0px;
   -moz-border-radius: 0px 0px 0px 0px;
   -webkit-border-radius: 0px 0px 0px 0px;
@@ -579,9 +476,6 @@ html.ie #search #search_text {
 }
 .post .post_info .post_social {
   background-color: #ccc;
-  border-radius: 0px 0px 0px 5px;
-  -moz-border-radius: 0px 0px 0px 5px;
-  -webkit-border-radius: 0px 0px 0px 5px;
   border-radius: 0px 0px 0px 5px;
   -moz-border-radius: 0px 0px 0px 5px;
   -webkit-border-radius: 0px 0px 0px 5px;
@@ -610,7 +504,6 @@ html.ie #search #search_text {
   line-height: 12px;
 }
 .post .content {
-  clear: both;
   clear: both;
   margin: 1em 0px;
 }
@@ -678,7 +571,7 @@ html.ie #search #search_text {
 .post .content h2,
 .post .content h3,
 .post .content h4 {
-  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', 'sans-serif';
+  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
   margin: 1em 0px;
 }
 .post .content h2 {
@@ -700,15 +593,6 @@ html.ie #search #search_text {
   border-radius: 2px 2px 2px 2px;
   -moz-border-radius: 2px 2px 2px 2px;
   -webkit-border-radius: 2px 2px 2px 2px;
-  border-radius: 2px 2px 2px 2px;
-  -moz-border-radius: 2px 2px 2px 2px;
-  -webkit-border-radius: 2px 2px 2px 2px;
-  border-radius: 2px 2px 2px 2px;
-  -moz-border-radius: 2px 2px 2px 2px;
-  -webkit-border-radius: 2px 2px 2px 2px;
-  border-radius: 2px 2px 2px 2px;
-  -moz-border-radius: 2px 2px 2px 2px;
-  -webkit-border-radius: 2px 2px 2px 2px;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -716,7 +600,6 @@ html.ie #search #search_text {
 .post .content .more-link {
   background-color: #333;
   float: right;
-  white-space: nowrap;
   white-space: nowrap;
   height: 100%;
   vertical-align: middle;
@@ -743,7 +626,6 @@ html.ie #search #search_text {
 .post .content .original {
   margin: 0px 0px 1em;
   font-style: italic;
-  clear: both;
   clear: both;
 }
 .post .content ul.nobullet {
@@ -799,22 +681,13 @@ html.ie #search #search_text {
   border-radius: 1px 1px 1px 1px;
   -moz-border-radius: 1px 1px 1px 1px;
   -webkit-border-radius: 1px 1px 1px 1px;
-  border-radius: 1px 1px 1px 1px;
-  -moz-border-radius: 1px 1px 1px 1px;
-  -webkit-border-radius: 1px 1px 1px 1px;
-  border-radius: 1px 1px 1px 1px;
-  -moz-border-radius: 1px 1px 1px 1px;
-  -webkit-border-radius: 1px 1px 1px 1px;
-  border-radius: 1px 1px 1px 1px;
-  -moz-border-radius: 1px 1px 1px 1px;
-  -webkit-border-radius: 1px 1px 1px 1px;
   text-decoration: none;
 }
 .widget {
   margin: 0px 0px 2em;
 }
 #sidebar h2.widgettitle {
-  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', 'sans-serif';
+  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
   font-size: 166%;
   font-weight: bold;
   border-bottom: 1px solid #aaa;
@@ -834,28 +707,10 @@ html.ie #search #search_text {
   border-radius: 5px 5px 5px 5px;
   -moz-border-radius: 5px 5px 5px 5px;
   -webkit-border-radius: 5px 5px 5px 5px;
-  border-radius: 5px 5px 5px 5px;
-  -moz-border-radius: 5px 5px 5px 5px;
-  -webkit-border-radius: 5px 5px 5px 5px;
-  border-radius: 5px 5px 5px 5px;
-  -moz-border-radius: 5px 5px 5px 5px;
-  -webkit-border-radius: 5px 5px 5px 5px;
-  border-radius: 5px 5px 5px 5px;
-  -moz-border-radius: 5px 5px 5px 5px;
-  -webkit-border-radius: 5px 5px 5px 5px;
 }
 #twitter_update_list li {
   margin: 1em 0px;
   padding: 0.5em;
-  border-radius: 2px 2px 2px 2px;
-  -moz-border-radius: 2px 2px 2px 2px;
-  -webkit-border-radius: 2px 2px 2px 2px;
-  border-radius: 2px 2px 2px 2px;
-  -moz-border-radius: 2px 2px 2px 2px;
-  -webkit-border-radius: 2px 2px 2px 2px;
-  border-radius: 2px 2px 2px 2px;
-  -moz-border-radius: 2px 2px 2px 2px;
-  -webkit-border-radius: 2px 2px 2px 2px;
   border-radius: 2px 2px 2px 2px;
   -moz-border-radius: 2px 2px 2px 2px;
   -webkit-border-radius: 2px 2px 2px 2px;
@@ -934,7 +789,6 @@ html.ie #search #search_text {
 #bitbucket_events li {
   font-size: 100%;
   clear: both;
-  clear: both;
   margin: 0.5em 0px;
   padding: 0.5em;
   background-color: #f9f9f9;
@@ -945,19 +799,9 @@ html.ie #search #search_text {
 #github_events li {
   font-size: 100%;
   clear: both;
-  clear: both;
   margin: 0.5em 0px;
   padding: 0.5em;
   background-color: #f9f9f9;
-  border-radius: 2px 2px 2px 2px;
-  -moz-border-radius: 2px 2px 2px 2px;
-  -webkit-border-radius: 2px 2px 2px 2px;
-  border-radius: 2px 2px 2px 2px;
-  -moz-border-radius: 2px 2px 2px 2px;
-  -webkit-border-radius: 2px 2px 2px 2px;
-  border-radius: 2px 2px 2px 2px;
-  -moz-border-radius: 2px 2px 2px 2px;
-  -webkit-border-radius: 2px 2px 2px 2px;
   border-radius: 2px 2px 2px 2px;
   -moz-border-radius: 2px 2px 2px 2px;
   -webkit-border-radius: 2px 2px 2px 2px;
@@ -984,19 +828,9 @@ html.ie #search #search_text {
 #sidebar .widget_aboutmewidget .more_link {
   float: right;
   clear: both;
-  clear: both;
   padding: 3px 5px;
   background-color: #ddd;
   border: 1px solid #aaa;
-  border-radius: 1px 1px 1px 1px;
-  -moz-border-radius: 1px 1px 1px 1px;
-  -webkit-border-radius: 1px 1px 1px 1px;
-  border-radius: 1px 1px 1px 1px;
-  -moz-border-radius: 1px 1px 1px 1px;
-  -webkit-border-radius: 1px 1px 1px 1px;
-  border-radius: 1px 1px 1px 1px;
-  -moz-border-radius: 1px 1px 1px 1px;
-  -webkit-border-radius: 1px 1px 1px 1px;
   border-radius: 1px 1px 1px 1px;
   -moz-border-radius: 1px 1px 1px 1px;
   -webkit-border-radius: 1px 1px 1px 1px;
@@ -1024,10 +858,20 @@ html.ie #search #search_text {
 #sidebar .widget_links li.even {
   background-color: #f9f9f9;
 }
+#copyright {
+  font-size: 85%;
+  text-align: center;
+  margin: 1em 0px;
+  color: #dcdcdc;
+}
+#copyright a {
+  color: #dcdcdc;
+  text-decoration: underline;
+}
 #content.contact #big_image_container {
   width: 860px;
   height: 367px;
-  background: url('../../images/about_jimmy_widescreen.jpg');
+  background: url('../images/about_jimmy_widescreen.jpg');
   position: relative;
 }
 #content.contact #big_image_padding {
@@ -1044,15 +888,6 @@ html.ie #search #search_text {
   border-radius: 1px 1px 1px 1px;
   -moz-border-radius: 1px 1px 1px 1px;
   -webkit-border-radius: 1px 1px 1px 1px;
-  border-radius: 1px 1px 1px 1px;
-  -moz-border-radius: 1px 1px 1px 1px;
-  -webkit-border-radius: 1px 1px 1px 1px;
-  border-radius: 1px 1px 1px 1px;
-  -moz-border-radius: 1px 1px 1px 1px;
-  -webkit-border-radius: 1px 1px 1px 1px;
-  border-radius: 1px 1px 1px 1px;
-  -moz-border-radius: 1px 1px 1px 1px;
-  -webkit-border-radius: 1px 1px 1px 1px;
   background-color: #f9f9f9;
 }
 #content.contact #right_box {
@@ -1064,20 +899,8 @@ html.ie #search #search_text {
   zoom: 1;
   filter: alpha(opacity=80);
   opacity: 0.8;
-  zoom: 1;
-  filter: alpha(opacity=80);
-  opacity: 0.8;
   border: 1px solid #222;
   padding: 10px;
-  border-radius: 1px 1px 1px 1px;
-  -moz-border-radius: 1px 1px 1px 1px;
-  -webkit-border-radius: 1px 1px 1px 1px;
-  border-radius: 1px 1px 1px 1px;
-  -moz-border-radius: 1px 1px 1px 1px;
-  -webkit-border-radius: 1px 1px 1px 1px;
-  border-radius: 1px 1px 1px 1px;
-  -moz-border-radius: 1px 1px 1px 1px;
-  -webkit-border-radius: 1px 1px 1px 1px;
   border-radius: 1px 1px 1px 1px;
   -moz-border-radius: 1px 1px 1px 1px;
   -webkit-border-radius: 1px 1px 1px 1px;
@@ -1087,7 +910,7 @@ html.ie #search #search_text {
   color: #d9d9d9;
 }
 #content.contact h1 {
-  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', 'sans-serif' !important;
+  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif !important;
   font-size: 150%;
   text-decoration: none;
   font-weight: bold;
@@ -1120,20 +943,10 @@ html.ie #search #search_text {
   text-decoration: none;
 }
 #content.projects h1 {
-  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', 'sans-serif';
+  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
   font-size: 150%;
   text-decoration: none;
   font-weight: bold;
-}
-#copyright {
-  font-size: 85%;
-  text-align: center;
-  margin: 1em 0px;
-  color: #dcdcdc;
-}
-#copyright a {
-  color: #dcdcdc;
-  text-decoration: underline;
 }
 #wpstats {
   display: none;

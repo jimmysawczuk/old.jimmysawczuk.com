@@ -15,13 +15,10 @@ require('includes/github_widget.php');
 require('includes/bitbucket.php');
 require('includes/github.php');
 
-if (file_exists('includes/mode.php'))
+include('includes/mode.php');
+if (!defined('MODE'))
 {
-	require('includes/mode.php');
-}
-else
-{
-	define('MODE', 'live');
+	define('MODE', 'live');	
 }
 
 function has_more_link()

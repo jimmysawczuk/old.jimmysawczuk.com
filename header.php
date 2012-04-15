@@ -2,7 +2,7 @@
 <html lang="en" xml:lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
 	<head>
 		<title><? page_title(); ?></title>
-		<? load_stylesheet('style'); ?>
+		<? load_stylesheet('style', true); ?>
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 		<script src="<?=get_min_url('jquery', true); ?>" type="text/javascript" charset="utf-8"></script>
 		<meta name="viewport" content="width=1050, maximum-scale=1.0" />
