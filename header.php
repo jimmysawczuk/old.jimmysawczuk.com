@@ -25,27 +25,29 @@
 	</head>
 	<body>
 		<div id="tab_container">
+			<div id="nav">
+				<div id="nav_left_bezel"></div>
+				<div id="nav_right_bezel"></div>
+				<ul>
+					<li class="first"><a href="<? bloginfo('url'); ?>" title="Home">Home</a></li>
+					<li><a href="<? bloginfo('url'); ?>/contact" title="About Me">About Me</a></li>
+					<li><a href="<? bloginfo('url'); ?>/projects" title="Projects">Projects</a></li>
+					<li><a href="http://photos.jimmysawczuk.com" target="_blank" title="Photos">Photos</a></li>
+					<li><a href="http://code.jimmysawczuk.com" target="_blank" title="Code">Code</a></li>
+					<li class="last"><a href="<? bloginfo('url'); ?>/resume" target="_blank" title="Resume">Resum&eacute;</a></li>
+				</ul>
+				
+				<div id="search" class="empty">
+					<form method="get" action="<? bloginfo('url'); ?>">
+						<div id="search_text_wrapper" class="input_wrapper">
+							<input type="text" name="s" id="search_text" data-description="Search" />
+						</div>
+						<input type="image" src="<? bloginfo('stylesheet_directory'); ?>/images/search.png" value="" id="search_submit" />
+					</form>
+				</div>
+			</div>
 			<div id="container">
 				<div id="header">
 					<h1><a href="<? bloginfo('url'); ?>">Cleveland, Curveballs<br />and Common Sense</a></h1>
-				</div>
-				<div id="nav">
-					<ul>
-						<li class="first"><a href="<? bloginfo('url'); ?>" title="Home">Home</a></li>
-						<li><a href="<? bloginfo('url'); ?>/contact" title="About Me">About Me</a></li>
-						<li><a href="<? bloginfo('url'); ?>/projects" title="Projects">Projects</a></li>
-						<li><a href="http://photos.jimmysawczuk.com" target="_blank" title="Photos">Photos</a></li>
-						<li><a href="http://code.jimmysawczuk.com" target="_blank" title="Code">Code</a></li>
-						<li class="last"><a href="<? bloginfo('url'); ?>/resume" target="_blank" title="Resume">Resum&eacute;</a></li>
-					</ul>
-					
-					<div id="search" class="empty">
-						<form method="get" action="<? bloginfo('url'); ?>">
-							<div id="search_text_wrapper" class="input_wrapper">
-								<input type="text" name="s" id="search_text" data-description="Search" />
-							</div>
-							<input type="image" src="<? bloginfo('stylesheet_directory'); ?>/images/search.png" value="" id="search_submit" />
-						</form>
-					</div>
 				</div>
 				<div id="content" class="<?=defined('PAGE_TEMPLATE')? PAGE_TEMPLATE : '' ?> <?=defined('HIDE_SIDEBAR') && HIDE_SIDEBAR? 'hide_sidebar' : '' ?>" >
