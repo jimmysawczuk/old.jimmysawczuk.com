@@ -2,6 +2,14 @@ var Styling = {
 
 	init: function()
 	{
+		if (typeof $.browser.msie !== "undefined" && $.browser.msie)
+		{
+			if ($.browser.version == '8.0' || $.browser.version == '7.0')
+			{
+				$('html').addClass('ie');	
+			}					
+		}
+		
 		if (Config.is_single && !Config.is_page)
 		{
 			(function() {
