@@ -71,6 +71,22 @@ function get_min_url($urls, $group = false)
 	return $str;
 }
 
+function load_stylesheet($name, $override = false)
+{
+	$dir = get_bloginfo('stylesheet_directory');
+
+	if (MODE == 'live' || $override)
+	{
+		echo '<link href="'.$dir.'/css/'.$name.'.min.css" type="text/css" rel="stylesheet" />';
+	}
+	elseif (MODE == 'dev')
+	{
+		echo '<link href="'.$dir.'/less/'.$name.'.less" type="text/css" rel="stylesheet/less" />\n';
+		echo '<script type="text/javascript">var less = {env: "development"};</script>\n';
+		echo '<script src="'.$dir.'/js/less-1.3.0.min.js" type="text/javascript"></script>';
+	}
+}
+
 function git_revision()
 {
 	return GitRevision::format("%r &middot; %b &middot; <time datetime=\"%d\"></time>");

@@ -2,14 +2,7 @@
 <html lang="en" xml:lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
 	<head>
 		<title><? page_title(); ?></title>
-		<? /*<link href='//fonts.googleapis.com/css?family=Arvo:400,700|Mako' rel='stylesheet' type='text/css' />
-		<link href="<?=get_min_url('css', true); ?>" type="text/css" rel="stylesheet" />
-		*/ ?>
-		<link href="<?=bloginfo('stylesheet_directory'); ?>/less/style.less" type="text/css" rel="stylesheet/less" />
-		<script type="text/javascript">
-			var less = {env: 'development'};
-		</script>
-		<script src="<?=bloginfo('stylesheet_directory'); ?>/js/less-1.3.0.min.js" type="text/javascript"></script>
+		<? load_stylesheet('style'); ?>
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 		<script src="<?=get_min_url('jquery', true); ?>" type="text/javascript" charset="utf-8"></script>
 		<meta name="viewport" content="width=1050, maximum-scale=1.0" />

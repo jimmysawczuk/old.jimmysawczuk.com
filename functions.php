@@ -15,7 +15,14 @@ require('includes/github_widget.php');
 require('includes/bitbucket.php');
 require('includes/github.php');
 
-Github::ActivityFeed('jimmysawczuk', 20);
+if (file_exists('includes/mode.php'))
+{
+	require('includes/mode.php');
+}
+else
+{
+	define('MODE', 'live');
+}
 
 function has_more_link()
 {
