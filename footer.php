@@ -52,6 +52,10 @@
 				{
 					$('#bitbucket_events .timeago').timeago();
 				});
+				Github.load('#github_events', function()
+				{
+					$('#github_events .timeago').timeago();
+				});
 				Styling.init();
 				
 				$('.timeago').timeago();

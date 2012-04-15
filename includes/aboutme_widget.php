@@ -26,8 +26,9 @@ class AboutMeWidget extends WP_Widget {
 		<div class="more_link">
 			<a href="<?=get_bloginfo('url'); ?>/contact">More &raquo;</a>
 		</div>
+
+		<br class="clearboth" />	
 		
-		<br class="clearboth" />
 			
 	<?=$args['after_widget']; ?>
 <?

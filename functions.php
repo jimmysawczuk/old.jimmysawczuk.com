@@ -10,8 +10,12 @@ require('includes/likebox_widget.php');
 require('includes/twitter_widget.php');
 require('includes/ballpark_widget.php');
 require('includes/bitbucket_widget.php');
+require('includes/github_widget.php');
 
 require('includes/bitbucket.php');
+require('includes/github.php');
+
+Github::ActivityFeed('jimmysawczuk', 20);
 
 function has_more_link()
 {

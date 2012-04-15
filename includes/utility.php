@@ -32,7 +32,7 @@ function truncate_string($str, $limit = 50)
 	return $str;
 }
 
-function pluralize($num, $sing, $plu)
+function pluralize($num, $sing, $plu, $repl = '%')
 {
 	if ($num == 1)
 	{
@@ -43,7 +43,7 @@ function pluralize($num, $sing, $plu)
 		$tbr = $plu;
 	}
 	
-	$tbr = str_replace('%', $num, $tbr);
+	$tbr = str_replace($repl, $num, $tbr);
 	
 	return $tbr;
 }

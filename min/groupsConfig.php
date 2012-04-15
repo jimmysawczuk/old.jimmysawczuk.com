@@ -6,6 +6,6 @@
 
 return array(
 	'jquery' => array('//js/jquery.min.js', '//js/jquery.ui.min.js'),
-    'js' => array("//js/search.js", "//js/timeago.js", "//js/bitbucket.js", "//js/styling.js"),
-	'css' => array('//css/style.css')
+    'js' => array("//js/search.js", "//js/timeago.js", "//js/bitbucket.js", "//js/github.js", "//js/styling.js"),
+	'css' => array('//css/style.css'),
 );
