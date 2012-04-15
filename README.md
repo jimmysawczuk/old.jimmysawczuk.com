@@ -31,7 +31,7 @@ Special thanks also to the [Google Font API][11], for the gorgeous fonts, namely
 The code in `lightword` is protected under the [GPL license][4], as it is a very slight deviation on the Lightword theme. The `default` and `production` branches are protected under the [MIT License][5], which is repeated below:
 
 	The MIT License (MIT)
-	Copyright (C) 2011 by Jimmy Sawczuk
+	Copyright (C) 2011-2012 by Jimmy Sawczuk
 
 	Permission is hereby granted, free of charge, to any person obtaining a copy
 	of this software and associated documentation files (the "Software"), to deal
