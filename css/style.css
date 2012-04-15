@@ -188,7 +188,7 @@ html.ie #search #search_text { padding-top: 4px; }
 #github_events li { font-size: 100%; clear: both; margin: 0.5em 0px; padding: 0.5em; background-color: #f9f9f9; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; }
 #github_events li .footer { font-size: 93%; }
 #github_events li ul.extra { font-size: 85%; padding-left: 20px; margin: 0.5em 1em; border: 1px dashed #e1e1e1; }
-#github_events li ul.extra li { list-style-type: disc; margin: 0px; padding: 0.25em; }
+#github_events li ul.extra li { list-style-type: square; margin: 0px; padding: 0.25em; }
 
 #sidebar .widget_links li { font-size: 14px; line-height: 15px; font-weight: normal; padding: 5px 10px; }
 #sidebar .widget_links li a, .widget_links li a:hover { color: #369; font-weight: normal; text-decoration: none; }
