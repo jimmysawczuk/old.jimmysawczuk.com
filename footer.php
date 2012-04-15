@@ -48,10 +48,6 @@
 			$(document).ready(function()
 			{
 				Search.init();
-				BitBucket.load('#bitbucket_events', function()
-				{
-					$('#bitbucket_events .timeago').timeago();
-				});
 				Github.load('#github_events', function()
 				{
 					$('#github_events .timeago').timeago();
