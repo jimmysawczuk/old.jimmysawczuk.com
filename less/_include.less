@@ -1,0 +1,20 @@
+@import "_functions.less";
+
+.clearboth { clear: both; }
+.hidden { display: none; }
+.nowrap { white-space: nowrap; }
+
+.clearfix() {
+	&:after {
+	 	content: ".";  
+		display: block; 
+		height: 0; 
+		clear: both; 
+		visibility: hidden; 
+	}
+	
+	& { display:inline-block; }
+	& { display: block; }
+}
+
+@headerFont: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', 'sans-serif';

@@ -1,0 +1,65 @@
+#search { 
+	position: absolute; 
+	right: 30px; 
+	padding: 7px 0px; 
+	height: 26px; 
+	overflow-y: hidden; 
+	z-index: 101; 
+
+	#search_text { 
+		font-size: 14px; 
+		line-height: 16px; 
+		padding: 0px; 
+		font-family: 'Mako', 'Arial', 'Helvetica', sans-serif; 
+	}
+
+	#search_submit { 
+		float: left; 
+		width: 16px;
+		height: 16px;
+		padding: 5px;
+	}
+
+	& #search_text_wrapper, & #search_submit { 
+		background-color: #ddd; 
+	}
+
+	&.empty {
+		#search_text_wrapper, #search_submit { 
+			background-color: #777; 
+		}
+
+		&:hover #search_text_wrapper, &:hover #search_submit { 
+			background-color: #999; 
+		}
+
+		#search_text { font-style: italic; }
+	}
+
+	input:focus {
+		outline: none;
+	}
+
+	.input_wrapper {
+		float: left;
+		width: 220px;
+		height: 26px;
+		overflow-y: hidden;
+		padding-left: 5px;
+
+		input { 
+			width: 100%; 
+			height: 100%; 
+			border-width: 0px; 
+			background-color: transparent; 
+		}
+	}
+
+	&.empty .input_wrapper {
+		width: 145px; 
+	}
+	
+
+}
+
+html.ie #search #search_text { padding-top: 4px; }

@@ -1,0 +1,303 @@
+.post {
+	position: relative;
+	margin-bottom: 3em; 
+	min-height: 300px;
+
+	h2 {
+		font-family: @headerFont;
+		font-size: 166%;
+		text-decoration: none;
+
+		a, a:hover {
+			color: #333;
+			text-decoration: none;
+		}
+	}
+
+	.post_header {
+		.clearboth;
+		vertical-align: middle;
+		margin-bottom: 1em;
+
+		h2 { 
+			border-bottom: 1px solid #aaa;
+		}
+
+		h3.subtitle {
+			font-family: @headerFont; 
+			font-size: 120%; 
+			text-decoration: none; 
+			margin: 0.25em 0px;
+		}
+	}
+
+	.post_info {
+		position: absolute; 
+		left: -84px; 
+		top: 0px; 
+		background-color: #ccc; 
+		border: 1px solid #aaa; 
+		border-right-width: 0px; .border-radius(5px, 0px, 0px, 5px);
+		z-index: 90; 
+		width: 62px;
+		
+		& >  div { 
+			text-align: center; 
+			padding: 5px; 
+		}
+		
+		.top_link { 
+			display: none; 
+			text-transform: uppercase; 
+			font-size: 85%; 
+			font-weight: bold; 
+			background-color: #444;
+			.border-radius(0px, 0px, 0px, 5px);
+
+			a {
+				display: block; 
+				color: #eee; 
+				text-decoration: none; 
+			}
+		}
+
+		.post_date { 
+			background-color: #ccc; 
+			.border-radius(5px, 0px, 0px, 0px);
+		}
+
+		.post_comments {
+			overflow: hidden;
+			.border-radius(0px);
+			background-color: #dedede;
+
+			span.small {
+				font-size: 77%;
+			}
+
+			a {
+				text-decoration: none;
+				color: #333;
+			}
+		}
+		
+		.post_social {
+			background-color: #ccc; 
+			.border-radius(0px, 0px, 0px, 5px);
+			text-align: center; 
+
+			div.aligncenter {
+				overflow: hidden;
+
+				span { 
+					margin: 0px auto; 
+					display: block; 
+					margin-bottom: 10px; 
+					width: 50px;
+				}
+			}
+		}
+
+		div {
+			span.big {
+				font-size: 24px;
+				font-weight: bold;
+				display: block;
+				line-height: 24px;
+			}
+
+			span.small {
+				font-size: 12px;
+				font-weight: normal;
+				text-transform: uppercase;
+				display: block;
+				line-height: 12px;
+			}
+		}
+	}
+
+	.content {
+		.clearboth;
+		margin: 1em 0px;
+
+		p {
+			margin: 1em 0px;
+			text-align: justify;
+			font-size: 108%;
+		}
+
+		.aligncenter { 
+			margin: 0px auto; 
+			display: block;
+		}
+
+		.alignleft {
+			margin: 10px 10px 10px 0px;
+			float: left;
+			display: block;
+		}
+
+		.alignright {
+			margin: 10px 0px 10px 10px;
+			float: right;
+			display: block;
+		}
+
+		.wp-caption {
+			background-color: #ddd;
+
+			img {
+				padding: 5px;
+			}
+		}
+
+		p.wp-caption-text {
+			margin: 0px;
+			padding: 0px 5px 5px;
+			font-size: 93%;
+		}
+
+		ul, ol {
+			padding-left: 30px;
+		}
+
+		ul li, ol li {
+			text-align: justify; 
+			font-size: 108%;
+
+			& > p {
+				font-size: 100%;
+			}
+		}
+
+		ul li {
+			list-style-type: disc;
+		}
+
+		ol li {
+			list-style-type: decimal;
+		}
+
+		blockquote {
+			background-color: #cdcdcd;
+			font-style: italic;
+			margin: 10px;
+			padding: 0px 10px;
+			overflow: hidden;
+
+			p {
+
+			}
+		}
+
+		a, a:hover {
+			text-decoration: underline; 
+			color: #369;
+		}
+
+		h2, h3, h4 {
+			font-family: @headerFont;
+			margin: 1em 0px;
+		}
+
+		h2 { font-size: 150%; }
+		h3 { font-size: 135%; }
+		h4 { font-size: 120%; }
+
+		hr {
+			height: 0px;
+			border-width: 0px;
+			border-top: 1px solid #aaa;
+		}
+
+		.meta {
+			background-color: #ddd;
+			.border-radius(2px);
+			width: 100%;
+			overflow: hidden;
+			position: relative;
+		}
+
+		.more-link {
+			background-color: #333;
+			float: right;
+			.nowrap;
+			height: 100%;
+			vertical-align: middle;
+			position: absolute;
+			top: 0px;
+			bottom: 0px;
+			right: 0px;
+			text-align: right;
+			width: 90px;
+
+			a {
+				color: #eee;
+				text-decoration: none;
+				font-weight: bold;
+				display: block;
+				padding: 5px;
+			}
+		}
+
+		.tags {
+			padding: 5px;
+			background-color: #ddd;
+			width: 465px;
+			min-height: 17px;
+		}
+
+		.original {
+			margin: 0px 0px 1em;
+			font-style: italic;
+			.clearboth;
+		}
+
+		ul.nobullet {
+			padding: 0px;
+
+			li {
+				list-style-type: none;
+			}
+		}
+
+		hr.recommendation-divider {
+			border-top-style: dashed;
+		}
+
+		.recommendations {
+			background-color: white;
+		}
+	}
+}
+
+.post_first {
+	margin-bottom: 1.5em;
+}
+
+.page {
+	.post_info {
+		display: none;
+	}
+}
+
+#interstitial_recommendations {
+	margin: 1.5em 0px;
+	overflow: hidden;
+	padding: 0.75em 0px;
+	border: 1px dashed #aaa;
+	border-width: 1px 0px;
+
+	.container {
+		margin: 0px;
+		background-color: #f9f9f9;
+		overflow: hidden; 
+	}
+}
+
+#comments {
+	h1 {
+		font-size: 150%;
+		border-bottom: 1px solid #aaa;
+	}
+}

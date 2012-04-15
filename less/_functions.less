@@ -1,0 +1,39 @@
+.border-radius (@r1, @r2, @r3, @r4) {
+	border-radius: @r1 @r2 @r3 @r4;
+	-moz-border-radius: @r1 @r2 @r3 @r4;
+	-webkit-border-radius: @r1 @r2 @r3 @r4;
+}
+
+.border-radius (@r1) {
+	.border-radius(@r1, @r1, @r1, @r1);
+}
+
+.box-shadow (@h, @v, @blur, @spread, @color) {
+	-webkit-box-shadow: @h @v @blur @spread @color; 
+	-moz-box-shadow: @h @v @blur @spread @color; 
+	box-shadow: @h @v @blur @spread @color;
+}
+
+.text-shadow (@color, @x, @y, @blur) {
+	text-shadow: @color @x @y @blur;
+}
+
+.transparent(@pct) {
+	@pctDecimal: @pct / 100;
+
+	zoom: 1;
+	filter: alpha(opacity=@pct);
+	opacity: @pctDecimal;
+}
+
+.font-face(@name, @filename, @weight: normal, @font_style: normal, @path: '../type') {
+	font-family: @name;
+	src: local(@name);
+	src: url('@{path}/@{filename}-webfont.eot');
+	src: url('@{path}/@{filename}-webfont.eot?#iefix') format('embedded-opentype'),
+		url('@{path}/@{filename}-webfont.woff') format('woff'),
+		url('@{path}/@{filename}-webfont.ttf') format('truetype'),
+		url('/@{path}/@{filename}-webfont.svg#@{name}') format('svg');
+	font-weight: @weight;
+	font-style: @font_style;
+}

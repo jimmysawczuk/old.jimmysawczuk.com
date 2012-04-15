@@ -1,0 +1,75 @@
+#content.contact {
+	#big_image_container {
+		width: 860px;
+		height: 367px;
+		background: url('../../images/about_jimmy_widescreen.jpg');
+		position: relative;
+	}
+	
+	#big_image_padding {
+		padding: 20px;
+	}
+
+	#left_box {
+		position: absolute;
+		left: 10px;
+		top: 10px;
+		width: 210px;
+		text-align: justify;
+		border: 1px solid #888;
+		padding: 5px;
+		.border-radius(1px);
+		background-color: #f9f9f9;
+	}
+
+	#right_box {
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+		width: 310px;
+		background-color: #444;
+		background: rgba(40, 40, 40, 0.7);
+		border: 1px solid #222;
+		padding: 10px;
+
+		.border-radius(1px);
+		color: #F9F9F9;
+
+		a {
+			color: #d9d9d9;
+		}
+	}
+
+	h1 {
+		font-family: @headerFont !important;
+		font-size: 150%;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	
+	#contact_info {
+		margin: 0px;
+		padding: 0px;
+
+		li {
+			list-style-type: none;
+			padding: 0px;
+			font-size: 93%;
+			margin: 3px 0px;
+			line-height: 16px;
+
+			&.first { margin-top: 0px; }
+			img { border: 0px solid black; vertical-align: middle; width: 16px; height: 16px; }
+		}
+
+	}
+
+	a {
+		color: #369;
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
