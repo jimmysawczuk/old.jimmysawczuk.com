@@ -41,8 +41,39 @@ class Github
 				switch ($event['type'])
 				{
 					case "PushEvent":
+						$commits = $event['payload']['commits'];
+
 						$story = "{$event['actor']['login']} pushed "
-							.pluralize(count($event['payload']['commits']), "%s commit", "%s commits", '%s');
+							.pluralize(count($commits), "%s commit", "%s commits", '%s').":";
+
+						if (count($commits) > 0)
+						{
+							$story .= "<ul class=\"extra\">";
+							$j = 0;
+							foreach ($commits as $commit)
+							{
+								if (strlen($commit['message']) > 50)
+								{
+									$commit['message'] = substr($commit['message'], 0, 50);
+									$commit['message'] = substr($commit['message'], 0, strripos($commit['message'], ' '));
+									$commit['message'] .= "...";
+								}
+
+								$link = "http://www.github.com/{$event['repo']['name']}/commit/{$commit['sha']}";
+
+								$story .= "<li>".htmlentities($commit['message'])." (<a href=\"{$link}\">link</a>)</li>";
+								$j++;
+
+								if ($j >= 5)
+								{
+									$story .= "<li><i>and more...</i></li>";
+									break;
+								}
+							}
+							$story .= "</ul>";
+						}
+						
+
 						$adverb = "to";
 						break;
 
