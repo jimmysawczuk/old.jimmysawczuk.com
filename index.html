@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>JimmySawczuk.com by jimmysawczuk</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>JimmySawczuk.com</h1>
+        <h2>The WordPress theme for my blog, a WordPress installation at jimmysawczuk.com</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/jimmysawczuk/jimmysawczuk.com/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/jimmysawczuk/jimmysawczuk.com/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/jimmysawczuk/jimmysawczuk.com" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>Welcome</h1>
+
+<p>This is a repository for the theme that runs my blog, which is located at <a href="http://www.jimmysawczuk.com">www.jimmysawczuk.com</a>. </p>
+
+<h2>Original</h2>
+
+<p>The theme currently in the <code>lightword</code> branch is only slightly modified from an older version of <a href="http://wordpress.org/extend/themes/profile/andreiluca">Andrei Luca's</a> <a href="http://wordpress.org/extend/themes/lightword">LightWord</a>. It has served me well for two years, however, I feel it's time for a change.</p>
+
+<h2>In use</h2>
+
+<p>The theme in use now was written from scratch with some inspiration from <a href="http://wordpress.org/extend/themes/lightword"><code>lightword</code></a>, <a href="http://www.grantland.com">Grantland</a>, and the <a href="http://www.nytimes.com">New York Times</a>. My aim was to create a theme that was simple, attractive and clean. I also built it with Facebook integration in mind, and specifically, to respect the <a href="http://ogp.me">Open Graph protocol</a>. It uses HTML5 and CSS3, with some jQuery.</p>
+
+<h3>Repository Hooks</h3>
+
+<p>To display the current code revision in the footer, I use this hook on both <code>post-checkout</code> and <code>post-merge</code>:</p>
+
+<pre><code>includes/update_revision.sh;
+rm -rf /path/to/wp/cache/directory/*
+</code></pre>
+
+<h3>Acknowledgements</h3>
+
+<p>I used all or parts of these open-source projects in this theme:</p>
+
+<ul>
+<li>
+<a href="http://timeago.yarp.com/">TimeAgo</a>, for the relative timestamps on the BitBucket widget.</li>
+<li>
+<a href="http://code.google.com/p/minify/">Minify</a>, for the on-the-fly minification of my CSS and JS. There are a couple modifications to this Minify installation. The most notable one is <a href="http://code.google.com/p/minify/wiki/AlternateFileLayouts">this workaround</a> that enables Minify to run in a subdirectory of the document root. It's also configured to use group loading rather than file loading, check <code>min/groupsConfig.php</code> for the configuration.</li>
+</ul><p>Special thanks also to the <a href="http://code.google.com/apis/webfonts/">Google Font API</a>, for the gorgeous fonts, namely: <strong>Arvo</strong> and <strong>Mako</strong></p>
+
+<h2>License</h2>
+
+<p>The code in <code>lightword</code> is protected under the <a href="http://www.opensource.org/licenses/gpl-license.php">GPL license</a>, as it is a very slight deviation on the Lightword theme. The <code>default</code> and <code>production</code> branches are protected under the <a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a>, which is repeated below:</p>
+
+<pre><code>The MIT License (MIT)
+Copyright (C) 2011-2012 by Jimmy Sawczuk
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+</code></pre>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
