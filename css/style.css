@@ -577,6 +577,7 @@ html.ie #search #search_text {
   width: 100%;
   overflow: hidden;
   position: relative;
+  font-size: 13px;
 }
 .post .content .more-link {
   background-color: #333;
