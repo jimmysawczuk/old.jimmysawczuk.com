@@ -90,3 +90,25 @@ function fb_og_tags()
 	
 	echo implode("\r\n", $meta_tags);
 }
+
+function blog_domain($root = true)
+{
+	$url = get_bloginfo('url');
+
+	$url = preg_replace('#https?\://#', '', $url);
+
+	
+	if (!$root)
+	{
+		return $url;
+	}
+	else
+	{
+		$url = explode('.', $url);
+		$cnt = count($url);
+
+		$url = $url[$cnt - 2] . '.' . $url[$cnt - 1];
+
+		return $url;	
+	}
+}
