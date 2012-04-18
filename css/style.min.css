@@ -80,8 +80,8 @@ html.ie #search #search_text{padding-top:4px;}
 .post .content h3{font-size:135%;}
 .post .content h4{font-size:120%;}
 .post .content hr{height:0px;border-width:0px;border-top:1px solid #aaa;}
-.post .content .meta{background-color:#ddd;border-radius:2px 2px 2px 2px;-moz-border-radius:2px 2px 2px 2px;-webkit-border-radius:2px 2px 2px 2px;width:100%;overflow:hidden;position:relative;font-size:12px;}.post .content .meta .more-link{background-color:#333;float:right;white-space:nowrap;height:100%;vertical-align:middle;position:absolute;top:0px;bottom:0px;right:0px;text-align:right;width:80px;letter-spacing:-1px;border-radius:2px 2px 2px 2px;-moz-border-radius:2px 2px 2px 2px;-webkit-border-radius:2px 2px 2px 2px;}.post .content .meta .more-link a{color:#eee;text-decoration:none;font-weight:bold;display:block;padding:5px;}
-.post .content .meta .tags{padding:5px;background-color:#ddd;width:475px;min-height:17px;border-radius:2px 0px 0px 2px;-moz-border-radius:2px 0px 0px 2px;-webkit-border-radius:2px 0px 0px 2px;}
+.post .content .meta{background-color:#ddd;border-radius:2px 2px 2px 2px;-moz-border-radius:2px 2px 2px 2px;-webkit-border-radius:2px 2px 2px 2px;width:100%;overflow:hidden;position:relative;font-size:12px;}.post .content .meta .more-link{background-color:#333;float:right;white-space:nowrap;height:100%;vertical-align:middle;position:absolute;top:0px;bottom:0px;right:0px;text-align:right;min-width:80px;letter-spacing:-1px;border-radius:2px 2px 2px 2px;-moz-border-radius:2px 2px 2px 2px;-webkit-border-radius:2px 2px 2px 2px;}.post .content .meta .more-link a{color:#eee;text-decoration:none;font-weight:bold;display:block;padding:5px;}
+.post .content .meta .tags{padding:5px;background-color:#ddd;width:465px;min-height:17px;border-radius:2px 0px 0px 2px;-moz-border-radius:2px 0px 0px 2px;-webkit-border-radius:2px 0px 0px 2px;}
 .post .content .original{margin:0px 0px 1em;font-style:italic;clear:both;}
 .post .content ul.nobullet{padding:0px;}.post .content ul.nobullet li{list-style-type:none;}
 .post .content hr.recommendation-divider{border-top-style:dashed;}

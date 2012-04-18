@@ -590,7 +590,7 @@ html.ie #search #search_text {
   bottom: 0px;
   right: 0px;
   text-align: right;
-  width: 80px;
+  min-width: 80px;
   letter-spacing: -1px;
   border-radius: 2px 2px 2px 2px;
   -moz-border-radius: 2px 2px 2px 2px;
@@ -606,7 +606,7 @@ html.ie #search #search_text {
 .post .content .meta .tags {
   padding: 5px;
   background-color: #ddd;
-  width: 475px;
+  width: 465px;
   min-height: 17px;
   border-radius: 2px 0px 0px 2px;
   -moz-border-radius: 2px 0px 0px 2px;
