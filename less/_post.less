@@ -208,39 +208,43 @@
 		.meta {
 			background-color: #ddd;
 			.border-radius(2px);
+			// .box-shadow(1px, 1px, 5px, 1px, #aaa);
 			width: 100%;
 			overflow: hidden;
 			position: relative;
-			font-size: 13px;
-		}
+			font-size: 12px;
+			
+			.more-link {
+				background-color: #333;
+				float: right;
+				.nowrap;
+				height: 100%;
+				vertical-align: middle;
+				position: absolute;
+				top: 0px;
+				bottom: 0px;
+				right: 0px;
+				text-align: right;
+				width: 80px;
+				letter-spacing: -1px;
+				.border-radius(2px);
 
-		.more-link {
-			background-color: #333;
-			float: right;
-			.nowrap;
-			height: 100%;
-			vertical-align: middle;
-			position: absolute;
-			top: 0px;
-			bottom: 0px;
-			right: 0px;
-			text-align: right;
-			width: 90px;
-
-			a {
-				color: #eee;
-				text-decoration: none;
-				font-weight: bold;
-				display: block;
-				padding: 5px;
+				a {
+					color: #eee;
+					text-decoration: none;
+					font-weight: bold;
+					display: block;
+					padding: 5px;
+				}
 			}
-		}
 
-		.tags {
-			padding: 5px;
-			background-color: #ddd;
-			width: 465px;
-			min-height: 17px;
+			.tags {
+				padding: 5px;
+				background-color: #ddd;
+				width: 475px;
+				min-height: 17px;
+				.border-radius(2px, 0px, 0px, 2px);
+			}
 		}
 
 		.original {

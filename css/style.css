@@ -577,9 +577,9 @@ html.ie #search #search_text {
   width: 100%;
   overflow: hidden;
   position: relative;
-  font-size: 13px;
+  font-size: 12px;
 }
-.post .content .more-link {
+.post .content .meta .more-link {
   background-color: #333;
   float: right;
   white-space: nowrap;
@@ -590,20 +590,27 @@ html.ie #search #search_text {
   bottom: 0px;
   right: 0px;
   text-align: right;
-  width: 90px;
+  width: 80px;
+  letter-spacing: -1px;
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
 }
-.post .content .more-link a {
+.post .content .meta .more-link a {
   color: #eee;
   text-decoration: none;
   font-weight: bold;
   display: block;
   padding: 5px;
 }
-.post .content .tags {
+.post .content .meta .tags {
   padding: 5px;
   background-color: #ddd;
-  width: 465px;
+  width: 475px;
   min-height: 17px;
+  border-radius: 2px 0px 0px 2px;
+  -moz-border-radius: 2px 0px 0px 2px;
+  -webkit-border-radius: 2px 0px 0px 2px;
 }
 .post .content .original {
   margin: 0px 0px 1em;
