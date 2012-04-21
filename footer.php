@@ -38,22 +38,18 @@
 		</script>
 		<script type="text/javascript" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 		<script type="text/javascript" src="<?=get_min_url('js', true); ?>" charset="utf-8"></script>
-		<script type="text/javascript">
-			var Config = { 
-				stylesheet_directory: '<? bloginfo("stylesheet_directory"); ?>',
-				is_single: <?=is_single()? 'true' : 'false' ?>,
-				is_page: <?=is_page()? 'true' : 'false' ?>
-			};
-		
+		<script type="text/javascript">		
 			$(document).ready(function()
 			{
 				Search.init();
-				Github.load('#github_events', function()
+				if (Config.sidebar_visible)
 				{
-					$('#github_events .timeago').timeago();
-				});
-				Styling.init();
-				
+					Github.load('#github_events', function()
+					{
+						$('#github_events .timeago').timeago();
+					});	
+				}				
+				Styling.init();				
 				$('.timeago').timeago();
 			});
 		</script>

@@ -82,8 +82,17 @@ function load_stylesheet($name, $override = false)
 	elseif (MODE == 'dev')
 	{
 		echo '<link href="'.$dir.'/less/'.$name.'.less" type="text/css" rel="stylesheet/less" />' . "\n";
-		echo '<script type="text/javascript">var less = {env: "development"};</script>' . "\n";
-		echo '<script src="'.$dir.'/js/less-1.3.0.min.js" type="text/javascript"></script>';
+		echo '<script type="text/javascript">';
+		echo 'var less = {env: "development"};';
+		echo '</script>';
+		echo '<script src="'.$dir.'/js/less-1.3.0.min.js" type="text/javascript"></script>' . "\n";
+		echo '<script type="text/javascript">';
+		echo 'if (localStorage) {';
+			echo 'delete localStorage["'.$dir.'/less/'.$name.'.less"];';
+			echo 'delete localStorage["'.$dir.'/less/'.$name.'.less:timestamp"];';
+		echo '}';
+		echo '</script>' . "\n";
+		
 	}
 }
 

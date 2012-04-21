@@ -21,6 +21,14 @@
 		  })();
 
 		</script>
+		<script type="text/javascript">
+			var Config = { 
+				stylesheet_directory: '<? bloginfo("stylesheet_directory"); ?>',
+				is_single: <?=is_single()? 'true' : 'false' ?>,
+				is_page: <?=is_page()? 'true' : 'false' ?>,
+				sidebar_visible: <?=defined('HIDE_SIDEBAR') && HIDE_SIDEBAR? 'false' : 'true' ?>
+			};
+		</script>
 	</head>
 	<body>
 		<div id="tab_container">

@@ -1,4 +1,4 @@
-<?
+<?php
 
 require '../includes/utility.php';
 require '../includes/github.php';
