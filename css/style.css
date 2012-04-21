@@ -1216,7 +1216,8 @@ html.ie #search #search_text {
 }
 #content.projects #projects .col .project .container img.screenshot {
   display: block;
-  width: 90%;
+  max-width: 90%;
+  max-height: 200px;
   margin: 1em auto;
 }
 #content.projects #projects .col .project .container ul {
