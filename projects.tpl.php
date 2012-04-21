@@ -15,9 +15,7 @@ the_post();
 </div>
 
 <script type="text/javascript">
-<? /*
-<?=$post->post_content; ?>
-*/ ?>
+<? /* <?=$post->post_content; ?> */ ?>
 var projects = [];
 
 projects.push({
@@ -115,4 +113,3 @@ projects.push({
 </script>
 <?
 get_footer();
-?>
