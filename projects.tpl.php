@@ -87,10 +87,24 @@ projects.push({
 });
 
 projects.push({
+	name: "FlashCard",
+	description: "An application I wrote to test myself on German vocabulary words, and since has been requested by many family members.",
+	tags: ["c#", "utility", "windows", "education"],
+	download: "http://files.jimmysawczuk.com/files/flashcard/FlashCardSetup.msi"
+});
+
+projects.push({
 	name: "Big Prize Giveaways Prizes Tab",
-	description: "A handy miniature prizes tab that shows currently-running Big Prize Giveaways sweepstakes.",
+	description: "A handy miniature prizes tab (in the form of a Chrome extension) that shows currently-running Big Prize Giveaways sweepstakes.",
 	download: "https://chrome.google.com/extensions/detail/dehinmdmfgclcpijadomcogabhdceakj",
 	tags: ["javascript", "chrome-extension", "work"]
+});
+
+projects.push({
+	name: "Facebook Page Lookup",
+	description: "A Chrome extension to quickly lookup information about Pages on Facebook.",
+	download: "https://chrome.google.com/webstore/detail/eloopmgpiphiokehjgomphnnlejikbol",
+	tags: ["javascript", "chrome-extension", "facebook"]
 });
 
 projects.push({

@@ -39,9 +39,9 @@ var Projects = (function()
 			{
 				ul.append($('<li />')
 					.addClass('github')
-					.html('GitHub: ').append($('<a />')
-						.attr({href: 'http://github.com/' + project.github})
-						.html(project.github)));
+					.append($('<a />')
+						.attr({href: 'http://github.com/' + project.github, target: '_blank'})
+						.html('GitHub repository')));
 			}
 
 			if (typeof project.download !== "undefined")
@@ -49,7 +49,7 @@ var Projects = (function()
 				ul.append($('<li />')
 					.addClass('download')
 					.append($('<a />')
-						.attr({href: project.download})
+						.attr({href: project.download, target: '_blank'})
 						.html("Download")));
 			}
 
@@ -58,7 +58,7 @@ var Projects = (function()
 				ul.append($('<li />')
 					.addClass('web')
 					.append($('<a />')
-						.attr({href: project.web})
+						.attr({href: project.web, target: '_blank'})
 						.html("Web")));
 			}
 
