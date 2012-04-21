@@ -2,25 +2,36 @@ var Projects = (function()
 {
 	var projects = [];
 
-	var projects_element = '#projects';
-
 	function render()
 	{
 		var i = 0;
 		$.each(projects, function(idx, project)
 		{
-			class_name = project.name
+			project_id = project.name
 							.replace(/\s+/g, '_')
 							.replace(/\W+/g, '_')
 							.replace(/_+/g, '-')
 							.toLowerCase();
 
-			var div = $('<div />').addClass('project').addClass('project-' + class_name);
+			projects[idx] = project_id;
+
+			var div = $('<div />')
+							.addClass('project')
+							.addClass('project-' + project_id)
+							.attr('data-project-id', project_id)
 
 			var container = $('<div />').addClass('container');
 
 			container.append($('<h2 />').html(project.name));
 			container.append($('<h3 />').html(htmlEntities(project.description)));
+
+			if (typeof project.screenshots !== "undefined")
+			{
+				$.each(project.screenshots, function(idx, ss)
+				{
+					container.append($('<img />').attr(ss).addClass('screenshot'));
+				});
+			}
 
 			var ul = $('<ul />');
 			var updated_on = false;
@@ -42,6 +53,15 @@ var Projects = (function()
 						.html("Download")));
 			}
 
+			if (typeof project.web !== "undefined")
+			{
+				ul.append($('<li />')
+					.addClass('web')
+					.append($('<a />')
+						.attr({href: project.web})
+						.html("Web")));
+			}
+
 			container.append(ul);
 
 			var meta = $('<div />').addClass('meta');
@@ -58,17 +78,17 @@ var Projects = (function()
 
 			container.append(meta);
 
-			div.append(container);
+			div.append(container);			
 
-			$(projects_element + ' .col-' + (i % 3)).append(div);
+			$('#projects .col-' + (i % 3)).append(div);
 			i++;
 
 			if (typeof project.github !== "undefined")
 			{
 				$.get(Config.stylesheet_directory + '/ajax/github-repo-information.php', 
-					{ repo: project.github, class: class_name }, function(response)
+					{ repo: project.github, class: project_id }, function(response)
 				{
-					var meta = $(projects_element + ' .project-' + response.class).find('.meta');
+					var meta = $('#projects .project-' + response.class).find('.meta');
 
 					meta.prepend($('<div />')
 							.addClass('times')

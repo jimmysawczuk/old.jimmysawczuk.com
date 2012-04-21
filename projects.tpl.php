@@ -6,6 +6,7 @@ define('PAGE_TEMPLATE', 'projects');
 define('HIDE_SIDEBAR', true);
 get_header();
 ?>
+
 <div id="projects">
 	<div class="col col-0"></div>
 	<div class="col col-1"></div>
@@ -36,10 +37,29 @@ get_header();
 		tags: ["php", "javascript", "wordpress", "open-source"]
 	});
 
+	
 	projects.push({
 		name: "Invaders",
 		description: "An XNA game which was my last homework assignment for my game development class my senior year in college.",
-		tags: ["xna", "c#", "game"]
+		tags: ["xna", "c#", "game"],
+		web: "http://files.jimmysawczuk.com/files/invaders.php",
+		screenshots: [{src: "http://files.jimmysawczuk.com/files/images/invaders_ss1.jpg", alt: "Screenshot"}]
+	});
+
+	projects.push({
+		name: "George in Space!",
+		description: "My first XNA game that was any fun at all. Not as cool as Invaders.",
+		tags: ["xna", "c#", "game"],
+		web: "http://files.jimmysawczuk.com/files/georgeinspace.php",
+		screenshots: [{src: "http://files.jimmysawczuk.com/files/images/gis_ss1.jpg", alt: "Screenshot"}]
+	});
+
+	projects.push({
+		name: "Sleep Timer",
+		description: "A little Windows application that performs a variety of operations after a set timer has elapsed.",
+		tags: ["c#", "utility", "windows"],
+		download: "http://files.jimmysawczuk.com/files/sleeptimer/Setup.msi",
+		screenshots: [{src: "http://www.jimmysawczuk.com/wp-content/uploads/2011/01/sleeptimer_ss1.jpg", alt: "Screenshot"}]
 	});
 
 	projects.push({
@@ -60,6 +80,7 @@ get_header();
 		name: "clippy-jquery",
 		description: "A jQuery plugin that utilizes the clippy SWF to enable easy copy-and-paste on web content.",
 		github: "jimmysawczuk/clippy-jquery",
+		web: "http://files.jimmysawczuk.com/clippy-jquery",
 		tags: ["javascript", "development"]
 	});
 </script>

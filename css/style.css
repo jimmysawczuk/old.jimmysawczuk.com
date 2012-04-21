@@ -140,6 +140,12 @@ tt {
   src: url('../type/mako-webfont.eot?#iefix') format('embedded-opentype'), url('../type/mako-webfont.woff') format('woff'), url('../type/mako-webfont.ttf') format('truetype'), url('/../type/mako-webfont.svg#Mako') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-family: 'Mako';
+  src: local('Mako');
+  src: url('../type/mako-webfont.eot');
+  src: url('../type/mako-webfont.eot?#iefix') format('embedded-opentype'), url('../type/mako-webfont.woff') format('woff'), url('../type/mako-webfont.ttf') format('truetype'), url('/../type/mako-webfont.svg#Mako') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: 'Arvo';
@@ -148,8 +154,20 @@ tt {
   src: url('../type/arvo-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../type/arvo-regular-webfont.woff') format('woff'), url('../type/arvo-regular-webfont.ttf') format('truetype'), url('/../type/arvo-regular-webfont.svg#Arvo') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-family: 'Arvo';
+  src: local('Arvo');
+  src: url('../type/arvo-regular-webfont.eot');
+  src: url('../type/arvo-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../type/arvo-regular-webfont.woff') format('woff'), url('../type/arvo-regular-webfont.ttf') format('truetype'), url('/../type/arvo-regular-webfont.svg#Arvo') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
+  font-family: 'Arvo';
+  src: local('Arvo');
+  src: url('../type/arvo-bold-webfont.eot');
+  src: url('../type/arvo-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../type/arvo-bold-webfont.woff') format('woff'), url('../type/arvo-bold-webfont.ttf') format('truetype'), url('/../type/arvo-bold-webfont.svg#Arvo') format('svg');
+  font-weight: bold;
+  font-style: normal;
   font-family: 'Arvo';
   src: local('Arvo');
   src: url('../type/arvo-bold-webfont.eot');
@@ -176,6 +194,16 @@ body {
   background: linear-gradient(top, #9a9a9a 42%, #555555 100%);
   background-height: 100%;
   background-attachment: fixed;
+  background: #9a9a9a;
+  background: -moz-linear-gradient(top, #9a9a9a 42%, #9a9a9a 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(42%, #9a9a9a), color-stop(100%, #555555));
+  background: -webkit-linear-gradient(top, #9a9a9a 42%, #555555 100%);
+  background: -o-linear-gradient(top, #9a9a9a 42%, #555555 100%);
+  background: -ms-linear-gradient(top, #9a9a9a 42%, #555555 100%);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#9a9a9a', endColorstr='#555555', GradientType=0);
+  background: linear-gradient(top, #9a9a9a 42%, #555555 100%);
+  background-height: 100%;
+  background-attachment: fixed;
 }
 #container {
   width: 860px;
@@ -185,6 +213,18 @@ body {
   -webkit-box-shadow: 2px 2px 10px 0px #555555;
   -moz-box-shadow: 2px 2px 10px 0px #555555;
   box-shadow: 2px 2px 10px 0px #555555;
+  -webkit-box-shadow: 2px 2px 10px 0px #555555;
+  -moz-box-shadow: 2px 2px 10px 0px #555555;
+  box-shadow: 2px 2px 10px 0px #555555;
+  border-radius: 1px 1px 1px 1px;
+  -moz-border-radius: 1px 1px 1px 1px;
+  -webkit-border-radius: 1px 1px 1px 1px;
+  border-radius: 1px 1px 1px 1px;
+  -moz-border-radius: 1px 1px 1px 1px;
+  -webkit-border-radius: 1px 1px 1px 1px;
+  border-radius: 1px 1px 1px 1px;
+  -moz-border-radius: 1px 1px 1px 1px;
+  -webkit-border-radius: 1px 1px 1px 1px;
   border-radius: 1px 1px 1px 1px;
   -moz-border-radius: 1px 1px 1px 1px;
   -webkit-border-radius: 1px 1px 1px 1px;
@@ -208,6 +248,7 @@ body {
   float: left;
 }
 #footer {
+  clear: both;
   clear: both;
 }
 #header h1 {
@@ -245,6 +286,19 @@ body {
 #nav {
   display: block;
 }
+#nav:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#nav {
+  display: inline-block;
+}
+#nav {
+  display: block;
+}
 #nav ul {
   overflow: hidden;
   background-color: #444;
@@ -258,7 +312,29 @@ body {
   border-radius: 1px 1px 1px 1px;
   -moz-border-radius: 1px 1px 1px 1px;
   -webkit-border-radius: 1px 1px 1px 1px;
+  border-radius: 1px 1px 1px 1px;
+  -moz-border-radius: 1px 1px 1px 1px;
+  -webkit-border-radius: 1px 1px 1px 1px;
+  border-radius: 1px 1px 1px 1px;
+  -moz-border-radius: 1px 1px 1px 1px;
+  -webkit-border-radius: 1px 1px 1px 1px;
+  border-radius: 1px 1px 1px 1px;
+  -moz-border-radius: 1px 1px 1px 1px;
+  -webkit-border-radius: 1px 1px 1px 1px;
   z-index: 100;
+}
+#nav ul:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#nav ul {
+  display: inline-block;
+}
+#nav ul {
+  display: block;
 }
 #nav ul:after {
   content: ".";
@@ -295,6 +371,15 @@ body {
 #nav ul li a {
   padding: 10px 5px;
   display: block;
+  border-radius: 1px 1px 1px 1px;
+  -moz-border-radius: 1px 1px 1px 1px;
+  -webkit-border-radius: 1px 1px 1px 1px;
+  border-radius: 1px 1px 1px 1px;
+  -moz-border-radius: 1px 1px 1px 1px;
+  -webkit-border-radius: 1px 1px 1px 1px;
+  border-radius: 1px 1px 1px 1px;
+  -moz-border-radius: 1px 1px 1px 1px;
+  -webkit-border-radius: 1px 1px 1px 1px;
   border-radius: 1px 1px 1px 1px;
   -moz-border-radius: 1px 1px 1px 1px;
   -webkit-border-radius: 1px 1px 1px 1px;
@@ -396,6 +481,7 @@ html.ie #search #search_text {
 }
 .post .post_header {
   clear: both;
+  clear: both;
   vertical-align: middle;
   margin-bottom: 1em;
 }
@@ -418,6 +504,9 @@ html.ie #search #search_text {
   border-radius: 5px 0px 0px 5px;
   -moz-border-radius: 5px 0px 0px 5px;
   -webkit-border-radius: 5px 0px 0px 5px;
+  border-radius: 5px 0px 0px 5px;
+  -moz-border-radius: 5px 0px 0px 5px;
+  -webkit-border-radius: 5px 0px 0px 5px;
   z-index: 90;
   width: 62px;
 }
@@ -434,6 +523,9 @@ html.ie #search #search_text {
   border-radius: 0px 0px 0px 5px;
   -moz-border-radius: 0px 0px 0px 5px;
   -webkit-border-radius: 0px 0px 0px 5px;
+  border-radius: 0px 0px 0px 5px;
+  -moz-border-radius: 0px 0px 0px 5px;
+  -webkit-border-radius: 0px 0px 0px 5px;
 }
 .post .post_info .top_link a {
   display: block;
@@ -445,9 +537,21 @@ html.ie #search #search_text {
   border-radius: 5px 0px 0px 0px;
   -moz-border-radius: 5px 0px 0px 0px;
   -webkit-border-radius: 5px 0px 0px 0px;
+  border-radius: 5px 0px 0px 0px;
+  -moz-border-radius: 5px 0px 0px 0px;
+  -webkit-border-radius: 5px 0px 0px 0px;
 }
 .post .post_info .post_comments {
   overflow: hidden;
+  border-radius: 0px 0px 0px 0px;
+  -moz-border-radius: 0px 0px 0px 0px;
+  -webkit-border-radius: 0px 0px 0px 0px;
+  border-radius: 0px 0px 0px 0px;
+  -moz-border-radius: 0px 0px 0px 0px;
+  -webkit-border-radius: 0px 0px 0px 0px;
+  border-radius: 0px 0px 0px 0px;
+  -moz-border-radius: 0px 0px 0px 0px;
+  -webkit-border-radius: 0px 0px 0px 0px;
   border-radius: 0px 0px 0px 0px;
   -moz-border-radius: 0px 0px 0px 0px;
   -webkit-border-radius: 0px 0px 0px 0px;
@@ -462,6 +566,9 @@ html.ie #search #search_text {
 }
 .post .post_info .post_social {
   background-color: #ccc;
+  border-radius: 0px 0px 0px 5px;
+  -moz-border-radius: 0px 0px 0px 5px;
+  -webkit-border-radius: 0px 0px 0px 5px;
   border-radius: 0px 0px 0px 5px;
   -moz-border-radius: 0px 0px 0px 5px;
   -webkit-border-radius: 0px 0px 0px 5px;
@@ -490,6 +597,7 @@ html.ie #search #search_text {
   line-height: 12px;
 }
 .post .content {
+  clear: both;
   clear: both;
   margin: 1em 0px;
   font-size: 14px;
@@ -574,6 +682,15 @@ html.ie #search #search_text {
   border-radius: 2px 2px 2px 2px;
   -moz-border-radius: 2px 2px 2px 2px;
   -webkit-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -582,6 +699,7 @@ html.ie #search #search_text {
 .post .content .meta .more-link {
   background-color: #333;
   float: right;
+  white-space: nowrap;
   white-space: nowrap;
   height: 100%;
   vertical-align: middle;
@@ -592,6 +710,15 @@ html.ie #search #search_text {
   text-align: right;
   min-width: 80px;
   letter-spacing: -1px;
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
   border-radius: 2px 2px 2px 2px;
   -moz-border-radius: 2px 2px 2px 2px;
   -webkit-border-radius: 2px 2px 2px 2px;
@@ -611,10 +738,14 @@ html.ie #search #search_text {
   border-radius: 2px 0px 0px 2px;
   -moz-border-radius: 2px 0px 0px 2px;
   -webkit-border-radius: 2px 0px 0px 2px;
+  border-radius: 2px 0px 0px 2px;
+  -moz-border-radius: 2px 0px 0px 2px;
+  -webkit-border-radius: 2px 0px 0px 2px;
 }
 .post .content .original {
   margin: 0px 0px 1em;
   font-style: italic;
+  clear: both;
   clear: both;
 }
 .post .content ul.nobullet {
@@ -670,6 +801,15 @@ html.ie #search #search_text {
   border-radius: 1px 1px 1px 1px;
   -moz-border-radius: 1px 1px 1px 1px;
   -webkit-border-radius: 1px 1px 1px 1px;
+  border-radius: 1px 1px 1px 1px;
+  -moz-border-radius: 1px 1px 1px 1px;
+  -webkit-border-radius: 1px 1px 1px 1px;
+  border-radius: 1px 1px 1px 1px;
+  -moz-border-radius: 1px 1px 1px 1px;
+  -webkit-border-radius: 1px 1px 1px 1px;
+  border-radius: 1px 1px 1px 1px;
+  -moz-border-radius: 1px 1px 1px 1px;
+  -webkit-border-radius: 1px 1px 1px 1px;
   text-decoration: none;
 }
 .widget {
@@ -696,10 +836,28 @@ html.ie #search #search_text {
   border-radius: 5px 5px 5px 5px;
   -moz-border-radius: 5px 5px 5px 5px;
   -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
 }
 #twitter_update_list li {
   margin: 1em 0px;
   padding: 0.5em;
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
   border-radius: 2px 2px 2px 2px;
   -moz-border-radius: 2px 2px 2px 2px;
   -webkit-border-radius: 2px 2px 2px 2px;
@@ -778,6 +936,7 @@ html.ie #search #search_text {
 #bitbucket_events li {
   font-size: 100%;
   clear: both;
+  clear: both;
   margin: 0.5em 0px;
   padding: 0.5em;
   background-color: #f9f9f9;
@@ -788,9 +947,19 @@ html.ie #search #search_text {
 #github_events li {
   font-size: 100%;
   clear: both;
+  clear: both;
   margin: 0.5em 0px;
   padding: 0.5em;
   background-color: #f9f9f9;
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
   border-radius: 2px 2px 2px 2px;
   -moz-border-radius: 2px 2px 2px 2px;
   -webkit-border-radius: 2px 2px 2px 2px;
@@ -817,9 +986,19 @@ html.ie #search #search_text {
 #sidebar .widget_aboutmewidget .more_link {
   float: right;
   clear: both;
+  clear: both;
   padding: 3px 5px;
   background-color: #ddd;
   border: 1px solid #aaa;
+  border-radius: 1px 1px 1px 1px;
+  -moz-border-radius: 1px 1px 1px 1px;
+  -webkit-border-radius: 1px 1px 1px 1px;
+  border-radius: 1px 1px 1px 1px;
+  -moz-border-radius: 1px 1px 1px 1px;
+  -webkit-border-radius: 1px 1px 1px 1px;
+  border-radius: 1px 1px 1px 1px;
+  -moz-border-radius: 1px 1px 1px 1px;
+  -webkit-border-radius: 1px 1px 1px 1px;
   border-radius: 1px 1px 1px 1px;
   -moz-border-radius: 1px 1px 1px 1px;
   -webkit-border-radius: 1px 1px 1px 1px;
@@ -877,6 +1056,15 @@ html.ie #search #search_text {
   border-radius: 1px 1px 1px 1px;
   -moz-border-radius: 1px 1px 1px 1px;
   -webkit-border-radius: 1px 1px 1px 1px;
+  border-radius: 1px 1px 1px 1px;
+  -moz-border-radius: 1px 1px 1px 1px;
+  -webkit-border-radius: 1px 1px 1px 1px;
+  border-radius: 1px 1px 1px 1px;
+  -moz-border-radius: 1px 1px 1px 1px;
+  -webkit-border-radius: 1px 1px 1px 1px;
+  border-radius: 1px 1px 1px 1px;
+  -moz-border-radius: 1px 1px 1px 1px;
+  -webkit-border-radius: 1px 1px 1px 1px;
   background-color: #f9f9f9;
 }
 #content.contact #right_box {
@@ -888,8 +1076,20 @@ html.ie #search #search_text {
   zoom: 1;
   filter: alpha(opacity=80);
   opacity: 0.8;
+  zoom: 1;
+  filter: alpha(opacity=80);
+  opacity: 0.8;
   border: 1px solid #222;
   padding: 10px;
+  border-radius: 1px 1px 1px 1px;
+  -moz-border-radius: 1px 1px 1px 1px;
+  -webkit-border-radius: 1px 1px 1px 1px;
+  border-radius: 1px 1px 1px 1px;
+  -moz-border-radius: 1px 1px 1px 1px;
+  -webkit-border-radius: 1px 1px 1px 1px;
+  border-radius: 1px 1px 1px 1px;
+  -moz-border-radius: 1px 1px 1px 1px;
+  -webkit-border-radius: 1px 1px 1px 1px;
   border-radius: 1px 1px 1px 1px;
   -moz-border-radius: 1px 1px 1px 1px;
   -webkit-border-radius: 1px 1px 1px 1px;
@@ -931,11 +1131,151 @@ html.ie #search #search_text {
 #content.contact a:hover {
   text-decoration: none;
 }
-#content.projects h1 {
+.clearboth {
+  clear: both;
+}
+.hidden {
+  display: none;
+}
+.nowrap {
+  white-space: nowrap;
+}
+#content.projects #projects {
+  position: relative;
+}
+#content.projects #projects:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#content.projects #projects {
+  display: inline-block;
+}
+#content.projects #projects {
+  display: block;
+}
+#content.projects #projects:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#content.projects #projects {
+  display: inline-block;
+}
+#content.projects #projects {
+  display: block;
+}
+#content.projects #projects .col {
+  float: left;
+  width: 276px;
+  margin-right: 15px;
+}
+#content.projects #projects .col .project {
+  margin-bottom: 15px;
+  position: relative;
+}
+#content.projects #projects .col .project .container {
+  background-color: #f9f9f9;
+  border: 1px solid #aaaaaa;
+  -webkit-box-shadow: 1px 1px 10px 1px #aaaaaa;
+  -moz-box-shadow: 1px 1px 10px 1px #aaaaaa;
+  box-shadow: 1px 1px 10px 1px #aaaaaa;
+  -webkit-box-shadow: 1px 1px 10px 1px #aaaaaa;
+  -moz-box-shadow: 1px 1px 10px 1px #aaaaaa;
+  box-shadow: 1px 1px 10px 1px #aaaaaa;
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  padding-top: 5px;
+}
+#content.projects #projects .col .project .container h2 {
   font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
   font-size: 150%;
   text-decoration: none;
   font-weight: bold;
+  margin: 0px 5px;
+  border-bottom: 1px solid #919191;
+}
+#content.projects #projects .col .project .container h3 {
+  font-size: 93%;
+  text-decoration: none;
+  padding: 0px 5px;
+}
+#content.projects #projects .col .project .container img.screenshot {
+  display: block;
+  width: 90%;
+  margin: 1em auto;
+}
+#content.projects #projects .col .project .container ul {
+  font-size: 93%;
+  margin: 1em 0px;
+  padding: 0px 5px;
+}
+#content.projects #projects .col .project .container a {
+  color: #369;
+  text-decoration: underline;
+}
+#content.projects #projects .col .project .container a:hover {
+  text-decoration: none;
+}
+#content.projects #projects .col .project .container div.meta {
+  overflow: hidden;
+  background-color: #555;
+  white-space: normal;
+}
+#content.projects #projects .col .project .container div.meta .times {
+  font-size: 77%;
+  border-bottom: 1px dashed #777;
+  color: #f9f9f9;
+  padding: 5px;
+}
+#content.projects #projects .col .project .container div.meta .tags {
+  padding: 5px;
+  line-height: 18px;
+  font-size: 85%;
+}
+#content.projects #projects .col .project .container div.meta .tags .tag {
+  padding: 0px 6px;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  background-color: #999;
+  white-space: nowrap;
+}
+#content.projects #projects .col .project:hover .container {
+  border-color: #919191;
+  background-color: #ddd;
+}
+#content.projects #projects .col .project:hover .container h2 {
+  color: #369;
+}
+#content.projects #projects .col .project:hover .container div.meta .tag {
+  background-color: #aaa;
+}
+#content.projects #projects .col-2 {
+  margin-right: 0px;
 }
 #wpstats {
   display: none;

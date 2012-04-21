@@ -4,6 +4,7 @@
 
 	#projects {
 		position: relative;
+		.clearfix;
 
 		.col {
 			float: left;
@@ -12,7 +13,10 @@
 
 			.project {
 				margin-bottom: 15px;
+				position: relative;
+
 				.container {
+
 					background-color: #f9f9f9;
 
 					border: 1px solid darken(#aaa, 0%);
@@ -24,12 +28,17 @@
 						padding: 0px 5px;
 					}
 
+					.elementmargin() {
+						margin: 0px 5px;
+					}
+
 					h2 {
 						font-family: @headerFont;
 						font-size: 150%;
 						text-decoration: none;
 						font-weight: bold;
-						.elementpadding;
+						.elementmargin;
+						border-bottom: 1px solid lighten(#444, 30%);
 					}
 
 					h3 {
@@ -37,6 +46,12 @@
 						text-decoration: none;
 						.elementpadding;
 
+					}
+
+					img.screenshot {
+						display: block;
+						width: 90%;
+						margin: 1em auto;
 					}
 
 					ul {
@@ -59,25 +74,23 @@
 						background-color: #555;
 						white-space: normal;
 
-						& > span, & > div {
-							font-size: 85%;
+						.times {
+							font-size: 77%;
+							border-bottom: 1px dashed #777;
+							color: #f9f9f9;
+							padding: 5px;				
 						}
 
 						.tags {
 							padding: 5px;
 							line-height: 18px;
+							font-size: 85%;
 							.tag {
 								padding: 0px 6px;
 								.border-radius(10px);
 								background-color: #999;
 								white-space: nowrap;
 							}	
-						}					
-
-						.times {
-							border-bottom: 1px dashed #777;
-							color: #f9f9f9;
-							padding: 5px;				
 						}
 					}
 				}
@@ -89,6 +102,10 @@
 
 						h2 {
 							color: #369;
+						}
+
+						img.screenshot {
+							// display: block;
 						}
 
 						div.meta {
