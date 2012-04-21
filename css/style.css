@@ -1181,12 +1181,12 @@ html.ie #search #search_text {
 #content.projects #projects .col .project .container {
   background-color: #f9f9f9;
   border: 1px solid #aaaaaa;
-  -webkit-box-shadow: 1px 1px 10px 1px #aaaaaa;
-  -moz-box-shadow: 1px 1px 10px 1px #aaaaaa;
-  box-shadow: 1px 1px 10px 1px #aaaaaa;
-  -webkit-box-shadow: 1px 1px 10px 1px #aaaaaa;
-  -moz-box-shadow: 1px 1px 10px 1px #aaaaaa;
-  box-shadow: 1px 1px 10px 1px #aaaaaa;
+  -webkit-box-shadow: 1px 1px 10px 2px #aaaaaa;
+  -moz-box-shadow: 1px 1px 10px 2px #aaaaaa;
+  box-shadow: 1px 1px 10px 2px #aaaaaa;
+  -webkit-box-shadow: 1px 1px 10px 2px #aaaaaa;
+  -moz-box-shadow: 1px 1px 10px 2px #aaaaaa;
+  box-shadow: 1px 1px 10px 2px #aaaaaa;
   border-radius: 2px 2px 2px 2px;
   -moz-border-radius: 2px 2px 2px 2px;
   -webkit-border-radius: 2px 2px 2px 2px;
@@ -1267,6 +1267,12 @@ html.ie #search #search_text {
 #content.projects #projects .col .project:hover .container {
   border-color: #919191;
   background-color: #ddd;
+  -webkit-box-shadow: 1px 1px 10px 2px #555555;
+  -moz-box-shadow: 1px 1px 10px 2px #555555;
+  box-shadow: 1px 1px 10px 2px #555555;
+  -webkit-box-shadow: 1px 1px 10px 2px #555555;
+  -moz-box-shadow: 1px 1px 10px 2px #555555;
+  box-shadow: 1px 1px 10px 2px #555555;
 }
 #content.projects #projects .col .project:hover .container h2 {
   color: #369;
