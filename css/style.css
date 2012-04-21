@@ -974,6 +974,7 @@ html.ie #search #search_text {
   font-weight: bold;
   margin: 0px 5px;
   border-bottom: 1px solid #919191;
+  padding-bottom: 3px;
 }
 #content.projects #projects .col .project .container h3 {
   font-size: 93%;
