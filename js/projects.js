@@ -40,7 +40,7 @@ var Projects = (function()
 				ul.append($('<li />')
 					.addClass('github')
 					.html('GitHub: ').append($('<a />')
-						.attr({href: 'http://github.com' + project.github})
+						.attr({href: 'http://github.com/' + project.github})
 						.html(project.github)));
 			}
 
