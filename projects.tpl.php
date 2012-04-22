@@ -32,7 +32,10 @@ list($projects, $cols) = (require 'projects.inc.php');
 							<? endforeach; endif; ?>
 							<ul>
 								<? if (isset($project['github'])): ?>
-									<li><a href="http://github.com/<?=$project['github'] ?>">GitHub repository</a></li>
+									<li><a href="http://github.com/<?=$project['github'] ?>">GitHub</a></li>
+								<? endif; ?>
+								<? if (isset($project['bitbucket'])): ?>
+									<li><a href="http://bitbucket.org/<?=$project['bitbucket'] ?>">Bitbucket</a></li>
 								<? endif; ?>
 								<? if (isset($project['web'])): ?>
 									<li><a href="<?=$project['web'] ?>">Web</a></li>

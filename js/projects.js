@@ -41,7 +41,16 @@ var Projects = (function()
 					.addClass('github')
 					.append($('<a />')
 						.attr({href: 'http://github.com/' + project.github, target: '_blank'})
-						.html('GitHub repository')));
+						.html('GitHub')));
+			}
+
+			if (typeof project.bitbucket !== "undefined")
+			{
+				ul.append($('<li />')
+					.addClass('bitbucket')
+					.append($('<a />')
+						.attr({href: 'http://bitbucket.org/' + project.bitbucket, target: '_blank'})
+						.html('Bitbucket')));
 			}
 
 			if (typeof project.download !== "undefined")
@@ -105,6 +114,38 @@ var Projects = (function()
 								.html('Updated ')
 								.append($('<span />')
 									.attr({title: response.repo.pushed_at })
+									.addClass('timeago')
+								))
+						);
+
+					if (typeof $.timeago === "function")
+					{
+						meta.find('.timeago').timeago();	
+					}
+				}, 'json');
+			}
+			else if (typeof project.bitbucket !== "undefined")
+			{
+				$.get(Config.stylesheet_directory + '/ajax/bitbucket-repo-information.php', 
+					{ repo: project.bitbucket, class: project_id }, function(response)
+				{
+					var meta = $('#projects .project-' + response.class).find('.meta');
+
+					meta.prepend($('<div />')
+							.addClass('times')
+							.append($('<span />')
+								.addClass('created_on')
+								.html('Created ')
+								.append($('<span />')
+									.attr({title: response.repo.utc_created_on })
+									.addClass('timeago')
+								))
+							.append("\n" + '&middot;' + "\n")
+							.append($('<span />')
+								.addClass('updated_on')
+								.html('Updated ')
+								.append($('<span />')
+									.attr({title: response.repo.utc_last_updated })
 									.addClass('timeago')
 								))
 						);
