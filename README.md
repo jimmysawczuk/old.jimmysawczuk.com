@@ -2,13 +2,7 @@
 
 This is a repository for the theme that runs my blog, which is located at [www.jimmysawczuk.com][1]. 
 
-## Original ##
-
-The theme currently in the `lightword` branch is only slightly modified from an older version of [Andrei Luca's][2] [LightWord][3]. It has served me well for two years, however, I feel it's time for a change.
-
-## In use ##
-
-The theme in use now was written from scratch with some inspiration from [`lightword`][3], [Grantland][6], and the [New York Times][7]. My aim was to create a theme that was simple, attractive and clean. I also built it with Facebook integration in mind, and specifically, to respect the [Open Graph protocol][8]. It uses HTML5 and CSS3, with some jQuery.
+This theme was written from scratch with some inspiration from [`lightword`][3], [Grantland][6], and the [New York Times][7]. My aim was to create a theme that was simple, attractive and clean. I also built it with Facebook integration in mind, and specifically, to respect the [Open Graph protocol][8]. It uses HTML5 and CSS3, with some jQuery.
 
 ### Repository Hooks ###
 
