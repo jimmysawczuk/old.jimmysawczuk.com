@@ -958,7 +958,7 @@ html.ie #search #search_text {
 }
 #content.projects #projects .project .container {
   background-color: #f9f9f9;
-  border: 1px solid #aaaaaa;
+  border: 1px solid #919191;
   -webkit-box-shadow: 1px 1px 10px 2px #aaaaaa;
   -moz-box-shadow: 1px 1px 10px 2px #aaaaaa;
   box-shadow: 1px 1px 10px 2px #aaaaaa;
@@ -1006,13 +1006,13 @@ html.ie #search #search_text {
 }
 #content.projects #projects .project .container div.meta {
   overflow: hidden;
-  background-color: #bbb;
+  background-color: #999;
   white-space: normal;
-  color: #676767;
+  color: #444;
 }
 #content.projects #projects .project .container div.meta .times {
   font-size: 77%;
-  border-bottom: 1px dashed #777;
+  border-bottom: 1px dashed #444;
   padding: 5px;
 }
 #content.projects #projects .project .container div.meta .tags {
@@ -1025,13 +1025,13 @@ html.ie #search #search_text {
   border-radius: 10px 10px 10px 10px;
   -moz-border-radius: 10px 10px 10px 10px;
   -webkit-border-radius: 10px 10px 10px 10px;
-  background-color: #999;
+  background-color: #bbb;
   color: #555;
   white-space: nowrap;
 }
 #content.projects #projects .project:hover .container {
-  border-color: #919191;
-  background-color: #ddd;
+  border-color: #777777;
+  background-color: #eee;
   -webkit-box-shadow: 1px 1px 10px 2px #555555;
   -moz-box-shadow: 1px 1px 10px 2px #555555;
   box-shadow: 1px 1px 10px 2px #555555;
