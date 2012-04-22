@@ -135,7 +135,7 @@ html.ie #search #search_text{padding-top:4px;}
 #content.projects #projects .project .container img.screenshot{display:block;max-width:90%;max-height:200px;margin:1em auto;}
 #content.projects #projects .project .container ul{font-size:93%;margin:1em 0px;padding:0px 5px;}#content.projects #projects .project .container ul li{list-style-type:square;margin-left:16px;}
 #content.projects #projects .project .container a{color:#369;text-decoration:underline;}#content.projects #projects .project .container a:hover{text-decoration:none;}
-#content.projects #projects .project .container div.meta{overflow:hidden;background-color:#999;white-space:normal;color:#444;}#content.projects #projects .project .container div.meta .times{font-size:77%;border-bottom:1px dashed #444;padding:5px;}
+#content.projects #projects .project .container div.meta{overflow:hidden;background-color:#ddd;white-space:normal;color:#444;}#content.projects #projects .project .container div.meta .times{font-size:77%;border-bottom:1px dashed #999;padding:5px;}
 #content.projects #projects .project .container div.meta .tags{padding:5px;line-height:18px;font-size:85%;}#content.projects #projects .project .container div.meta .tags .tag{padding:0px 6px;border-radius:10px 10px 10px 10px;-moz-border-radius:10px 10px 10px 10px;-webkit-border-radius:10px 10px 10px 10px;background-color:#bbb;color:#555;white-space:nowrap;}
 #content.projects #projects .project:hover .container{border-color:#777777;background-color:#eee;-webkit-box-shadow:1px 1px 10px 2px #555555;-moz-box-shadow:1px 1px 10px 2px #555555;box-shadow:1px 1px 10px 2px #555555;}#content.projects #projects .project:hover .container h2{color:#369;}
 #content.projects #projects .project:hover .container div.meta .tag{background-color:#aaa;}
