@@ -115,10 +115,22 @@ $projects []= array(
 	'tags' => array("php", "website")
 );
 
+/**************************************
+Don't edit past this line
+**************************************/
+
 $cols = array();
 $i = 0;
 foreach ($projects as $project)
 {
+	$id = strtolower($project['name']);
+	$id = preg_replace('#\s+#', '_', $id);
+	$id = preg_replace('#\W+#', '_', $id);
+	$id = preg_replace('#_+#', '_', $id);
+
+	$project['id'] = $id;
+
+
 	$idx = $i % 3;
 	$cols["{$idx}"] []= $project;
 	$i++;
