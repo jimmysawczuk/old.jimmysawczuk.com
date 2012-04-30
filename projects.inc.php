@@ -47,6 +47,27 @@ $projects []= array(
 );
 
 $projects []= array(
+	'name' => "Real Time Notes",
+	'description' => "An online tool that lets users create timed logs or diaries for export later.",
+	'web' => "http://www.realtimenotes.com",
+	'tags' => array("php", "website")
+);
+
+$projects []= array(
+	'name' => "Too Long For Twitter",
+	'description' => "A tool for writing posts that would otherwise be tweets but are too long. Provides an easy way to post to Twitter as well.",
+	'web' => "http://www.toolongfortwitter.com",
+	'tags' => array("php", "website")
+);
+
+$projects []= array(
+	'name' => "fangate",
+	'description' => "An open-source PHP framework for making gated Facebook fan pages.",
+	'github' => 'jimmysawczuk/fangate',
+	'tags' => array('php', 'facebook', 'open-source')
+);
+
+$projects []= array(
 	'name' => "Invaders",
 	'description' => "An XNA game which was my last homework assignment for my game development class my senior year in college.",
 	'tags' => array("xna", "c#", "game"),
@@ -99,20 +120,6 @@ $projects []= array(
 	'download' => "https://chrome.google.com/webstore/detail/eloopmgpiphiokehjgomphnnlejikbol",
 	'bitbucket' => 'jimmysawczuk/facebook-page-finder',
 	'tags' => array("javascript", "chrome-extension", "facebook")
-);
-
-$projects []= array(
-	'name' => "Real Time Notes",
-	'description' => "An online tool that lets users create timed logs or diaries for export later.",
-	'web' => "http://www.realtimenotes.com",
-	'tags' => array("php", "website")
-);
-
-$projects []= array(
-	'name' => "Too Long For Twitter",
-	'description' => "A tool for writing posts that would otherwise be tweets but are too long. Provides an easy way to post to Twitter as well.",
-	'web' => "http://www.toolongfortwitter.com",
-	'tags' => array("php", "website")
 );
 
 /**************************************
