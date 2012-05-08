@@ -73,7 +73,7 @@ html.ie #search #search_text{padding-top:4px;}
 .post .content ul li,.post .content ol li{text-align:justify;}
 .post .content ul li{list-style-type:disc;}
 .post .content ol li{list-style-type:decimal;}
-.post .content blockquote{background-color:#cdcdcd;font-style:italic;margin:10px;padding:0px 10px;overflow:hidden;}
+.post .content blockquote{background-color:#ddd;margin:10px;padding:0px 10px;overflow:hidden;font-size:93%;}
 .post .content a,.post .content a:hover{text-decoration:underline;color:#369;}
 .post .content h2,.post .content h3,.post .content h4{font-family:'Arvo','Arial Black','Arial','Helvetica',sans-serif;margin:1em 0px;}
 .post .content h2{font-size:150%;}

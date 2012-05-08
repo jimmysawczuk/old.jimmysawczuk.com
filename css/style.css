@@ -538,11 +538,11 @@ html.ie #search #search_text {
   list-style-type: decimal;
 }
 .post .content blockquote {
-  background-color: #cdcdcd;
-  font-style: italic;
+  background-color: #ddd;
   margin: 10px;
   padding: 0px 10px;
   overflow: hidden;
+  font-size: 93%;
 }
 .post .content a,
 .post .content a:hover {
