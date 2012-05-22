@@ -68,7 +68,7 @@ var Styling = {
 				(function(citation)
 				{
 					var a = $('<a />').attr({href: citation, target: "_blank"});
-					var domain = a[0].host.split(".");
+					var domain = a[0].hostname.split(".");
 					domain = domain[domain.length - 2] + "." + domain[domain.length - 1];
 					a.html(domain);
 
