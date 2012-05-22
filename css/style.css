@@ -538,10 +538,14 @@ html.ie #search #search_text {
   list-style-type: decimal;
 }
 .post .content blockquote {
-  background-color: #ddd;
+  background-color: #e4e4e4;
   margin: 10px;
   overflow: hidden;
   font-size: 93%;
+  border: 1px solid #ccc;
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
 }
 .post .content blockquote p {
   padding: 0px 10px;
@@ -551,7 +555,7 @@ html.ie #search #search_text {
   padding: 5px 10px;
   font-size: 85%;
   text-align: right;
-  background-color: #d4d4d4;
+  background-color: #eee;
 }
 .post .content blockquote .citation a {
   color: #676767;
