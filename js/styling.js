@@ -58,5 +58,27 @@ var Styling = {
 				even = !even;
 			});
 		});
+
+		$('blockquote').each(function(idx, quote)
+		{
+			var citation = $(quote).attr('cite');
+
+			if (typeof citation !== "undefined")
+			{
+				(function(citation)
+				{
+					var a = $('<a />').attr({href: citation, target: "_blank"});
+					var domain = a[0].host.split(".");
+					domain = domain[domain.length - 2] + "." + domain[domain.length - 1];
+					a.html(domain);
+
+					$(quote).append($('<div />')
+						.addClass('citation')
+						.html("Source: ")
+						.append(a)
+					);
+				})(citation);	
+			}				
+		});
 	}
 };

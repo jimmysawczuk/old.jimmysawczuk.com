@@ -48,7 +48,7 @@ function pluralize($num, $sing, $plu, $repl = '%')
 	return $tbr;
 }
 
-function get_min_url($urls, $group = false)
+function get_min_url($urls, $group = false, $override = false)
 {
 	if (!is_array($urls) && !$group)
 	{
@@ -66,6 +66,11 @@ function get_min_url($urls, $group = false)
 	else
 	{
 		$str = get_bloginfo('stylesheet_directory').'/min/?g='.$urls;
+	}
+
+	if (MODE == "dev" || $override)
+	{
+		$str .= "&date=".date("YmdHis");
 	}
 	
 	return $str;
