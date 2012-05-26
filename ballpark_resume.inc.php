@@ -128,6 +128,7 @@ $ballparks []= array(
 $ballparks []= array(
 	'name' => "Rogers Centre",
 	'alt_name' => "SkyDome",
+	'team' => "Toronto Blue Jays",
 	'rating' => '5',
 	'num_visits' => "1",
 	'visit' => "2012-05-19",
@@ -135,3 +136,20 @@ $ballparks []= array(
 	'article' => "",
 	'img' => "rogers_centre.jpg"
 );
+
+//////////////////////////////////////
+
+$i = 0;
+$cols = array();
+foreach ($ballparks as &$ballpark)
+{
+	$ballpark['full_img'] = get_bloginfo('stylesheet_directory') . '/images/ballparks/' . $ballpark['img'];
+	$ballpark['visit'] = strtotime($ballpark['visit']);
+
+	$col = $i++ % 2;
+
+	$cols[$col] []= $ballpark;
+}
+unset($ballpark);
+
+return array($ballparks, $cols);
