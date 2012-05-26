@@ -11,14 +11,32 @@ class BallparkWidget extends WP_Widget
 
 		list($ballparks, $cols) = get_ballparks();
 
+		usort($ballparks, "BallparkWidget::sortBallparksByName");
+
 		$this->ballparks = $ballparks;
+	}
+
+	private static function sortBallparksByName($a1, $a2)
+	{
+		if ($a1['name'] > $a2['name'])
+		{
+			return 1;
+		}
+		elseif ($a2['name'] > $a1['name'])
+		{
+			return -1;
+		}
+		else
+		{
+			return 0;
+		}
 	}
 
 	function widget( $args, $instance )
 	{
 	?>
 	<?=$args['before_widget']; ?>
-		<?=$args['before_title'] ?>Ballpark Resum&eacute;<?=$args['after_title'] ?>
+		<?=$args['before_title'] ?>Ballparks<?=$args['after_title'] ?>
 		<ul id="ballpark_resume">		
 			<? $even = false; foreach ($this->ballparks as $ballpark): ?>
 				<li class="<?=$even? 'even' : 'odd' ?>">
@@ -31,7 +49,7 @@ class BallparkWidget extends WP_Widget
 						</a>
 					</p>
 					<p class="small">
-						Visited: <?=date("F j, Y", $ballpark['visit']); ?>
+						Visited on <?=date("F j, Y", $ballpark['visit']); ?>
 					</p>
 				</li>
 			<? $even = !$even; endforeach; ?>

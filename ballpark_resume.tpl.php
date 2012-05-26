@@ -43,7 +43,15 @@ list($ballparks, $cols) = get_ballparks();
 							<dt>Total visits:</dt>
 							<dd><?=$ballpark['num_visits'] ?></dd>
 						</dl>
+
+						<? if (isset($ballpark['img_credit'])): ?>
+							<div class="credit">
+								<a href="<?=$ballpark['img_credit']; ?>" target="_blank">Photo credit</a>
+							</div>
+						<? endif; ?>
 					</div>
+
+
 				</div>
 			<? $row++; endforeach; ?>
 		</div>
