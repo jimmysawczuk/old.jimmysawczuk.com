@@ -1157,16 +1157,15 @@ html.ie #search #search_text {
 }
 #ballparks .ballpark .footer div.meta div.field {
   clear: both;
+  overflow: hidden;
 }
 #ballparks .ballpark .footer div.meta div.field div.name {
-  clear: left;
   float: left;
   font-weight: bold;
   width: 100px;
 }
 #ballparks .ballpark .footer div.meta div.field div.value {
   float: left;
-  clear: right;
 }
 #ballparks .ballpark .footer div.meta div.field div.value a {
   color: #fff;
