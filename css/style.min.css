@@ -108,8 +108,9 @@ html.ie #search #search_text{padding-top:4px;}
 #wp-calendar #prev,#wp-calendar #next{padding-top:1em;}#wp-calendar #prev a,#wp-calendar #next a{font-weight:bold;text-decoration:none;}
 #ballpark_resume li{font-size:14px;line-height:15px;font-weight:normal;padding:5px 10px;position:relative;}#ballpark_resume li.odd{background-color:#e1e1e1;}
 #ballpark_resume li.even{background-color:#f9f9f9;}
-#ballpark_resume li a,#ballpark_resume li a:hover{text-decoration:none;color:#369;font-weight:normal;}
-#ballpark_resume li .rating{font-weight:bold;font-size:140%;position:absolute;right:10px;text-align:center;width:20px;color:#333;}#ballpark_resume li .rating a{color:#333;}
+#ballpark_resume li p.link a,#ballpark_resume li p.link a:hover{text-decoration:none;color:#369;font-weight:normal;}
+#ballpark_resume li p.small{font-size:85%;color:#444;}
+#ballpark_resume li .rating{font-weight:bold;font-size:140%;position:absolute;right:10px;top:10px;text-align:center;width:20px;color:#333;}
 #bitbucket_events li{font-size:100%;clear:both;margin:0.5em 0px;padding:0.5em;background-color:#f9f9f9;}#bitbucket_events li .footer{font-size:93%;}
 #github_events li{font-size:100%;clear:both;margin:0.5em 0px;padding:0.5em;background-color:#f9f9f9;border-radius:2px 2px 2px 2px;-moz-border-radius:2px 2px 2px 2px;-webkit-border-radius:2px 2px 2px 2px;}#github_events li .footer{font-size:93%;}
 #github_events li ul.extra{font-size:85%;padding-left:20px;margin:0.5em 1em;border:1px dashed #e1e1e1;}#github_events li ul.extra li{list-style-type:square;margin:0px;padding:0px;}
@@ -141,4 +142,15 @@ html.ie #search #search_text{padding-top:4px;}
 #content.projects #projects .project:hover .container{border-color:#777777;background-color:#eee;-webkit-box-shadow:1px 1px 10px 2px #555555;-moz-box-shadow:1px 1px 10px 2px #555555;box-shadow:1px 1px 10px 2px #555555;}#content.projects #projects .project:hover .container h2{color:#369;}
 #content.projects #projects .project:hover .container div.meta .tag{background-color:#aaa;}
 #content.projects #projects .col-2{margin-right:0px;}
+#ballparks .col{float:left;}
+#ballparks .col-0{margin-right:30px;}
+#ballparks .ballpark{width:415px;height:258px;margin-top:30px;position:relative;border-radius:2px 2px 2px 2px;-moz-border-radius:2px 2px 2px 2px;-webkit-border-radius:2px 2px 2px 2px;-webkit-box-shadow:1px 1px 10px 2px #aaaaaa;-moz-box-shadow:1px 1px 10px 2px #aaaaaa;box-shadow:1px 1px 10px 2px #aaaaaa;overflow:hidden;}#ballparks .ballpark .header{display:none;padding:10px;background:rgba(0, 0, 0, 0.7);position:absolute;top:0px;left:0px;right:0px;overflow-y:hidden;}#ballparks .ballpark .header h1{color:#fff;font-family:'Arvo','Arial Black','Arial','Helvetica',sans-serif;font-size:113%;font-weight:bold;}#ballparks .ballpark .header h1 a{color:#fff;text-decoration:underline;}#ballparks .ballpark .header h1 a:hover{text-decoration:none;}
+#ballparks .ballpark .header h2{color:#fff;font-family:'Arvo','Arial Black','Arial','Helvetica',sans-serif;font-size:100%;}
+#ballparks .ballpark .header .rating{position:absolute;top:0px;right:0px;bottom:0px;background-color:#369;color:#fff;font-size:30px;line-height:30px;font-weight:bold;}#ballparks .ballpark .header .rating div{padding:10px 10px 0px 0px;}
+#ballparks .ballpark .header .rating:before{content:"aaa...aaa";height:0px;width:0px;border-style:solid;border-width:30px;border-color:#369;border-left-color:transparent;border-bottom-color:transparent;position:absolute;left:-60px;overflow:hidden;}
+#ballparks .ballpark .footer{display:none;background:rgba(0, 0, 0, 0.7);position:absolute;bottom:0px;left:0px;right:0px;padding:5px 10px;}#ballparks .ballpark .footer dl{color:white;}#ballparks .ballpark .footer dl dt{clear:left;float:left;font-weight:bold;width:100px;}
+#ballparks .ballpark .footer dl dd{float:left;}#ballparks .ballpark .footer dl dd a{color:#fff;}#ballparks .ballpark .footer dl dd a:hover{text-decoration:none;}
+#ballparks .ballpark .footer .credit{position:absolute;bottom:3px;right:3px;color:#fff;font-size:11px;}#ballparks .ballpark .footer .credit a{color:#fff;}
+#ballparks .ballpark:hover{-webkit-box-shadow:1px 1px 10px 2px #555555;-moz-box-shadow:1px 1px 10px 2px #555555;box-shadow:1px 1px 10px 2px #555555;}#ballparks .ballpark:hover .header,#ballparks .ballpark:hover .footer{display:block;}
+#ballparks .row-0{margin-top:0px;}
 #wpstats{display:none;}
