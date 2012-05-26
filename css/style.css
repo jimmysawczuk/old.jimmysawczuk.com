@@ -1152,22 +1152,26 @@ html.ie #search #search_text {
   right: 0px;
   padding: 5px 10px;
 }
-#ballparks .ballpark .footer dl {
+#ballparks .ballpark .footer div.meta {
   color: white;
 }
-#ballparks .ballpark .footer dl dt {
+#ballparks .ballpark .footer div.meta div.field {
+  clear: both;
+}
+#ballparks .ballpark .footer div.meta div.field div.name {
   clear: left;
   float: left;
   font-weight: bold;
   width: 100px;
 }
-#ballparks .ballpark .footer dl dd {
+#ballparks .ballpark .footer div.meta div.field div.value {
   float: left;
+  clear: right;
 }
-#ballparks .ballpark .footer dl dd a {
+#ballparks .ballpark .footer div.meta div.field div.value a {
   color: #fff;
 }
-#ballparks .ballpark .footer dl dd a:hover {
+#ballparks .ballpark .footer div.meta div.field div.value a:hover {
   text-decoration: none;
 }
 #ballparks .ballpark .footer .credit {

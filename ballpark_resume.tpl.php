@@ -30,19 +30,25 @@ list($ballparks, $cols) = get_ballparks();
 					</div>
 
 					<div class="footer">
-						<dl>
-							<dt>Hometeam:</dt>
-							<dd><?=$ballpark['team'] ?></dd>
+						<div class="meta">
+							<div class="field">
+								<div class="name">Hometeam:</div>
+								<div class="value"><?=$ballpark['team'] ?></div>
+							</div>
 							
-							<dt>First visit:</dt>
-							<dd>
-								<a href="<?=$ballpark['game'] ?>" target="_blank"><?=date("F j, Y", $ballpark['visit']); ?></a> 
-								(<span class="timeago" title="<?=date("c", $ballpark['visit']); ?>"></span>)
-							</dd>
+							<div class="field">
+								<div class="name">First visit:</div>
+								<div class="value">
+									<a href="<?=$ballpark['game'] ?>" target="_blank"><?=date("F j, Y", $ballpark['visit']); ?></a> 
+									(<span class="timeago" title="<?=date("c", $ballpark['visit']); ?>"></span>)
+								</div>
+							</div>
 							
-							<dt>Total visits:</dt>
-							<dd><?=$ballpark['num_visits'] ?></dd>
-						</dl>
+							<div class="field">
+								<div class="name">Total visits:</div>
+								<div class="value"><?=$ballpark['num_visits'] ?></div>
+							</div>
+						</div>
 
 						<? if (isset($ballpark['img_credit'])): ?>
 							<div class="credit">

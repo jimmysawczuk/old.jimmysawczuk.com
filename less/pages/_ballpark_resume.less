@@ -94,24 +94,29 @@
 			right: 0px;
 			padding: 5px 10px;
 
-			dl {
+			div.meta {
 				color: white;
 
-				dt {
-					clear: left;
-					float: left;
-					font-weight: bold;
-					width: 100px;
-				}
+				div.field {
+					clear: both;
 
-				dd {
-					float: left;
+					div.name {
+						clear: left;
+						float: left;
+						font-weight: bold;
+						width: 100px;
+					}
 
-					a {
-						color: #fff;
+					div.value {
+						float: left;
+						clear: right;
 
-						&:hover {
-							text-decoration: none;
+						a {
+							color: #fff;
+
+							&:hover {
+								text-decoration: none;
+							}
 						}
 					}
 				}
