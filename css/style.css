@@ -1089,6 +1089,7 @@ html.ie #search #search_text {
 #ballparks .ballpark .header {
   display: none;
   padding: 10px;
+  background: #444;
   background: rgba(0, 0, 0, 0.7);
   position: absolute;
   top: 0px;
@@ -1143,6 +1144,7 @@ html.ie #search #search_text {
 }
 #ballparks .ballpark .footer {
   display: none;
+  background: #444;
   background: rgba(0, 0, 0, 0.7);
   position: absolute;
   bottom: 0px;
