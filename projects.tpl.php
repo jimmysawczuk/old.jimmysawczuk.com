@@ -6,7 +6,7 @@ define('PAGE_TEMPLATE', 'projects');
 define('HIDE_SIDEBAR', true);
 get_header();
 the_post();
-list($projects, $cols) = (require 'projects.inc.php');
+list($projects, $cols) = get_projects();
 ?>
 <div id="projects">
 	<? foreach ($cols as $i => $prj): ?>

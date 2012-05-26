@@ -15,6 +15,8 @@ require('includes/github_widget.php');
 require('includes/bitbucket.php');
 require('includes/github.php');
 
+require('projects.inc.php');
+
 @include('includes/mode.php');
 if (!defined('MODE'))
 {
