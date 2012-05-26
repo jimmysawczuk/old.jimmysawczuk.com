@@ -16,6 +16,7 @@ require('includes/bitbucket.php');
 require('includes/github.php');
 
 require('projects.inc.php');
+require('ballpark_resume.inc.php');
 
 @include('includes/mode.php');
 if (!defined('MODE'))

@@ -1,0 +1,140 @@
+#ballparks {
+	.col {
+		float: left;
+	}
+	
+	.col-0 {
+		margin-right: 30px;
+	}
+
+	.ballpark {
+		width: 415px;
+		height: 258px;
+		margin-top: 30px;
+		position: relative;
+		.border-radius(2px);
+		.box-shadow(1px, 1px, 10px, 2px, #aaa);
+		overflow: hidden;
+
+		.header {
+			display: none;
+			padding: 10px;
+			background: rgba(0, 0, 0, 0.7);
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			overflow-y: hidden;
+
+			h1 {
+				color: #fff;
+				font-family: @headerFont;
+				font-size: 113%;
+				font-weight: bold;
+
+				a {
+					color: #fff;
+					text-decoration: underline;
+
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+
+			h2 {
+				color: #fff;
+				font-family: @headerFont;
+				font-size: 100%;
+			}
+
+			.rating {
+				position: absolute;
+				top: 0px;
+				right: 0px;
+				bottom: 0px;
+				background-color: #369;
+				color: #fff;
+				font-size: 30px;
+				line-height: 30px;
+				font-weight: bold;
+
+				div {
+					padding: 10px 10px 0px 0px;
+				}
+
+				&:before {
+					content: "aaa...aaa";
+					height: 0px;
+					width: 0px;
+					border-style: solid;
+					border-width: 30px;
+					border-color: #369;
+					border-left-color: transparent;
+					border-bottom-color: transparent;
+					position: absolute;
+					left: -60px;
+					overflow: hidden;
+				}
+			}
+		}
+
+		.footer {
+			display: none;
+			background: rgba(0, 0, 0, 0.7);
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+			right: 0px;
+			padding: 5px 10px;
+
+			dl {
+				color: white;
+
+				dt {
+					clear: left;
+					float: left;
+					font-weight: bold;
+					width: 100px;
+				}
+
+				dd {
+					float: left;
+
+					a {
+						color: #fff;
+
+						&:hover {
+							text-decoration: none;
+						}
+					}
+				}
+			}
+
+			.credit {
+				position: absolute;
+				bottom: 3px;
+				right: 3px;
+				color: #fff;
+				font-size: 11px;
+
+				a {
+					color: #fff;
+				}
+			}
+		}
+
+		&:hover {
+			.box-shadow(1px, 1px, 10px, 2px, #555);
+			
+			.header, .footer {
+				display: block;
+			}
+		}
+	}
+
+	.row-0 {
+		margin-top: 0px;
+	}
+}
+

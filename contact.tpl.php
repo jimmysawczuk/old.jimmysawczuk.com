@@ -63,8 +63,5 @@ get_header();
 	</div>
 </div> 
 
-
-
-
 <?
 get_footer();

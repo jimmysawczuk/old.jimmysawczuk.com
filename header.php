@@ -43,6 +43,7 @@
 						<li class="first"><a href="<? bloginfo('url'); ?>" title="Home">Home</a></li>
 						<li><a href="<? bloginfo('url'); ?>/contact" title="About Me">About Me</a></li>
 						<li><a href="<? bloginfo('url'); ?>/projects" title="Projects">Projects</a></li>
+						<li><a href="<? bloginfo('url'); ?>/ballparks" title="Ballparks">Ballparks</a></li>
 						<li><a href="http://photos.jimmysawczuk.com" target="_blank" title="Photos">Photos</a></li>
 						<li><a href="http://code.jimmysawczuk.com" target="_blank" title="Code">Code</a></li>
 						<li class="last"><a href="<? bloginfo('url'); ?>/resume" target="_blank" title="Resume">Resum&eacute;</a></li>
