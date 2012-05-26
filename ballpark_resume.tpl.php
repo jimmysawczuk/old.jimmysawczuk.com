@@ -6,7 +6,7 @@ define('PAGE_TEMPLATE', 'ballpark_resume');
 define('HIDE_SIDEBAR', true);
 get_header();
 the_post();
-list($ballparks, $cols) = (require 'ballpark_resume.inc.php');
+list($ballparks, $cols) = get_ballparks();
 ?>
 
 <div id="ballparks">
