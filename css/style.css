@@ -584,6 +584,12 @@ html.ie #search #search_text {
 .post .content h4 {
   font-size: 120%;
 }
+.post .content em {
+  font-style: italic;
+}
+.post .content strong {
+  font-weight: bold;
+}
 .post .content hr {
   height: 0px;
   border-width: 0px;
