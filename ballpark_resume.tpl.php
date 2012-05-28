@@ -13,7 +13,7 @@ list($ballparks, $cols) = get_ballparks();
 	<? foreach (array_keys($cols) as $col): $row = 0; ?>
 		<div class="col col-<?=$col ?>">
 			<? foreach ($cols[$col] as $ballpark): ?>
-				<div class="row-<?=$row ?> ballpark" style="background: url('<?=$ballpark['full_img'] ?>') no-repeat;">
+				<div class="row-<?=$row ?> ballpark" style="background: url('<?=$ballpark['full_img'] ?>?wide') no-repeat;">
 					<div class="header">
 						<? if (isset($ballpark['article'])): ?>
 							<h1><a href="<?=$ballpark['article'] ?>"><?=$ballpark['name'] ?></a></h1>
