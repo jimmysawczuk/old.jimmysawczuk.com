@@ -147,7 +147,7 @@ function get_ballparks()
 		'num_visits' => "1",
 		'visit' => "2012-05-19",
 		'game' => "http://www.baseball-reference.com/boxes/TOR/TOR201205190.shtml",
-		'article' => "",
+		'article' => "http://www.jimmysawczuk.com/2012/05/northern-exposure.html",
 		'img' => "rogers_centre.jpg"
 	);
 
