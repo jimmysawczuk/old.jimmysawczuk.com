@@ -26,6 +26,13 @@ function get_projects()
 	);
 
 	$projects []= array(
+		'name' => "scm-status",
+		'description' => "A repository status snapshot generator in Go",
+		'github' => "jimmysawczuk/scm-status",
+		'tags' => array("go", "open-source", "development")
+	);
+
+	$projects []= array(
 		'name' => "jimmysawczuk.com",
 		'description' => "The WordPress theme that runs the very blog you're looking at.",
 		'github' => "jimmysawczuk/jimmysawczuk.com",
