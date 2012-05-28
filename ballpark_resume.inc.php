@@ -8,6 +8,7 @@ function get_ballparks()
 		'name' => "Progressive Field",
 		'team' => "Cleveland Indians",
 		'alt_name' => "Jacobs Field",
+		'location' => "Cleveland, OH",
 		'rating' => '9',
 		'num_visits' => '50+',
 		'visit' => "1995-08-02",
@@ -19,17 +20,19 @@ function get_ballparks()
 	$ballparks []= array(
 		'name' => "Fenway Park",
 		'team' => "Boston Red Sox",
+		'location' => "Boston, MA",
 		'rating' => '9',
 		'num_visits' => '1',
 		'visit' => "2003-06-24",
 		'game' => "http://www.baseball-reference.com/boxes/BOS/BOS200306240.shtml",
 		'img' => "fenway_park.jpg",
-		'img_credit' => "http://www.flickr.com/photos/apollo13ma/2338849933/",
+		'img_credit' => "http://www.flickr.com/photos/wallyg/156139457/",
 	);
 
 	$ballparks []= array(
 		'name' => "Wrigley Field",
 		'team' => "Chicago Cubs",
+		'location' => "Chicago, IL",
 		'rating' => '7',
 		'num_visits' => '1',
 		'visit' => "2007-07-20",
@@ -41,6 +44,7 @@ function get_ballparks()
 	$ballparks []= array(
 		'name' => "Great American Ballpark",
 		'team' => "Cincinatti Reds",
+		'location' => "Cincinatti, OH",
 		'rating' => '6',
 		'num_visits' => '1',
 		'visit' => "2008-05-18",
@@ -52,6 +56,7 @@ function get_ballparks()
 	$ballparks []= array(
 		'name' => "Shea Stadium",
 		'team' => "New York Mets",
+		'location' => "Queens, NY",
 		'rating' => '6',
 		'num_visits' => '1',
 		'visit' => "2008-07-27",
@@ -64,6 +69,7 @@ function get_ballparks()
 		'name' => "Yankee Stadium",
 		'alt_name' => "Old Yankee Stadium",
 		'team' => "New York Yankees",
+		'location' => "Bronx, NY",
 		'rating' => '10',
 		'num_visits' => '1',
 		'visit' => "2008-07-28",
@@ -75,6 +81,7 @@ function get_ballparks()
 	$ballparks []= array(
 		'name' => "Camden Yards",
 		'team' => "Baltimore Orioles",
+		'location' => "Baltimore, MD",
 		'rating' => '8',
 		'num_visits' => '1',
 		'visit' => "2009-05-12",
@@ -86,6 +93,7 @@ function get_ballparks()
 	$ballparks []= array(
 		'name' => "PNC Park",
 		'team' => "Pittsburgh Pirates",
+		'location' => "Pittsburgh, PA",
 		'rating' => '9',
 		'num_visits' => '1',
 		'visit' => "2010-05-31",
@@ -97,6 +105,7 @@ function get_ballparks()
 	$ballparks []= array(
 		'name' => "Nationals Park",
 		'team' => "Washington Nationals",
+		'location' => "Washington, DC",
 		'rating' => '8',
 		'num_visits' => "1",
 		'visit' => "2011-07-03",
@@ -108,6 +117,7 @@ function get_ballparks()
 	$ballparks []= array(
 		'name' => "Target Field",
 		'team' => "Minnesota Twins",
+		'location' => "Minneapolis, MN",
 		'rating' => '9',
 		'num_visits' => "3",
 		'visit' => "2011-09-16",
@@ -119,6 +129,7 @@ function get_ballparks()
 	$ballparks []= array(
 		'name' => "Comerica Park",
 		'team' => "Detroit Tigers",
+		'location' => "Detroit, MI",
 		'rating' => '9',
 		'num_visits' => "1",
 		'visit' => "2012-05-18",
@@ -131,6 +142,7 @@ function get_ballparks()
 		'name' => "Rogers Centre",
 		'alt_name' => "SkyDome",
 		'team' => "Toronto Blue Jays",
+		'location' => "Toronto, ON",
 		'rating' => '5',
 		'num_visits' => "1",
 		'visit' => "2012-05-19",

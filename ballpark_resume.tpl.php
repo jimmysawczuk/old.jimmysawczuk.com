@@ -20,7 +20,7 @@ list($ballparks, $cols) = get_ballparks();
 						<? else: ?>
 							<h1><?=$ballpark['name'] ?></h1>
 						<? endif; ?>
-						<h2><?=isset($ballpark['alt_name'])? $ballpark['alt_name'] : '&nbsp;'; ?></h2>
+						<h2><?=$ballpark['location']; ?><?=isset($ballpark['alt_name'])? ' &middot; ' . $ballpark['alt_name'] : ""; ?></h2>
 
 						<div class="rating rating-<?=$ballpark['rating']; ?>">
 							<div>
