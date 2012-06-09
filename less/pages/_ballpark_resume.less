@@ -1,3 +1,5 @@
+@import "../_font-awesome.less";
+
 #ballparks {
 	.clearfix;
 
@@ -76,7 +78,7 @@
 				}
 
 				&:before {
-					content: "aaa...aaa";
+					content: ""; //aaa...aaa";
 					height: 0px;
 					width: 0px;
 					border-style: solid;
@@ -128,10 +130,10 @@
 			bottom: 0px;
 			left: 0px;
 			right: 0px;
-			padding: 5px 10px;
-
+			
 			div.meta {
 				color: white;
+				padding: 5px 10px;
 
 				div.field {
 					clear: both;
@@ -159,11 +161,57 @@
 
 			.show_location {
 				position: absolute;
-				top: 5px;
-				right: 10px;
+				top: 0px;
+				right: 0px;
+				// background: #555;
+				// background: rgba(100, 100, 100, 0.8);
+				bottom: 0px;
 
-				a {
+				&:before {
+					content: ""; //aaa...aaa";
+					height: 0px;
+					width: 0px;
+					border-style: solid;
+					border-width: 35px;
+					
+					// border-color: #555;
+					// border-color: rgba(100, 100, 100, 0.8);
+					border-color: transparent;
+
+					position: absolute;
+					left: -70px;
+				}
+
+				&:hover {
+					.icon-globe {
+						color: #ddd;
+					}
+				}
+
+				.icon-globe {
+					padding: 5px 10px;
+					color: #aaa;
+					text-decoration: none;
+					font-size: 35px;
+				}
+			}
+
+			.show_location_engaged {
+				background: #369;
+
+				&:before {
+					border-color: #369;
+				}
+
+				&:hover .icon-globe, .icon-globe {
 					color: #fff;
+				}
+			}
+
+			.show_location {
+				&:before {
+					border-left-color: transparent;
+					border-top-color: transparent;
 				}
 			}
 		}

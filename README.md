@@ -17,6 +17,8 @@ I used all or parts of these open-source projects in this theme:
 
 * [TimeAgo][9], for the relative timestamps on the BitBucket widget.
 * [Minify][10], for the on-the-fly minification of my CSS and JS. There are a couple modifications to this Minify installation. The most notable one is [this workaround][13] that enables Minify to run in a subdirectory of the document root. It's also configured to use group loading rather than file loading, check `min/groupsConfig.php` for the configuration.
+* [Google Maps API][14], for the maps on the ballpark resume
+* [FontAwesome][15] for the globe icon on the ballpark resume
 
 Special thanks also to the [Google Font API][11], for the gorgeous fonts, namely: **Arvo** and **Mako**
 
@@ -59,3 +61,5 @@ The code in `lightword` is protected under the [GPL license][4], as it is a very
   [11]: http://code.google.com/apis/webfonts/
   [12]: http://stackoverflow.com/questions/6005751/how-to-display-current-working-copy-version-of-an-hg-repository-on-a-php-page
   [13]: http://code.google.com/p/minify/wiki/AlternateFileLayouts
+  [14]: https://developers.google.com/maps/
+  [15]: http://fortawesome.github.com/Font-Awesome/
