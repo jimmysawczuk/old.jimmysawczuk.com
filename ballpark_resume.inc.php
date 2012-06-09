@@ -61,6 +61,7 @@ function get_ballparks()
 		'name' => "Shea Stadium",
 		'team' => "New York Mets",
 		'location' => "Queens, NY",
+		'active' => false,
 		'rating' => '6',
 		'num_visits' => '1',
 		'visit' => "2008-07-27",
@@ -74,6 +75,7 @@ function get_ballparks()
 		'name' => "Yankee Stadium",
 		'alt_name' => "Old Yankee Stadium",
 		'team' => "New York Yankees",
+		'active' => false,
 		'location' => "Bronx, NY",
 		'rating' => '10',
 		'num_visits' => '1',
@@ -171,6 +173,11 @@ function get_ballparks()
 	{
 		$ballpark['full_img'] = get_bloginfo('stylesheet_directory') . '/images/ballparks/' . $ballpark['img'];
 		$ballpark['visit'] = strtotime($ballpark['visit']);
+
+		$ballpark['id'] = strtolower($ballpark['name']). '_' . ($i + 1);
+		$ballpark['id'] = preg_replace('#\s+#', '_', $ballpark['id']);
+		$ballpark['id'] = preg_replace('#\W+#', '', $ballpark['id']);
+		$ballpark['id'] = str_replace('_', '-', $ballpark['id']);
 
 		$col = $i++ % 2;
 

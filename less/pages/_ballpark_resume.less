@@ -17,6 +17,7 @@
 		.border-radius(2px);
 		.box-shadow(1px, 1px, 10px, 2px, #aaa);
 		overflow: hidden;
+		cursor: pointer;
 
 		.header {
 			display: none;
@@ -32,6 +33,8 @@
 			left: 0px;
 			right: 0px;
 			overflow-y: hidden;
+
+			height: 34px;
 
 			h1 {
 				color: #fff;
@@ -88,6 +91,31 @@
 			}
 		}
 
+		.map {
+			display: none;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0px;
+			left: 0px;
+		}
+
+		.map_engaged {
+			display: block;
+		}
+
+		.credit {
+			position: absolute;
+			top: -15px;
+			right: 3px;
+			color: #fff;
+			font-size: 11px;
+
+			a {
+				color: #fff;
+			}
+		}
+
 		.footer {
 			display: none;
 			
@@ -129,25 +157,26 @@
 				}
 			}
 
-			.credit {
+			.show_location {
 				position: absolute;
-				bottom: 3px;
-				right: 3px;
-				color: #fff;
-				font-size: 11px;
+				top: 5px;
+				right: 10px;
 
 				a {
 					color: #fff;
 				}
 			}
 		}
+	}
 
-		&:hover {
-			.box-shadow(1px, 1px, 10px, 2px, #555);
-			
-			.header, .footer {
-				display: block;
-			}
+	.ballpark:hover {
+		.box-shadow(1px, 1px, 10px, 3px, #777);
+	}
+
+	.ballpark_engaged {
+		.box-shadow(1px, 1px, 10px, 3px, #999);
+		.header, .footer, {
+			display: block;
 		}
 	}
 
