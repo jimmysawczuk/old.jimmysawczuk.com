@@ -2,6 +2,8 @@
 
 register_sidebars(1, array('name' => 'Right sidebar'));
 
+define('GOOGLE_MAPS_API_KEY', "AIzaSyBo5OqOOFOiMArR6jAAoeZAdrpPZH12fcY");
+
 require('includes/git_revision.php');
 require('includes/utility.php');
 
