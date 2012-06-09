@@ -38,6 +38,7 @@ var BallparkResume = (function()
 			disableDefaultUI: true,
 			scrollwheel: false,
 			draggable: false,
+			disableDoubleClickZoom: true,
 			styles: styles
 		};
 
