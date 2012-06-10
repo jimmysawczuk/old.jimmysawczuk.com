@@ -23,10 +23,10 @@ var BallparkResume = (function()
 		];
 
 		default_opts = {
-			zoom: 15,
+			zoom: 6,
 			mapTypeId: google.maps.MapTypeId.HYBRID,
 			maxZoom: 17,
-			minZoom: 12,
+			minZoom: 6,
 			panControl: false,
 			mapTypeControl: false,
 			zoomControl: true,
@@ -70,11 +70,7 @@ var BallparkResume = (function()
 					$parent.addClass('ballpark_engaged');
 					$(this).removeAttr('style');
 				});
-
 				
-				var center = new google.maps.LatLng($(this).data('mapCenter')[0], $(this).data('mapCenter')[1]);
-				var opts = $.extend(default_opts, {center: center});
-				var map = new google.maps.Map($(this).find('.map:first')[0], opts);
 			}
 			else
 			{
@@ -106,6 +102,47 @@ var BallparkResume = (function()
 				var opts = $.extend(default_opts, {center: center});
 				var map = new google.maps.Map($map_div[0], opts);
 
+				(function(map)
+				{
+					var funcs = [];
+
+					var zoom_target = 16;
+					var initial_timeout = 500;
+					var frame_duration = 150;
+
+					for (var i = map.getZoom(), j = 0; i <= zoom_target; i++, j++)
+					{
+						var func = (function(i)
+						{
+							return function()
+							{
+								map.setZoom(i);
+								if (map.getZoom() == zoom_target)
+								{
+									map.setOptions({minZoom: 13});
+								}
+							}
+						})(i);
+
+						funcs.push({func: func, timeout: initial_timeout + j * frame_duration});
+					}
+
+					map.event_set = false;
+
+					google.maps.event.addListener(map, 'tilesloaded', function()
+					{
+						if (!map.event_set)
+						{
+							map.event_set = true;
+							for (var f in funcs)
+							{
+								window.setTimeout(funcs[f].func, funcs[f].timeout);
+							}	
+						}
+					});					
+				})(map);
+				
+
 				$ballpark_div.find('.credit').hide();
 				$(this).parents('.show_location').addClass('show_location_engaged');
 			}
@@ -116,7 +153,7 @@ var BallparkResume = (function()
 			}
 		});
 
-		$('.ballpark .show_location .icon-globe').disableSelection();
+		$('.ballpark').disableSelection();
 	}
 
 	var public_functions = {
