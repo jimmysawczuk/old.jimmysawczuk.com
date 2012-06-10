@@ -54,12 +54,22 @@ var BallparkResume = (function()
 			if (!$(this).hasClass('ballpark_engaged'))
 			{
 				var $other_engaged = $('.ballpark_engaged');
-				$other_engaged.removeClass('ballpark_engaged');
+				$other_engaged.find('.header, .footer').slideUp('fast', function()
+				{
+					var $parent = $(this).parent();
+					$parent.removeClass('ballpark_engaged');
+					$(this).removeAttr('style');
+				});
 				$other_engaged.find('.map_engaged').removeClass('map_engaged');
 				$other_engaged.find('.show_location_engaged').removeClass('show_location_engaged');
 				$other_engaged.find('.credit').show();
 
-				$(this).addClass('ballpark_engaged');
+				$(this).find('.header, .footer').slideDown('normal', function()
+				{
+					var $parent = $(this).parent();
+					$parent.addClass('ballpark_engaged');
+					$(this).removeAttr('style');
+				});
 
 				
 				var center = new google.maps.LatLng($(this).data('mapCenter')[0], $(this).data('mapCenter')[1]);
@@ -70,7 +80,12 @@ var BallparkResume = (function()
 			{
 				if (!$(this).find('.map_engaged').hasClass('map_engaged'))
 				{
-					$(this).removeClass('ballpark_engaged');
+					$(this).find('.header, .footer').slideUp('fast', function()
+					{
+						var $parent = $(this).parent();
+						$parent.removeClass('ballpark_engaged');
+						$(this).removeAttr('style');
+					});
 				}
 				
 			}
@@ -100,6 +115,8 @@ var BallparkResume = (function()
 				$(this).parents('.show_location').removeClass('show_location_engaged');
 			}
 		});
+
+		$('.ballpark .show_location .icon-globe').disableSelection();
 	}
 
 	var public_functions = {

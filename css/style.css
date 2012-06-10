@@ -1887,7 +1887,7 @@ ul.icons li .icon-large:before {
   -webkit-border-radius: 0px 2px 0px 0px;
 }
 #ballparks .ballpark .header .rating div {
-  padding: 10px 10px 0px 0px;
+  padding: 10px;
 }
 #ballparks .ballpark .header .rating:before {
   content: "";
@@ -1974,23 +1974,23 @@ ul.icons li .icon-large:before {
   left: -70px;
 }
 #ballparks .ballpark .footer .show_location:hover .icon-globe {
-  color: #ddd;
+  color: #eee;
 }
 #ballparks .ballpark .footer .show_location .icon-globe {
-  padding: 5px 10px;
+  padding: 10px;
   color: #aaa;
   text-decoration: none;
-  font-size: 35px;
+  font-size: 30px;
 }
 #ballparks .ballpark .footer .show_location_engaged {
-  background: #369;
+  background: rgba(51, 102, 153, 0.8);
 }
 #ballparks .ballpark .footer .show_location_engaged:before {
-  border-color: #369;
+  border-color: rgba(51, 102, 153, 0.8);
 }
 #ballparks .ballpark .footer .show_location_engaged:hover .icon-globe,
 #ballparks .ballpark .footer .show_location_engaged .icon-globe {
-  color: #fff;
+  color: #fff !important;
 }
 #ballparks .ballpark .footer .show_location:before {
   border-left-color: transparent;
