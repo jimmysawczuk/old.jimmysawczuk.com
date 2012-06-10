@@ -23,10 +23,10 @@ var BallparkResume = (function()
 		];
 
 		default_opts = {
-			zoom: 16,
+			zoom: 15,
 			mapTypeId: google.maps.MapTypeId.HYBRID,
 			maxZoom: 17,
-			minZoom: 13,
+			minZoom: 12,
 			panControl: false,
 			mapTypeControl: false,
 			zoomControl: true,
