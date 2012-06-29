@@ -51,7 +51,7 @@ function get_projects()
 		'name' => "clippy-jquery",
 		'description' => "A jQuery plugin that utilizes the clippy SWF to enable easy copy-and-paste on web content.",
 		'github' => "jimmysawczuk/clippy-jquery",
-		'web' => "http://files.jimmysawczuk.com/clippy-jquery",
+		'web' => "http://jimmysawczuk.github.com/clippy-jquery",
 		'tags' => array("javascript", "development", "open-source")
 	);
 
