@@ -79,7 +79,7 @@ function get_projects()
 	$projects []= array(
 		'name' => "Invaders",
 		'description' => "An XNA game which was my last homework assignment for my game development class my senior year in college.",
-		'tags' => array("xna", "c#", "game"),
+		'tags' => array("xna", "c#", "game", "open-source"),
 		'web' => "http://files.jimmysawczuk.com/files/invaders.php",
 		'bitbucket' => "jimmysawczuk/invaders",
 		'screenshots' => array(
@@ -100,7 +100,7 @@ function get_projects()
 	$projects []= array(
 		'name' => "Sleep Timer",
 		'description' => "A little Windows application that performs a variety of operations after a set timer has elapsed.",
-		'tags' => array("c#", "utility", "windows"),
+		'tags' => array("c#", "utility", "windows", "open-source"),
 		'download' => "http://files.jimmysawczuk.com/files/sleeptimer/Setup.msi",
 		'bitbucket' => "jimmysawczuk/sleeptimer",
 		'screenshots' => array(
@@ -111,7 +111,7 @@ function get_projects()
 	$projects []= array(
 		'name' => "FlashCard",
 		'description' => "An application I wrote to test myself on German vocabulary words, and since has been requested by many family members.",
-		'tags' => array("c#", "utility", "windows", "education"),
+		'tags' => array("c#", "utility", "windows", "education", "open-source"),
 		'bitbucket' => 'jimmysawczuk/flashcard',
 		'download' => "http://files.jimmysawczuk.com/files/flashcard/FlashCardSetup.msi"
 	);
@@ -128,7 +128,7 @@ function get_projects()
 		'description' => "A Chrome extension to quickly lookup information about Pages on Facebook.",
 		'download' => "https://chrome.google.com/webstore/detail/eloopmgpiphiokehjgomphnnlejikbol",
 		'bitbucket' => 'jimmysawczuk/facebook-page-finder',
-		'tags' => array("javascript", "chrome-extension", "facebook")
+		'tags' => array("javascript", "chrome-extension", "facebook", "open-source")
 	);
 
 	/**************************************
