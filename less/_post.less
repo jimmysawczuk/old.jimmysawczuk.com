@@ -89,7 +89,7 @@
 
 			div.aligncenter {
 				overflow: hidden;
-				width: 45px;
+				// width: 45px;
 				margin: 0px auto;
 
 				.share-button {
@@ -97,7 +97,7 @@
 					text-decoration: none;
 					font-size: 12px;
 					display: block;
-					margin-bottom: 0.75em;
+					padding-bottom: 0.75em;
 
 					span.icon {
 						font-size: 25px;
@@ -106,7 +106,14 @@
 					}
 
 					span.text {
+						display: none;
 						text-transform: uppercase;
+					}
+
+					&:hover {
+						span.text {
+							display: block;
+						}
 					}
 
 					text-align: center;
@@ -135,7 +142,7 @@
 				}
 
 				.share-button-linkedin {
-					margin-bottom: 1em;
+					margin-bottom: 0.5em;
 					&:hover {
 						color: #0181B2;
 					}

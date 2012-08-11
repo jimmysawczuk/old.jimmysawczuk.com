@@ -24,9 +24,9 @@
 							<span class="icon icon-twitter"></span>
 							<span class="text">Tweet</span>
 						</a>
-						<a href="https://plus.google.com/share?url=<?=urlencode(get_permalink()); ?>" class="share-button share-button-gplus" title="+1 on Google+">
+						<a href="https://plus.google.com/share?url=<?=urlencode(get_permalink()); ?>" class="share-button share-button-gplus" title="Share on Google+">
 							<span class="icon icon-google-plus"></span>
-							<span class="text">+1</span>
+							<span class="text">Share</span>
 						</a>
 						<a href="https://www.linkedin.com/cws/share?isFramed=true&lang=en_US&url=<?=urlencode(get_permalink()); ?>" class="share-button share-button-linkedin" title="Share on LinkedIn">
 							<span class="icon icon-linkedin"></span>

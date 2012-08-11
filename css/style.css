@@ -1214,7 +1214,6 @@ html.ie #search #search_text {
 }
 .post .post_info .post_social div.aligncenter {
   overflow: hidden;
-  width: 45px;
   margin: 0px auto;
 }
 .post .post_info .post_social div.aligncenter .share-button {
@@ -1222,7 +1221,7 @@ html.ie #search #search_text {
   text-decoration: none;
   font-size: 12px;
   display: block;
-  margin-bottom: 0.75em;
+  padding-bottom: 0.75em;
   text-align: center;
 }
 .post .post_info .post_social div.aligncenter .share-button span.icon {
@@ -1231,7 +1230,11 @@ html.ie #search #search_text {
   height: 25px;
 }
 .post .post_info .post_social div.aligncenter .share-button span.text {
+  display: none;
   text-transform: uppercase;
+}
+.post .post_info .post_social div.aligncenter .share-button:hover span.text {
+  display: block;
 }
 .post .post_info .post_social div.aligncenter .share-button-fb:hover {
   color: #3B5998;
@@ -1243,7 +1246,7 @@ html.ie #search #search_text {
   color: #F90101;
 }
 .post .post_info .post_social div.aligncenter .share-button-linkedin {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 .post .post_info .post_social div.aligncenter .share-button-linkedin:hover {
   color: #0181B2;
