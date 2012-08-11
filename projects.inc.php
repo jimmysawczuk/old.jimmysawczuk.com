@@ -134,7 +134,7 @@ function get_projects()
 	$projects []= array(
 		'name' => "Facebook Circles",
 		'description' => "A proof-of-concept app demonstrating a better UI to manage Facebook lists",
-		'tags' => "javascript", "facebook", "open-source"),
+		'tags' => array("javascript", "facebook", "open-source"),
 		'github' =>'jimmysawczuk/facebook-circles',
 		'web' => "http://apps.facebook.com/better_lists/",
 	);
