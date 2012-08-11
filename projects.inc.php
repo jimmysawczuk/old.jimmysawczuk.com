@@ -131,6 +131,14 @@ function get_projects()
 		'tags' => array("javascript", "chrome-extension", "facebook", "open-source")
 	);
 
+	$projects []= array(
+		'name' => "Facebook Circles",
+		'description' => "A proof-of-concept app demonstrating a better UI to manage Facebook lists",
+		'tags' => "javascript", "facebook", "open-source"),
+		'github' =>'jimmysawczuk/facebook-circles',
+		'web' => "http://apps.facebook.com/better_lists/",
+	);
+
 	/**************************************
 	Don't edit past this line
 	**************************************/
