@@ -107,7 +107,12 @@
 		{
 			if ($.browser.version == '8.0' || $.browser.version == '7.0')
 			{
-				$('html').addClass('ie');	
+				$('html').addClass('ie');
+
+				if ($.browser.version == '7.0')
+				{
+					$('html').addClass('ie7');
+				}
 			}					
 		}
 		

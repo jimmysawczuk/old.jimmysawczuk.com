@@ -1452,6 +1452,12 @@ html.ie #search #search_text {
   font-size: 150%;
   border-bottom: 1px solid #aaa;
 }
+html.ie7 .post .post_info .post_social div.aligncenter .share-button span.text {
+  display: block;
+}
+html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
+  display: none;
+}
 #pagination .prev {
   float: left;
 }
