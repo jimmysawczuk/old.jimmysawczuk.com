@@ -16,7 +16,7 @@
 				</div>
 				<div class="post_social">
 					<div class="aligncenter">
-						<a href="https://www.facebook.com/sharer.php?u=<?=urlencode(get_permalink()); ?>" class="share-button share-button-fb" title="Share on Facebook">
+						<a href="https://www.facebook.com/sharer.php?u=<?=urlencode(get_permalink()); ?>" class="share-button share-button-fb" title="Share on Facebook" data-width="650" data-height="450">
 							<span class="icon icon-facebook"></span>
 							<span class="text">Share</span>
 						</a>
@@ -24,7 +24,7 @@
 							<span class="icon icon-twitter"></span>
 							<span class="text">Tweet</span>
 						</a>
-						<a href="https://plus.google.com/share?url=<?=urlencode(get_permalink()); ?>" class="share-button share-button-gplus" title="Share on Google+">
+						<a href="https://plus.google.com/share?url=<?=urlencode(get_permalink()); ?>" class="share-button share-button-gplus" title="Share on Google+" data-height="600">
 							<span class="icon icon-google-plus"></span>
 							<span class="text">Share</span>
 						</a>

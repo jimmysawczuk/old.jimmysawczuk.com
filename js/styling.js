@@ -93,7 +93,10 @@
 	{
 		evt.preventDefault();
 
-		window.open($(this).attr('href'), "sharer", "width=575,height=300,scrolling=0,status=0");
+		var width = $(this).data('width')? $(this).data('width') : 575;
+		var height = $(this).data('height')? $(this).data('height') : 300;
+
+		window.open($(this).attr('href'), "sharer", "width="+ width + ",height=" + height + ",scrolling=0,status=0");
 
 		return false;
 	});
