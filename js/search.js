@@ -8,25 +8,25 @@
 	
 	function init()
 	{
-		$(Search.config.text).focus(function()
+		$(config.text).focus(function()
 		{
-			if ($(Search.config.text).val() == $(Search.config.text).data('description'))
+			if ($(config.text).val() == $(config.text).data('description'))
 			{
-				$(Search.config.text).val('');
-				$(Search.config.container).removeClass('empty');
+				$(config.text).val('');
+				$(config.container).removeClass('empty');
 			}
 		});
 		
-		$(Search.config.text).blur(function()
+		$(config.text).blur(function()
 		{		
-			if ($(Search.config.text).val() == '')
+			if ($(config.text).val() == '')
 			{
-				$(Search.config.text).val($(Search.config.text).data('description'));
-				$(Search.config.container).addClass('empty');
+				$(config.text).val($(config.text).data('description'));
+				$(config.container).addClass('empty');
 			}
 		});
 				
-		$(Search.config.text).blur();
+		$(config.text).blur();
 	}
 
 	$(document).ready(init);
