@@ -16,8 +16,14 @@
 				</div>
 				<div class="post_social">
 					<div class="aligncenter">
-						<a href="https://www.facebook.com/sharer.php?u=<? urlencode(the_permalink()); ?>" class="share-button share-button-fb icon-facebook-sign" title="Share on Facebook"></a>
-						<a href="https://twitter.com/share?url=<? the_permalink(); ?>" class="share-button share-button-twitter icon-twitter-sign" title="Tweet on Twitter"></a>
+						<a href="https://www.facebook.com/sharer.php?u=<? urlencode(the_permalink()); ?>" class="share-button share-button-fb" title="Share on Facebook">
+							<span class="icon icon-facebook"></span>
+							<span class="text">Share</span>
+						</a>
+						<a href="https://twitter.com/share?url=<? the_permalink(); ?>" class="share-button share-button-twitter" title="Tweet on Twitter">
+							<span class="icon icon-twitter"></span>
+							<span class="text">Tweet</span>
+						</a>
 					</div>
 				</div>
 				<div class="top_link">

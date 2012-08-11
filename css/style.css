@@ -1220,17 +1220,24 @@ html.ie #search #search_text {
 .post .post_info .post_social div.aligncenter .share-button {
   color: #555;
   text-decoration: none;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+.post .post_info .post_social div.aligncenter .share-button span.icon {
   font-size: 25px;
   display: block;
-  float: left;
-  margin-right: 5px;
-  width: 20px;
+  height: 25px;
+}
+.post .post_info .post_social div.aligncenter .share-button span.text {
+  text-transform: uppercase;
 }
 .post .post_info .post_social div.aligncenter .share-button-fb:hover {
   color: #3B5998;
 }
 .post .post_info .post_social div.aligncenter .share-button-twitter {
-  margin-right: 0px;
+  margin-bottom: 1em;
 }
 .post .post_info .post_social div.aligncenter .share-button-twitter:hover {
   color: #4099FF;
