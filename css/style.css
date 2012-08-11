@@ -1232,6 +1232,7 @@ html.ie #search #search_text {
 .post .post_info .post_social div.aligncenter .share-button span.text {
   display: none;
   text-transform: uppercase;
+  font-weight: bold;
 }
 .post .post_info .post_social div.aligncenter .share-button:hover span.text {
   display: block;
