@@ -8,6 +8,7 @@ get_header();
 the_post();
 list($projects, $cols) = get_projects();
 ?>
+<h1>Projects</h1>
 <div id="projects">
 	<? foreach ($cols as $i => $prj): ?>
 		<div class="col col-<?=$i ?>">

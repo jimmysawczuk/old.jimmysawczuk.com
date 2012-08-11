@@ -889,6 +889,15 @@ html.ie #search #search_text {
   color: #dcdcdc;
   text-decoration: underline;
 }
+#content.contact h1 {
+  font-size: 200%;
+  font-weight: bold;
+  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
+  text-transform: uppercase;
+  border-bottom: 1px solid #747474;
+  padding-bottom: 0.25em;
+  margin-bottom: 1em;
+}
 #content.contact #big_image_container {
   width: 860px;
   height: 367px;
@@ -930,7 +939,7 @@ html.ie #search #search_text {
 #content.contact #right_box a {
   color: #d9d9d9;
 }
-#content.contact h1 {
+#content.contact h2 {
   font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif !important;
   font-size: 150%;
   text-decoration: none;
@@ -962,6 +971,15 @@ html.ie #search #search_text {
 }
 #content.contact a:hover {
   text-decoration: none;
+}
+#content.projects h1 {
+  font-size: 200%;
+  font-weight: bold;
+  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
+  text-transform: uppercase;
+  border-bottom: 1px solid #747474;
+  padding-bottom: 0.25em;
+  margin-bottom: 1em;
 }
 #content.projects #projects {
   position: relative;
@@ -1801,6 +1819,15 @@ ul.icons li .icon-large:before {
 }
 .icon-user-md:before {
   content: "\f200";
+}
+#content.ballpark_resume h1 {
+  font-size: 200%;
+  font-weight: bold;
+  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
+  text-transform: uppercase;
+  border-bottom: 1px solid #747474;
+  padding-bottom: 0.25em;
+  margin-bottom: 1em;
 }
 #ballparks:after {
   content: ".";
