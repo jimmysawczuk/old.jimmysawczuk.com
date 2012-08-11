@@ -16,10 +16,8 @@
 				</div>
 				<div class="post_social">
 					<div class="aligncenter">
-						<fb:like href="<? the_permalink(); ?>" send="true" layout="box_count" width="60" show_faces="false"></fb:like>
-					</div>
-					<div class="aligncenter">
-						<a href="http://twitter.com/share" class="twitter-share-button" data-url="<? the_permalink(); ?>" data-count="vertical">Tweet</a>
+						<a href="https://www.facebook.com/sharer.php?u=<? urlencode(the_permalink()); ?>" class="share-button share-button-fb icon-facebook-sign" title="Share on Facebook"></a>
+						<a href="https://twitter.com/share?url=<? the_permalink(); ?>" class="share-button share-button-twitter icon-twitter-sign" title="Tweet on Twitter"></a>
 					</div>
 				</div>
 				<div class="top_link">

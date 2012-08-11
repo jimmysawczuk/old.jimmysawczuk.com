@@ -36,7 +36,7 @@
 		left: -83px; 
 		top: 0px; 
 		background-color: #ccc;
-		border-right-width: 0px;
+		border-right: 1px solid #999;
 		.border-radius(5px, 0px, 0px, 5px);
 		z-index: 90; 
 		width: 62px;
@@ -72,7 +72,7 @@
 			background-color: #dedede;
 
 			span.small {
-				font-size: 77%;
+				font-size: 70%;
 			}
 
 			a {
@@ -82,18 +82,37 @@
 		}
 		
 		.post_social {
-			background-color: #ccc; 
+			background-color: #ccc;
 			.border-radius(0px, 0px, 0px, 5px);
-			text-align: center; 
+			text-align: center;
+			font-size: 25px;
 
 			div.aligncenter {
-				// overflow: hidden;
+				overflow: hidden;
+				width: 45px;
+				margin: 0px auto;
 
-				span { 
-					margin: 0px auto; 
-					display: block; 
-					margin-bottom: 10px; 
-					width: 50px;
+				.share-button {
+					color: #555;
+					text-decoration: none;
+					font-size: 25px;
+					display: block;
+					float: left;
+					margin-right: 5px;
+					width: 20px;
+				}
+
+				.share-button-fb {
+					&:hover {
+						color: #3B5998;
+					}
+				}
+
+				.share-button-twitter {
+					margin-right: 0px;
+					&:hover {
+						color: #4099FF;
+					}
 				}
 			}
 		}

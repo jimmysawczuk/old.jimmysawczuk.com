@@ -89,6 +89,15 @@
 		}				
 	});
 
+	$('.share-button').click(function(evt)
+	{
+		evt.preventDefault();
+
+		window.open($(this).attr('href'), "sharer", "width=575,height=300,scrolling=0,status=0");
+
+		return false;
+	});
+
 	function init()
 	{
 		if (typeof $.browser.msie !== "undefined" && $.browser.msie)
