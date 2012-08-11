@@ -1,6 +1,6 @@
-var Github = {
-	
-	load: function(selector, cb)
+var Github = (function($)
+{
+	function load(selector, cb)
 	{
 		$.get(Config.stylesheet_directory + "/ajax/github-activity-feed.php", {count: 7}, function(response)
 		{	
@@ -12,7 +12,12 @@ var Github = {
 			}
 		});
 	}
-}
+
+	return {
+		load: load
+	};
+
+})(jQuery);
 
 $(document).ready(function()
 {
