@@ -1222,7 +1222,7 @@ html.ie #search #search_text {
   text-decoration: none;
   font-size: 12px;
   display: block;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.75em;
   text-align: center;
 }
 .post .post_info .post_social div.aligncenter .share-button span.icon {
@@ -1236,11 +1236,17 @@ html.ie #search #search_text {
 .post .post_info .post_social div.aligncenter .share-button-fb:hover {
   color: #3B5998;
 }
-.post .post_info .post_social div.aligncenter .share-button-twitter {
-  margin-bottom: 1em;
-}
 .post .post_info .post_social div.aligncenter .share-button-twitter:hover {
   color: #4099FF;
+}
+.post .post_info .post_social div.aligncenter .share-button-gplus:hover {
+  color: #F90101;
+}
+.post .post_info .post_social div.aligncenter .share-button-linkedin {
+  margin-bottom: 1em;
+}
+.post .post_info .post_social div.aligncenter .share-button-linkedin:hover {
+  color: #0181B2;
 }
 .post .post_info div span.big {
   font-size: 24px;

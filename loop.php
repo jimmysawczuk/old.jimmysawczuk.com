@@ -16,13 +16,21 @@
 				</div>
 				<div class="post_social">
 					<div class="aligncenter">
-						<a href="https://www.facebook.com/sharer.php?u=<? urlencode(the_permalink()); ?>" class="share-button share-button-fb" title="Share on Facebook">
+						<a href="https://www.facebook.com/sharer.php?u=<?=urlencode(get_permalink()); ?>" class="share-button share-button-fb" title="Share on Facebook">
 							<span class="icon icon-facebook"></span>
 							<span class="text">Share</span>
 						</a>
-						<a href="https://twitter.com/share?url=<? the_permalink(); ?>" class="share-button share-button-twitter" title="Tweet on Twitter">
+						<a href="https://twitter.com/share?url=<?=urlencode(get_permalink()); ?>" class="share-button share-button-twitter" title="Tweet on Twitter">
 							<span class="icon icon-twitter"></span>
 							<span class="text">Tweet</span>
+						</a>
+						<a href="https://plus.google.com/share?url=<?=urlencode(get_permalink()); ?>" class="share-button share-button-gplus" title="+1 on Google+">
+							<span class="icon icon-google-plus"></span>
+							<span class="text">+1</span>
+						</a>
+						<a href="https://www.linkedin.com/cws/share?isFramed=true&lang=en_US&url=<?=urlencode(get_permalink()); ?>" class="share-button share-button-linkedin" title="Share on LinkedIn">
+							<span class="icon icon-linkedin"></span>
+							<span class="text">Share</span>
 						</a>
 					</div>
 				</div>
@@ -53,7 +61,7 @@
 			<? if (!is_page()): ?>
 				<div class="meta">
 					<div class="more-link">
-						<? if (has_more_link() && !is_single()): ?>						
+						<? if (has_more_link() && !is_single()): ?>
 							<a href="<? the_permalink(); ?>#more-<? the_ID(); ?>">Read more &raquo;</a>
 						<? else: ?>
 							<a href="<? the_permalink(); ?>#comments"><fb:comments-count href="<? the_permalink(); ?>"></fb:comments-count> Comments</a>
