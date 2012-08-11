@@ -415,10 +415,9 @@ html.ie #search #search_text {
 }
 .post .post_info {
   position: absolute;
-  left: -84px;
+  left: -83px;
   top: 0px;
   background-color: #ccc;
-  border: 1px solid #aaa;
   border-right-width: 0px;
   border-radius: 5px 0px 0px 5px;
   -moz-border-radius: 5px 0px 0px 5px;
