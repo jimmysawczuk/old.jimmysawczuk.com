@@ -31,6 +31,7 @@
 		</script>
 	</head>
 	<body>
+		<div id="bg"></div>
 		<div id="tab_container">
 			<div id="container">
 				<div id="header">

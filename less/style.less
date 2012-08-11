@@ -35,7 +35,25 @@ body {
 	z-index: 100; 
 }
 
-#tab_container { position: relative; }
+#bg {
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+
+	z-index: 1;
+
+	background: url("/@{stylesheetDirectory}/images/backgrounds/progressive-field.jpg") top center no-repeat #9a9a9a;
+	.background-size(cover);
+}
+
+#tab_container {
+	position: relative;
+	z-index: 50;
+
+}
 #content { 
 	float: left; 
 	width: 575px; 
@@ -52,7 +70,7 @@ body {
 }
 
 #footer { 
-	.clearboth; 
+	.clearboth;
 }
 
 #header {
@@ -83,5 +101,8 @@ body {
 @import "pages/_contact.less";
 @import "pages/_projects.less";
 @import "pages/_ballpark_resume.less";
+
+@import "_ipad.less";
+@import "_mobile.less";
 
 #wpstats { display: none; }
