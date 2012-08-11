@@ -14,14 +14,12 @@ body {
 	
 	@backgroundStart: #9a9a9a;
 	@backgroundEnd: #555555;
+
+	// .background-gradient(@backgroundStart, @backgroundEnd);
 	
-	// @backgroundStart: lighten(desaturate(#369, 20%), 30%);
-	// @backgroundEnd: darken(@backgroundStart, 20%);
-	
-	.background-gradient(@backgroundStart, @backgroundEnd);
-	background-image: url("/@{stylesheetDirectory}/images/backgrounds/progressive-field.jpg");
+	background: #9a9a9a;
+	background: url("/@{stylesheetDirectory}/images/backgrounds/progressive-field.jpg") top center no-repeat #9a9a9a;
 	.background-size(cover);
-	background-position: top center;
 }
 
 #container { 
