@@ -1,11 +1,12 @@
-var Search = {
-	config: {
+(function($)
+{
+	var config = {
 		container: '#search',
 		text: '#search_text',
 		submit: '#search_submit'
-	},
+	};
 	
-	init: function()
+	function init()
 	{
 		$(Search.config.text).focus(function()
 		{
@@ -27,4 +28,7 @@ var Search = {
 				
 		$(Search.config.text).blur();
 	}
-};
+
+	$(document).ready(init);
+
+})(jQuery);

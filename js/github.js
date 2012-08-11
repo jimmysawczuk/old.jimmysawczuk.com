@@ -12,6 +12,15 @@ var Github = {
 			}
 		});
 	}
-	
-	
 }
+
+$(document).ready(function()
+{
+	if (Config.sidebar_visible)
+	{
+		Github.load('#github_events', function()
+		{
+			$('#github_events .timeago').timeago();
+		});	
+	}
+});

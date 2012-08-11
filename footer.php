@@ -26,7 +26,8 @@
 			window.fbAsyncInit = function() {
 				FB.init({
 					appId: '193404464015012',
-					xfbml: true
+					xfbml: true,
+					channelUrl: Config.stylesheet_directory + '/channel.html'
 				});
 			};
 			(function() {
@@ -38,21 +39,6 @@
 		</script>
 		<script type="text/javascript" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 		<script type="text/javascript" src="<?=get_min_url('js', true); ?>" charset="utf-8"></script>
-		<script type="text/javascript">		
-			$(document).ready(function()
-			{
-				Search.init();
-				if (Config.sidebar_visible)
-				{
-					Github.load('#github_events', function()
-					{
-						$('#github_events .timeago').timeago();
-					});	
-				}				
-				Styling.init();				
-				$('.timeago').timeago();
-			});
-		</script>
 		<? wp_footer(); ?>
 	</body>
 </html>
