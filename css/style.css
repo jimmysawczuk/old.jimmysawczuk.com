@@ -884,6 +884,7 @@ html.ie #search #search_text {
   text-align: center;
   margin: 1em 0px;
   color: #dcdcdc;
+  text-shadow: 1px 1px 0 #444;
 }
 #copyright a {
   color: #dcdcdc;
