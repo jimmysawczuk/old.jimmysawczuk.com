@@ -1219,7 +1219,7 @@ html.ie #search #search_text {
 .post .post_info .post_social div.aligncenter .share-button {
   color: #555;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 11px;
   display: block;
   padding-bottom: 0.75em;
   text-align: center;
@@ -1232,7 +1232,6 @@ html.ie #search #search_text {
 .post .post_info .post_social div.aligncenter .share-button span.text {
   display: none;
   text-transform: uppercase;
-  font-weight: bold;
 }
 .post .post_info .post_social div.aligncenter .share-button:hover span.text {
   display: block;
@@ -1293,6 +1292,9 @@ html.ie #search #search_text {
 }
 .post .content .wp-caption img {
   padding: 5px;
+}
+.post .content .gist {
+  font-size: 12px;
 }
 .post .content p.wp-caption-text {
   margin: 0px;
