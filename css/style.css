@@ -1878,7 +1878,7 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
 #content.projects #projects .col-2 {
   margin-right: 0px;
 }
-#content.ballpark_resume h1 {
+#content.ballpark_resume h1.headline {
   font-size: 200%;
   font-weight: bold;
   font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;

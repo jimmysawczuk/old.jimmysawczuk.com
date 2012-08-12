@@ -8,7 +8,7 @@ get_header();
 the_post();
 list($ballparks, $cols) = get_ballparks();
 ?>
-<h1>Ballpark Resum&eacute;</h1>
+<h1 class="headline">Ballpark Resum&eacute;</h1>
 <div id="ballparks">
 	<? foreach (array_keys($cols) as $col): $row = 0; ?>
 		<div class="col col-<?=$col ?>">
