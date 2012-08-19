@@ -77,7 +77,7 @@
 		
 		<? if (is_single() && !is_page()): ?>
 			<div id="comments">
-				<h1>Comments</h1>
+				<h4>Comments</h4>
 				<fb:comments href="<? the_permalink(); ?>" num_posts="10" width="575"></fb:comments>
 			</div>
 		<? endif; ?>
