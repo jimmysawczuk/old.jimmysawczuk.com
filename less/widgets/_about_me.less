@@ -1,3 +1,47 @@
+@import "../_include.less";
+
+.gradientBar(@primaryColor, @secondaryColor, @textColor: #fff, @textShadow: 0 -1px 0 rgba(0,0,0,.25)) {
+	color: @textColor;
+	text-shadow: @textShadow;
+	.vertical(@primaryColor, @secondaryColor);
+	border-color: @secondaryColor @secondaryColor darken(@secondaryColor, 15%);
+	border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) fadein(rgba(0,0,0,.1), 15%);
+}
+
+.reset-filter() {
+	filter: e(%("progid:DXImageTransform.Microsoft.gradient(enabled = false)"));
+}
+
+.vertical(@startColor: #555, @endColor: #333) {
+	background-color: mix(@startColor, @endColor, 60%);
+	background-image: -moz-linear-gradient(top, @startColor, @endColor); // FF 3.6+
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@startColor), to(@endColor)); // Safari 4+, Chrome 2+
+	background-image: -webkit-linear-gradient(top, @startColor, @endColor); // Safari 5.1+, Chrome 10+
+	background-image: -o-linear-gradient(top, @startColor, @endColor); // Opera 11.10
+	background-image: linear-gradient(to bottom, @startColor, @endColor); // Standard, IE10
+	background-repeat: repeat-x;
+	filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",argb(@startColor),argb(@endColor))); // IE9 and down
+}
+
+.buttonBackground(@startColor, @endColor, @textColor: #fff, @textShadow: 0 -1px 0 rgba(0,0,0,.25)) {
+	.gradientBar(@startColor, @endColor, @textColor, @textShadow);
+	*background-color: @endColor;
+	.reset-filter();
+
+	// in these cases the gradient won't cover the background, so we override
+	&:hover, &:active, &.active, &.disabled, &[disabled] {
+		color: @textColor;
+		background-color: @endColor;
+		*background-color: darken(@endColor, 5%);
+	}
+
+	// IE 7 + 8 can't handle box-shadow to show active, so we darken a bit ourselves
+	&:active,
+	&.active {
+		background-color: darken(@endColor, 10%) e("\9");
+	}
+}
+
 #sidebar .widget_aboutmewidget {
 	p {
 		font-style: normal;
@@ -5,18 +49,50 @@
 		margin: 1em 0px;
 	}
 
-	.more_link {
-		float: right;
-		.clearboth;
-		padding: 3px 5px;
-		background-color: #ddd;
-		border: 1px solid #aaa;
-		.border-radius(1px);
-
-		a {
-			color: #333;
+	ul.more {
+		@textColor: #444;
+		li {
+			font-size: 16px;
 			font-weight: bold;
-			text-decoration: none;
+			padding: 5px 0px;
+			margin: 10px 0px;
+			border: 1px solid #aaa;
+			.buttonBackground(#f9f9f9, #ddd, @textColor, 0 0 0 rgba(0, 0, 0, .25));
+			position: relative;
+
+			a {
+				color: @textColor;
+				text-decoration: none;
+				display: block;
+
+				&:hover {
+					color: darken(@textColor, 5%);
+					text-decoration: none;
+				}
+
+				i {
+					font-size: 18px;
+					border-right: 1px solid #ccc;
+					padding: 0px 5px 0px 10px;
+					margin-right: 5px;
+				}
+			}
+
+			&:hover {
+				.buttonBackground(#eee, #ddd, @textColor, 0 0 0 rgba(0, 0, 0, .25));
+			}
+
+			&:active {
+				.buttonBackground(#ddd, #ddd, @textColor, 0 0 0 rgba(0, 0, 0, .25));
+			}
+
+			i.icon-chevron-right {
+				position: absolute;
+				top: 7px;
+				right: 5px;
+				bottom: 0px;
+			}
 		}
 	}
 }
+

@@ -23,13 +23,27 @@ class AboutMeWidget extends WP_Widget {
 			<a href="/tag/programming">programming</a>. He also enjoys a cup of great coffee and a good book.
 		</p>
 		
-		<div class="more_link">
-			<a href="<?=get_bloginfo('url'); ?>/contact">More &raquo;</a>
-		</div>
+		<ul class="more">
+			<li>
+				<a href="<?=get_bloginfo('url'); ?>/contact"><i class="icon-asterisk"></i> More</a>  <i class="icon-chevron-right"></i>
+			</li>
+			<li>
+				<a href="http://www.facebook.com/JimmySawczuk" target="_blank"><i class="icon-facebook"></i> Facebook</a> <i class="icon-chevron-right"></i>
+			</li>
+			<li>
+				<a href="http://www.twitter.com/JimmySawczuk" target="_blank"><i class="icon-twitter"></i> Twitter</a> <i class="icon-chevron-right"></i>
+			</li>
+			<li>
+				<a href="http://code.jimmysawczuk.com" target="_blank"><i class="icon-github"></i> Github</a> <i class="icon-chevron-right"></i>
+			</li>
+			<li>
+				<a href="https://plus.google.com/111813506447073245640" target="_blank"><i class="icon-google-plus"></i> Google Plus</a> <i class="icon-chevron-right"></i>
+			</li>
+			<li>
+				<a href="http://photos.jimmysawczuk.com" target="_blank"><i class="icon-picture"></i> Photos</a> <i class="icon-chevron-right"></i>
+			</li>
+		</ul>
 
-		<br class="clearboth" />	
-		
-			
 	<?=$args['after_widget']; ?>
 <?
 	}

@@ -82,7 +82,7 @@ function load_stylesheet($name, $override = false)
 
 	if (MODE == 'live' || $override)
 	{
-		echo '<link href="'.get_min_url('css', true).'" type="text/css" rel="stylesheet" />';
+		echo '<link href="'.$dir.'/css/'.$name.'.css" type="text/css" rel="stylesheet" />';
 	}
 	elseif (MODE == 'dev')
 	{
