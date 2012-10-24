@@ -1633,7 +1633,6 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   margin: 10px 0px;
   border: 1px solid #aaa;
   color: #444444;
-  text-shadow: 0 0 0 rgba(0, 0, 0, 0.25);
   background-color: #eeeeee;
   background-image: -moz-linear-gradient(top, #f9f9f9, #dddddd);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f9f9f9), to(#dddddd));
@@ -1678,7 +1677,6 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
 }
 #sidebar .widget_aboutmewidget ul.more li:hover {
   color: #444444;
-  text-shadow: 0 0 0 rgba(0, 0, 0, 0.25);
   background-color: #e7e7e7;
   background-image: -moz-linear-gradient(top, #eeeeee, #dddddd);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eeeeee), to(#dddddd));
@@ -1707,7 +1705,6 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
 }
 #sidebar .widget_aboutmewidget ul.more li:active {
   color: #444444;
-  text-shadow: 0 0 0 rgba(0, 0, 0, 0.25);
   background-color: #dddddd;
   background-image: -moz-linear-gradient(top, #dddddd, #dddddd);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#dddddd), to(#dddddd));
