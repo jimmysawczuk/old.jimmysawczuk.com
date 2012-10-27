@@ -8,7 +8,13 @@ get_header();
 the_post();
 list($projects, $cols) = get_projects();
 ?>
-<h1>Projects</h1>
+<h1 class="headline">Projects</h1>
+
+<p class="section-description">
+	<big>I like to write code.</big><br />
+	But I don't work on one big project; instead, I work on a lot of little projects. These are the projects I'm willing to talk about. Some of them are live; some of them are open source; some of them will forever be a work in progress.
+</p>
+
 <div id="projects">
 	<? foreach ($cols as $i => $prj): ?>
 		<div class="col col-<?=$i ?>">

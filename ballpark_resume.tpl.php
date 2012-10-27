@@ -6,9 +6,13 @@ define('PAGE_TEMPLATE', 'ballpark_resume');
 define('HIDE_SIDEBAR', true);
 get_header();
 the_post();
-list($ballparks, $cols) = get_ballparks();
+list($ballparks, $cols, $been_to, $active) = get_ballparks();
 ?>
+
 <h1 class="headline">Ballpark Resum&eacute;</h1>
+
+<p class="section-description"><big>I'm on a mission.</big><br />My mission is to see every Major League Baseball stadium on the planet. Since August 2, 1995, I've been to twelve stadiums (ten of which are currently active) and I've written about and taken pictures of each visit (except Fenway Park and Wrigley Field, which I plan to return to. Below are the stadiums I've been to. Click the picture to show more information.</p>
+
 <div id="ballparks">
 	<? foreach (array_keys($cols) as $col): $row = 0; ?>
 		<div class="col col-<?=$col ?>">

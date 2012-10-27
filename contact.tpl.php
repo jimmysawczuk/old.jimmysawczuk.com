@@ -6,46 +6,46 @@ define('PAGE_TEMPLATE', 'contact');
 define('HIDE_SIDEBAR', true);
 get_header();
 ?>
-<h1>About me</h1>
-<div id="big_image_container">
-	<div id="big_image_padding">
-		<div id="right_box">
+<div id="about_me_container">
+	<div class="container">
+		<div class="bio">
 			<h2>My name is Jimmy Sawczuk.</h2>
 			<p>I'm a 2009 graduate of <a href="http://www.case.edu">Case Western Reserve University</a>, with a degree in Computer Science. Even though I'm a <a href="http://www.louddoor.com">web developer by day</a>, I <a href="http://code.jimmysawczuk.com">code on the side</a> and <a href="http://stackoverflow.com/users/350278/jimmy-sawczuk">troll around on Stack Overflow</a> regularly. I'm a diehard Indians fan, a respectable tennis player, and an "enthusiastic" disc golf player. If you’re looking for my resume, it's available as <a href="http://www.jimmysawczuk.com/resume">a printable web page</a>. References available upon request.</p>
 		</div>
 	
-		<div id="left_box"> 
-			<ul id="contact_info"> 
+		<div class="contact_info"> 
+			<ul> 
 				<li class="first">
-					<img src="<? bloginfo('stylesheet_directory') ?>/images/email.png" alt="E-mail" />
+					<i class="icon-envelope"></i>
 					me@jimmysawczuk.com
 				</li> 
 				<li>
-					<img src="<? bloginfo('stylesheet_directory') ?>/images/phone.png" alt="Phone" />
+					<i class="icon-phone"></i>
 					(440) 796-7806
 				</li> 
 				<li>
-					<img src="<? bloginfo('stylesheet_directory') ?>/images/aim.png" alt="AIM" />
-					JimmySawczuk
+					<i class="icon-comment"></i>
+					AIM: JimmySawczuk
 				</li>
 				<li>
-					<img src="<? bloginfo('stylesheet_directory') ?>/images/gtalk.png" alt="Google Talk" />
-					me@jimmysawczuk.com
-				</li> 
+					<i class="icon-comment-alt"></i>
+					XMPP: me@jimmysawczuk.com
+				</li>
+				<li>&nbsp;</li>
 				<li>
-					<img src="<? bloginfo('stylesheet_directory') ?>/images/facebook.jpg" alt="Facebook" />
+					<i class="icon-facebook"></i>
 					<a href="http://www.facebook.com/JimmySawczuk" target="_blank">Facebook</a>
 				</li>
 				<li>
-					<img src="<? bloginfo('stylesheet_directory') ?>/images/linkedin.jpg" alt="LinkedIn" />
+					<i class="icon-linkedin"></i>
 					<a href="http://www.linkedin.com/in/jimmysawczuk" target="_blank">LinkedIn</a>
 				</li>		
 				<li>
-					<img src="<? bloginfo('stylesheet_directory') ?>/images/twitter.gif" alt="Twitter" />
+					<i class="icon-twitter"></i>
 					<a href="http://www.twitter.com/JimmySawczuk" target="_blank">Twitter</a>
 				</li>
 				<li>
-					<img src="<? bloginfo('stylesheet_directory') ?>/images/shelfari.gif" alt="Shelfari" />
+					<i class="icon-book"></i>
 					<a href="http://www.shelfari.com/jimmysawczuk" target="_blank">Shelfari</a>
 				</li>
 			</ul>

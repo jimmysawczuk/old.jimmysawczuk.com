@@ -185,6 +185,6 @@ function get_ballparks()
 	}
 	unset($ballpark);
 
-	return array($ballparks, $cols);
+	return array($ballparks, $cols, count($ballparks), count($ballparks) - 2);
 }
 

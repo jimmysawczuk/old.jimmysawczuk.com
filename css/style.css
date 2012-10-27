@@ -897,10 +897,9 @@ html {
 body {
   min-height: 100%;
   color: #333;
-  padding: 15px;
   font-family: 'Mako', 'Arial', 'Helvetica', sans-serif;
   background: #9a9a9a;
-  background: url("/wp-content/themes/jimmysawczuk/images/backgrounds/progressive-field.jpg") top center no-repeat #9a9a9a;
+  background: url("/wp-content/themes/jimmysawczuk/images/backgrounds/river.jpg") top center no-repeat #9a9a9a;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -928,7 +927,7 @@ body {
   right: 0px;
   bottom: 0px;
   z-index: 1;
-  background: url("/wp-content/themes/jimmysawczuk/images/backgrounds/progressive-field.jpg") top center no-repeat #9a9a9a;
+  background: url("/wp-content/themes/jimmysawczuk/images/backgrounds/river.jpg") top center no-repeat #9a9a9a;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -937,6 +936,7 @@ body {
 #tab_container {
   position: relative;
   z-index: 50;
+  padding-top: 15px;
 }
 #content {
   float: left;
@@ -1761,6 +1761,7 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   margin: 1em 0px;
   color: #dcdcdc;
   text-shadow: 1px 1px 0 #444;
+  padding-bottom: 15px;
   position: relative;
   z-index: 50;
 }
@@ -1768,25 +1769,16 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   color: #dcdcdc;
   text-decoration: underline;
 }
-#content.contact h1 {
-  font-size: 200%;
-  font-weight: bold;
-  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
-  text-transform: uppercase;
-  border-bottom: 1px solid #747474;
-  padding-bottom: 0.25em;
-  margin-bottom: 1em;
-}
-#content.contact #big_image_container {
+#content.contact #about_me_container {
   width: 860px;
   height: 367px;
   background: url("/wp-content/themes/jimmysawczuk/images/about_jimmy_widescreen.jpg");
   position: relative;
 }
-#content.contact #big_image_padding {
+#content.contact #about_me_container .container {
   padding: 20px;
 }
-#content.contact #left_box {
+#content.contact .contact_info {
   position: absolute;
   left: 10px;
   top: 10px;
@@ -1799,7 +1791,40 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   -webkit-border-radius: 1px 1px 1px 1px;
   background-color: #f9f9f9;
 }
-#content.contact #right_box {
+#content.contact .contact_info ul {
+  margin: 0px;
+  padding: 0px;
+}
+#content.contact .contact_info ul li {
+  list-style-type: none;
+  padding: 0px;
+  margin: 3px 0px;
+  line-height: 20px;
+  vertical-align: middle;
+  font-size: 13px;
+}
+#content.contact .contact_info ul li.first {
+  margin-top: 0px;
+}
+#content.contact .contact_info ul li img {
+  border: 0px solid black;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+}
+#content.contact .contact_info ul li i {
+  font-size: 20px;
+  color: #888;
+  vertical-align: middle;
+}
+#content.contact .contact_info ul li a {
+  color: #369;
+  text-decoration: underline;
+}
+#content.contact .contact_info ul li a:hover {
+  text-decoration: none;
+}
+#content.contact .bio {
   position: absolute;
   right: 10px;
   bottom: 10px;
@@ -1815,50 +1840,33 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   -webkit-border-radius: 1px 1px 1px 1px;
   color: #F9F9F9;
 }
-#content.contact #right_box a {
+#content.contact .bio a {
   color: #d9d9d9;
 }
-#content.contact h2 {
+#content.contact .bio h2 {
   font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif !important;
   font-size: 150%;
   text-decoration: none;
   font-weight: bold;
 }
-#content.contact #contact_info {
-  margin: 0px;
-  padding: 0px;
-}
-#content.contact #contact_info li {
-  list-style-type: none;
-  padding: 0px;
-  font-size: 93%;
-  margin: 3px 0px;
-  line-height: 16px;
-}
-#content.contact #contact_info li.first {
-  margin-top: 0px;
-}
-#content.contact #contact_info li img {
-  border: 0px solid black;
-  vertical-align: middle;
-  width: 16px;
-  height: 16px;
-}
-#content.contact a {
-  color: #369;
-  text-decoration: underline;
-}
-#content.contact a:hover {
-  text-decoration: none;
-}
-#content.projects h1 {
-  font-size: 200%;
+#content.projects h1.headline {
+  font-size: 26px;
   font-weight: bold;
   font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
   text-transform: uppercase;
   border-bottom: 1px solid #747474;
   padding-bottom: 0.25em;
   margin-bottom: 1em;
+  margin-bottom: 0px;
+}
+#content.projects p.section-description {
+  font-size: 16px;
+  margin: 0px 0px 1em;
+  padding: 1em;
+}
+#content.projects p.section-description big {
+  font-size: 24px;
+  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
 }
 #content.projects #projects {
   position: relative;
@@ -1975,13 +1983,23 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   margin-right: 0px;
 }
 #content.ballpark_resume h1.headline {
-  font-size: 200%;
+  font-size: 26px;
   font-weight: bold;
   font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
   text-transform: uppercase;
   border-bottom: 1px solid #747474;
   padding-bottom: 0.25em;
   margin-bottom: 1em;
+  margin-bottom: 0px;
+}
+#content.ballpark_resume p.section-description {
+  font-size: 16px;
+  margin: 0px 0px 1em;
+  padding: 1em;
+}
+#content.ballpark_resume p.section-description big {
+  font-size: 24px;
+  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
 }
 #ballparks:after {
   content: ".";

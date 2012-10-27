@@ -12,7 +12,7 @@
 		<div id="copyright">
 			&copy; 2008-<?=date("Y"); ?> Jimmy Sawczuk 
 			&middot; 
-			Theme <a href="http://code.jimmysawczuk.com/blog-wordpress-theme">open-sourced under the MIT license</a>
+			<a href="http://github.com/jimmysawczuk/jimmysawczuk.com">Open source</a>; MIT License
 			&middot;
 			<?
 			$fmt = '<a href="http://github.com/jimmysawczuk/jimmysawczuk.com/commit/%R" title="Branch: %b">%r</a>; <span class="timeago" title="%d"></span> &middot;';

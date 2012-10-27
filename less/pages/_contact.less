@@ -1,20 +1,19 @@
 #content.contact {
-	h1 {
-		.pageHeader;
-	}
 
-	#big_image_container {
+	#about_me_container {
 		width: 860px;
 		height: 367px;
 		background: url("/@{stylesheetDirectory}/images/about_jimmy_widescreen.jpg");
 		position: relative;
+
+		.container {
+			padding: 20px;
+		}
 	}
 	
-	#big_image_padding {
-		padding: 20px;
-	}
+	
 
-	#left_box {
+	.contact_info {
 		position: absolute;
 		left: 10px;
 		top: 10px;
@@ -24,9 +23,41 @@
 		padding: 5px;
 		.border-radius(1px);
 		background-color: #f9f9f9;
+
+		ul {
+			margin: 0px;
+			padding: 0px;
+
+			li {
+				list-style-type: none;
+				padding: 0px;
+				margin: 3px 0px;
+				line-height: 20px;
+				vertical-align: middle;
+				font-size: 13px;
+
+				&.first { margin-top: 0px; }
+				img { border: 0px solid black; vertical-align: middle; width: 16px; height: 16px; }
+
+				i {
+					font-size: 20px;
+					color: #888;
+					vertical-align: middle;
+				}
+
+				a {
+					color: #369;
+					text-decoration: underline;
+
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
 	}
 
-	#right_box {
+	.bio {
 		position: absolute;
 		right: 10px;
 		bottom: 10px;
@@ -42,38 +73,12 @@
 		a {
 			color: #d9d9d9;
 		}
-	}
 
-	h2 {
-		font-family: @headerFont !important;
-		font-size: 150%;
-		text-decoration: none;
-		font-weight: bold;
-	}
-	
-	#contact_info {
-		margin: 0px;
-		padding: 0px;
-
-		li {
-			list-style-type: none;
-			padding: 0px;
-			font-size: 93%;
-			margin: 3px 0px;
-			line-height: 16px;
-
-			&.first { margin-top: 0px; }
-			img { border: 0px solid black; vertical-align: middle; width: 16px; height: 16px; }
-		}
-
-	}
-
-	a {
-		color: #369;
-		text-decoration: underline;
-
-		&:hover {
+		h2 {
+			font-family: @headerFont !important;
+			font-size: 150%;
 			text-decoration: none;
+			font-weight: bold;
 		}
 	}
 }
