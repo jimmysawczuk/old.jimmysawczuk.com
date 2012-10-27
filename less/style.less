@@ -5,6 +5,8 @@
 
 @stylesheetDirectory: "wp-content/themes/jimmysawczuk";
 
+@backgroundUrl: "/images/backgrounds/fall.jpg";
+
 /* Structure */
 html { height: 100%; }
 body { 
@@ -19,7 +21,7 @@ body {
 	// .background-gradient(@backgroundStart, @backgroundEnd);
 	
 	background: #9a9a9a;
-	background: url("/@{stylesheetDirectory}/images/backgrounds/river.jpg") top center no-repeat #9a9a9a;
+	background: url("/@{stylesheetDirectory}@{backgroundUrl}") top center no-repeat #9a9a9a;
 	background-attachment: fixed;
 	.background-size(cover);
 }
@@ -44,7 +46,7 @@ body {
 
 	z-index: 1;
 
-	background: url("/@{stylesheetDirectory}/images/backgrounds/river.jpg") top center no-repeat #9a9a9a;
+	background: url("/@{stylesheetDirectory}@{backgroundUrl}") top center no-repeat #9a9a9a;
 	.background-size(cover);
 }
 
