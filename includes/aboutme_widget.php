@@ -37,9 +37,6 @@ class AboutMeWidget extends WP_Widget {
 				<a href="http://code.jimmysawczuk.com" target="_blank"><i class="icon-github"></i> Github</a> <i class="icon-chevron-right"></i>
 			</li>
 			<li>
-				<a href="https://plus.google.com/111813506447073245640" target="_blank"><i class="icon-google-plus"></i> Google Plus</a> <i class="icon-chevron-right"></i>
-			</li>
-			<li>
 				<a href="http://photos.jimmysawczuk.com" target="_blank"><i class="icon-picture"></i> Photos</a> <i class="icon-chevron-right"></i>
 			</li>
 		</ul>
