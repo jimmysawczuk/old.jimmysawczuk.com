@@ -7,6 +7,7 @@
 		<script src="<?=get_min_url('jquery', true); ?>" type="text/javascript" charset="utf-8"></script>
 		<meta name="viewport" content="width=1050, maximum-scale=1.0" />
 		<? fb_og_tags(); ?>
+		<link rel="apple-touch-icon" href="<? bloginfo('stylesheet_directory'); ?>/images/apple-touch-icon.png" />
 		<? wp_head(); ?>
 		<? if (MODE === "live"): ?>
 			<script type="text/javascript">
