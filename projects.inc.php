@@ -112,7 +112,7 @@ function get_projects()
 		'name' => 'flag.php',
 		'description' => "A PHP class to process command line flags",
 		'tags' => array("php", "open-source", "development"),
-		'github.' => "jimmysawczuk/flag.php",
+		'github' => "jimmysawczuk/flag.php",
 	);
 
 	$projects []= array(
