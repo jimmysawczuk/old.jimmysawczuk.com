@@ -109,6 +109,13 @@ function get_projects()
 	);
 
 	$projects []= array(
+		'name' => 'flag.php',
+		'description' => "A PHP class to process command line flags",
+		'tags' => array("php", "open-source", "development"),
+		'github.' => "jimmysawczuk/flag.php",
+	);
+
+	$projects []= array(
 		'name' => "FlashCard",
 		'description' => "An application I wrote to test myself on German vocabulary words, and since has been requested by many family members.",
 		'tags' => array("c#", "utility", "windows", "education", "open-source"),
