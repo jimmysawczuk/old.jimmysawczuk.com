@@ -172,7 +172,7 @@ function extract_excerpt($limit = 200)
 		$excerpt = str_replace("<!--more-->", "[[[more]]]", $excerpt);
 		$excerpt = str_replace("<!-- more -->", "[[[more]]]", $excerpt);
 
-		$excerpt = trim(strip_tags($excerpt));
+		$excerpt = trim(htmlentities(strip_tags($excerpt)));
 
 		$limited = stripos($excerpt, " ", $limit);
 		$more_pos = stripos($excerpt, "[[[more]]]");
