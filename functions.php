@@ -93,7 +93,7 @@ function fb_og_tags()
 		$meta_tags []= '<meta property="og:description" content="'.$description.'" />';
 	}
 	
-	echo implode("\r\n", $meta_tags);
+	echo "\r\n" . implode("\r\n", $meta_tags);
 }
 
 function twitter_card_tags()
@@ -116,12 +116,12 @@ function twitter_card_tags()
 			$meta_tags []= '<meta property="twitter:image" content="'.get_bloginfo('stylesheet_directory').'/images/about_jimmy.jpg" />';
 		}
 
-		$description = extract_excerpt();
+		$description = extract_excerpt(500);
 
 		$meta_tags []= '<meta property="twitter:title" content="'.str_replace("\"", "&quot;", get_the_title()).'"/>';
 		$meta_tags []= '<meta property="twitter:type" content="summary" />';
 		$meta_tags []= '<meta property="twitter:url" content="'.get_permalink().'"/>';
-		$meta_tags []= '<meta property="twitter:description" content="'.get_excerpt().'" />';
+		$meta_tags []= '<meta property="twitter:description" content="'.$description.'" />';
 	}
 	else
 	{
@@ -134,7 +134,7 @@ function twitter_card_tags()
 		$meta_tags []= '<meta property="twitter:description" content="'.$description.'" />';
 	}
 
-	echo implode("\r\n", $meta_tags);
+	echo "\r\n" . implode("\r\n", $meta_tags);
 }
 
 function blog_domain($root = true)
@@ -159,17 +159,42 @@ function blog_domain($root = true)
 	}
 }
 
-public function extract_excerpt()
+function extract_excerpt($limit = 200)
 {
 	$excerpt = get_the_excerpt();
 
+	global $post;
+
 	if ($excerpt == "")
 	{
-		$excerpt = get_the_post();
+		$excerpt = $post->post_content;
 
-		$excerpt = strip_tags($excerpt);
+		$excerpt = str_replace("<!--more-->", "[[[more]]]", $excerpt);
+		$excerpt = str_replace("<!-- more -->", "[[[more]]]", $excerpt);
 
-		$excerpt = substr($excerpt, 0, stripos($excerpt, " ", 200));
+		$excerpt = trim(strip_tags($excerpt));
+
+		$limited = stripos($excerpt, " ", $limit);
+		$more_pos = stripos($excerpt, "[[[more]]]");
+
+		if ($more_pos === false)
+		{
+			$more_pos = 1e9;
+		}
+
+		$sub = substr($excerpt, 0, min($limited, $more_pos));
+
+		if (strlen($sub) < strlen($excerpt))
+		{
+			$excerpt = $sub;
+
+			if ($limited < $more_pos)
+			{
+				$excerpt .= "...";
+			}
+		}
+
+		$excerpt = trim($excerpt);
 	}
 
 	return $excerpt;
