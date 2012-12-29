@@ -1829,7 +1829,8 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   right: 0px;
   top: 0px;
   width: 300px;
-  height: 367px;
+  height: 347px;
+  *height: 367px;
   background-color: #282828;
   zoom: 1;
   filter: alpha(opacity=90);
