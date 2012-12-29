@@ -1829,18 +1829,19 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   right: 0px;
   top: 0px;
   width: 300px;
-  height: 347px;
-  *height: 367px;
+  height: 367px;
   background-color: #282828;
   zoom: 1;
   filter: alpha(opacity=90);
   opacity: 0.9;
+  color: #F9F9F9;
+}
+#content.contact .bio .padding {
   border: 1px solid #222;
-  padding: 10px;
   border-radius: 1px 1px 1px 1px;
   -moz-border-radius: 1px 1px 1px 1px;
   -webkit-border-radius: 1px 1px 1px 1px;
-  color: #F9F9F9;
+  padding: 10px;
 }
 #content.contact .bio p {
   margin-bottom: 1em;

@@ -9,9 +9,11 @@ get_header();
 <div id="about_me_container">
 	<div class="container">
 		<div class="bio">
-			<h2>Hey! My name is Jimmy.</h2>
-			<p>I'm a native Clevelander from Perry, Ohio. After graduating from <a href="http://www.case.edu">Case Western Reserve University</a> with a degree in Computer Science in 2009, I moved to Columbia, South Carolina and started work at <a href="http://www.louddoor.com">LoudDoor</a>, and I've been there ever since. I like to work on <a href="/projects">side projects</a>, and I'm on a mission to see <a href="/ballparks">every Major League Baseball stadium on the planet</a>. I'm a diehard Indians, Steelers and Buckeyes fan, and I play tennis, ping pong, racquetball and disc golf. I also love skiing and running.</p>
-			<p>If you’re looking for my resume, it's available as <a href="http://www.jimmysawczuk.com/resume">a printable web page</a>. References available upon request.</p>
+			<div class="padding">
+				<h2>Hey! My name is Jimmy.</h2>
+				<p>I'm a native Clevelander from Perry, Ohio. After graduating from <a href="http://www.case.edu">Case Western Reserve University</a> with a degree in Computer Science in 2009, I moved to Columbia, South Carolina and started work at <a href="http://www.louddoor.com">LoudDoor</a>, and I've been there ever since. I like to work on <a href="/projects">side projects</a>, and I'm on a mission to see <a href="/ballparks">every Major League Baseball stadium on the planet</a>. I'm a diehard Indians, Steelers and Buckeyes fan, and I play tennis, ping pong, racquetball and disc golf. I also love skiing and running.</p>
+				<p>If you’re looking for my resume, it's available as <a href="http://www.jimmysawczuk.com/resume">a printable web page</a>. References available upon request.</p>
+			</div>
 		</div>
 	
 		<div class="contact_info"> 
