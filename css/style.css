@@ -1781,8 +1781,8 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
 #content.contact .contact_info {
   position: absolute;
   left: 10px;
-  top: 10px;
-  width: 210px;
+  bottom: 10px;
+  width: 215px;
   text-align: justify;
   border: 1px solid #888;
   padding: 5px;
@@ -1826,19 +1826,24 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
 }
 #content.contact .bio {
   position: absolute;
-  right: 10px;
-  bottom: 10px;
-  width: 310px;
+  right: 0px;
+  top: 0px;
+  width: 300px;
+  height: 367px;
   background-color: #282828;
   zoom: 1;
-  filter: alpha(opacity=80);
-  opacity: 0.8;
+  filter: alpha(opacity=90);
+  opacity: 0.9;
   border: 1px solid #222;
   padding: 10px;
   border-radius: 1px 1px 1px 1px;
   -moz-border-radius: 1px 1px 1px 1px;
   -webkit-border-radius: 1px 1px 1px 1px;
   color: #F9F9F9;
+}
+#content.contact .bio p {
+  margin-bottom: 1em;
+  line-height: 1.25em;
 }
 #content.contact .bio a {
   color: #d9d9d9;
