@@ -33,6 +33,13 @@ function get_projects()
 	);
 
 	$projects []= array(
+		'name' => "dove",
+		'description' => "A tool to make web requests from a web interface",
+		'github' => "jimmysawczuk/dove",
+		'tags' => array("go", "open-source", "development")
+	);
+
+	$projects []= array(
 		'name' => "jimmysawczuk.com",
 		'description' => "The WordPress theme that runs the very blog you're looking at.",
 		'github' => "jimmysawczuk/jimmysawczuk.com",
