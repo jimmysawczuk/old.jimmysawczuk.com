@@ -15,12 +15,13 @@ class AboutMeWidget extends WP_Widget {
 		<img src="<?=get_bloginfo('stylesheet_directory') . '/images/about_jimmy.jpg'; ?>" alt="About Jimmy" />
 		<br />
 		<p>
-			Jimmy is a 2009 graduate of <a href="http://www.case.edu">Case Western Reserve University</a> in 
-			Cleveland, OH, and currently works as a software engineer for 
-			<a href="http://www.louddoor.com">LoudDoor</a> on a Facebook Page optimization platform in Columbia, SC. 
-			He mostly writes about <a href="/tag/mlb">baseball</a> (particularly the <a href="/tag/indians">Cleveland 
-			Indians</a>), <a href="/tag/politics">politics</a>, <a href="/tag/movies">movies</a> and 
-			<a href="/tag/programming">programming</a>. He also enjoys a cup of great coffee and a good book.
+			Jimmy is a 2009 graduate of <a href="http://www.case.edu">Case Western Reserve University</a> in Cleveland, 
+			OH, and currently works as a software engineer for <a href="http://www.louddoor.com" target="_blank">LoudDoor</a> 
+			in Columbia, SC on <a href="http://www.brandsatisfaction.com" target="_blank">Brand Satisfaction</a>, a market 
+			research and brand benchmarking system on Facebook. He mostly writes about <a href="/tag/mlb">baseball</a> 
+			(particularly the <a href="/tag/indians">Cleveland Indians</a>), <a href="/tag/politics">politics</a>, 
+			<a href="/tag/movies">movies</a> and <a href="/tag/programming">programming</a>. He also enjoys a cup of great 
+			coffee and a good book.
 		</p>
 		
 		<ul class="more">
