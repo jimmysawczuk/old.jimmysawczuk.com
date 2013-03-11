@@ -899,7 +899,7 @@ body {
   color: #333;
   font-family: 'Mako', 'Arial', 'Helvetica', sans-serif;
   background: #9a9a9a;
-  background: url("/wp-content/themes/jimmysawczuk/images/backgrounds/ski-slope.jpg") top center no-repeat #9a9a9a;
+  background: url("/wp-content/themes/jimmysawczuk/images/backgrounds/progressive-field.jpg") top center no-repeat #9a9a9a;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -927,7 +927,7 @@ body {
   right: 0px;
   bottom: 0px;
   z-index: 1;
-  background: url("/wp-content/themes/jimmysawczuk/images/backgrounds/ski-slope.jpg") top center no-repeat #9a9a9a;
+  background: url("/wp-content/themes/jimmysawczuk/images/backgrounds/progressive-field.jpg") top center no-repeat #9a9a9a;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1165,7 +1165,7 @@ html.ie #search #search_text {
   z-index: 90;
   width: 62px;
 }
-.post .post_info  > div {
+.post .post_info > div {
   text-align: center;
   padding: 5px;
 }
@@ -2185,10 +2185,10 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   font-size: 30px;
 }
 #ballparks .ballpark .footer .show_location_engaged {
-  background: rgba(51, 102, 153, 0.8);
+  background: fadeOut(#336699, 20%);
 }
 #ballparks .ballpark .footer .show_location_engaged:before {
-  border-color: rgba(51, 102, 153, 0.8);
+  border-color: fadeOut(#336699, 20%);
 }
 #ballparks .ballpark .footer .show_location_engaged:hover .icon-globe,
 #ballparks .ballpark .footer .show_location_engaged .icon-globe {
@@ -2248,7 +2248,7 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
     background: -webkit-linear-gradient(top, #9a9a9a 42%, #555555 100%);
     background: -o-linear-gradient(top, #9a9a9a 42%, #555555 100%);
     background: -ms-linear-gradient(top, #9a9a9a 42%, #555555 100%);
-    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#9a9a9a', endColorstr='#555555', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9a9a9a', endColorstr='#555555', GradientType=0);
     background: linear-gradient(top, #9a9a9a 42%, #555555 100%);
     background-height: 100%;
     background-attachment: fixed;
@@ -2263,7 +2263,7 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
     background: -webkit-linear-gradient(top, #9a9a9a 42%, #555555 100%);
     background: -o-linear-gradient(top, #9a9a9a 42%, #555555 100%);
     background: -ms-linear-gradient(top, #9a9a9a 42%, #555555 100%);
-    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#9a9a9a', endColorstr='#555555', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9a9a9a', endColorstr='#555555', GradientType=0);
     background: linear-gradient(top, #9a9a9a 42%, #555555 100%);
     background-height: 100%;
     background-attachment: fixed;
