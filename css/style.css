@@ -1621,6 +1621,63 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   margin: 0px;
   padding: 0px;
 }
+#goodreads_books li.book {
+  padding: 0.5em;
+  margin: 0.5em 0px;
+  background: #f9f9f9;
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+}
+#goodreads_books li.book img {
+  width: 20%;
+  float: left;
+}
+#goodreads_books li.book div.info {
+  float: left;
+  width: 80%;
+}
+#goodreads_books li.book div.title {
+  margin-left: 7px;
+}
+#goodreads_books li.book div.author {
+  margin-left: 7px;
+  font-style: italic;
+  font-size: 93%;
+}
+#goodreads_books li.book div.meta {
+  margin-top: 1em;
+  border-top: 1px dashed #ddd;
+  margin-left: 7px;
+  font-size: 93%;
+  color: #aaa;
+}
+#goodreads_books li.book:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#goodreads_books li.book {
+  display: inline-block;
+}
+#goodreads_books li.book {
+  display: block;
+}
+#goodreads_books:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#goodreads_books {
+  display: inline-block;
+}
+#goodreads_books {
+  display: block;
+}
 #sidebar .widget_aboutmewidget p {
   font-style: normal;
   font-size: 108%;
