@@ -1,24 +1,23 @@
 <?php
 
-function switch_timezone($format, $time = null, 
-    $to = "America/Los_Angeles", $from = "America/Los_Angeles")
+function switch_timezone($format, $time = null, $to = "America/Los_Angeles", $from = "America/Los_Angeles")
 {
-    if ($time == null) $time = time();
+	if ($time == null) $time = time();
 
-    $from_tz = new DateTimeZone($from);
-    $to_tz = new DateTimeZone($to);
+	$from_tz = new DateTimeZone($from);
+	$to_tz = new DateTimeZone($to);
 
-    if (is_int($time)) $time = '@' . $time;
+	if (is_int($time)) $time = '@' . $time;
 
-    $dt = date_create($time, $from_tz);
+	$dt = date_create($time, $from_tz);
 
-    if ($dt)
-    {
-        $dt->setTimezone($to_tz);
-        return $dt->format($format);
-    }
+	if ($dt)
+	{
+		$dt->setTimezone($to_tz);
+		return $dt->format($format);
+	}
 
-    return date($format, $time);
+	return date($format, $time);
 }
 
 function truncate_string($str, $limit = 50)

@@ -2,7 +2,7 @@
 
 register_sidebars(1, array('name' => 'Right sidebar'));
 
-define('GOOGLE_MAPS_API_KEY', "AIzaSyBo5OqOOFOiMArR6jAAoeZAdrpPZH12fcY");
+require('includes/config.php');
 
 require('includes/git_revision.php');
 require('includes/utility.php');
@@ -13,9 +13,11 @@ require('includes/twitter_widget.php');
 require('includes/ballpark_widget.php');
 require('includes/bitbucket_widget.php');
 require('includes/github_widget.php');
+require('includes/goodreads_widget.php');
 
 require('includes/bitbucket.php');
 require('includes/github.php');
+require('includes/goodreads.php');
 
 require('projects.inc.php');
 require('ballpark_resume.inc.php');
