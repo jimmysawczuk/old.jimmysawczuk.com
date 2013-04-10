@@ -79,9 +79,9 @@ function load_stylesheet($name, $override = false)
 {
 	$dir = get_bloginfo('stylesheet_directory');
 
-	if (MODE == 'live' || $override)
+	if (MODE == 'live' || $override || true)
 	{
-		echo '<link href="'.$dir.'/css/'.$name.'.min.css" type="text/css" rel="stylesheet" />';
+		echo '<link href="'.$dir.'/min/?g=css" type="text/css" rel="stylesheet" />';
 	}
 	elseif (MODE == 'dev')
 	{
