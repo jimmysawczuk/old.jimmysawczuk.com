@@ -26,6 +26,13 @@ function get_projects()
 	);
 
 	$projects []= array(
+		'name' => 'less-tree',
+		'description' => "A batch tool to compile a bunch of LESS files and organize the results",
+		'github' => "jimmysawczuk/less-tree",
+		'tags' => array("go", "development", "open-source")
+	);
+
+	$projects []= array(
 		'name' => "scm-status",
 		'description' => "A repository status snapshot generator in Go",
 		'github' => "jimmysawczuk/scm-status",
@@ -120,6 +127,20 @@ function get_projects()
 		'description' => "A PHP class to process command line flags",
 		'tags' => array("php", "open-source", "development"),
 		'github' => "jimmysawczuk/flag.php",
+	);
+
+	$projects []= array(
+		'name' => 'go-aws',
+		'description' => "A Go library for AWS services (particularly S3)",
+		'tags' => array("go", "open-source", "development"),
+		'github' => "jimmysawczuk/go-aws"
+	);
+
+	$projects []= array(
+		'name' => 'go-facebook',
+		'description' => "A Go library to access the Facebook Graph API",
+		'tags' => array("go", "open-source", "development"),
+		'github' => "jimmysawczuk/go-facebook"
 	);
 
 	$projects []= array(
