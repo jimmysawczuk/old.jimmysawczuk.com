@@ -1,5 +1,4 @@
 var BitBucket = {
-	
 	load: function(selector, cb)
 	{
 		$.get(Config.stylesheet_directory + "/ajax/bitbucket-activity-feed.php", {}, function(response)
@@ -12,6 +11,4 @@ var BitBucket = {
 			}
 		});
 	}
-	
-	
 }

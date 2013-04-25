@@ -10,6 +10,7 @@ class Github
 	
 		curl_setopt($ch, CURLOPT_URL, self::$uri . $url);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+		curl_setopt($ch, CURLOPT_HTTPHEADER, array('User-Agent: curl'));
 	
 		$result = curl_exec($ch);
 	
