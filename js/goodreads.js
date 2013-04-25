@@ -4,10 +4,8 @@ var Goodreads = (function($)
 	{
 		$.get(Config.stylesheet_directory + "/ajax/goodreads-activity-feed.php", {shelf: "currently-reading"}, function(response)
 		{
-			console.debug(response);
 			$.each(response, function(idx, book)
 			{
-				console.debug(book);
 				var $li = $('<li />', {class: "book"})
 					.append($('<img />', {src: book.book.image_url, alt: book.book.title}))
 					.append($('<div />', {class: "info"})
