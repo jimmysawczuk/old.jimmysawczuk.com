@@ -9,6 +9,11 @@ var Twitter = (function($)
 
 		$.get(Config.stylesheet_directory + "/ajax/twitter-feed.php", {username: "JimmySawczuk", count: 7}, function(response)
 		{
+			if (response.error)
+			{
+				return;
+			}
+
 			var $list = $(selector).find('ul');
 			
 			// per http://daringfireball.net/2010/07/improved_regex_for_matching_urls
