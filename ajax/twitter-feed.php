@@ -11,5 +11,11 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
 $tweets = json_decode(curl_exec($ch), true);
 
+foreach ($tweets as &$tweet)
+{
+	$tweet['created_at'] = date("c", strtotime($tweet['created_at']));
+}
+unset($tweet);
+
 header("Content-type: application/json");
 echo json_encode($tweets);
