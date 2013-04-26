@@ -11,12 +11,9 @@ class TwitterWidget extends WP_Widget {
 ?>
 	<?=$args['before_widget']; ?>
 		<?=$args['before_title']; ?>On Twitter<?=$args['after_title'] ?>
-		<div id="twitter_div">
-			<ul id="twitter_update_list"></ul>
+		<div id="twitter_feed">
+			<ul></ul>
 		</div>
-		<script type="text/javascript" src="https://twitter.com/javascripts/blogger.js"></script>
-		<script type="text/javascript" src="https://api.twitter.com/1/statuses/user_timeline/JimmySawczuk.json?callback=twitterCallback2&amp;count=7"></script>
-			
 	<?=$args['after_widget']; ?>
 <?
 	}

@@ -1507,14 +1507,6 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   -moz-border-radius: 5px 5px 5px 5px;
   -webkit-border-radius: 5px 5px 5px 5px;
 }
-#twitter_update_list li {
-  margin: 1em 0px;
-  padding: 0.5em;
-  border-radius: 2px 2px 2px 2px;
-  -moz-border-radius: 2px 2px 2px 2px;
-  -webkit-border-radius: 2px 2px 2px 2px;
-  background-color: #f9f9f9;
-}
 #wp-calendar {
   width: 100%;
   background-color: #f9f9f9;
@@ -1677,6 +1669,22 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
 }
 #goodreads_books {
   display: block;
+}
+#twitter_feed li {
+  margin: 1em 0px;
+  padding: 0.5em;
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  background-color: #f9f9f9;
+}
+#twitter_feed li .meta {
+  margin-top: 0.5em;
+  font-size: 93%;
+  color: #aaa;
+}
+#twitter_feed li .meta a {
+  color: #aaa;
 }
 #sidebar .widget_aboutmewidget p {
   font-style: normal;

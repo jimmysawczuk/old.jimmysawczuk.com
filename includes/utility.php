@@ -69,7 +69,7 @@ function get_min_url($urls, $group = false, $override = false)
 
 	if (MODE == "dev" || $override)
 	{
-		$str .= "&date=".date("YmdHis");
+		$str .= "&debug=1&date=".date("YmdHis");
 	}
 	
 	return $str;
