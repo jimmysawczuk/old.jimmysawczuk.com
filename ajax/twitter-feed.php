@@ -1,21 +1,40 @@
 <?php
 
-$username = preg_replace("#\W#", "", $_GET['username']);
-$count = isset($_GET['count']) && is_numeric($_GET['count'])? $_GET['count'] : 7;
+require "../includes/config.php";
 
-$url = 'https://api.twitter.com/1/statuses/user_timeline/'.$username.'.json?count='.$count;
+$consumer_key = TWITTER_CONSUMER_KEY;
+$consumer_secret = TWITTER_CONSUMER_SECRET;
+
+$auth = base64_encode(rawurlencode($consumer_key).":".rawurlencode($consumer_secret));
 
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_URL, "https://api.twitter.com/oauth2/token");
+curl_setopt($ch, CURLOPT_POST, true);
+curl_setopt($ch, CURLOPT_POSTFIELDS, array('grant_type' => 'client_credentials'));
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_HTTPHEADER, array("Authorization: Basic {$auth}"));
 
-$tweets = json_decode(curl_exec($ch), true);
+$result = json_decode(curl_exec($ch), true);
 
-foreach ($tweets as &$tweet)
+if (!isset($result['access_token']))
 {
-	$tweet['created_at'] = date("c", strtotime($tweet['created_at']));
+	exit;
 }
-unset($tweet);
 
-header("Content-type: application/json");
-echo json_encode($tweets);
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name={$_GET['username']}&count={$_GET['count']}");
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_HTTPHEADER, array("Authorization: Bearer {$result['access_token']}"));
+
+$result = json_decode(curl_exec($ch), true);
+
+if (isset($_GET['callback']))
+{
+	header("Content-type: text/javascript");
+	echo "{$_GET['callback']}(".json_encode($result).")";
+}
+else
+{
+	header("Content-type: application/json");
+	echo json_encode($result);
+}

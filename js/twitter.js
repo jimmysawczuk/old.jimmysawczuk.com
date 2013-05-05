@@ -20,7 +20,7 @@ var Twitter = (function($)
 		}
 
 		$s = $('<script />').attr({
-			'src': 'https://api.twitter.com/1/statuses/user_timeline/' + opts.screen_name + '.json?count=' + opts.count + '&callback=Twitter.render',
+			'src': Config.stylesheet_directory + "/ajax/twitter-feed.php?username=" + opts.screen_name + '&count=' + opts.count + '&callback=Twitter.render',
 			'type': 'text/javascript'
 		});
 
