@@ -1,4 +1,7 @@
 <?php
 
-define('GOOGLE_MAPS_API_KEY', "AIzaSyBo5OqOOFOiMArR6jAAoeZAdrpPZH12fcY");
-define('GOODREADS_API_KEY', 'UKm4aCnq9d9nusakEwPEw');
+@include(dirname(__FILE__) . '/mode.php');
+if (!defined('MODE'))
+{
+	define('MODE', 'live');	
+}
