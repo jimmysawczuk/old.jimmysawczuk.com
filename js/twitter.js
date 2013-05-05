@@ -19,10 +19,13 @@ var Twitter = (function($)
 			return;
 		}
 
-		$s = $('<script />').attr({
-			'src': Config.stylesheet_directory + "/ajax/twitter-feed.php?username=" + opts.screen_name + '&count=' + opts.count + '&callback=Twitter.render',
-			'type': 'text/javascript'
-		});
+		$s = $('<script />')
+			.attr({
+				'src': Config.stylesheet_directory + "/ajax/twitter-feed.php?username=" + opts.screen_name + '&count=' + opts.count + '&callback=Twitter.render',
+				'type': 'text/javascript'
+			}).prop({
+				'async': true
+			});
 
 		$('body').append($s);
 	}
