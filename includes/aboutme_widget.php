@@ -29,7 +29,7 @@ class AboutMeWidget extends WP_Widget {
 				<a href="http://www.twitter.com/JimmySawczuk" target="_blank"><i class="icon-twitter"></i> Twitter</a> <i class="icon-chevron-right"></i>
 			</li>
 			<li>
-				<a href="http://code.jimmysawczuk.com" target="_blank"><i class="icon-github"></i> Github</a> <i class="icon-chevron-right"></i>
+				<a href="http://code.jimmysawczuk.com" target="_blank"><i class="icon-github"></i> GitHub</a> <i class="icon-chevron-right"></i>
 			</li>
 			<li>
 				<a href="http://photos.jimmysawczuk.com" target="_blank"><i class="icon-picture"></i> Photos</a> <i class="icon-chevron-right"></i>
