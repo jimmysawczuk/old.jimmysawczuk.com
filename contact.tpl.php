@@ -15,17 +15,17 @@ get_header();
 				<p>If you’re looking for my resume, it's available as <a href="http://www.jimmysawczuk.com/resume">a printable web page</a>. References available upon request.</p>
 			</div>
 		</div>
-	
-		<div class="contact_info"> 
-			<ul> 
+
+		<div class="contact_info">
+			<ul>
 				<li class="first">
 					<i class="icon-envelope"></i>
 					hello@jimmysawczuk.com
-				</li> 
+				</li>
 				<li>
 					<i class="icon-phone"></i>
 					(440) 796-7806
-				</li> 
+				</li>
 				<li>
 					<i class="icon-comment"></i>
 					AIM: JimmySawczuk
@@ -42,25 +42,25 @@ get_header();
 				<li>
 					<i class="icon-linkedin"></i>
 					<a href="http://www.linkedin.com/in/jimmysawczuk" target="_blank">LinkedIn</a>
-				</li>		
+				</li>
 				<li>
 					<i class="icon-twitter"></i>
 					<a href="http://www.twitter.com/JimmySawczuk" target="_blank">Twitter</a>
 				</li>
 				<li>
-					<i class="icon-book"></i>
-					<a href="http://www.shelfari.com/jimmysawczuk" target="_blank">Shelfari</a>
+					<i class="icon-github"></i>
+					<a href="http://www.github.com/JimmySawczuk" target="_blank">GitHub</a>
 				</li>
 			</ul>
-		
-			<p>		
-				<a href="http://stackoverflow.com/users/350278/jimmy-sawczuk"><br /> 
-					<img src="http://stackoverflow.com/users/flair/350278.png" width="208" height="58" alt="profile for JimmySawczuk at Stack Overflow, Q&#038;A for professional and enthusiast programmers" title="profile for JimmySawczuk at Stack Overflow, Q&#038;A for professional and enthusiast programmers" /><br /> 
+
+			<p>
+				<a href="http://stackoverflow.com/users/350278/jimmy-sawczuk"><br />
+					<img src="http://stackoverflow.com/users/flair/350278.png" width="208" height="58" alt="profile for JimmySawczuk at Stack Overflow, Q&#038;A for professional and enthusiast programmers" title="profile for JimmySawczuk at Stack Overflow, Q&#038;A for professional and enthusiast programmers" /><br />
 				</a>
 			</p>
 		</div>
 	</div>
-</div> 
+</div>
 
 <?
 get_footer();
