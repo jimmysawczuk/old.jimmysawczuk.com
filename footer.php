@@ -5,22 +5,22 @@
 					</div>
 				<? endif; ?>
 				<div id="footer">
-				
+
 				</div>
 			</div>
 		</div>
 		<div id="copyright">
-			&copy; 2008-<?=date("Y"); ?> Jimmy Sawczuk 
-			&middot; 
+			&copy; 2008-<?=date("Y"); ?> Jimmy Sawczuk
+			&middot;
 			<a href="http://github.com/jimmysawczuk/jimmysawczuk.com">Open source</a>; MIT License
 			&middot;
 			<?
-			$fmt = '<a href="http://github.com/jimmysawczuk/jimmysawczuk.com/commit/%R" title="Branch: %b">%r</a>; <span class="timeago" title="%d"></span> &middot;';
-			echo GitRevision::format($fmt);
+			$fmt = '<a href="http://github.com/jimmysawczuk/jimmysawczuk.com/commit/%R" title="Branch: %b">%r</a>; <span class="timeago" title="%F">%F</span> &middot;';
+			echo ScmStatus::format($fmt, array('format_date' => "c"));
 			?>
 			Special thanks to <a href="http://timeago.yarp.com/">TimeAgo</a>, <a href="http://code.google.com/p/minify/">Minify</a>, <a href="http://code.google.com/apis/webfonts/">Google Font API</a>
 		</div>
-		
+
 		<div id="fb-root"></div>
 		<script type="text/javascript">
 			window.fbAsyncInit = function() {

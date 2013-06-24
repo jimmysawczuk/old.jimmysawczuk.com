@@ -2,10 +2,12 @@
 
 register_sidebars(1, array('name' => 'Right sidebar'));
 
+require('includes/scm_status.php');
+require('includes/utility.php');
+
 require('includes/config.php');
 
-require('includes/git_revision.php');
-require('includes/utility.php');
+ScmStatus::setFilePath(dirname(__FILE__) . "/REVISION.json");
 
 require('includes/aboutme_widget.php');
 require('includes/likebox_widget.php');
@@ -25,14 +27,14 @@ require('ballpark_resume.inc.php');
 function has_more_link()
 {
 	global $post;
-	
+
 	return strpos($post->post_content, "<!--more-->") !== false;
 }
 
 function page_title()
 {
 	global $post;
-	
+
 	if (is_single() || is_page())
 	{
 		the_title();
@@ -54,14 +56,14 @@ function fb_og_tags()
 	$meta_tags []= '<meta property="og:locale" content="en_US" />';
 	// $meta_tags []= '<meta property="fb:page_id" content="107775795674" />';
 	$meta_tags []= '<meta property="fb:app_id" content="193404464015012" />';
-	
+
 	if (is_single())
 	{
 		global $post;
-		
-		$matches = array();		
+
+		$matches = array();
 		$matched = preg_match_all('#<img(?:.*)src\=\"(.+?)\"(?:.*)\/\>#i', $post->post_content, $matches);
-		
+
 		if ($matched)
 		{
 			$meta_tags []= '<meta property="og:image" content="'.$matches[1][0].'" />';
@@ -70,25 +72,25 @@ function fb_og_tags()
 		{
 			$meta_tags []= '<meta property="og:image" content="'.get_bloginfo('stylesheet_directory').'/images/about_jimmy.jpg" />';
 		}
-		
-		
+
+
 		$meta_tags []= '<meta property="og:title" content="'.str_replace("\"", "&quot;", get_the_title()).'"/>';
 		$meta_tags []= '<meta property="og:type" content="article"/>';
 		$meta_tags []= '<meta property="og:url" content="'.get_permalink().'"/>';
 		$meta_tags []= '<meta property="og:site_name" content="'.get_bloginfo().'"/>';
-		
+
 	}
 	else
 	{
 		$description = "A blog about baseball, technology, politics and life by Jimmy Sawczuk, a software engineer from Cleveland living in Columbia, SC.";
-	
+
 		$meta_tags []= '<meta property="og:title" content="Cleveland, Curveballs and Common Sense"/>';
 		$meta_tags []= '<meta property="og:type" content="website"/>';
 		$meta_tags []= '<meta property="og:url" content="'.get_bloginfo('url').'"/>';
 		$meta_tags []= '<meta property="og:image" content="'.get_bloginfo('stylesheet_directory').'/images/about_jimmy.jpg" />';
 		$meta_tags []= '<meta property="og:description" content="'.$description.'" />';
 	}
-	
+
 	echo "\r\n" . implode("\r\n", $meta_tags);
 }
 
@@ -139,7 +141,7 @@ function blog_domain($root = true)
 
 	$url = preg_replace('#https?\://#', '', $url);
 
-	
+
 	if (!$root)
 	{
 		return $url;
@@ -151,7 +153,7 @@ function blog_domain($root = true)
 
 		$url = $url[$cnt - 2] . '.' . $url[$cnt - 1];
 
-		return $url;	
+		return $url;
 	}
 }
 
