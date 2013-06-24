@@ -19,45 +19,51 @@ get_header();
 		<div class="contact_info">
 			<ul>
 				<li class="first">
-					<i class="icon-envelope"></i>
+					<i class="icon-envelope icon-fixed-width"></i>
 					hello@jimmysawczuk.com
 				</li>
 				<li>
-					<i class="icon-phone"></i>
+					<i class="icon-phone icon-fixed-width"></i>
 					(440) 796-7806
 				</li>
 				<li>
-					<i class="icon-comment"></i>
+					<i class="icon-comment icon-fixed-width"></i>
 					AIM: JimmySawczuk
 				</li>
 				<li>
-					<i class="icon-comment-alt"></i>
+					<i class="icon-comment-alt icon-fixed-width"></i>
 					XMPP: me@jimmysawczuk.com
 				</li>
 				<li>&nbsp;</li>
 				<li>
-					<i class="icon-facebook"></i>
+					<i class="icon-facebook icon-fixed-width"></i>
 					<a href="http://www.facebook.com/JimmySawczuk" target="_blank">Facebook</a>
 				</li>
 				<li>
-					<i class="icon-linkedin"></i>
-					<a href="http://www.linkedin.com/in/jimmysawczuk" target="_blank">LinkedIn</a>
-				</li>
-				<li>
-					<i class="icon-twitter"></i>
+					<i class="icon-twitter icon-fixed-width"></i>
 					<a href="http://www.twitter.com/JimmySawczuk" target="_blank">Twitter</a>
 				</li>
 				<li>
-					<i class="icon-github"></i>
+					<i class="icon-linkedin icon-fixed-width"></i>
+					<a href="http://www.linkedin.com/in/jimmysawczuk" target="_blank">LinkedIn</a>
+				</li>
+				<li>
+					<i class="icon-google-plus icon-fixed-width"></i>
+					<a href="https://plus.google.com/111813506447073245640" target="_blank">Google+</a>
+				</li>
+				<li>
+					<i class="icon-github icon-fixed-width"></i>
 					<a href="http://www.github.com/JimmySawczuk" target="_blank">GitHub</a>
 				</li>
+				<li>
+					<i class="icon-bitbucket icon-fixed-width"></i>
+					<a href="http://bitbucket.org/JimmySawczuk" target="_blank">Bitbucket</a>
+				</li>
+				<li>
+					<i class="icon-stackexchange icon-fixed-width"></i>
+					<a href="http://stackoverflow.com/users/350278" target="_blank">Stack Overflow</a>
+				</li>
 			</ul>
-
-			<p>
-				<a href="http://stackoverflow.com/users/350278/jimmy-sawczuk"><br />
-					<img src="http://stackoverflow.com/users/flair/350278.png" width="208" height="58" alt="profile for JimmySawczuk at Stack Overflow, Q&#038;A for professional and enthusiast programmers" title="profile for JimmySawczuk at Stack Overflow, Q&#038;A for professional and enthusiast programmers" /><br />
-				</a>
-			</p>
 		</div>
 	</div>
 </div>
