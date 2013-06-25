@@ -157,6 +157,13 @@ tt {
   font-weight: bold;
   font-style: normal;
 }
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../type/fontawesome-webfont.eot?v=3.2.1');
+  src: url('../type/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('../type/fontawesome-webfont.woff?v=3.2.1') format('woff'), url('../type/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), url('../type/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 /*!
  *  Font Awesome 3.2.1
  *  the iconic font designed for Bootstrap
@@ -182,15 +189,6 @@ tt {
  *  Twitter: http://twitter.com/byscuits
  *  Work: Lead Product Designer @ Kyruus - http://kyruus.com
  */
-/* FONT PATH
- * -------------------------- */
-@font-face {
-  font-family: 'FontAwesome';
-  src: url('../../type/fontawesome-webfont.eot?v=3.2.1');
-  src: url('../../type/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('../../type/fontawesome-webfont.woff?v=3.2.1') format('woff'), url('../../type/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), url('../../type/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
 /* FONT AWESOME CORE
  * -------------------------- */
 [class^="icon-"],
