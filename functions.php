@@ -54,7 +54,6 @@ function fb_og_tags()
 	$meta_tags = array();
 	$meta_tags []= '<meta property="fb:admins" content="15504121" />';
 	$meta_tags []= '<meta property="og:locale" content="en_US" />';
-	// $meta_tags []= '<meta property="fb:page_id" content="107775795674" />';
 	$meta_tags []= '<meta property="fb:app_id" content="193404464015012" />';
 
 	if (is_single())
@@ -78,7 +77,7 @@ function fb_og_tags()
 		$meta_tags []= '<meta property="og:type" content="article"/>';
 		$meta_tags []= '<meta property="og:url" content="'.get_permalink().'"/>';
 		$meta_tags []= '<meta property="og:site_name" content="'.get_bloginfo().'"/>';
-
+		$meta_tags []= '<meta property="article:author" content="https://www.facebook.com/JimmySawczuk" />';
 	}
 	else
 	{
