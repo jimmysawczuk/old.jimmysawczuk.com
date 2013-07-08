@@ -158,13 +158,13 @@ function get_projects()
 		'tags' => array("javascript", "chrome-extension", "work")
 	);
 
-	$projects []= array(
-		'name' => "Facebook Page Lookup",
-		'description' => "A Chrome extension to quickly lookup information about Pages on Facebook.",
-		'download' => "https://chrome.google.com/webstore/detail/eloopmgpiphiokehjgomphnnlejikbol",
-		'bitbucket' => 'jimmysawczuk/facebook-page-finder',
-		'tags' => array("javascript", "chrome-extension", "facebook", "open-source")
-	);
+	// $projects []= array(
+	// 	'name' => "Facebook Page Lookup",
+	// 	'description' => "A Chrome extension to quickly lookup information about Pages on Facebook.",
+	// 	'download' => "https://chrome.google.com/webstore/detail/eloopmgpiphiokehjgomphnnlejikbol",
+	// 	'bitbucket' => 'jimmysawczuk/facebook-page-finder',
+	// 	'tags' => array("javascript", "chrome-extension", "facebook", "open-source")
+	// );
 
 	$projects []= array(
 		'name' => "Facebook Circles",
@@ -195,6 +195,6 @@ function get_projects()
 		$i++;
 	}
 
-	return array($projects, $cols);	
+	return array($projects, $cols);
 }
 
