@@ -1,40 +1,42 @@
-#goodreads_books {
-	li.book {
-		padding: 0.5em;
-		margin: 0.5em 0px;
-		background: #f9f9f9;
-		.border-radius(2px);
+.goodreads-container {
+	ul {
+		li.book {
+			padding: 0.5em;
+			margin: 0.5em 0px;
+			background: #f9f9f9;
+			.border-radius(2px);
 
-		img {
-			width: 20%;
-			float: left;
-		}
+			img {
+				width: 20%;
+				float: left;
+			}
 
-		div.info {
-			float: left;
-			width: 80%;
-		}
+			div.info {
+				float: left;
+				width: 80%;
+			}
 
-		div.title {
-			margin-left: 7px;
-		}
+			div.title {
+				margin-left: 7px;
+			}
 
-		div.author {
-			margin-left: 7px;
-			font-style: italic;
-			font-size: 93%;
-		}
+			div.author {
+				margin-left: 7px;
+				font-style: italic;
+				font-size: 93%;
+			}
 
-		div.meta {
-			margin-top: 1em;
-			border-top: 1px dashed #ddd;
-			margin-left: 7px;
-			font-size: 93%;
-			color: #aaa;
+			div.meta {
+				margin-top: 1em;
+				border-top: 1px dashed #ddd;
+				margin-left: 7px;
+				font-size: 93%;
+				color: #aaa;
+			}
+
+			.clearfix();
 		}
 
 		.clearfix();
 	}
-
-	.clearfix();
 }
