@@ -2309,7 +2309,7 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   margin: 0px;
   padding: 0px;
 }
-#goodreads_books li.book {
+.goodreads-container ul li.book {
   padding: 0.5em;
   margin: 0.5em 0px;
   background: #f9f9f9;
@@ -2320,53 +2320,53 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   -moz-border-radius: 2px;
   border-radius: 2px;
 }
-#goodreads_books li.book img {
+.goodreads-container ul li.book img {
   width: 20%;
   float: left;
 }
-#goodreads_books li.book div.info {
+.goodreads-container ul li.book div.info {
   float: left;
   width: 80%;
 }
-#goodreads_books li.book div.title {
+.goodreads-container ul li.book div.title {
   margin-left: 7px;
 }
-#goodreads_books li.book div.author {
+.goodreads-container ul li.book div.author {
   margin-left: 7px;
   font-style: italic;
   font-size: 93%;
 }
-#goodreads_books li.book div.meta {
+.goodreads-container ul li.book div.meta {
   margin-top: 1em;
   border-top: 1px dashed #ddd;
   margin-left: 7px;
   font-size: 93%;
   color: #aaa;
 }
-#goodreads_books li.book:after {
+.goodreads-container ul li.book:after {
   content: ".";
   display: block;
   height: 0;
   clear: both;
   visibility: hidden;
 }
-#goodreads_books li.book {
+.goodreads-container ul li.book {
   display: inline-block;
 }
-#goodreads_books li.book {
+.goodreads-container ul li.book {
   display: block;
 }
-#goodreads_books:after {
+.goodreads-container ul:after {
   content: ".";
   display: block;
   height: 0;
   clear: both;
   visibility: hidden;
 }
-#goodreads_books {
+.goodreads-container ul {
   display: inline-block;
 }
-#goodreads_books {
+.goodreads-container ul {
   display: block;
 }
 #twitter_feed li {
