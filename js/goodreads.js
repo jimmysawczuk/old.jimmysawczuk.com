@@ -10,14 +10,20 @@ var Goodreads = (function($)
 
 			$.each(response, function(idx, book)
 			{
-				var dateline = "";
+				var lines = [];
+
+				if (book.book.publisher != "")
+				{
+					lines.push(book.book.publisher)
+				}
+
 				if (book.read_at.length > 0)
 				{
-					dateline = ' &middot; Finished <span class="timeago" title="' + book.read_at + '"></span>';
+					lines.push('Finished <span class="timeago" title="' + book.read_at + '"></span>');
 				}
 				else if (book.started_at.length > 0)
 				{
-					dateline = ' &middot; Started <span class="timeago" title="' + book.started_at + '"></span>';
+					lines.push('Started <span class="timeago" title="' + book.started_at + '"></span>');
 				}
 
 				var $li = $('<li />').addClass("book")
@@ -28,8 +34,7 @@ var Goodreads = (function($)
 						)
 						.append($('<div />').addClass("author").html(book.book.authors.author.name))
 						.append($('<div />').addClass("meta")
-							.append(book.book.format)
-							.append(dateline)
+							.append(lines.join(" &middot; "))
 						)
 					);
 
