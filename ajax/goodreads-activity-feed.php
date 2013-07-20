@@ -1,10 +1,16 @@
 <?php
 
 require '../includes/config.php';
-require '../includes/goodreads.php';
 
-$gr = new Goodreads(GOODREADS_API_KEY);
-$books = $gr->getShelf("18966392", $_GET['shelf']);
+require realpath('../../../../wp-load.php');
+
+$widget = new WP_Widget("goodreads", "Goodreads");
+$settings = $widget->get_settings();
+$settings = $settings[$_GET['widgetId']];
+
+
+$gr = new Goodreads($settings['api_key']);
+$books = $gr->getShelf($settings['user_id'], $settings['shelf']);
 
 header("Content-type: application/json");
 
