@@ -165,6 +165,19 @@ function get_ballparks()
 		'latlong' => array(43.641389, -79.389167),
 	);
 
+	$ballparks []= array(
+		'name' => "Turner Field",
+		'team' => "Atlanta Braves",
+		'location' => "Atlanta, GA",
+		'rating' => '8',
+		'num_visits' => "1",
+		'visit' => "2013-08-09",
+		'game' => "http://www.baseball-reference.com/boxes/ATL/ATL201308090.shtml",
+		'article' => "http://www.jimmysawczuk.com/2013/08/wait-theres-a-waffle-house-here.html",
+		'img' => "turner_field.jpg",
+		'latlong' => array(33.735278, -84.389444),
+	);
+
 	//////////////////////////////////////
 
 	$i = 0;
