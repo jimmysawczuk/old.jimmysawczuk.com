@@ -11,7 +11,7 @@ list($ballparks, $cols, $been_to, $active) = get_ballparks();
 
 <h1 class="headline">Ballpark Resum&eacute;</h1>
 
-<p class="section-description"><big>I'm on a mission.</big><br />My mission is to see every Major League Baseball stadium on the planet. Since August 2, 1995, I've been to twelve stadiums (ten of which are currently active) and I've written about and taken pictures of each visit (except Fenway Park and Wrigley Field, which I plan to return to. Below are the stadiums I've been to. Click the picture to show more information.</p>
+<p class="section-description"><big>I'm on a mission.</big><br />My mission is to see every Major League Baseball stadium on the planet. Since August 2, 1995, I've been to thirteen stadiums (eleven of which are currently active) and I've written about and taken pictures of each visit (except Fenway Park and Wrigley Field, which I plan to return to). Below are the stadiums I've been to. Click the picture to show more information.</p>
 
 <div id="ballparks">
 	<? foreach (array_keys($cols) as $col): $row = 0; ?>
@@ -43,15 +43,15 @@ list($ballparks, $cols, $been_to, $active) = get_ballparks();
 								<div class="name">Hometeam:</div>
 								<div class="value"><?=$ballpark['team'] ?></div>
 							</div>
-							
+
 							<div class="field">
 								<div class="name">First visit:</div>
 								<div class="value">
-									<a href="<?=$ballpark['game'] ?>" target="_blank"><?=date("F j, Y", $ballpark['visit']); ?></a> 
+									<a href="<?=$ballpark['game'] ?>" target="_blank"><?=date("F j, Y", $ballpark['visit']); ?></a>
 									(<span class="timeago" title="<?=date("c", $ballpark['visit']); ?>"></span>)
 								</div>
 							</div>
-							
+
 							<div class="field">
 								<div class="name">Total visits:</div>
 								<div class="value"><?=$ballpark['num_visits'] ?></div>
