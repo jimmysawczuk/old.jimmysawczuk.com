@@ -28,7 +28,7 @@ var Twitter = (function($)
 	function render(response)
 	{
 		var $list = $(selector).find('ul');
-		
+
 		// per http://daringfireball.net/2010/07/improved_regex_for_matching_urls
 		var url_regexp_string = /((?:[a-z][\w-]+:(?:\/{1,3}|[a-z0-9%])|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}\/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'".,<>?«»“”‘’]))/gi;
 		var url_regexp = new RegExp(url_regexp_string);
@@ -80,6 +80,19 @@ var Twitter = (function($)
 				$meta.append(" from " + tweet.place.full_name);
 			}
 
+			if (typeof tweet.retweeted_status == "undefined")
+			{
+				if (tweet.favorite_count > 0)
+				{
+					$meta.append(' &middot; <i class="icon-star"></i> ' + tweet.favorite_count);
+				}
+
+				if (tweet.retweet_count > 0)
+				{
+					$meta.append(' &middot; <i class="icon-retweet"></i> ' + tweet.retweet_count);
+				}
+			}
+
 			var $li = $('<li />').addClass("tweet")
 				.append($('<span />').addClass("content")
 					.html(text)
@@ -87,7 +100,6 @@ var Twitter = (function($)
 				.append($meta);
 
 			var $content = $li.find('.content');
-			
 
 			$list.append($li);
 		});
