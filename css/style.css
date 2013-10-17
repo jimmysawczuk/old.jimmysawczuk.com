@@ -1565,7 +1565,7 @@ body {
   color: #333;
   font-family: 'Mako', 'Arial', 'Helvetica', sans-serif;
   background: #9a9a9a;
-  background: url("/wp-content/themes/jimmysawczuk/images/backgrounds/progressive-field.jpg") top center no-repeat #9a9a9a;
+  background: url("/wp-content/themes/jimmysawczuk/images/backgrounds/fall.jpg") top center no-repeat #9a9a9a;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1596,7 +1596,7 @@ body {
   right: 0px;
   bottom: 0px;
   z-index: 1;
-  background: url("/wp-content/themes/jimmysawczuk/images/backgrounds/progressive-field.jpg") top center no-repeat #9a9a9a;
+  background: url("/wp-content/themes/jimmysawczuk/images/backgrounds/fall.jpg") top center no-repeat #9a9a9a;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
