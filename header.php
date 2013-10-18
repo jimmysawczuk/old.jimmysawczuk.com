@@ -18,13 +18,13 @@
 
 				(function() {
 					var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-					ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+					ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
 					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			  	})();
+				})();
 			</script>
 		<? endif; ?>
 		<script type="text/javascript">
-			var Config = { 
+			var Config = {
 				stylesheet_directory: '<? bloginfo("stylesheet_directory"); ?>',
 				is_single: <?=is_single()? 'true' : 'false' ?>,
 				is_page: <?=is_page()? 'true' : 'false' ?>,
@@ -49,7 +49,7 @@
 						<li><a href="<? bloginfo('url'); ?>/ballparks" title="Ballparks">Ballparks</a></li>
 						<li class="last"><a href="<? bloginfo('url'); ?>/resume" target="_blank" title="Resume">Resum&eacute;</a></li>
 					</ul>
-					
+
 					<div id="search" class="empty">
 						<form method="get" action="<? bloginfo('url'); ?>">
 							<div id="search_text_wrapper" class="input_wrapper">
