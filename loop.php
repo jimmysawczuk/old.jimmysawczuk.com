@@ -94,7 +94,7 @@
 	$i++; endwhile;
 ?>
 
-	<div id="pagination"><? posts_nav_link(' ','<div class="prev">&laquo; Previous</div>','<div class="next">Next &raquo;</div>'); ?></div>
+	<div id="pagination"><? posts_nav_link(' ','<span class="previous">Previous</span>','<span class="next">Next</span>'); ?></div>
 
 <?
 else:

@@ -27,7 +27,7 @@ function truncate_string($str, $limit = 50)
 		$str = substr($str, 0, 50);
 		$str = substr($str, 0, strrpos($str, " ")) . '...';
 	}
-	
+
 	return $str;
 }
 
@@ -41,9 +41,9 @@ function pluralize($num, $sing, $plu, $repl = '%')
 	{
 		$tbr = $plu;
 	}
-	
+
 	$tbr = str_replace($repl, $num, $tbr);
-	
+
 	return $tbr;
 }
 
@@ -53,11 +53,11 @@ function get_min_url($urls, $group = false, $override = false)
 	{
 		$urls = array($urls);
 	}
-	
+
 	$root_dir = get_bloginfo('stylesheet_directory');
-	
+
 	$root_dir = str_replace(get_bloginfo('url').'/', '', $root_dir);
-	
+
 	if (!$group)
 	{
 		$str = get_bloginfo('stylesheet_directory').'/min/?b='.$root_dir.'&f='.implode(",", $urls);
@@ -71,7 +71,7 @@ function get_min_url($urls, $group = false, $override = false)
 	{
 		$str .= "&debug=1&date=".date("YmdHis");
 	}
-	
+
 	return $str;
 }
 
@@ -89,14 +89,7 @@ function load_stylesheet($name, $override = false)
 		echo '<script type="text/javascript">';
 		echo 'var less = {env: "development"};';
 		echo '</script>';
-		echo '<script src="'.$dir.'/js/less-1.3.0.min.js" type="text/javascript"></script>' . "\n";
-		echo '<script type="text/javascript">';
-		echo 'if (localStorage) {';
-			echo 'delete localStorage["'.$dir.'/less/'.$name.'.less"];';
-			echo 'delete localStorage["'.$dir.'/less/'.$name.'.less:timestamp"];';
-		echo '}';
-		echo '</script>' . "\n";
-		
+		echo '<script src="'.$dir.'/js/less-1.4.2.min.js" type="text/javascript"></script>' . "\n";
 	}
 }
 

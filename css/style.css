@@ -414,7 +414,7 @@ a .icon-spin {
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
-  filter: progid:dximagetransform.microsoft.basicimage(rotation=1);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
 }
 .icon-rotate-180:before {
   -webkit-transform: rotate(180deg);
@@ -422,7 +422,7 @@ a .icon-spin {
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
-  filter: progid:dximagetransform.microsoft.basicimage(rotation=2);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }
 .icon-rotate-270:before {
   -webkit-transform: rotate(270deg);
@@ -430,7 +430,7 @@ a .icon-spin {
   -ms-transform: rotate(270deg);
   -o-transform: rotate(270deg);
   transform: rotate(270deg);
-  filter: progid:dximagetransform.microsoft.basicimage(rotation=3);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 .icon-flip-horizontal:before {
   -webkit-transform: scale(-1, 1);
@@ -1840,7 +1840,7 @@ html.ie #search #search_text {
   z-index: 90;
   width: 62px;
 }
-.post .post_info  > div {
+.post .post_info > div {
   text-align: center;
   padding: 5px;
 }
@@ -2148,28 +2148,69 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.text {
 html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   display: none;
 }
-#pagination .prev {
+#pagination .previous {
   float: left;
+  position: relative;
+}
+#pagination .previous:before {
+  content: "\f053";
+  font-family: FontAwesome;
+  font-size: 80%;
+  margin: 5px 0px 0px;
+  margin-right: 7px;
 }
 #pagination .next {
   float: right;
+  position: relative;
 }
-#pagination div {
-  background-color: #ddd;
+#pagination .next:after {
+  content: "\f054";
+  font-family: FontAwesome;
+  font-size: 80%;
+  margin: 5px 0px 0px;
+  margin-left: 7px;
+}
+#pagination span {
+  color: #333333;
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(top, #eeeeee, #dddddd);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eeeeee), to(#dddddd));
+  background-image: -webkit-linear-gradient(top, #eeeeee, #dddddd);
+  background-image: -o-linear-gradient(top, #eeeeee, #dddddd);
+  background-image: linear-gradient(to bottom, #eeeeee, #dddddd);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeeeeee', endColorstr='#ffdddddd', GradientType=0);
+  border-color: #dddddd #dddddd #b7b7b7;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #dddddd;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   padding: 3px 5px;
   border: 1px solid #aaa;
   width: 80px;
-  text-align: center;
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+#pagination span:hover,
+#pagination span:active,
+#pagination span.active,
+#pagination span.disabled,
+#pagination span[disabled] {
+  color: #333333;
+  background-color: #dddddd;
+  *background-color: #d0d0d0;
+}
+#pagination span:active,
+#pagination span.active {
+  background-color: #c4c4c4 \9;
 }
 #pagination a {
-  color: #333;
-  font-weight: bold;
-  border-radius: 1px 1px 1px 1px;
-  -moz-border-radius: 1px 1px 1px 1px;
-  -webkit-border-radius: 1px 1px 1px 1px;
-  -webkit-border-radius: 1px;
-  -moz-border-radius: 1px;
-  border-radius: 1px;
+  color: #333333;
+  font-weight: normal;
+  text-align: center;
   text-decoration: none;
 }
 .widget {
@@ -2393,6 +2434,19 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   font-size: 108%;
   margin: 1em 0px;
 }
+#sidebar .widget_aboutmewidget ul.more:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#sidebar .widget_aboutmewidget ul.more {
+  display: inline-block;
+}
+#sidebar .widget_aboutmewidget ul.more {
+  display: block;
+}
 #sidebar .widget_aboutmewidget ul.more li {
   font-size: 16px;
   font-weight: bold;
@@ -2431,6 +2485,7 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   color: #444444;
   text-decoration: none;
   display: block;
+  font-weight: normal;
 }
 #sidebar .widget_aboutmewidget ul.more li a:hover {
   color: #373737;
@@ -2438,9 +2493,8 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
 }
 #sidebar .widget_aboutmewidget ul.more li a i {
   font-size: 18px;
-  border-right: 1px solid #ccc;
   padding: 0px 7px;
-  margin-right: 7px;
+  margin-right: 3px;
   width: 20px;
   float: left;
   display: block;
@@ -2503,9 +2557,10 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   background-color: #c4c4c4 \9;
 }
 #sidebar .widget_aboutmewidget ul.more li i.icon-chevron-right {
+  display: none;
   position: absolute;
   top: 7px;
-  right: 5px;
+  right: 7px;
   bottom: 0px;
 }
 #sidebar .widget_links li {
@@ -3037,7 +3092,7 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
     background: -webkit-linear-gradient(top, #9a9a9a 42%, #555555 100%);
     background: -o-linear-gradient(top, #9a9a9a 42%, #555555 100%);
     background: -ms-linear-gradient(top, #9a9a9a 42%, #555555 100%);
-    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#9a9a9a', endColorstr='#555555', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9a9a9a', endColorstr='#555555', GradientType=0);
     background: linear-gradient(top, #9a9a9a 42%, #555555 100%);
     background-height: 100%;
     background-attachment: fixed;
@@ -3052,7 +3107,7 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
     background: -webkit-linear-gradient(top, #9a9a9a 42%, #555555 100%);
     background: -o-linear-gradient(top, #9a9a9a 42%, #555555 100%);
     background: -ms-linear-gradient(top, #9a9a9a 42%, #555555 100%);
-    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#9a9a9a', endColorstr='#555555', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9a9a9a', endColorstr='#555555', GradientType=0);
     background: linear-gradient(top, #9a9a9a 42%, #555555 100%);
     background-height: 100%;
     background-attachment: fixed;
