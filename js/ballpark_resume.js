@@ -70,7 +70,7 @@ var BallparkResume = (function()
 					$parent.addClass('ballpark_engaged');
 					$(this).removeAttr('style');
 				});
-				
+
 			}
 			else
 			{
@@ -83,11 +83,11 @@ var BallparkResume = (function()
 						$(this).removeAttr('style');
 					});
 				}
-				
+
 			}
 		});
 
-		$('.ballpark .show_location .icon-globe').on('click', function(evt)
+		$('.ballpark .show_location .toggle').on('click', function(evt)
 		{
 			evt.stopPropagation();
 
@@ -137,11 +137,11 @@ var BallparkResume = (function()
 							for (var f in funcs)
 							{
 								window.setTimeout(funcs[f].func, funcs[f].timeout);
-							}	
+							}
 						}
-					});					
+					});
 				})(map);
-				
+
 
 				$ballpark_div.find('.credit').hide();
 				$(this).parents('.show_location').addClass('show_location_engaged');

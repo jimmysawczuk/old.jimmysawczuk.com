@@ -137,7 +137,7 @@ tt {
   font-family: 'Mako';
   src: local('Mako');
   src: url('../type/mako-webfont.eot');
-  src: url('../type/mako-webfont.eot?#iefix') format('embedded-opentype'), url('../type/mako-webfont.woff') format('woff'), url('../type/mako-webfont.ttf') format('truetype'), url('/../type/mako-webfont.svg#Mako') format('svg');
+  src: url('../type/mako-webfont.eot?#iefix') format('embedded-opentype'), url('../type/mako-webfont.woff') format('woff'), url('../type/mako-webfont.ttf') format('truetype'), url('type/mako-webfont.svg#Mako') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -145,7 +145,7 @@ tt {
   font-family: 'Arvo';
   src: local('Arvo');
   src: url('../type/arvo-regular-webfont.eot');
-  src: url('../type/arvo-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../type/arvo-regular-webfont.woff') format('woff'), url('../type/arvo-regular-webfont.ttf') format('truetype'), url('/../type/arvo-regular-webfont.svg#Arvo') format('svg');
+  src: url('../type/arvo-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../type/arvo-regular-webfont.woff') format('woff'), url('../type/arvo-regular-webfont.ttf') format('truetype'), url('type/arvo-regular-webfont.svg#Arvo') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -153,7 +153,7 @@ tt {
   font-family: 'Arvo';
   src: local('Arvo');
   src: url('../type/arvo-bold-webfont.eot');
-  src: url('../type/arvo-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../type/arvo-bold-webfont.woff') format('woff'), url('../type/arvo-bold-webfont.ttf') format('truetype'), url('/../type/arvo-bold-webfont.svg#Arvo') format('svg');
+  src: url('../type/arvo-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../type/arvo-bold-webfont.woff') format('woff'), url('../type/arvo-bold-webfont.ttf') format('truetype'), url('type/arvo-bold-webfont.svg#Arvo') format('svg');
   font-weight: bold;
   font-style: normal;
 }
@@ -3019,14 +3019,14 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   position: absolute;
   left: -70px;
 }
-#ballparks .ballpark .footer .show_location:hover .icon-globe {
-  color: #eee;
-}
-#ballparks .ballpark .footer .show_location .icon-globe {
+#ballparks .ballpark .footer .show_location .toggle {
   padding: 10px;
   color: #aaa;
   text-decoration: none;
   font-size: 30px;
+}
+#ballparks .ballpark .footer .show_location:hover .toggle {
+  color: #eee;
 }
 #ballparks .ballpark .footer .show_location_engaged {
   background: rgba(51, 102, 153, 0.8);
@@ -3034,8 +3034,8 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
 #ballparks .ballpark .footer .show_location_engaged:before {
   border-color: rgba(51, 102, 153, 0.8);
 }
-#ballparks .ballpark .footer .show_location_engaged:hover .icon-globe,
-#ballparks .ballpark .footer .show_location_engaged .icon-globe {
+#ballparks .ballpark .footer .show_location_engaged:hover .toggle,
+#ballparks .ballpark .footer .show_location_engaged .toggle {
   color: #fff !important;
 }
 #ballparks .ballpark .footer .show_location:before {

@@ -59,7 +59,7 @@ list($ballparks, $cols, $been_to, $active) = get_ballparks();
 						</div>
 
 						<div class="show_location">
-							<div class="icon-globe"></div>
+							<div class="toggle icon-map-marker"></div>
 						</div>
 
 						<? if (isset($ballpark['img_credit'])): ?>
