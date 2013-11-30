@@ -56,6 +56,7 @@ function get_projects()
 	$projects []= array(
 		'name' => "jimmysawczuk.com",
 		'description' => "The WordPress theme that runs the very blog you're looking at.",
+		'web' => "http://www.jimmysawczuk.com",
 		'github' => "jimmysawczuk/jimmysawczuk.com",
 		'tags' => array("php", "javascript", "wordpress", "open-source")
 	);
