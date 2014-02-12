@@ -152,6 +152,13 @@ function get_projects()
 	);
 
 	$projects []= array(
+		'name' => 'worker',
+		'description' => "A Go library that makes it easy to parallelize processes or tasks",
+		'tags' => array("go", "open-source", "development"),
+		'github' => "jimmysawczuk/worker"
+	);
+
+	$projects []= array(
 		'name' => "FlashCard",
 		'description' => "An application I wrote to test myself on German vocabulary words, and since has been requested by many family members.",
 		'tags' => array("c#", "utility", "windows", "education", "open-source"),
