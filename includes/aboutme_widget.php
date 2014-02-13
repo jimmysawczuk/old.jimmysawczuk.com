@@ -26,10 +26,10 @@ class AboutMeWidget extends WP_Widget {
 				<a href="http://www.twitter.com/JimmySawczuk" target="_blank">Twitter</a>
 			</li>
 			<li class="google-plus">
-				<a href="https://plus.google.com/+JimmySawczuk" target="_blank">Google+</a>
+				<a href="http://plus.google.com/+JimmySawczuk" target="_blank">Google+</a>
 			</li>
 			<li class="github">
-				<a href="http://code.jimmysawczuk.com" target="_blank">GitHub</a>
+				<a href="http://github.com/jimmysawczuk" target="_blank">GitHub</a>
 			</li>
 			<li class="camera">
 				<a href="http://photos.jimmysawczuk.com" target="_blank">Photos</a>
