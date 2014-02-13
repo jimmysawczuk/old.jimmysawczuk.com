@@ -19,20 +19,23 @@ class AboutMeWidget extends WP_Widget {
 		</p>
 
 		<ul class="more">
-			<li>
-				<a href="http://www.facebook.com/JimmySawczuk" target="_blank"><i class="icon-facebook"></i> Facebook</a> <i class="icon-chevron-right"></i>
+			<li class="facebook">
+				<a href="http://www.facebook.com/JimmySawczuk" target="_blank">Facebook</a>
 			</li>
-			<li>
-				<a href="http://www.twitter.com/JimmySawczuk" target="_blank"><i class="icon-twitter"></i> Twitter</a> <i class="icon-chevron-right"></i>
+			<li class="twitter">
+				<a href="http://www.twitter.com/JimmySawczuk" target="_blank">Twitter</a>
 			</li>
-			<li>
-				<a href="http://code.jimmysawczuk.com" target="_blank"><i class="icon-github"></i> GitHub</a> <i class="icon-chevron-right"></i>
+			<li class="google-plus">
+				<a href="https://plus.google.com/+JimmySawczuk" target="_blank">Google+</a>
 			</li>
-			<li>
-				<a href="http://photos.jimmysawczuk.com" target="_blank"><i class="icon-camera"></i> Photos</a> <i class="icon-chevron-right"></i>
+			<li class="github">
+				<a href="http://code.jimmysawczuk.com" target="_blank">GitHub</a>
 			</li>
-			<li>
-				<a href="<?=get_bloginfo('url'); ?>/contact"><i class="icon-info-sign"></i> Contact</a> <i class="icon-chevron-right"></i>
+			<li class="camera">
+				<a href="http://photos.jimmysawczuk.com" target="_blank">Photos</a>
+			</li>
+			<li class="info-sign">
+				<a href="<?=get_bloginfo('url'); ?>/contact">Contact</a>
 			</li>
 		</ul>
 
