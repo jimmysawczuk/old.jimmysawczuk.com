@@ -37,15 +37,11 @@ function page_title()
 
 	if (is_single() || is_page())
 	{
-		the_title();
-		echo ' - ';
-		bloginfo('name');
+		echo strip_tags(get_the_title()) . ' - ' . get_bloginfo('name');
 	}
 	else
 	{
-		bloginfo('name');
-		echo ' - ';
-		bloginfo('description');
+		echo get_bloginfo('name') . ' - ' . get_bloginfo('description');
 	}
 }
 
@@ -73,7 +69,7 @@ function fb_og_tags()
 		}
 
 
-		$meta_tags []= '<meta property="og:title" content="'.str_replace("\"", "&quot;", get_the_title()).'"/>';
+		$meta_tags []= '<meta property="og:title" content="'.str_replace("\"", "&quot;", strip_tags(get_the_title())).'"/>';
 		$meta_tags []= '<meta property="og:type" content="article"/>';
 		$meta_tags []= '<meta property="og:url" content="'.get_permalink().'"/>';
 		$meta_tags []= '<meta property="og:site_name" content="'.get_bloginfo().'"/>';
@@ -115,7 +111,7 @@ function twitter_card_tags()
 
 		$description = extract_excerpt(500);
 
-		$meta_tags []= '<meta property="twitter:title" content="'.str_replace("\"", "&quot;", get_the_title()).'"/>';
+		$meta_tags []= '<meta property="twitter:title" content="'.str_replace("\"", "&quot;", strip_tags(get_the_title())).'"/>';
 		$meta_tags []= '<meta property="twitter:type" content="summary" />';
 		$meta_tags []= '<meta property="twitter:url" content="'.get_permalink().'"/>';
 		$meta_tags []= '<meta property="twitter:description" content="'.$description.'" />';
