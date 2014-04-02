@@ -12,13 +12,6 @@ function get_projects()
 	);
 
 	$projects []= array(
-		'name' => "wiki.md",
-		'description' => "A PHP-powered Markdown-enabled site framework.",
-		'github' => "jimmysawczuk/wiki.md",
-		'tags' => array("php", "markdown", "open-source")
-	);
-
-	$projects []= array(
 		'name' => "Inline LESS",
 		'description' => "A Chrome extension to render LESS-enhanced CSS in <style> tags.",
 		'github' => "jimmysawczuk/inline-less",
@@ -55,7 +48,7 @@ function get_projects()
 
 	$projects []= array(
 		'name' => "jimmysawczuk.com",
-		'description' => "The WordPress theme that runs the very blog you're looking at.",
+		'description' => "The WordPress theme that runs the very blog you're looking at",
 		'web' => "http://www.jimmysawczuk.com",
 		'github' => "jimmysawczuk/jimmysawczuk.com",
 		'tags' => array("php", "javascript", "wordpress", "open-source")
@@ -71,7 +64,7 @@ function get_projects()
 
 	$projects []= array(
 		'name' => "clippy-jquery",
-		'description' => "A jQuery plugin that utilizes the clippy SWF to enable easy copy-and-paste on web content.",
+		'description' => "A jQuery plugin that utilizes the clippy SWF to enable easy copy-and-paste on web content",
 		'github' => "jimmysawczuk/clippy-jquery",
 		'web' => "http://jimmysawczuk.github.com/clippy-jquery",
 		'tags' => array("javascript", "development", "open-source")
@@ -152,6 +145,13 @@ function get_projects()
 	);
 
 	$projects []= array(
+		'name' => 'go-config',
+		'description' => "A Go library to set and retrieve relevant config options in a project",
+		'tags' => array("go", "open-source", "development"),
+		'github' => "jimmysawczuk/go-config"
+	);
+
+	$projects []= array(
 		'name' => 'worker',
 		'description' => "A Go library that makes it easy to parallelize processes or tasks",
 		'tags' => array("go", "open-source", "development"),
@@ -172,14 +172,6 @@ function get_projects()
 		'download' => "https://chrome.google.com/extensions/detail/dehinmdmfgclcpijadomcogabhdceakj",
 		'tags' => array("javascript", "chrome-extension", "work")
 	);
-
-	// $projects []= array(
-	// 	'name' => "Facebook Page Lookup",
-	// 	'description' => "A Chrome extension to quickly lookup information about Pages on Facebook.",
-	// 	'download' => "https://chrome.google.com/webstore/detail/eloopmgpiphiokehjgomphnnlejikbol",
-	// 	'bitbucket' => 'jimmysawczuk/facebook-page-finder',
-	// 	'tags' => array("javascript", "chrome-extension", "facebook", "open-source")
-	// );
 
 	$projects []= array(
 		'name' => "Facebook Circles",
