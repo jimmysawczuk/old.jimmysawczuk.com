@@ -73,7 +73,7 @@ function get_projects()
 	$projects []= array(
 		'name' => "Real Time Notes",
 		'description' => "An online tool that lets users create timed logs or diaries for export later.",
-		'web' => "http://www.realtimenotes.com",
+		'web' => "http://realtimenotes.jimmysawczuk.com",
 		'tags' => array("php", "website")
 	);
 
