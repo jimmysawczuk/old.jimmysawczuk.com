@@ -209,7 +209,7 @@ tt {
 /* makes the font 33% larger relative to the icon container */
 .icon-large:before {
   vertical-align: -10%;
-  font-size: 1.3333333333333333em;
+  font-size: 1.33333333em;
 }
 /* makes sure icons active on rollover in links */
 a [class^="icon-"],
@@ -220,16 +220,16 @@ a [class*=" icon-"] {
 [class^="icon-"].icon-fixed-width,
 [class*=" icon-"].icon-fixed-width {
   display: inline-block;
-  width: 1.1428571428571428em;
+  width: 1.14285714em;
   text-align: right;
-  padding-right: 0.2857142857142857em;
+  padding-right: 0.28571429em;
 }
 [class^="icon-"].icon-fixed-width.icon-large,
 [class*=" icon-"].icon-fixed-width.icon-large {
-  width: 1.4285714285714286em;
+  width: 1.42857143em;
 }
 .icons-ul {
-  margin-left: 2.142857142857143em;
+  margin-left: 2.14285714em;
   list-style-type: none;
 }
 .icons-ul > li {
@@ -237,8 +237,8 @@ a [class*=" icon-"] {
 }
 .icons-ul .icon-li {
   position: absolute;
-  left: -2.142857142857143em;
-  width: 2.142857142857143em;
+  left: -2.14285714em;
+  width: 2.14285714em;
   text-align: center;
   line-height: inherit;
 }
@@ -1640,6 +1640,8 @@ body {
   color: #369;
 }
 #nav {
+  display: inline-block;
+  display: block;
   margin: 0px auto 30px;
   height: 40px;
   width: 920px;
@@ -1653,13 +1655,9 @@ body {
   clear: both;
   visibility: hidden;
 }
-#nav {
-  display: inline-block;
-}
-#nav {
-  display: block;
-}
 #nav ul {
+  display: inline-block;
+  display: block;
   overflow: hidden;
   background-color: #444;
   color: white;
@@ -1683,12 +1681,6 @@ body {
   height: 0;
   clear: both;
   visibility: hidden;
-}
-#nav ul {
-  display: inline-block;
-}
-#nav ul {
-  display: block;
 }
 #nav ul li {
   float: left;
@@ -2350,6 +2342,10 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   margin: 0px;
   padding: 0px;
 }
+.goodreads-container ul {
+  display: inline-block;
+  display: block;
+}
 .goodreads-container ul li.book {
   padding: 0.5em;
   margin: 0.5em 0px;
@@ -2360,6 +2356,8 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
+  display: inline-block;
+  display: block;
 }
 .goodreads-container ul li.book img {
   width: 20%;
@@ -2391,24 +2389,12 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   clear: both;
   visibility: hidden;
 }
-.goodreads-container ul li.book {
-  display: inline-block;
-}
-.goodreads-container ul li.book {
-  display: block;
-}
 .goodreads-container ul:after {
   content: ".";
   display: block;
   height: 0;
   clear: both;
   visibility: hidden;
-}
-.goodreads-container ul {
-  display: inline-block;
-}
-.goodreads-container ul {
-  display: block;
 }
 #twitter_feed li {
   margin: 1em 0px;
@@ -2434,18 +2420,16 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   font-size: 108%;
   margin: 1em 0px;
 }
+#sidebar .widget_aboutmewidget ul.more {
+  display: inline-block;
+  display: block;
+}
 #sidebar .widget_aboutmewidget ul.more:after {
   content: ".";
   display: block;
   height: 0;
   clear: both;
   visibility: hidden;
-}
-#sidebar .widget_aboutmewidget ul.more {
-  display: inline-block;
-}
-#sidebar .widget_aboutmewidget ul.more {
-  display: block;
 }
 #sidebar .widget_aboutmewidget ul.more li {
   padding: 5px 0px;
@@ -2731,6 +2715,8 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
 }
 #content.projects #projects {
   position: relative;
+  display: inline-block;
+  display: block;
 }
 #content.projects #projects:after {
   content: ".";
@@ -2738,12 +2724,6 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   height: 0;
   clear: both;
   visibility: hidden;
-}
-#content.projects #projects {
-  display: inline-block;
-}
-#content.projects #projects {
-  display: block;
 }
 #content.projects #projects .col {
   float: left;
@@ -2868,18 +2848,16 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   font-size: 24px;
   font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
 }
+#ballparks {
+  display: inline-block;
+  display: block;
+}
 #ballparks:after {
   content: ".";
   display: block;
   height: 0;
   clear: both;
   visibility: hidden;
-}
-#ballparks {
-  display: inline-block;
-}
-#ballparks {
-  display: block;
 }
 #ballparks .col {
   float: left;
