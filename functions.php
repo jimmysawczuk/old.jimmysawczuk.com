@@ -111,6 +111,7 @@ function twitter_card_tags()
 
 		$description = extract_excerpt(500);
 
+		$meta_tags []= '<meta property="twitter:card" content="summary_large_image" />';
 		$meta_tags []= '<meta property="twitter:title" content="'.str_replace("\"", "&quot;", strip_tags(get_the_title())).'"/>';
 		$meta_tags []= '<meta property="twitter:type" content="summary" />';
 		$meta_tags []= '<meta property="twitter:url" content="'.get_permalink().'"/>';
@@ -120,6 +121,7 @@ function twitter_card_tags()
 	{
 		$description = "A blog about baseball, technology, politics and life by Jimmy Sawczuk, a software engineer from Cleveland living in Columbia, SC.";
 
+		$meta_tags []= '<meta property="twitter:card" content="summary" />';
 		$meta_tags []= '<meta property="twitter:title" content="Cleveland, Curveballs and Common Sense"/>';
 		$meta_tags []= '<meta property="twitter:type" content="website"/>';
 		$meta_tags []= '<meta property="twitter:url" content="'.get_bloginfo('url').'"/>';
