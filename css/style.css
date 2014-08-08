@@ -1588,20 +1588,6 @@ body {
   border-radius: 1px;
   z-index: 100;
 }
-#bg {
-  display: none;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  z-index: 1;
-  background: url("/wp-content/themes/jimmysawczuk/images/backgrounds/progressive-field-2.jpg") top center no-repeat #9a9a9a;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 #tab_container {
   position: relative;
   z-index: 50;
@@ -3073,41 +3059,9 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
 #ballpark-map-wrapper .infobox-hidden {
   display: none;
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  body {
-    background: #9a9a9a;
-  }
-  #bg {
-    display: block;
-  }
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  body {
-    background: #9a9a9a;
-    background: -moz-linear-gradient(top, #9a9a9a 42%, #9a9a9a 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(42%, #9a9a9a), color-stop(100%, #555555));
-    background: -webkit-linear-gradient(top, #9a9a9a 42%, #555555 100%);
-    background: -o-linear-gradient(top, #9a9a9a 42%, #555555 100%);
-    background: -ms-linear-gradient(top, #9a9a9a 42%, #555555 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9a9a9a', endColorstr='#555555', GradientType=0);
-    background: linear-gradient(top, #9a9a9a 42%, #555555 100%);
-    background-height: 100%;
-    background-attachment: fixed;
-    background-size: 100%;
-  }
-}
 @media handheld {
   body {
-    background: #9a9a9a;
-    background: -moz-linear-gradient(top, #9a9a9a 42%, #9a9a9a 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(42%, #9a9a9a), color-stop(100%, #555555));
-    background: -webkit-linear-gradient(top, #9a9a9a 42%, #555555 100%);
-    background: -o-linear-gradient(top, #9a9a9a 42%, #555555 100%);
-    background: -ms-linear-gradient(top, #9a9a9a 42%, #555555 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9a9a9a', endColorstr='#555555', GradientType=0);
-    background: linear-gradient(top, #9a9a9a 42%, #555555 100%);
-    background-height: 100%;
-    background-attachment: fixed;
+    background: #9a9aaa;
     background-size: 100%;
   }
 }
