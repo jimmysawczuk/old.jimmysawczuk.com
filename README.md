@@ -1,6 +1,6 @@
 # Welcome #
 
-This is a repository for the theme that runs my blog, which is located at [www.jimmysawczuk.com][1]. 
+This is a repository for the theme that runs my blog, which is located at [www.jimmysawczuk.com][1].
 
 This theme was written from scratch with some inspiration from [`lightword`][3], [Grantland][6], and the [New York Times][7]. My aim was to create a theme that was simple, attractive and clean. I also built it with Facebook integration in mind, and specifically, to respect the [Open Graph protocol][8]. It uses HTML5 and CSS3, with some jQuery.
 
@@ -23,10 +23,8 @@ Special thanks also to the [Google Font API][11], for the gorgeous fonts, namely
 
 ## License ##
 
-The code in `lightword` is protected under the [GPL license][4], as it is a very slight deviation on the Lightword theme. The `default` and `production` branches are protected under the [MIT License][5], which is repeated below:
-
 	The MIT License (MIT)
-	Copyright (C) 2011-2012 by Jimmy Sawczuk
+	Copyright (C) 2011-2014 by Jimmy Sawczuk
 
 	Permission is hereby granted, free of charge, to any person obtaining a copy
 	of this software and associated documentation files (the "Software"), to deal
