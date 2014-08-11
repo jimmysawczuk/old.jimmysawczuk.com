@@ -3059,7 +3059,7 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
 #ballpark-map-wrapper .infobox-hidden {
   display: none;
 }
-@media handheld {
+@media (min-width: 768px) {
   body {
     background: #9a9aaa;
     background-size: 100%;
