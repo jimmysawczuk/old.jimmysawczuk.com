@@ -178,6 +178,19 @@ function get_ballparks()
 		'latlong' => array(33.735278, -84.389444),
 	);
 
+	$ballparks []= array(
+		'name' => "Citizens Bank Park",
+		'team' => "Philadelphia Phillies",
+		'location' => "Philadelphia, PA",
+		'rating' => '9',
+		'num_visits' => "1",
+		'visit' => "2014-08-05",
+		'game' => "http://www.baseball-reference.com/boxes/PHI/PHI201408050.shtml",
+		'article' => "http://www.jimmysawczuk.com/2014/08/the-mecca-of-cheesesteaks.html",
+		'img' => "citizens_bank_park.jpg",
+		'latlong' => array(39.905833, -75.166389),
+	);
+
 	//////////////////////////////////////
 
 	$i = 0;
