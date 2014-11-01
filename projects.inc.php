@@ -40,13 +40,6 @@ function get_projects()
 	);
 
 	$projects []= array(
-		'name' => "hillofthelord.com",
-		'description' => "A website for the church I attend in Columbia, SC",
-		'web' => "http://www.hillofthelord.com",
-		'tags' => array("php", "website")
-	);
-
-	$projects []= array(
 		'name' => "jimmysawczuk.com",
 		'description' => "The WordPress theme that runs the very blog you're looking at",
 		'web' => "http://www.jimmysawczuk.com",
