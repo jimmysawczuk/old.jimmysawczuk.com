@@ -14,26 +14,6 @@
 					<span class="big"><a href="<? the_permalink(); ?>#comments"><fb:comments-count href="<? the_permalink(); ?>"></fb:comments-count></a></span>
 					<span class="small">Comments</span>
 				</div>
-				<div class="post_social">
-					<div class="aligncenter">
-						<a href="https://www.facebook.com/sharer.php?u=<?=urlencode(get_permalink()); ?>" class="share-button share-button-fb" title="Share on Facebook" data-width="650" data-height="450">
-							<span class="icon icon-facebook"></span>
-							<span class="text">Share</span>
-						</a>
-						<a href="https://twitter.com/share?url=<?=urlencode(get_permalink()); ?>" class="share-button share-button-twitter" title="Tweet on Twitter">
-							<span class="icon icon-twitter"></span>
-							<span class="text">Tweet</span>
-						</a>
-						<a href="https://plus.google.com/share?url=<?=urlencode(get_permalink()); ?>" class="share-button share-button-gplus" title="Share on Google+" data-height="600">
-							<span class="icon icon-google-plus"></span>
-							<span class="text">Share</span>
-						</a>
-						<a href="https://www.linkedin.com/cws/share?isFramed=true&lang=en_US&url=<?=urlencode(get_permalink()); ?>" class="share-button share-button-linkedin" title="Share on LinkedIn">
-							<span class="icon icon-linkedin"></span>
-							<span class="text">Share</span>
-						</a>
-					</div>
-				</div>
 				<div class="top_link">
 					<a href="#container">Top</a>
 				</div>

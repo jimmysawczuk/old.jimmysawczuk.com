@@ -12,10 +12,15 @@ class AboutMeWidget extends WP_Widget {
 	<?=$args['before_widget']; ?>
 		<?=$args['before_title']; ?>About Jimmy<?=$args['after_title'] ?>
 
-		<img src="<?=get_bloginfo('stylesheet_directory') . '/images/about_jimmy.jpg'; ?>" alt="About Jimmy" />
+		<img src="<?=get_bloginfo('stylesheet_directory') . '/images/about_jimmy_coffee.jpg'; ?>" alt="About Jimmy" />
 		<br />
 		<p>
-			Jimmy, a 2009 graduate of <a href="http://www.case.edu">Case Western Reserve University</a> in Cleveland, OH, currently lives in Columbia, SC and works as a software engineer for <a href="http://www.louddoor.com" target="_blank">LoudDoor</a> on a market research platform on Facebook. He mostly writes about <a href="/tag/mlb">baseball</a> (particularly the <a href="/tag/indians">Cleveland Indians</a>), <a href="/tag/politics">politics</a>, <a href="/tag/movies">movies</a> and <a href="/tag/programming">programming</a>. He also enjoys a cup of great coffee and a good book.
+			Jimmy is a 2009 graduate of <a href="http://www.case.edu">Case Western Reserve University</a> in Cleveland, OH
+			and currently lives in Columbia, SC. He works as a software engineer for
+			<a href="http://www.louddoor.com" target="_blank">LoudDoor</a>. He mostly writes about
+			<a href="/tag/mlb">baseball</a> (particularly the <a href="/tag/indians">Cleveland Indians</a>),
+			<a href="/tag/politics">politics</a>, <a href="/tag/movies">movies</a> and
+			<a href="/tag/programming">programming</a>. He also enjoys a cup of great coffee and a good book.
 		</p>
 
 		<ul class="more">
