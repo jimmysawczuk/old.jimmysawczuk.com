@@ -89,7 +89,7 @@ function load_stylesheet($name, $override = false)
 		echo '<script type="text/javascript">';
 		echo 'var less = {env: "development"};';
 		echo '</script>';
-		echo '<script src="'.$dir.'/js/less-1.5.0.min.js" type="text/javascript"></script>' . "\n";
+		echo '<script src="'.$dir.'/js/less-2.2.0.min.js" type="text/javascript"></script>' . "\n";
 	}
 }
 
