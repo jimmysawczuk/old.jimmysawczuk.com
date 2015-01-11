@@ -2637,6 +2637,7 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   float: left;
   display: block;
   font-size: 15px;
+  margin-right: 3px;
 }
 #content.contact .contact_info ul li a {
   color: #369;
