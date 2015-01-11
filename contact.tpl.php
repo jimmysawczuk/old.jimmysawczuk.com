@@ -27,10 +27,6 @@ get_header();
 					(440) 796-7806
 				</li>
 				<li>
-					<i class="icon-comment icon-fixed-width"></i>
-					AIM: JimmySawczuk
-				</li>
-				<li>
 					<i class="icon-comment-alt icon-fixed-width"></i>
 					XMPP: me@jimmysawczuk.com
 				</li>
@@ -49,7 +45,7 @@ get_header();
 				</li>
 				<li>
 					<i class="icon-google-plus-sign icon-fixed-width"></i>
-					<a href="https://plus.google.com/111813506447073245640" target="_blank">Google+</a>
+					<a href="https://plus.google.com/+JimmySawczuk" target="_blank">Google+</a>
 				</li>
 				<li>
 					<i class="icon-github-sign icon-fixed-width"></i>
