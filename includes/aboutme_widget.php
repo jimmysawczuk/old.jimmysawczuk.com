@@ -30,6 +30,9 @@ class AboutMeWidget extends WP_Widget {
 			<li class="twitter">
 				<a href="http://www.twitter.com/JimmySawczuk" target="_blank">Twitter</a>
 			</li>
+			<li class="instagram">
+				<a href="http://www.instagram.com/jimmysawczuk" target="_blank">Instagram</a>
+			</li>
 			<li class="google-plus">
 				<a href="http://plus.google.com/+JimmySawczuk" target="_blank">Google+</a>
 			</li>

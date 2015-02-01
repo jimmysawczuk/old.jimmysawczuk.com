@@ -40,6 +40,10 @@ get_header();
 					<a href="http://www.twitter.com/JimmySawczuk" target="_blank">Twitter</a>
 				</li>
 				<li>
+					<i class="icon-instagram icon-fixed-width"></i>
+					<a href="http://www.instagram.com/jimmysawczuk" target="_blank">Instagram</a>
+				</li>
+				<li>
 					<i class="icon-linkedin-sign icon-fixed-width"></i>
 					<a href="http://www.linkedin.com/in/jimmysawczuk" target="_blank">LinkedIn</a>
 				</li>

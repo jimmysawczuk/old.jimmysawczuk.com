@@ -2474,6 +2474,24 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   *margin-right: .3em;
   content: "\f099";
 }
+#sidebar .widget_aboutmewidget ul.more li.instagram {
+  background-color: #517fa4;
+}
+#sidebar .widget_aboutmewidget ul.more li.instagram:hover {
+  background-color: #5f8cb0;
+}
+#sidebar .widget_aboutmewidget ul.more li.instagram a:before {
+  border-right: 1px solid #81a4c1;
+}
+#sidebar .widget_aboutmewidget ul.more li.instagram a:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+  content: "\f16d";
+}
 #sidebar .widget_aboutmewidget ul.more li.google-plus {
   background-color: #dd4b39;
 }
@@ -2509,27 +2527,6 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   -webkit-font-smoothing: antialiased;
   *margin-right: .3em;
   content: "\f09b";
-}
-#sidebar .widget_aboutmewidget ul.more li.camera {
-  background-color: #cccccc;
-}
-#sidebar .widget_aboutmewidget ul.more li.camera:hover {
-  background-color: #d9d9d9;
-}
-#sidebar .widget_aboutmewidget ul.more li.camera a:before {
-  border-right: 1px solid #f2f2f2;
-}
-#sidebar .widget_aboutmewidget ul.more li.camera a {
-  color: #333;
-}
-#sidebar .widget_aboutmewidget ul.more li.camera a:before {
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  -webkit-font-smoothing: antialiased;
-  *margin-right: .3em;
-  content: "\f030";
 }
 #sidebar .widget_aboutmewidget ul.more li.info-sign {
   background-color: #e85810;
