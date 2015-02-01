@@ -196,3 +196,23 @@ function extract_excerpt($limit = 200)
 
 	return $excerpt;
 }
+
+function get_comments_permalink()
+{
+	$switch_date = mktime(0, 0, 0, 2, 1, 2015);
+	$post_date = (int)get_the_date("U");
+
+	if ($post_date > $switch_date)
+	{
+		return preg_replace("#^https?:#", "https:", get_permalink());
+	}
+	else
+	{
+		return preg_replace("#^https?:#", "http:", get_permalink());
+	}
+}
+
+function comments_permalink()
+{
+	echo get_comments_permalink();
+}
