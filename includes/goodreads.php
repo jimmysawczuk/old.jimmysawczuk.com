@@ -2,7 +2,7 @@
 
 class Goodreads
 {
-	private $url = "http://www.goodreads.com";
+	private $url = "https://www.goodreads.com";
 	private $key = false;
 
 	public function __construct($key)
