@@ -21,6 +21,8 @@ require('includes/bitbucket.php');
 require('includes/github.php');
 require('includes/goodreads.php');
 
+require('includes/upgrade_url_filter.php');
+
 require('projects.inc.php');
 require('ballpark_resume.inc.php');
 
