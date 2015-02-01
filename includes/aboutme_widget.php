@@ -39,9 +39,6 @@ class AboutMeWidget extends WP_Widget {
 			<li class="github">
 				<a href="http://github.com/jimmysawczuk" target="_blank">GitHub</a>
 			</li>
-			<li class="camera">
-				<a href="http://photos.jimmysawczuk.com" target="_blank">Photos</a>
-			</li>
 			<li class="info-sign">
 				<a href="<?=get_bloginfo('url'); ?>/contact">Contact</a>
 			</li>
