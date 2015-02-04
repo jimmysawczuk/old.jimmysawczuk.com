@@ -17,6 +17,9 @@ add_filter("the_content", function($content)
 			(isset($original_dir_parts['port'])? ':' . $original_dir_parts['port'] : "") .
 			$original_dir_parts['path'];
 
+		$content = str_replace('src="http://blog.jimmysawczuk.com', 'src="http://www.jimmysawczuk.com', $content);
+		$content = str_replace('href="http://blog.jimmysawczuk.com', 'href="http://www.jimmysawczuk.com', $content);
+
 		$content = str_replace('src="' . $normal_dir, 'src="' . $secure_dir, $content);
 		$content = str_replace('href="' . $normal_dir, 'href="' . $secure_dir, $content);
 	}
