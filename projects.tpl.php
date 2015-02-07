@@ -65,7 +65,9 @@ list($projects, $cols) = get_projects();
 
 <script src="<?=get_min_url('projects', true); ?>" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
-	Projects.init({});
+	Projects.init({
+		github_access_token: <?=json_encode(GITHUB_PROJECTS_ACCESS_TOKEN); ?>
+	});
 </script>
 <?
 get_footer();

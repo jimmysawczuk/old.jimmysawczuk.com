@@ -1,8 +1,15 @@
 var Projects = (function()
 {
 	var projects = [];
-	var GITHUB_BASE = 'https://api.github.com';
-	var BITBUCKET_BASE = 'https://api.bitbucket.org/1.0';
+
+	var GithubConfig = {
+		BaseURL: 'https://api.github.com',
+		AccessToken: null
+	};
+
+	var BitbucketConfig = {
+		BaseURL: 'https://api.bitbucket.org/1.0'
+	};
 
 	function render()
 	{
@@ -13,8 +20,15 @@ var Projects = (function()
 			{
 				var repo = $(project).data('github');
 
-				$.ajax(GITHUB_BASE + '/repos/' + repo, {
+				var params = {};
+				if (GithubConfig.AccessToken !== null)
+				{
+					params.access_token = GithubConfig.AccessToken;
+				}
+
+				$.ajax(GithubConfig.BaseURL + '/repos/' + repo, {
 					type: 'GET',
+					data: params,
 					dataType: 'jsonp',
 					success: function(response)
 					{
@@ -53,7 +67,7 @@ var Projects = (function()
 			{
 				var repo = $(project).data('bitbucket');
 
-				$.ajax(BITBUCKET_BASE + '/repositories/' + repo, {
+				$.ajax(BitbucketConfig.BaseURL + '/repositories/' + repo, {
 					type: 'GET',
 					dataType: 'jsonp',
 					success: function(response)
@@ -97,6 +111,11 @@ var Projects = (function()
 
 	function init(opts)
 	{
+		if (typeof opts.github_access_token != "undefined")
+		{
+			GithubConfig.AccessToken = opts.github_access_token;
+		}
+
 		render();
 	}
 
