@@ -33,6 +33,13 @@ function get_projects()
 	);
 
 	$projects []= array(
+		'name' => "pegasus",
+		'description' => "A Nike+ API consumer in Go",
+		'github' => "jimmysawczuk/pegasus",
+		'tags' => array("go", "open-source", "development"),
+	);
+
+	$projects []= array(
 		'name' => "dove",
 		'description' => "A tool to make web requests from a web interface",
 		'github' => "jimmysawczuk/dove",
