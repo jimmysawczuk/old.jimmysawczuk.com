@@ -24,6 +24,13 @@ list($projects, $cols) = get_projects();
 					<?=isset($project['bitbucket'])? 'data-bitbucket="'.$project['bitbucket'].'"' : ""; ?>>
 					<div class="container">
 						<h2><?=$project['name'] ?></h2>
+						<? if (isset($project['codeship']) && is_array($project['codeship'])): ?>
+							<div class="codeship">
+								<a href="https://codeship.com/projects/<?=$project['codeship']['id'] ?>">
+									<img src="https://codeship.com/projects/<?=$project['codeship']['guid'] ?>/status?branch=<?=isset($project['codeship']['branch'])? $project['codeship']['branch'] : "master" ?>" alt="Codeship status" />
+								</a>
+							</div>
+						<? endif; ?>
 						<h3><?=htmlentities($project['description']); ?></h3>
 						<? if (isset($project['screenshots'])): foreach ($project['screenshots'] as $screenshot): ?>
 							<img src="<?=$screenshot['src'] ?>" alt="<?=$screenshot['alt'] ?>" class="screenshot" />

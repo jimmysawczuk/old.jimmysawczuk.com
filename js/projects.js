@@ -43,11 +43,11 @@ var Projects = (function()
 
 							if (typeof $.timeago === "function")
 							{
-								meta.find('.timeago').timeago();	
+								meta.find('.timeago').timeago();
 							}
 						}
-					}						
-				});				
+					}
+				});
 			}
 			else if ($(project).data('bitbucket'))
 			{
@@ -81,12 +81,12 @@ var Projects = (function()
 
 						if (typeof $.timeago === "function")
 						{
-							meta.find('.timeago').timeago();	
+							meta.find('.timeago').timeago();
 						}
 					}
 				});
 			}
-		});			
+		});
 	}
 
 	// via http://css-tricks.com/snippets/javascript/htmlentities-for-javascript/

@@ -110,7 +110,6 @@ function get_projects()
 		'description' => "A little Windows application that performs a variety of operations after a set timer has elapsed.",
 		'tags' => array("c#", "utility", "windows", "open-source"),
 		'download' => "http://files.jimmysawczuk.com/files/sleeptimer/Setup.msi",
-		'bitbucket' => "jimmysawczuk/sleeptimer",
 		'screenshots' => array(
 			array('src' => get_bloginfo('stylesheet_directory') . "/images/projects/sleeptimer_ss1.jpg", 'alt' => "Screenshot")
 		)
@@ -127,14 +126,22 @@ function get_projects()
 		'name' => 'go-aws',
 		'description' => "A Go library for AWS services (particularly S3)",
 		'tags' => array("go", "open-source", "development"),
-		'github' => "jimmysawczuk/go-aws"
+		'github' => "jimmysawczuk/go-aws",
+		'codeship' => array(
+			'guid' => "6607f8d0-2b35-0132-392a-122cbd15e841",
+			'id' => 38504,
+		),
 	);
 
 	$projects []= array(
 		'name' => 'go-facebook',
 		'description' => "A Go library to access the Facebook Graph API",
 		'tags' => array("go", "open-source", "development"),
-		'github' => "jimmysawczuk/go-facebook"
+		'github' => "jimmysawczuk/go-facebook",
+		'codeship' => array(
+			'guid' => "6607f8d0-2b35-0132-392a-122cbd15e841",
+			'id' => 61581,
+		),
 	);
 
 	$projects []= array(
