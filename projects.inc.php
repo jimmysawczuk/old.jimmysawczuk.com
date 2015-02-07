@@ -91,7 +91,7 @@ function get_projects()
 		'web' => "http://files.jimmysawczuk.com/files/invaders.php",
 		'bitbucket' => "jimmysawczuk/invaders",
 		'screenshots' => array(
-			array('src' => "http://files.jimmysawczuk.com/files/images/invaders_ss1.jpg", 'alt' => "Screenshot")
+			array('src' => get_bloginfo('stylesheet_directory') . "/images/projects/invaders_ss1.jpg", 'alt' => "Screenshot")
 		)
 	);
 
@@ -101,7 +101,7 @@ function get_projects()
 		'tags' => array("xna", "c#", "game"),
 		'web' => "http://files.jimmysawczuk.com/files/georgeinspace.php",
 		'screenshots' => array(
-			array('src' => "http://files.jimmysawczuk.com/files/images/gis_ss1.jpg", 'alt' => "Screenshot")
+			array('src' => get_bloginfo('stylesheet_directory') . "/images/projects/gis_ss1.jpg", 'alt' => "Screenshot")
 		)
 	);
 
@@ -112,7 +112,7 @@ function get_projects()
 		'download' => "http://files.jimmysawczuk.com/files/sleeptimer/Setup.msi",
 		'bitbucket' => "jimmysawczuk/sleeptimer",
 		'screenshots' => array(
-			array('src' => "http://www.jimmysawczuk.com/wp-content/uploads/2011/01/sleeptimer_ss1.jpg", 'alt' => "Screenshot")
+			array('src' => get_bloginfo('stylesheet_directory') . "/images/projects/sleeptimer_ss1.jpg", 'alt' => "Screenshot")
 		)
 	);
 
