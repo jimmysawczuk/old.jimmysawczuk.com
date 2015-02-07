@@ -4,7 +4,7 @@ add_filter("the_content", function($content)
 {
 	if (is_ssl())
 	{
-		$orignal_dir = wp_upload_dir();
+		$original_dir = wp_upload_dir();
 		$original_dir_parts = parse_url($original_dir['baseurl']);
 
 		$normal_dir = 'http://' .
@@ -19,6 +19,9 @@ add_filter("the_content", function($content)
 
 		$content = str_replace('src="http://blog.jimmysawczuk.com', 'src="http://www.jimmysawczuk.com', $content);
 		$content = str_replace('href="http://blog.jimmysawczuk.com', 'href="http://www.jimmysawczuk.com', $content);
+
+		$content = str_replace('src="http://www.jimmysawczuk.com', 'src="http://jimmysawczuk.com', $content);
+		$content = str_replace('href="http://www.jimmysawczuk.com', 'href="http://jimmysawczuk.com', $content);
 
 		$content = str_replace('src="' . $normal_dir, 'src="' . $secure_dir, $content);
 		$content = str_replace('href="' . $normal_dir, 'href="' . $secure_dir, $content);
