@@ -2027,7 +2027,7 @@ html.ie #search #search_text {
 .post .content hr {
   height: 0px;
   border-width: 0px;
-  border-top: 1px solid #aaa;
+  border-top: 1px solid #ccc;
 }
 .post .content hr.ellipsis {
   margin: 2em auto;
