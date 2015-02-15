@@ -155,7 +155,11 @@ function get_projects()
 		'name' => 'go-config',
 		'description' => "A Go library to set and retrieve relevant config options in a project",
 		'tags' => array("go", "open-source", "development"),
-		'github' => "jimmysawczuk/go-config"
+		'github' => "jimmysawczuk/go-config",
+		'codeship' => array(
+			'guid' => "47df1c70-96ff-0132-8354-7a1406c9da98",
+			'id' => 63102,
+		),
 	);
 
 	$projects []= array(
