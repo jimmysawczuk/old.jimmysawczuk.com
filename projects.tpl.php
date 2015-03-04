@@ -31,6 +31,11 @@ list($projects, $cols) = get_projects();
 								</a>
 							</div>
 						<? endif; ?>
+						<? if (isset($project['travis']) && is_array($project['travis'])): ?>
+							<div class="travis">
+								<a href="http://travis-ci.org/<?=$project['travis']['path'] ?>"><img src="https://travis-ci.org/<?=$project['travis']['path'] ?>.svg?branch=<?=urlencode($project['travis']['branch']); ?>" alt="<?=$project['travis']['path'] ?>" /></a>
+							</div>
+						<? endif; ?>
 						<h3><?=htmlentities($project['description']); ?></h3>
 						<? if (isset($project['screenshots'])): foreach ($project['screenshots'] as $screenshot): ?>
 							<img src="<?=$screenshot['src'] ?>" alt="<?=$screenshot['alt'] ?>" class="screenshot" />

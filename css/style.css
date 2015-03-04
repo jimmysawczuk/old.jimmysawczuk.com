@@ -2743,13 +2743,15 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   border-bottom: 1px solid #919191;
   padding-bottom: 3px;
 }
-#content.projects #projects .project .container .codeship {
+#content.projects #projects .project .container .codeship,
+#content.projects #projects .project .container .travis {
   margin: 0px 5px;
   margin-top: 3px;
   margin-bottom: 3px;
   height: 20px;
 }
-#content.projects #projects .project .container .codeship img {
+#content.projects #projects .project .container .codeship img,
+#content.projects #projects .project .container .travis img {
   display: inline-block;
   height: 20px;
 }

@@ -134,9 +134,9 @@ function get_projects()
 		'description' => "A Go library for AWS services (particularly S3)",
 		'tags' => array("go", "open-source", "development"),
 		'github' => "jimmysawczuk/go-aws",
-		'codeship' => array(
-			'guid' => "6607f8d0-2b35-0132-392a-122cbd15e841",
-			'id' => 38504,
+		'travis' => array(
+			'path' => "jimmysawczuk/go-aws",
+			'branch' => "master",
 		),
 	);
 
@@ -145,9 +145,9 @@ function get_projects()
 		'description' => "A Go library to access the Facebook Graph API",
 		'tags' => array("go", "open-source", "development"),
 		'github' => "jimmysawczuk/go-facebook",
-		'codeship' => array(
-			'guid' => "6607f8d0-2b35-0132-392a-122cbd15e841",
-			'id' => 61581,
+		'travis' => array(
+			'path' => "jimmysawczuk/go-facebook",
+			'branch' => "master",
 		),
 	);
 
@@ -156,9 +156,9 @@ function get_projects()
 		'description' => "A Go library to set and retrieve relevant config options in a project",
 		'tags' => array("go", "open-source", "development"),
 		'github' => "jimmysawczuk/go-config",
-		'codeship' => array(
-			'guid' => "47df1c70-96ff-0132-8354-7a1406c9da98",
-			'id' => 63102,
+		'travis' => array(
+			'path' => "jimmysawczuk/go-config",
+			'branch' => "master",
 		),
 	);
 
