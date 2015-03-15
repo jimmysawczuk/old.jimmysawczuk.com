@@ -3189,14 +3189,14 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
     width: 65%;
   }
   .post .content .recommendations {
-    height: 150px;
+    height: 300px;
     clear: both;
   }
   .post_first {
     margin-bottom: inherit;
   }
   #interstitial_recommendations {
-    height: 150px;
+    height: 300px;
     clear: both;
   }
 }
