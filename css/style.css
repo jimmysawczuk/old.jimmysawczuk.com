@@ -3209,6 +3209,7 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   }
   #sidebar .widget_aboutmewidget img {
     margin: 0px auto;
+    display: block;
   }
 }
 #wpstats {
