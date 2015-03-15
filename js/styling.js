@@ -116,7 +116,7 @@
 			}
 		}
 
-		$('.post .content').find('img').removeAttr('width');
+		$('.post .content').find('img').removeAttr('width').removeAttr('height');
 		$('.post .content').find('.wp-caption').css("width", "auto");
 
 		$('.timeago').timeago();
