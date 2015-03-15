@@ -2175,41 +2175,16 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   margin-left: 7px;
 }
 #pagination span {
-  color: #333333;
-  background-color: #e7e7e7;
-  background-image: -moz-linear-gradient(top, #eeeeee, #dddddd);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eeeeee), to(#dddddd));
-  background-image: -webkit-linear-gradient(top, #eeeeee, #dddddd);
-  background-image: -o-linear-gradient(top, #eeeeee, #dddddd);
-  background-image: linear-gradient(to bottom, #eeeeee, #dddddd);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeeeeee', endColorstr='#ffdddddd', GradientType=0);
-  border-color: #dddddd #dddddd #b7b7b7;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #dddddd;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  padding: 3px 5px;
-  border: 1px solid #aaa;
-  width: 80px;
-  border-radius: 2px 2px 2px 2px;
-  -moz-border-radius: 2px 2px 2px 2px;
-  -webkit-border-radius: 2px 2px 2px 2px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-}
-#pagination span:hover,
-#pagination span:active,
-#pagination span.active,
-#pagination span.disabled,
-#pagination span[disabled] {
-  color: #333333;
-  background-color: #dddddd;
-  *background-color: #d0d0d0;
-}
-#pagination span:active,
-#pagination span.active {
-  background-color: #c4c4c4 \9;
+  background: #333;
+  color: #f9f9f9;
+  padding: 5px 7px;
+  width: 120px;
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
 #pagination a {
   color: #333333;
@@ -3227,10 +3202,33 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
     width: auto;
     padding-left: 0px;
     padding: 0px 7px;
+    margin-top: 2em;
+    padding-top: 2em;
   }
   #sidebar .widget_aboutmewidget img {
     margin: 0px auto;
     display: block;
+  }
+}
+@media (max-width: 768px) {
+  #pagination {
+    box-sizing: border-box;
+  }
+  #pagination .next,
+  #pagination .previous {
+    width: 40%;
+    box-sizing: border-box;
+  }
+  #pagination .next {
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+  #pagination .previous {
+    margin-right: 10px;
+    margin-left: 5px;
+  }
+  #pagination span {
+    width: 100%;
   }
 }
 #wpstats {
