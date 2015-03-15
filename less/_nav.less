@@ -1,41 +1,42 @@
 #nav {
-	.clearfix; 
-	margin: 0px auto 30px; 
-	height: 40px; 
-	width: 920px; 
-	position: relative; 
-	left: -30px; 
+	.clearfix;
+	margin: 0px auto 30px;
+	height: 40px;
+	width: 920px;
+	position: relative;
+	left: -30px;
 
-	ul { 
+	ul {
 		.clearfix;
-		overflow: hidden; 
-		background-color: #444; 
-		color: white; 
-		margin: 0px 0px 30px; 
+		overflow: hidden;
+		background-color: #444;
+		color: white;
+		margin: 0px 0px 30px;
 		padding: 0px 30px;
 		height: 40px;
 		position: absolute; left: 0px; right: 0px;
 		.border-radius(1px);
 		z-index: 100;
 
-		li { 
-			float: left; 
-			line-height: 20px; 
-			padding: 0px; 
-			margin: 0px 7px; 
+		li {
+			float: left;
+			line-height: 20px;
+			padding: 0px;
+			margin: 0px 7px;
 
+			&.switch { display: none; }
 			&.first { margin-left: 0px; }
 			&.last { margin-right: 0px; }
 
 			&, & a {
-				font-weight: bold; 
-				color: #eee; 
-				font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif; 
-				text-decoration: none; 
+				font-weight: bold;
+				color: #eee;
+				font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
+				text-decoration: none;
 			}
 
 			a {
-				padding: 10px 5px; 
+				padding: 10px 5px;
 				display: block;
 				.border-radius(1px);
 			}
@@ -55,8 +56,8 @@
 		position: absolute;
 		display: block;
 		bottom: -10px;
-		z-index: 99; 
-		border: 10px solid transparent; 
+		z-index: 99;
+		border: 10px solid transparent;
 	}
 
 	.left_bezel {

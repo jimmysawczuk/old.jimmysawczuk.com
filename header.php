@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
 	<head>
-		<title><? page_title(); ?></title>
+		<title><?=MODE == "live"? "" : "[" . MODE . "] "; ?><? page_title(); ?></title>
 		<? load_stylesheet('style'); ?>
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 		<script src="<?=get_min_url('jquery', true); ?>" type="text/javascript" charset="utf-8"></script>
-		<meta name="viewport" content="width=1050, maximum-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<? fb_og_tags(); ?>
 		<? twitter_card_tags(); ?>
 		<link rel="apple-touch-icon" href="<? bloginfo('stylesheet_directory'); ?>/images/apple-touch-icon.png" />
@@ -43,6 +43,7 @@
 					<div class="bezel left_bezel"></div>
 					<div class="bezel right_bezel"></div>
 					<ul>
+						<li class="switch"><a href="javascript: void(0);">Menu</a></li>
 						<li class="first"><a href="<? bloginfo('url'); ?>" title="Home">Home</a></li>
 						<li><a href="<? bloginfo('url'); ?>/contact" title="About Me">About Me</a></li>
 						<li><a href="<? bloginfo('url'); ?>/projects" title="Projects">Projects</a></li>

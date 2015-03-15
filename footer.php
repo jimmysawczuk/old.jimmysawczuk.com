@@ -4,9 +4,6 @@
 						<? dynamic_sidebar(1); ?>
 					</div>
 				<? endif; ?>
-				<div id="footer">
-
-				</div>
 			</div>
 		</div>
 		<div id="copyright">

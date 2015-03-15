@@ -85,8 +85,8 @@
 					.html("Source: ")
 					.append(a)
 				);
-			})(citation);	
-		}				
+			})(citation);
+		}
 	});
 
 	$('.share-button').click(function(evt)
@@ -113,10 +113,18 @@
 				{
 					$('html').addClass('ie7');
 				}
-			}					
+			}
 		}
-		
+
+		$('.post .content').find('img').removeAttr('width');
+		$('.post .content').find('.wp-caption').css("width", "auto");
+
 		$('.timeago').timeago();
+
+		$('#nav .switch a').click(function()
+		{
+			$('#nav').toggleClass('active');
+		})
 	}
 
 	$(document).ready(function()

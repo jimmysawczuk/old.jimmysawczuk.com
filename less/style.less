@@ -32,6 +32,7 @@ body {
 	.box-shadow(2px, 2px, 10px, 0px, #222);
 	.border-radius(1px);
 	z-index: 100;
+	.clearfix;
 }
 
 #tab_container {
@@ -88,6 +89,10 @@ body {
 @import "pages/_projects.less";
 @import "pages/_ballpark_resume.less";
 
-@import "_mobile.less";
+// Mobile rules/exceptions
+@import "_mobile_main.less";
+@import "_mobile_nav.less";
+@import "_mobile_post.less";
+@import "_mobile_sidebar.less";
 
 #wpstats { display: none; }
