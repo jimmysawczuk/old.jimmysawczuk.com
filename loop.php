@@ -29,7 +29,12 @@
 			<? if (is_single()): ?>
 				<hr class="recommendation-divider" />
 				<div class="recommendations">
-					<fb:recommendations site="<?=blog_domain(); ?>" width="100%" height="100%" header="true" font="arial" border_color="" colorscheme="light"></fb:recommendations>
+					<div class="container">
+						<fb:recommendations site="<?=blog_domain(); ?>" width="575" header="true" font="arial" border_color="" colorscheme="light"></fb:recommendations>
+					</div>
+					<div class="mobile-container">
+						<fb:recommendations site="<?=blog_domain(); ?>" width="300" header="true" font="arial" border_color="" colorscheme="light"></fb:recommendations>
+					</div>
 				</div>
 				<hr class="recommendation-divider" />
 				<div class="original">
@@ -66,7 +71,10 @@
 	<? if (!is_page() && $paged < 2 && $i == 0 && !is_single()): ?>
 		<div id="interstitial_recommendations">
 			<div class="container">
-				<fb:activity site="<?=blog_domain(); ?>" width="100%" height="100%" header="true" font="arial" border_color="#aaa" recommendations="false"></fb:activity>
+				<fb:activity site="<?=blog_domain(); ?>" width="575" header="true" font="arial" border_color="#aaa" recommendations="false"></fb:activity>
+			</div>
+			<div class="mobile-container">
+				<fb:activity site="<?=blog_domain(); ?>" width="300" header="true" font="arial" border_color="#aaa" recommendations="false"></fb:activity>
 			</div>
 		</div>
 	<? endif; ?>
