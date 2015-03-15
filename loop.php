@@ -66,7 +66,7 @@
 	<? if (!is_page() && $paged < 2 && $i == 0 && !is_single()): ?>
 		<div id="interstitial_recommendations">
 			<div class="container">
-				<fb:activity site="<?=blog_domain(); ?>" header="true" font="arial" border_color="#aaa" recommendations="false"></fb:activity>
+				<fb:activity site="<?=blog_domain(); ?>" width="100%" height="100%" header="true" font="arial" border_color="#aaa" recommendations="false"></fb:activity>
 			</div>
 		</div>
 	<? endif; ?>
