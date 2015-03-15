@@ -2110,6 +2110,8 @@ html.ie #search #search_text {
 }
 .post .content .recommendations {
   background-color: white;
+  width: 100%;
+  height: 300px;
 }
 .post_first {
   margin-bottom: 1.5em;
@@ -2123,6 +2125,8 @@ html.ie #search #search_text {
   padding: 0.75em 0px;
   border: 1px dashed #aaa;
   border-width: 1px 0px;
+  width: 100%;
+  height: 300px;
 }
 #interstitial_recommendations .container {
   margin: 0px;
@@ -3181,15 +3185,28 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
     float: none;
     margin: 0px auto;
   }
+  .post .content .meta .tags {
+    width: 65%;
+  }
+  .post .content .recommendations {
+    height: 150px;
+  }
   .post_first {
     margin-bottom: inherit;
+  }
+  #interstitial_recommendations {
+    height: 150px;
   }
 }
 @media (max-width: 768px) {
   #sidebar {
     clear: both;
-    width: 100%;
+    width: auto;
     padding-left: 0px;
+    padding: 0px 7px;
+  }
+  #sidebar .widget_aboutmewidget img {
+    margin: 0px auto;
   }
 }
 #wpstats {
