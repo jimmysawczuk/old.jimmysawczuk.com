@@ -1,13 +1,19 @@
 @media (max-width: 768px) {
 	body {
-		background: #9a9aaa;
+		background: #eee;
 		background-size: 100%;
+	}
+
+	#tab_container {
+		width: auto;
 	}
 
 	#container {
 		.box-shadow(0px, 0px, 0px, 0px, rgba(0, 0, 0, 0));
 		width: 100%;
 		padding-left: 0px;
+		padding-right: 0px;
+		padding-bottom: 0px;
 	}
 
 	#header {
@@ -22,5 +28,11 @@
 
 	#content {
 		width: 100%;
+		box-sizing: border-box;
+		padding: 0px 7px;
+
+		&.hide_sidebar {
+			width: 100%;
+		}
 	}
 }
