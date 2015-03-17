@@ -3070,7 +3070,7 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   #content.projects #projects .project {
     float: none;
     width: auto;
-    margin: inherit 5px;
+    margin: 0px 5px 10px;
   }
 }
 @media (max-width: 768px) {
