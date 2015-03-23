@@ -2571,10 +2571,9 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
 #copyright {
   font-size: 85%;
   text-align: center;
-  margin: 1em 0px;
   color: #dcdcdc;
   text-shadow: 1px 1px 0 #444;
-  padding-bottom: 15px;
+  padding: 15px 0px;
   position: relative;
   z-index: 50;
 }
@@ -2851,12 +2850,6 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   height: 0;
   clear: both;
   visibility: hidden;
-}
-#ballparks .col {
-  float: left;
-}
-#ballparks .col-0 {
-  margin-right: 15px;
 }
 #ballparks .ballpark {
   width: 422px;
