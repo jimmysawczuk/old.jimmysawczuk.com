@@ -9,7 +9,7 @@ class BallparkWidget extends WP_Widget
 		// Instantiate the parent object
 		parent::WP_Widget( false, 'Ballpark Widget' );
 
-		list($ballparks, $cols) = get_ballparks();
+		$ballparks = get_ballparks();
 
 		usort($ballparks, "BallparkWidget::sortBallparksByName");
 
@@ -37,7 +37,7 @@ class BallparkWidget extends WP_Widget
 	?>
 	<?=$args['before_widget']; ?>
 		<?=$args['before_title'] ?>Ballparks<?=$args['after_title'] ?>
-		<ul id="ballpark_resume">		
+		<ul id="ballpark_resume">
 			<? $even = false; foreach ($this->ballparks as $ballpark): ?>
 				<li class="<?=$even? 'even' : 'odd' ?>">
 					<div class="rating">
@@ -54,7 +54,7 @@ class BallparkWidget extends WP_Widget
 				</li>
 			<? $even = !$even; endforeach; ?>
 		</ul>
-			
+
 	<?=$args['after_widget']; ?>
 	<?
 	}

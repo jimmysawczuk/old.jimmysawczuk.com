@@ -194,7 +194,6 @@ function get_ballparks()
 	//////////////////////////////////////
 
 	$i = 0;
-	$cols = array();
 	foreach ($ballparks as &$ballpark)
 	{
 		$ballpark['full_img'] = get_bloginfo('stylesheet_directory') . '/images/ballparks/' . $ballpark['img'];
@@ -204,13 +203,9 @@ function get_ballparks()
 		$ballpark['id'] = preg_replace('#\s+#', '_', $ballpark['id']);
 		$ballpark['id'] = preg_replace('#\W+#', '', $ballpark['id']);
 		$ballpark['id'] = str_replace('_', '-', $ballpark['id']);
-
-		$col = $i++ % 2;
-
-		$cols[$col] []= $ballpark;
 	}
 	unset($ballpark);
 
-	return array($ballparks, $cols, count($ballparks), count($ballparks) - 2);
+	return $ballparks;
 }
 

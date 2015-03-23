@@ -2876,6 +2876,11 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   cursor: pointer;
   background-repeat: no-repeat;
   background-position: center center;
+  float: left;
+}
+#ballparks .ballpark:nth-child(2n+1) {
+  margin-right: 15px;
+  clear: left;
 }
 #ballparks .ballpark .header {
   display: none;
@@ -3117,22 +3122,14 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   #ballparks {
     clear: both;
   }
-  #ballparks .row {
-    margin-top: 0px !important;
-    margin-bottom: 10px;
-  }
-  #ballparks .col {
-    float: none;
-    width: auto;
-    margin-right: 0px;
-  }
-  #ballparks .col-1 {
-    margin-top: 10px;
-  }
   #ballparks .ballpark {
+    float: none;
     width: auto;
     max-width: 422px;
     margin-left: auto;
+    margin-right: auto;
+  }
+  #ballparks .ballpark:nth-child(2n+1) {
     margin-right: auto;
   }
 }
