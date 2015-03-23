@@ -2591,6 +2591,9 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
 #content.contact #about_me_container .container {
   padding: 20px;
 }
+#content.contact .mobile-img {
+  display: none;
+}
 #content.contact .contact_info {
   position: absolute;
   left: 10px;
@@ -3062,6 +3065,41 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
 }
 #ballpark-map-wrapper .infobox-hidden {
   display: none;
+}
+@media (max-width: 768px) {
+  #content.contact #about_me_container {
+    width: auto;
+    background: none;
+    height: auto;
+  }
+  #content.contact #about_me_container .container {
+    padding: 0px;
+  }
+  #content.contact .mobile-img {
+    display: block;
+  }
+  #content.contact .mobile-img img {
+    display: block;
+    max-width: 100%;
+  }
+  #content.contact .bio {
+    position: relative;
+    width: auto;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+  }
+  #content.contact .contact_info {
+    position: relative;
+    width: auto;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    border: 1px solid #bbb;
+    border-top-width: 0px;
+  }
 }
 @media (max-width: 768px) {
   #content.projects #projects .col {

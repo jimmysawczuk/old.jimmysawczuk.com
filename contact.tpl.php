@@ -8,6 +8,10 @@ get_header();
 ?>
 <div id="about_me_container">
 	<div class="container">
+		<div class="mobile-img">
+			<img src="<?=get_bloginfo('stylesheet_directory') . '/images/about_jimmy_widescreen.jpg'; ?>" alt="Hey! My name is Jimmy." />
+		</div>
+
 		<div class="bio">
 			<div class="padding">
 				<h2>Hey! My name is Jimmy.</h2>
