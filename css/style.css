@@ -2874,6 +2874,8 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   box-shadow: 1px 1px 10px 2px #cccccc;
   overflow: hidden;
   cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 #ballparks .ballpark .header {
   display: none;
@@ -3129,6 +3131,9 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   }
   #ballparks .ballpark {
     width: auto;
+    max-width: 422px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (max-width: 768px) {

@@ -17,7 +17,7 @@ list($ballparks, $cols, $been_to, $active) = get_ballparks();
 	<? foreach (array_keys($cols) as $col): $row = 0; ?>
 		<div class="col col-<?=$col ?>">
 			<? foreach ($cols[$col] as $ballpark): ?>
-				<div class="row-<?=$row ?> ballpark" id="<?=$ballpark['id'] ?>" style="background: url('<?=$ballpark['full_img'] ?>?wide') no-repeat;" data-map-center='<?=json_encode($ballpark['latlong']); ?>'>
+				<div class="row-<?=$row ?> ballpark" id="<?=$ballpark['id'] ?>" style="background-image: url('<?=$ballpark['full_img'] ?>?wide')" data-map-center='<?=json_encode($ballpark['latlong']); ?>'>
 					<div class="map"></div>
 
 					<div class="header">
