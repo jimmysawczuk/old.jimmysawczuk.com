@@ -11,7 +11,7 @@
 					<span class="small"><?=date("M y", strtotime(get_the_date())); ?></span>
 				</div>
 				<div class="post_comments">
-					<span class="big"><a href="<? the_permalink(); ?>#comments"><fb:comments-count href="<? comments_permalink(); ?>"></fb:comments-count></a></span>
+					<span class="big"><a href="<? the_permalink(); ?>#comments"><span class="fb-comments-count" data-href="<? comments_permalink(); ?>"></span></a></span>
 					<span class="small">Comments</span>
 				</div>
 				<div class="top_link">
@@ -28,15 +28,6 @@
 			<? the_content(''); ?>
 			<? if (is_single()): ?>
 				<hr class="recommendation-divider" />
-				<div class="recommendations">
-					<div class="container">
-						<fb:recommendations site="<?=blog_domain(); ?>" width="575" header="true" font="arial" border_color="" colorscheme="light"></fb:recommendations>
-					</div>
-					<div class="mobile-container">
-						<fb:recommendations site="<?=blog_domain(); ?>" width="300" header="true" font="arial" border_color="" colorscheme="light"></fb:recommendations>
-					</div>
-				</div>
-				<hr class="recommendation-divider" />
 				<div class="original">
 					Originally posted on <a href="<?=bloginfo('url'); ?>"><?=bloginfo('site_name') ?></a> on
 					<?=date("F j, Y \a\\t g:i A", strtotime($post->post_date)); ?>. Post text content &copy;
@@ -49,7 +40,7 @@
 						<? if (has_more_link() && !is_single()): ?>
 							<a href="<? the_permalink(); ?>#more-<? the_ID(); ?>">Read more &raquo;</a>
 						<? else: ?>
-							<a href="<? the_permalink(); ?>#comments"><fb:comments-count href="<? comments_permalink(); ?>"></fb:comments-count> Comments</a>
+							<a href="<? the_permalink(); ?>#comments"><span class="fb-comments-count" data-href="<? comments_permalink(); ?>"></span> Comments</a>
 						<? endif; ?>
 					</div>
 
@@ -63,21 +54,10 @@
 		<? if (is_single() && !is_page()): ?>
 			<div id="comments">
 				<h4>Comments</h4>
-				<fb:comments href="<? comments_permalink(); ?>" num_posts="10" width="575"></fb:comments>
+				<div class="fb-comments" data-href="<? comments_permalink(); ?>" data-version="v2.3" data-width="100%" data-numposts="10"></div>
 			</div>
 		<? endif; ?>
 	</div>
-
-	<? if (!is_page() && $paged < 2 && $i == 0 && !is_single()): ?>
-		<div id="interstitial_recommendations">
-			<div class="container">
-				<fb:activity site="<?=blog_domain(); ?>" width="575" header="true" font="arial" border_color="#aaa" recommendations="false"></fb:activity>
-			</div>
-			<div class="mobile-container">
-				<fb:activity site="<?=blog_domain(); ?>" width="300" header="true" font="arial" border_color="#aaa" recommendations="false"></fb:activity>
-			</div>
-		</div>
-	<? endif; ?>
 <?
 	$i++; endwhile;
 ?>
