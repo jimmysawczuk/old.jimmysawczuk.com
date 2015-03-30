@@ -63,6 +63,13 @@ module.exports = function(grunt)
 				src: ['css/style.css'],
 				dest: 'css/style.min.css'
 			}
+		},
+
+		watch: {
+			js: {
+				tasks: ['concat'],
+				files: ["js/src/**/*.js"]
+			}
 		}
 	});
 
@@ -70,6 +77,7 @@ module.exports = function(grunt)
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	grunt.registerTask('default', ['less', 'cssmin', 'concat', 'uglify']);
 };
