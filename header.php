@@ -4,7 +4,7 @@
 		<title><?=MODE == "live"? "" : "[" . MODE . "] "; ?><? page_title(); ?></title>
 		<? load_stylesheet('style'); ?>
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-		<script src="<?=get_min_url('jquery', true); ?>" type="text/javascript" charset="utf-8"></script>
+		<script src="<?=get_min_url('jquery'); ?>" type="text/javascript" charset="utf-8"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<? fb_og_tags(); ?>
 		<? twitter_card_tags(); ?>

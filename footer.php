@@ -34,7 +34,7 @@
 				document.getElementById('fb-root').appendChild(e);
 			}());
 		</script>
-		<script type="text/javascript" src="<?=get_min_url('js', true); ?>" charset="utf-8"></script>
+		<script type="text/javascript" src="<?=get_min_url('components'); ?>" charset="utf-8"></script>
 		<? wp_footer(); ?>
 	</body>
 </html>

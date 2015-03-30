@@ -2,3 +2,4 @@
 *.DS_Store
 REVISION*
 includes/mode.php
+node_modules/

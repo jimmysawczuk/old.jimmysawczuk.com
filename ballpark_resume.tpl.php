@@ -71,7 +71,7 @@ $ballparks = get_ballparks();
 </div>
 
 <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=<?=GOOGLE_MAPS_API_KEY; ?>&sensor=false"></script>
-<script src="<?=get_min_url('ballpark_resume', true); ?>" type="text/javascript" charset="utf-8"></script>
+<script src="<?=get_min_url('ballpark_resume'); ?>" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 	$(document).ready(function()
 	{

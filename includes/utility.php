@@ -47,32 +47,18 @@ function pluralize($num, $sing, $plu, $repl = '%')
 	return $tbr;
 }
 
-function get_min_url($urls, $group = false, $override = false)
+function get_min_url($name, $override = false)
 {
-	if (!is_array($urls) && !$group)
+	$dir = get_bloginfo('stylesheet_directory');
+
+	if (MODE == "live" || $override)
 	{
-		$urls = array($urls);
-	}
-
-	$root_dir = get_bloginfo('stylesheet_directory');
-
-	$root_dir = str_replace(get_bloginfo('url').'/', '', $root_dir);
-
-	if (!$group)
-	{
-		$str = get_bloginfo('stylesheet_directory').'/min/?b='.$root_dir.'&f='.implode(",", $urls);
+		return $dir . '/js/bin/' . $name . '.min.js';
 	}
 	else
 	{
-		$str = get_bloginfo('stylesheet_directory').'/min/?g='.$urls;
+		return $dir . '/js/bin/' . $name . '.js';
 	}
-
-	if (MODE == "dev" || $override)
-	{
-		$str .= "&debug=1&date=".date("YmdHis");
-	}
-
-	return $str;
 }
 
 function load_stylesheet($name, $override = false)
@@ -89,7 +75,7 @@ function load_stylesheet($name, $override = false)
 		echo '<script type="text/javascript">';
 		echo 'var less = {env: "development"};';
 		echo '</script>';
-		echo '<script src="'.$dir.'/js/less-2.2.0.min.js" type="text/javascript"></script>' . "\n";
+		echo '<script src="'.get_min_url("less", true).'" type="text/javascript"></script>' . "\n";
 	}
 }
 

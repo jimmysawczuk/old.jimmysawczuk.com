@@ -1,3 +1,8 @@
+export PATH := $(shell npm bin):$(PATH)
+
 default:
-	@lessc less/style.less css/style.css
-	@cleancss -o css/style.min.css css/style.css
+	@npm install
+	@grunt
+
+clean:
+	@rm -rf js/bin css
