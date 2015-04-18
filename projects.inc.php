@@ -56,6 +56,13 @@ function get_projects()
 	);
 
 	$projects []= array(
+		'name' => "power-monitor",
+		'description' => "A monitoring tool for CyberPower UPSes",
+		'github' => "jimmysawczuk/power-monitor",
+		'tags' => array("go", "open-source"),
+	);
+
+	$projects []= array(
 		'name' => "clippy-jquery",
 		'description' => "A jQuery plugin that utilizes the clippy SWF to enable easy copy-and-paste on web content",
 		'github' => "jimmysawczuk/clippy-jquery",
@@ -99,6 +106,17 @@ function get_projects()
 		'github' => "jimmysawczuk/go-config",
 		'travis' => array(
 			'path' => "jimmysawczuk/go-config",
+			'branch' => "master",
+		),
+	);
+
+	$projects []= array(
+		'name' => 'recon',
+		'description' => "A Go library to retrieve OpenGraph tags from web pages",
+		'tags' => array("go", "open-source", "development"),
+		'github' => "jimmysawczuk/recon",
+		'travis' => array(
+			'path' => "jimmysawczuk/recon",
 			'branch' => "master",
 		),
 	);
