@@ -20,7 +20,7 @@
 		</script>
 	</head>
 	<body>
-		<? if (MODE === "live") require(dirname(__FILE__) . '/ga.php'); ?>
+		<? if (MODE === "live") require(dirname(__FILE__) . '/includes/ga.php'); ?>
 		<div id="bg"></div>
 		<div id="tab_container">
 			<div id="container">
