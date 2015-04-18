@@ -10,19 +10,6 @@
 		<? twitter_card_tags(); ?>
 		<link rel="apple-touch-icon" href="<? bloginfo('stylesheet_directory'); ?>/images/apple-touch-icon.png" />
 		<? wp_head(); ?>
-		<? if (MODE === "live"): ?>
-			<script type="text/javascript">
-				var _gaq = _gaq || [];
-				_gaq.push(['_setAccount', 'UA-3634519-4']);
-				_gaq.push(['_trackPageview']);
-
-				(function() {
-					var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-					ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
-					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-				})();
-			</script>
-		<? endif; ?>
 		<script type="text/javascript">
 			var Config = {
 				stylesheet_directory: '<? bloginfo("stylesheet_directory"); ?>',
@@ -33,6 +20,7 @@
 		</script>
 	</head>
 	<body>
+		<? if (MODE === "live") require(dirname(__FILE__) . '/ga.php'); ?>
 		<div id="bg"></div>
 		<div id="tab_container">
 			<div id="container">
