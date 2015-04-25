@@ -7,12 +7,20 @@
 		<div class="post_header">
 			<div class="post_info">
 				<div class="post_date">
-					<span class="big"><?=date("j", strtotime(get_the_date())); ?></span>
-					<span class="small"><?=date("M y", strtotime(get_the_date())); ?></span>
+					<div class="big"><?=date("j", strtotime(get_the_date())); ?></div>
+					<div class="small"><?=date("M Y", strtotime(get_the_date())); ?></div>
+				</div>
+				<div class="post_hearts">
+					<a href="javascript: void(0);" class="toggle_heart">
+						<div class="big">0</div>
+						<div class="small"><i class="icon-heart"></i></div>
+					</a>
 				</div>
 				<div class="post_comments">
-					<span class="big"><a href="<? the_permalink(); ?>#comments"><span class="fb-comments-count" data-href="<? comments_permalink(); ?>"></span></a></span>
-					<span class="small">Comments</span>
+					<a href="<? the_permalink(); ?>#comments">
+						<div class="big"><span class="fb-comments-count" data-href="<? comments_permalink(); ?>">&mdash;</span></div>
+						<div class="small"><i class="icon-comment"></i></div>
+					</a>
 				</div>
 				<div class="top_link">
 					<a href="#container">Top</a>

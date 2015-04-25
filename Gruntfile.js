@@ -9,7 +9,15 @@ module.exports = function(grunt)
 			},
 
 			components: {
-				src: ['js/src/search.js', 'js/src/bitbucket.js', 'js/src/github.js', 'js/src/goodreads.js', 'js/src/twitter.js', 'js/src/styling.js'],
+				src: [
+					'js/src/search.js',
+					'js/src/bitbucket.js',
+					'js/src/github.js',
+					'js/src/goodreads.js',
+					'js/src/twitter.js',
+					'js/src/hearts.js',
+					'js/src/styling.js',
+				],
 				dest: 'js/bin/components.js'
 			},
 

@@ -32,18 +32,90 @@
 	}
 
 	.post_info {
+		box-sizing: border-box;
 		position: absolute;
-		left: -83px;
+		left: -100px;
 		top: 0px;
 		background-color: #ccc;
 		border-right: 1px solid #999;
 		.border-radius(5px, 0px, 0px, 5px);
 		z-index: 90;
-		width: 62px;
+		width: 80px;
 
-		& >  div {
-			text-align: center;
+		.post_date, .post_hearts, .post_comments, .top_link {
 			padding: 5px;
+		}
+
+		.post_date {
+			background-color: #ccc;
+			.border-radius(5px, 0px, 0px, 0px);
+
+			.big {
+				font-size: 30px;
+				text-align: center;
+			}
+
+			.small {
+				font-size: 11px;
+				text-transform: uppercase;
+				text-align: center;
+			}
+		}
+
+		.post_hearts, .post_comments {
+			background: #ddd;
+			.clearfix();
+
+			.big {
+				font-size: 20px;
+				display: block;
+				float: left;
+				width: 44px;
+				line-height: 22px;
+				text-align: center;
+				// vertical-align: middle;
+			}
+
+			.small {
+				font-size: 16px;
+				display: block;
+				float: left;
+				font-weight: normal;
+				text-transform: uppercase;
+				width: 25px;
+				line-height: 22px;
+				text-align: center;
+				// vertical-align: middle;
+			}
+
+			&:hover {
+				background: #e5e5e5;
+			}
+		}
+
+		.post_hearts {
+			&.hearted {
+				.small {
+					color: #b60000;
+				}
+			}
+
+			a {
+				display: block;
+				text-decoration: none;
+				color: #333;
+			}
+		}
+
+		.post_comments {
+			overflow: hidden;
+			.border-radius(0px, 0px, 0px, 5px);
+
+			a {
+				display: block;
+				text-decoration: none;
+				color: #333;
+			}
 		}
 
 		.top_link {
@@ -53,119 +125,12 @@
 			font-weight: bold;
 			background-color: #444;
 			.border-radius(0px, 0px, 0px, 5px);
+			text-align: center;
 
 			a {
 				display: block;
 				color: #eee;
 				text-decoration: none;
-			}
-		}
-
-		.post_date {
-			background-color: #ccc;
-			.border-radius(5px, 0px, 0px, 0px);
-		}
-
-		.post_comments {
-			overflow: hidden;
-			.border-radius(0px, 0px, 0px, 5px);
-			background-color: #dedede;
-
-			span.small {
-				font-size: 70%;
-			}
-
-			a {
-				text-decoration: none;
-				color: #333;
-			}
-		}
-
-		// this isn't being rendered anymore (social media, such a fad, am i right?)
-		.post_social {
-			background-color: #ccc;
-			.border-radius(0px, 0px, 0px, 5px);
-			text-align: center;
-			font-size: 25px;
-
-			div.aligncenter {
-				overflow: hidden;
-				// width: 45px;
-				margin: 0px auto;
-
-				.share-button {
-					color: #555;
-					text-decoration: none;
-					font-size: 11px;
-					display: block;
-					padding-bottom: 0.75em;
-
-					span.icon {
-						font-size: 25px;
-						display: block;
-						height: 25px;
-					}
-
-					span.text {
-						display: none;
-						text-transform: uppercase;
-						// font-weight: bold;
-					}
-
-					&:hover {
-						span.text {
-							display: block;
-						}
-					}
-
-					text-align: center;
-				}
-
-				.share-button-fb {
-					&:hover {
-						// background-color: #3B5998;
-						// color: #fff;
-						color: #3B5998;
-					}
-				}
-
-				.share-button-twitter {
-					&:hover {
-						// background-color: #4099FF;
-						// color: #fff;
-						color: #4099FF;
-					}
-				}
-
-				.share-button-gplus {
-					&:hover {
-						color: #F90101;
-					}
-				}
-
-				.share-button-linkedin {
-					margin-bottom: 0.5em;
-					&:hover {
-						color: #0181B2;
-					}
-				}
-			}
-		}
-
-		div {
-			span.big {
-				font-size: 24px;
-				font-weight: bold;
-				display: block;
-				line-height: 24px;
-			}
-
-			span.small {
-				font-size: 12px;
-				font-weight: normal;
-				text-transform: uppercase;
-				display: block;
-				line-height: 12px;
 			}
 		}
 	}
