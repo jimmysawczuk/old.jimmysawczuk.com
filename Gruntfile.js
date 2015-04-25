@@ -4,7 +4,7 @@ module.exports = function(grunt)
 	grunt.initConfig({
 		concat: {
 			jquery: {
-				src: ['js/src/jquery.min.js', 'js/src/jquery.ui.min.js', 'js/src/timeago.js'],
+				src: ['js/src/jquery.min.js', 'js/src/jquery.ui.min.js', 'js/src/timeago.js', 'node_modules/jquery.cookie/jquery.cookie.js'],
 				dest: 'js/bin/jquery.js'
 			},
 

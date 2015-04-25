@@ -3,7 +3,7 @@
 
 	the_post();
 ?>
-	<div class="<?=get_post_type() == 'post'? 'post' : 'post page'; ?> <?=(!is_page() && $paged < 2 && $i == 0 && !is_single())? 'post_first' : '' ?>" id="<?=get_post_type() == 'post'? 'post' : 'page'; ?>-<? the_ID(); ?>">
+	<div class="<?=get_post_type() == 'post'? 'post' : 'post page'; ?> <?=(!is_page() && $paged < 2 && $i == 0 && !is_single())? 'post_first' : '' ?>" id="<?=get_post_type() == 'post'? 'post' : 'page'; ?>-<? the_ID(); ?>" data-permalink="<? the_permalink(); ?>">
 		<div class="post_header">
 			<div class="post_info">
 				<div class="post_date">
@@ -12,7 +12,7 @@
 				</div>
 				<div class="post_hearts">
 					<a href="javascript: void(0);" class="toggle_heart">
-						<div class="big">0</div>
+						<div class="big">&mdash;</div>
 						<div class="small"><i class="icon-heart"></i></div>
 					</a>
 				</div>
