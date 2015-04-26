@@ -284,22 +284,25 @@ $(document).ready(function()
 
 (function($)
 {
-	$.cookie('norad_identifier', 'test', {
-		domain: ".jimmysawczuk.net"
-	});
+	var endpoint = Config.stylesheet_directory + "/ajax/norad-stats.php";
 
 	$('.post').on('click', '.post_info .post_hearts .toggle_heart', function()
 	{
 		var $post = $(this).parents('.post');
 		var permalink = $post.data('permalink');
 
-		$post.find('.post_hearts').toggleClass('hearted');
+		$post.find('.post_hearts').toggleClass('hearted', true);
 
 		if ($post.find('.post_hearts').hasClass('hearted'))
 		{
-			$.post('http://localhost:8080/v1', { url: permalink, "event": "heart"}, function(response)
+			$.post(endpoint, { method: "postEvent", url: permalink, "event": "heart"}, function(response)
 			{
-				$post.find('.post_hearts .big').html(response.count.lifetime);
+				if (response.success)
+				{
+					var payload = response.payload;
+					$post.find('.post_hearts .big').html(payload.count.lifetime);
+				}
+
 			}, 'json');
 		}
 	});
@@ -313,21 +316,45 @@ $(document).ready(function()
 			var $post = $(post);
 			var permalink = $post.data('permalink');
 
-			return 'url=' + permalink;
+			return 'url[]=' + permalink;
 		});
 
-		$.getJSON('http://localhost:8080/v1?event=heart&lifetime=1&callback=?&' + query.join("&"), function(response)
+		var params = [
+			"method=lifetimeEvent",
+			"event[]=heart"
+		];
+
+		$.each(query, function(i, row)
 		{
-			$.each(response, function(i, row)
+			params.push(row);
+		});
+
+		$.getJSON(endpoint + "?" + params.join("&"), function(response)
+		{
+			if (response.success)
 			{
-				$.each($posts, function(j, post)
+				var payload = response.payload;
+				$.each(payload, function(i, row)
 				{
-					if ($(post).data('permalink') == row.url)
+					$.each($posts, function(j, post)
 					{
-						$(post).find('.post_hearts .big').html(row.count);
-					}
+						if ($(post).data('permalink') == row.url)
+						{
+							$(post).find('.post_hearts .big').html(row.count);
+							if (row.is_member)
+							{
+								$(post).find('.post_hearts').toggleClass('hearted', true);
+							}
+						}
+					});
 				});
-			});
+			}
+			else if (!response.success && response.error == "Service unavailable")
+			{
+				console.log("test");
+				$posts.find('.post_hearts').hide();
+			}
+
 		}, 'json');
 	});
 })(jQuery);

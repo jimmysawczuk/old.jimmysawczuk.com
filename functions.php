@@ -20,6 +20,7 @@ require('includes/goodreads_widget.php');
 require('includes/bitbucket.php');
 require('includes/github.php');
 require('includes/goodreads.php');
+require('includes/norad.php');
 
 require('includes/upgrade_url_filter.php');
 

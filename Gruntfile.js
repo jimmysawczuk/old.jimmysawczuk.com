@@ -4,7 +4,12 @@ module.exports = function(grunt)
 	grunt.initConfig({
 		concat: {
 			jquery: {
-				src: ['js/src/jquery.min.js', 'js/src/jquery.ui.min.js', 'js/src/timeago.js', 'node_modules/jquery.cookie/jquery.cookie.js'],
+				src: [
+					'js/src/jquery.min.js',
+					'js/src/jquery.ui.min.js',
+					'js/src/timeago.js',
+					// 'node_modules/jquery.cookie/jquery.cookie.js',
+				],
 				dest: 'js/bin/jquery.js'
 			},
 
@@ -22,12 +27,16 @@ module.exports = function(grunt)
 			},
 
 			ballpark_resume: {
-				src: ['js/src/ballpark_resume.js'],
+				src: [
+					'js/src/ballpark_resume.js',
+				],
 				dest: 'js/bin/ballpark_resume.js'
 			},
 
 			projects: {
-				src: ['js/src/projects.js'],
+				src: [
+					'js/src/projects.js',
+				],
 				dest: 'js/bin/projects.js'
 			}
 		},
