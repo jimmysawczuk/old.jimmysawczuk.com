@@ -351,7 +351,6 @@ $(document).ready(function()
 			}
 			else if (!response.success && response.error == "Service unavailable")
 			{
-				console.log("test");
 				$posts.find('.post_hearts').hide();
 			}
 
