@@ -5,10 +5,8 @@ module.exports = function(grunt)
 		concat: {
 			jquery: {
 				src: [
-					'js/src/jquery.min.js',
-					'js/src/jquery.ui.min.js',
-					'js/src/timeago.js',
-					// 'node_modules/jquery.cookie/jquery.cookie.js',
+					'bower_components/jquery/jquery.js',
+					'bower_components/jquery-timeago/jquery.timeago.js',
 				],
 				dest: 'js/bin/jquery.js'
 			},

@@ -1,0 +1,20 @@
+{
+  "name": "jimmysawczuk.com",
+  "version": "1.0.0",
+  "authors": [
+    "Jimmy Sawczuk <me@jimmysawczuk.com>"
+  ],
+  "license": "MIT",
+  "homepage": "http://jimmysawczuk.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  	"jquery": "~1.9",
+    "jquery-timeago": "~1.4.1"
+  }
+}

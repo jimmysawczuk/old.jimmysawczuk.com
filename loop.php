@@ -13,7 +13,7 @@
 				<div class="post_hearts">
 					<a href="javascript: void(0);" class="toggle_heart">
 						<div class="big">&mdash;</div>
-						<div class="small"><i class="icon-heart"></i></div>
+						<div class="small"><i class="icon-star"></i></div>
 					</a>
 				</div>
 				<div class="post_comments">

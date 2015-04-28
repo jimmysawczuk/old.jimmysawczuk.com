@@ -18,6 +18,8 @@
 				sidebar_visible: <?=defined('HIDE_SIDEBAR') && HIDE_SIDEBAR? 'false' : 'true' ?>
 			};
 		</script>
+		<!--[if IE 7]><script type="text/javascript">$('html').addClass('ie7');</script><![endif]-->
+		<!--[if IE 8]><script type="text/javascript">$('html').addClass('ie8');</script><![endif]-->
 	</head>
 	<body>
 		<? if (MODE === "live") require(dirname(__FILE__) . '/includes/ga.php'); ?>

@@ -103,19 +103,6 @@
 
 	function init()
 	{
-		if (typeof $.browser.msie !== "undefined" && $.browser.msie)
-		{
-			if ($.browser.version == '8.0' || $.browser.version == '7.0')
-			{
-				$('html').addClass('ie');
-
-				if ($.browser.version == '7.0')
-				{
-					$('html').addClass('ie7');
-				}
-			}
-		}
-
 		$('.post .content').find('img').removeAttr('width').removeAttr('height');
 		$('.post .content').find('.wp-caption').css("width", "auto");
 

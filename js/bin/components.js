@@ -338,12 +338,13 @@ $(document).ready(function()
 				{
 					$.each($posts, function(j, post)
 					{
-						if ($(post).data('permalink') == row.url)
+						var $post = $(post);
+						if ($post.data('permalink') == row.url)
 						{
-							$(post).find('.post_hearts .big').html(row.count);
+							$post.find('.post_hearts .big').html(row.count);
 							if (row.is_member)
 							{
-								$(post).find('.post_hearts').toggleClass('hearted', true);
+								$post.find('.post_hearts').toggleClass('hearted', true);
 							}
 						}
 					});
@@ -463,19 +464,6 @@ $(document).ready(function()
 
 	function init()
 	{
-		if (typeof $.browser.msie !== "undefined" && $.browser.msie)
-		{
-			if ($.browser.version == '8.0' || $.browser.version == '7.0')
-			{
-				$('html').addClass('ie');
-
-				if ($.browser.version == '7.0')
-				{
-					$('html').addClass('ie7');
-				}
-			}
-		}
-
 		$('.post .content').find('img').removeAttr('width').removeAttr('height');
 		$('.post .content').find('.wp-caption').css("width", "auto");
 
