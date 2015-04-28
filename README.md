@@ -81,7 +81,7 @@ The fonts I use, [**Arvo**][arvo] and [**Mako**][mako], are from the [Google Fon
   [timeago]: http://timeago.yarp.com/
   [grunt]: http://gruntjs.com/
   [font-awesome]: http://fortawesome.github.com/Font-Awesome/
-  [google-fonts]: http://code.google.com/apis/webfonts/
+  [google-fonts]: http://www.google.com/fonts
 
   [mako]: https://www.google.com/fonts/specimen/Mako
   [arvo]: https://www.google.com/fonts/specimen/Arvo
