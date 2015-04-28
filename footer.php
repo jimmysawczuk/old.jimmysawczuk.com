@@ -15,7 +15,7 @@
 			$fmt = '<a href="http://github.com/jimmysawczuk/jimmysawczuk.com/commit/%R" title="Branch: %b">%r</a>; <span class="timeago" title="%F">%F</span> &middot;';
 			echo ScmStatus::format($fmt, array('format_date' => "c"));
 			?>
-			Special thanks to <a href="http://timeago.yarp.com/">TimeAgo</a>, <a href="http://code.google.com/p/minify/">Minify</a>, <a href="http://code.google.com/apis/webfonts/">Google Font API</a>
+			<a href="https://github.com/jimmysawczuk/jimmysawczuk.com#acknowledgements">Acknowledgements</a>
 		</div>
 
 		<div id="fb-root"></div>
