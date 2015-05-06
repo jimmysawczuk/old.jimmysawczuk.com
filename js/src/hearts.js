@@ -2,7 +2,7 @@
 {
 	var endpoint = Config.stylesheet_directory + "/ajax/norad-stats.php";
 
-	$('.post').on('click', '.post_info .post_hearts .toggle_heart', function()
+	function postHeart()
 	{
 		var $post = $(this).parents('.post');
 		var permalink = $post.data('permalink');
@@ -21,9 +21,9 @@
 
 			}, 'json');
 		}
-	});
+	}
 
-	$(document).ready(function()
+	function updateHearts()
 	{
 		var $posts = $('.post');
 
@@ -72,5 +72,8 @@
 			}
 
 		}, 'json');
-	});
+	}
+
+	$('.post').on('click', '.post_info .post_hearts .toggle_heart', postHeart);
+	$(document).ready(updateHearts);
 })(jQuery);

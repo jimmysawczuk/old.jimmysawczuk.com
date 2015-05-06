@@ -23,6 +23,7 @@ require('includes/goodreads.php');
 require('includes/norad.php');
 
 require('includes/upgrade_url_filter.php');
+require('includes/caption_shortcode_filter.php');
 
 require('projects.inc.php');
 require('ballpark_resume.inc.php');

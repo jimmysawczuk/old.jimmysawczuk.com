@@ -103,8 +103,7 @@
 
 	function init()
 	{
-		$('.post .content').find('img').removeAttr('width').removeAttr('height');
-		$('.post .content').find('.wp-caption').css("width", "auto");
+		$('.post .content').find('img').removeAttr('height');
 
 		$('.timeago').timeago();
 

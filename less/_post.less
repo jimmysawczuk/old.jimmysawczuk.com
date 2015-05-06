@@ -97,6 +97,8 @@
 		}
 
 		.post_hearts {
+			display: none;
+
 			&.hearted {
 				.small {
 					color: #fc3;
@@ -166,24 +168,58 @@
 			display: block;
 		}
 
-		.wp-caption {
-			background-color: #ddd;
-
-			img {
-				padding: 5px;
+		img {
+			&.aligncenter {
 				margin: 0px auto;
+				display: block;
+			}
+
+			&.alignleft {
+				margin: 10px 10px 10px 0px;
+				float: left;
+				display: block;
+			}
+
+			&.alignright {
+				margin: 10px 0px 10px 10px;
+				float: right;
 				display: block;
 			}
 		}
 
-		.gist {
-			font-size: 12px;
+		.wp-caption {
+			background-color: #ddd;
+			box-sizing: border-box;
+			padding: 5px;
+
+			&.alignleft {
+				float: left;
+			}
+
+			&.aligncenter {
+				margin: 0px auto;
+			}
+
+			&.alignright {
+				float: right;
+			}
+
+			.wp-caption-text {
+				margin: 5px 0px 0px;
+			}
+
+			img {
+				display: block;
+				margin: 0px auto;
+			}
 		}
 
-		p.wp-caption-text {
-			margin: 0px;
-			padding: 0px 5px 5px;
-			font-size: 93%;
+		.wp-caption-mobile {
+			display: none;
+		}
+
+		.gist {
+			font-size: 12px;
 		}
 
 		ul, ol {
@@ -280,7 +316,7 @@
 				bottom: 0px;
 				right: 0px;
 				text-align: right;
-				min-width: 80px;
+				min-width: 100px;
 				letter-spacing: -1px;
 				.border-radius(2px);
 
@@ -290,6 +326,11 @@
 					font-weight: bold;
 					display: block;
 					padding: 5px;
+				}
+
+				.fb-comments-count {
+					display: inline-block;
+					padding-right: 3px;
 				}
 			}
 

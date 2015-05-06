@@ -286,7 +286,7 @@ $(document).ready(function()
 {
 	var endpoint = Config.stylesheet_directory + "/ajax/norad-stats.php";
 
-	$('.post').on('click', '.post_info .post_hearts .toggle_heart', function()
+	function postHeart()
 	{
 		var $post = $(this).parents('.post');
 		var permalink = $post.data('permalink');
@@ -305,9 +305,9 @@ $(document).ready(function()
 
 			}, 'json');
 		}
-	});
+	}
 
-	$(document).ready(function()
+	function updateHearts()
 	{
 		var $posts = $('.post');
 
@@ -356,7 +356,10 @@ $(document).ready(function()
 			}
 
 		}, 'json');
-	});
+	}
+
+	$('.post').on('click', '.post_info .post_hearts .toggle_heart', postHeart);
+	$(document).ready(updateHearts);
 })(jQuery);
 
 (function($){
@@ -464,8 +467,7 @@ $(document).ready(function()
 
 	function init()
 	{
-		$('.post .content').find('img').removeAttr('width').removeAttr('height');
-		$('.post .content').find('.wp-caption').css("width", "auto");
+		$('.post .content').find('img').removeAttr('height');
 
 		$('.timeago').timeago();
 

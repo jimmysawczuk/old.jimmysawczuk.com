@@ -8,11 +8,33 @@
 		.content {
 			img {
 				max-width: 95% !important;
+
+				&.alignleft, &.alignright {
+					float: none;
+					margin: 0px auto;
+				}
 			}
 
-			img.alignleft, img.alignright {
+			.wp-caption {
+				display: none;
+			}
+
+			.wp-caption-mobile {
+				display: block;
+				width: auto;
 				float: none;
-				margin: 0px auto;
+				background-color: #ddd;
+				padding: 5px;
+				margin: 0.5em auto;
+
+				img {
+					display: block;
+					margin: 0px auto;
+				}
+
+				.wp-caption-text {
+					margin: 5px 0px 0px;
+				}
 			}
 
 			.meta {

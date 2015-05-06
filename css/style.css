@@ -1572,6 +1572,10 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+html.ie7,
+html.ie8 {
+  background: #9a9a9a;
+}
 #container {
   width: 860px;
   margin: 0px auto;
@@ -1893,6 +1897,9 @@ html.ie #search #search_text {
   background: #e5e5e5;
   background: rgba(229, 229, 229, 0.7);
 }
+.post .post_info .post_hearts {
+  display: none;
+}
 .post .post_info .post_hearts.hearted .small {
   color: #fc3;
 }
@@ -1952,19 +1959,46 @@ html.ie #search #search_text {
   float: right;
   display: block;
 }
+.post .content img.aligncenter {
+  margin: 0px auto;
+  display: block;
+}
+.post .content img.alignleft {
+  margin: 10px 10px 10px 0px;
+  float: left;
+  display: block;
+}
+.post .content img.alignright {
+  margin: 10px 0px 10px 10px;
+  float: right;
+  display: block;
+}
 .post .content .wp-caption {
   background-color: #ddd;
+  box-sizing: border-box;
+  padding: 5px;
+}
+.post .content .wp-caption.alignleft {
+  float: left;
+}
+.post .content .wp-caption.aligncenter {
+  margin: 0px auto;
+}
+.post .content .wp-caption.alignright {
+  float: right;
+}
+.post .content .wp-caption .wp-caption-text {
+  margin: 5px 0px 0px;
 }
 .post .content .wp-caption img {
-  padding: 5px;
+  display: block;
+  margin: 0px auto;
+}
+.post .content .wp-caption-mobile {
+  display: none;
 }
 .post .content .gist {
   font-size: 12px;
-}
-.post .content p.wp-caption-text {
-  margin: 0px;
-  padding: 0px 5px 5px;
-  font-size: 93%;
 }
 .post .content ul,
 .post .content ol {
@@ -2069,7 +2103,7 @@ html.ie #search #search_text {
   bottom: 0px;
   right: 0px;
   text-align: right;
-  min-width: 80px;
+  min-width: 100px;
   letter-spacing: -1px;
   border-radius: 2px 2px 2px 2px;
   -moz-border-radius: 2px 2px 2px 2px;
@@ -2084,6 +2118,10 @@ html.ie #search #search_text {
   font-weight: bold;
   display: block;
   padding: 5px;
+}
+.post .content .meta .more-link .fb-comments-count {
+  display: inline-block;
+  padding-right: 3px;
 }
 .post .content .meta .tags {
   padding: 5px;
@@ -3240,6 +3278,24 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
     float: none;
     margin: 0px auto;
   }
+  .post .content .wp-caption {
+    display: none;
+  }
+  .post .content .wp-caption-mobile {
+    display: block;
+    width: auto;
+    float: none;
+    background-color: #ddd;
+    padding: 5px;
+    margin: 0.5em auto;
+  }
+  .post .content .wp-caption-mobile img {
+    display: block;
+    margin: 0px auto;
+  }
+  .post .content .wp-caption-mobile .wp-caption-text {
+    margin: 5px 0px 0px;
+  }
   .post .content .meta .tags {
     width: 65%;
   }
@@ -3312,7 +3368,4 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   #pagination span {
     width: 100%;
   }
-}
-#wpstats {
-  display: none;
 }
