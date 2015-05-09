@@ -11,12 +11,12 @@
 		<link rel="apple-touch-icon" href="<? bloginfo('stylesheet_directory'); ?>/images/apple-touch-icon.png" />
 		<? wp_head(); ?>
 		<script type="text/javascript">
-			var Config = {
-				stylesheet_directory: '<? bloginfo("stylesheet_directory"); ?>',
-				is_single: <?=is_single()? 'true' : 'false' ?>,
-				is_page: <?=is_page()? 'true' : 'false' ?>,
-				sidebar_visible: <?=defined('HIDE_SIDEBAR') && HIDE_SIDEBAR? 'false' : 'true' ?>
-			};
+			var Config = <?=json_encode(array(
+				'stylesheet_directory' => get_bloginfo("stylesheet_directory"),
+				'is_single' => is_single(),
+				'is_page' => is_page(),
+				'sidebar_visible' => defined('HIDE_SIDEBAR') && HIDE_SIDEBAR? false : true,
+			)); ?>;
 		</script>
 		<!--[if IE 7]><script type="text/javascript">$('html').addClass('ie7');</script><![endif]-->
 		<!--[if IE 8]><script type="text/javascript">$('html').addClass('ie8');</script><![endif]-->
