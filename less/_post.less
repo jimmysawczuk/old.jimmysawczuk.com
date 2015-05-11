@@ -41,13 +41,15 @@
 		z-index: 90;
 		width: 80px;
 
+		@opacity: 0.8;
+
 		.post_date, .post_hearts, .post_comments, .top_link {
 			padding: 5px;
 		}
 
 		.post_date {
 			background: #ccc;
-			background: rgba(204, 204, 204, 0.7);
+			background: rgba(204, 204, 204, @opacity);
 			.border-radius(5px, 0px, 0px, 0px);
 
 			.big {
@@ -65,7 +67,7 @@
 
 		.post_hearts, .post_comments {
 			background: #ddd;
-			background: rgba(221, 221, 221, 0.7);
+			background: rgba(221, 221, 221, @opacity);
 			.clearfix();
 
 			.big {
@@ -92,12 +94,12 @@
 
 			&:hover {
 				background: #e5e5e5;
-				background: rgba(229, 229, 229, 0.7);
+				background: rgba(229, 229, 229, @opacity);
 			}
 		}
 
 		.post_hearts {
-			display: none;
+			// display: none;
 
 			&.hearted {
 				.small {

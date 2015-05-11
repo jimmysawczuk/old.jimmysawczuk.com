@@ -3,6 +3,17 @@
 require '../includes/norad.php';
 require '../includes/mode.php';
 
+if (!defined("NORAD_URL"))
+{
+	$payload = array(
+		'success' => false,
+		'error' => "Service unavailable",
+	);
+
+	header("Content-type: application/json");
+	die(json_encode($payload));
+}
+
 $Norad = new Norad(NORAD_URL);
 
 $payload = array();

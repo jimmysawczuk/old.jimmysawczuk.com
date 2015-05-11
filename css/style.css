@@ -1842,7 +1842,7 @@ html.ie #search #search_text {
 }
 .post .post_info .post_date {
   background: #ccc;
-  background: rgba(204, 204, 204, 0.7);
+  background: rgba(204, 204, 204, 0.8);
   border-radius: 5px 0px 0px 0px;
   -moz-border-radius: 5px 0px 0px 0px;
   -webkit-border-radius: 5px 0px 0px 0px;
@@ -1860,7 +1860,7 @@ html.ie #search #search_text {
 .post .post_info .post_hearts,
 .post .post_info .post_comments {
   background: #ddd;
-  background: rgba(221, 221, 221, 0.7);
+  background: rgba(221, 221, 221, 0.8);
   display: inline-block;
   display: block;
 }
@@ -1895,10 +1895,7 @@ html.ie #search #search_text {
 .post .post_info .post_hearts:hover,
 .post .post_info .post_comments:hover {
   background: #e5e5e5;
-  background: rgba(229, 229, 229, 0.7);
-}
-.post .post_info .post_hearts {
-  display: none;
+  background: rgba(229, 229, 229, 0.8);
 }
 .post .post_info .post_hearts.hearted .small {
   color: #fc3;
