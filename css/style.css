@@ -1955,6 +1955,14 @@ html.ie #search #search_text {
   clear: both;
   visibility: hidden;
 }
+.post .post_info_inline .post_date a:active,
+.post .post_info_inline .post_hearts a:active,
+.post .post_info_inline .post_comments a:active,
+.post .post_info_inline .post_date a:hover,
+.post .post_info_inline .post_hearts a:hover,
+.post .post_info_inline .post_comments a:hover {
+  color: #333;
+}
 .post .post_info_inline .post_date .big,
 .post .post_info_inline .post_hearts .big,
 .post .post_info_inline .post_comments .big {
