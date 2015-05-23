@@ -2,7 +2,7 @@
 
 This is a repository for the theme that runs my blog, which is located at [jimmysawczuk.com][jimmysawczuk].
 
-![Screenshot](http://i.imgur.com/MAYe510.jpg)
+![Screenshot](http://i.imgur.com/MijfWft.jpg)
 
 This theme was written from scratch with some inspiration from [Lightword][lightword], [Grantland][grantland], and the [New York Times][nytimes]. My aim was to create a theme that was simple, attractive and clean. I also built it with Facebook integration in mind, and specifically, to respect the [Open Graph protocol][open-graph]. It uses HTML5 and CSS3, with some jQuery, and is now mobile friendly.
 
