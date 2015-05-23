@@ -291,6 +291,11 @@ $(document).ready(function()
 		var $post = $(this).parents('.post');
 		var permalink = $post.data('permalink');
 
+		if ($post.hasClass('hearted'))
+		{
+			return;
+		}
+
 		$post.find('.post_hearts').toggleClass('hearted', true);
 
 		if ($post.find('.post_hearts').hasClass('hearted'))
@@ -301,6 +306,10 @@ $(document).ready(function()
 				{
 					var payload = response.payload;
 					$post.find('.post_hearts .big').html(payload.count.lifetime);
+				}
+				else
+				{
+					$post.find('.post_hearts').toggleClass('hearted', false);
 				}
 
 			}, 'json');
