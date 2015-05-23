@@ -1897,6 +1897,9 @@ html.ie #search #search_text {
   background: #e5e5e5;
   background: rgba(229, 229, 229, 0.8);
 }
+.post .post_info .post_hearts {
+  border-bottom: 1px solid rgba(175, 175, 175, 0.8);
+}
 .post .post_info .post_hearts.hearted .small {
   color: #fc3;
 }
