@@ -32,9 +32,38 @@
 			<? endif; ?>
 		</div>
 
+		<div class="post_info_inline">
+			<div class="post_hearts">
+				<a href="javascript: void(0);" class="toggle_heart">
+					<div class="big">&mdash;</div>
+					<div class="small"><i class="icon-star"></i></div>
+				</a>
+			</div>
+			<div class="post_comments">
+				<a href="<? the_permalink(); ?>#comments">
+					<div class="big"><span class="fb-comments-count" data-href="<? comments_permalink(); ?>">&mdash;</span></div>
+					<div class="small"><i class="icon-comment"></i></div>
+				</a>
+			</div>
+		</div>
+
 		<div class="content">
 			<? the_content(''); ?>
 			<? if (is_single()): ?>
+				<div class="post_info_inline">
+					<div class="post_hearts">
+						<a href="javascript: void(0);" class="toggle_heart">
+							<div class="big">&mdash;</div>
+							<div class="small"><i class="icon-star"></i></div>
+						</a>
+					</div>
+					<div class="post_comments">
+						<a href="<? the_permalink(); ?>#comments">
+							<div class="big"><span class="fb-comments-count" data-href="<? comments_permalink(); ?>">&mdash;</span></div>
+							<div class="small"><i class="icon-comment"></i></div>
+						</a>
+					</div>
+				</div>
 				<hr class="recommendation-divider" />
 				<div class="original">
 					Originally posted on <a href="<?=bloginfo('url'); ?>"><?=bloginfo('site_name') ?></a> on

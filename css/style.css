@@ -1933,6 +1933,67 @@ html.ie #search #search_text {
   color: #eee;
   text-decoration: none;
 }
+.post .post_info_inline {
+  display: none;
+  margin-bottom: 1em;
+}
+.post .post_info_inline .post_date,
+.post .post_info_inline .post_hearts,
+.post .post_info_inline .post_comments {
+  display: block;
+  display: inline-block;
+  font-size: 120%;
+  margin-right: 10px;
+  float: left;
+}
+.post .post_info_inline .post_date:after,
+.post .post_info_inline .post_hearts:after,
+.post .post_info_inline .post_comments:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.post .post_info_inline .post_date .big,
+.post .post_info_inline .post_hearts .big,
+.post .post_info_inline .post_comments .big {
+  background: #ddd;
+  float: left;
+  padding: 7px 15px;
+  border-radius: 5px 0px 0px 5px;
+  -moz-border-radius: 5px 0px 0px 5px;
+  -webkit-border-radius: 5px 0px 0px 5px;
+}
+.post .post_info_inline .post_date .small,
+.post .post_info_inline .post_hearts .small,
+.post .post_info_inline .post_comments .small {
+  background: #444;
+  color: #f9f9f9;
+  float: right;
+  padding: 7px;
+  border-radius: 0px 5px 5px 0px;
+  -moz-border-radius: 0px 5px 5px 0px;
+  -webkit-border-radius: 0px 5px 5px 0px;
+}
+.post .post_info_inline .post_date:hover .big,
+.post .post_info_inline .post_hearts:hover .big,
+.post .post_info_inline .post_comments:hover .big {
+  background: #e5e5e5;
+}
+.post .post_info_inline .post_hearts.hearted .small {
+  background-color: #fc3;
+}
+.post .post_info_inline .post_hearts a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+.post .post_info_inline .post_comments a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
 .post .content {
   clear: both;
   margin: 1em 0px;
@@ -3266,6 +3327,17 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   }
   .post .post-info {
     display: none;
+  }
+  .post .post_info_inline {
+    display: inline-block;
+    display: block;
+  }
+  .post .post_info_inline:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
   }
   .post .content img {
     max-width: 95% !important;

@@ -84,5 +84,6 @@
 	}
 
 	$('.post').on('click', '.post_info .post_hearts .toggle_heart', postHeart);
+	$('.post').on('click', '.post_info_inline .post_hearts .toggle_heart', postHeart);
 	$(document).ready(updateHearts);
 })(jQuery);
