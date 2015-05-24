@@ -122,6 +122,13 @@ function get_projects()
 	);
 
 	$projects []= array(
+		'name' => 'norad',
+		'description' => "A webservice that captures events on URLs and can aggregate them for stats",
+		'tags' => array("go", "open-source", "development", "redis"),
+		'github' => "jimmysawczuk/norad",
+	);
+
+	$projects []= array(
 		'name' => 'worker',
 		'description' => "A Go library that makes it easy to parallelize processes or tasks",
 		'tags' => array("go", "open-source", "development"),
@@ -182,25 +189,10 @@ function get_projects()
 	);
 
 	$projects []= array(
-		'name' => "fangate",
-		'description' => "An open-source PHP framework for making gated Facebook fan pages.",
-		'github' => 'jimmysawczuk/fangate',
-		'tags' => array('php', 'facebook', 'open-source')
-	);
-
-	$projects []= array(
 		'name' => "Real Time Notes",
 		'description' => "An online tool that lets users create timed logs or diaries for export later.",
 		'web' => "http://realtimenotes.jimmysawczuk.com",
 		'tags' => array("php", "website")
-	);
-
-	$projects []= array(
-		'name' => "Facebook Circles",
-		'description' => "A proof-of-concept app demonstrating a better UI to manage Facebook lists",
-		'tags' => array("javascript", "facebook", "open-source"),
-		'github' =>'jimmysawczuk/facebook-circles',
-		'web' => "http://apps.facebook.com/better_lists/",
 	);
 
 	/**************************************
