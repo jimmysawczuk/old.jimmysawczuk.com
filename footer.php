@@ -19,13 +19,16 @@
 		</div>
 
 		<div id="fb-root"></div>
+		<script type="text/javascript" src="<?=get_min_url('components'); ?>" charset="utf-8"></script>
 		<script type="text/javascript">
 			window.fbAsyncInit = function() {
 				FB.init({
-					appId: '193404464015012',
+					appId: '<?=FB_APP_ID; ?>',
 					xfbml: true,
 					channelUrl: Config.stylesheet_directory + '/channel.html'
 				});
+
+				Comments.init();
 			};
 			(function() {
 				var e = document.createElement('script'); e.async = true;
@@ -34,7 +37,6 @@
 				document.getElementById('fb-root').appendChild(e);
 			}());
 		</script>
-		<script type="text/javascript" src="<?=get_min_url('components'); ?>" charset="utf-8"></script>
 		<? wp_footer(); ?>
 	</body>
 </html>

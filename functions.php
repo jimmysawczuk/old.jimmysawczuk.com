@@ -54,7 +54,7 @@ function fb_og_tags()
 	$meta_tags = array();
 	$meta_tags []= '<meta property="fb:admins" content="15504121" />';
 	$meta_tags []= '<meta property="og:locale" content="en_US" />';
-	$meta_tags []= '<meta property="fb:app_id" content="193404464015012" />';
+	$meta_tags []= '<meta property="fb:app_id" content="'.FB_APP_ID.'" />';
 
 	if (is_single())
 	{

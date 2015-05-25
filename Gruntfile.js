@@ -20,6 +20,7 @@ module.exports = function(grunt)
 					'js/src/twitter.js',
 					'js/src/hearts.js',
 					'js/src/styling.js',
+					'js/src/comments.js',
 				],
 				dest: 'js/bin/components.js'
 			},
