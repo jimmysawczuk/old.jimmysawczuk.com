@@ -66,7 +66,7 @@ function get_projects()
 		'name' => "clippy-jquery",
 		'description' => "A jQuery plugin that utilizes the clippy SWF to enable easy copy-and-paste on web content",
 		'github' => "jimmysawczuk/clippy-jquery",
-		'web' => "http://jimmysawczuk.github.com/clippy-jquery",
+		'web' => "http://jimmysawczuk.github.io/clippy-jquery",
 		'tags' => array("javascript", "development", "open-source")
 	);
 
@@ -142,44 +142,44 @@ function get_projects()
 		'tags' => array("go", "open-source", "development")
 	);
 
-	$projects []= array(
-		'name' => "Invaders",
-		'description' => "An XNA game which was my last homework assignment for my game development class my senior year in college.",
-		'tags' => array("xna", "c#", "game", "open-source"),
-		'web' => "http://files.jimmysawczuk.com/files/invaders.php",
-		'bitbucket' => "jimmysawczuk/invaders",
-		'screenshots' => array(
-			array('src' => get_bloginfo('stylesheet_directory') . "/images/projects/invaders_ss1.jpg", 'alt' => "Screenshot")
-		)
-	);
+	// $projects []= array(
+	// 	'name' => "Invaders",
+	// 	'description' => "An XNA game which was my last homework assignment for my game development class my senior year in college.",
+	// 	'tags' => array("xna", "c#", "game", "open-source"),
+	// 	'download' => "http://public-files.jimmysawczuk.com/invaders/Invaders.application",
+	// 	'bitbucket' => "jimmysawczuk/invaders",
+	// 	'screenshots' => array(
+	// 		array('src' => get_bloginfo('stylesheet_directory') . "/images/projects/invaders_ss1.jpg", 'alt' => "Screenshot")
+	// 	)
+	// );
 
-	$projects []= array(
-		'name' => "George in Space!",
-		'description' => "My first XNA game that was any fun at all. Not as cool as Invaders.",
-		'tags' => array("xna", "c#", "game"),
-		'web' => "http://files.jimmysawczuk.com/files/georgeinspace.php",
-		'screenshots' => array(
-			array('src' => get_bloginfo('stylesheet_directory') . "/images/projects/gis_ss1.jpg", 'alt' => "Screenshot")
-		)
-	);
+	// $projects []= array(
+	// 	'name' => "George in Space!",
+	// 	'description' => "My first XNA game that was any fun at all. Not as cool as Invaders.",
+	// 	'tags' => array("xna", "c#", "game"),
+	// 	'download' => "http://public-files.jimmysawczuk.com/georgeinspace/GeorgeInSpace.application",
+	// 	'screenshots' => array(
+	// 		array('src' => get_bloginfo('stylesheet_directory') . "/images/projects/gis_ss1.jpg", 'alt' => "Screenshot")
+	// 	)
+	// );
 
-	$projects []= array(
-		'name' => "Sleep Timer",
-		'description' => "A little Windows application that performs a variety of operations after a set timer has elapsed.",
-		'tags' => array("c#", "utility", "windows", "open-source"),
-		'download' => "http://files.jimmysawczuk.com/files/sleeptimer/Setup.msi",
-		'screenshots' => array(
-			array('src' => get_bloginfo('stylesheet_directory') . "/images/projects/sleeptimer_ss1.jpg", 'alt' => "Screenshot")
-		)
-	);
+	// $projects []= array(
+	// 	'name' => "Sleep Timer",
+	// 	'description' => "A little Windows application that performs a variety of operations after a set timer has elapsed.",
+	// 	'tags' => array("c#", "utility", "windows", "open-source"),
+	// 	'download' => "http://public-files.jimmysawczuk.com/sleeptimer/Setup.msi",
+	// 	'screenshots' => array(
+	// 		array('src' => get_bloginfo('stylesheet_directory') . "/images/projects/sleeptimer_ss1.jpg", 'alt' => "Screenshot")
+	// 	)
+	// );
 
-	$projects []= array(
-		'name' => "FlashCard",
-		'description' => "An application I wrote to test myself on German vocabulary words, and since has been requested by many family members.",
-		'tags' => array("c#", "utility", "windows", "education", "open-source"),
-		'bitbucket' => 'jimmysawczuk/flashcard',
-		'download' => "http://files.jimmysawczuk.com/files/flashcard/FlashCardSetup.msi"
-	);
+	// $projects []= array(
+	// 	'name' => "FlashCard",
+	// 	'description' => "An application I wrote to test myself on German vocabulary words, and since has been requested by many family members.",
+	// 	'tags' => array("c#", "utility", "windows", "education", "open-source"),
+	// 	'bitbucket' => 'jimmysawczuk/flashcard',
+	// 	'download' => "http://public-files.jimmysawczuk.com/flashcard/FlashCardSetup.msi",
+	// );
 
 	$projects []= array(
 		'name' => "Scaffolding",
