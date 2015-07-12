@@ -13,7 +13,7 @@ function get_ballparks()
 		'num_visits' => '50+',
 		'visit' => "1995-08-02",
 		'game' => "http://www.baseball-reference.com/boxes/CLE/CLE199508020.shtml",
-		'article' => "http://www.jimmysawczuk.com/2008/04/my-inaugural-visit-to-progressive-field.html",
+		'article' => "http://jimmysawczuk.com/2008/04/my-inaugural-visit-to-progressive-field.html",
 		'img' => 'progressive_field.jpg',
 		'latlong' => array(41.495833, -81.685278),
 	);
@@ -52,7 +52,7 @@ function get_ballparks()
 		'num_visits' => '1',
 		'visit' => "2008-05-18",
 		'game' => "http://www.baseball-reference.com/boxes/CIN/CIN200805180.shtml",
-		'article' => "http://www.jimmysawczuk.com/2008/05/here-i-dreamt-i-was-an-architect.html",
+		'article' => "http://jimmysawczuk.com/2008/05/here-i-dreamt-i-was-an-architect.html",
 		'img' => "great_american_ballpark.jpg",
 		'latlong' => array(39.0975, -84.506667),
 	);
@@ -66,7 +66,7 @@ function get_ballparks()
 		'num_visits' => '1',
 		'visit' => "2008-07-27",
 		'game' => "http://www.baseball-reference.com/boxes/NYN/NYN200807270.shtml",
-		'article' => "http://www.jimmysawczuk.com/2008/07/the-stadiums-in-new-york.html",
+		'article' => "http://jimmysawczuk.com/2008/07/the-stadiums-in-new-york.html",
 		'img' => 'shea_stadium.jpg',
 		'latlong' => array(40.755556, -73.848056),
 	);
@@ -81,7 +81,7 @@ function get_ballparks()
 		'num_visits' => '1',
 		'visit' => "2008-07-28",
 		'game' => "http://www.baseball-reference.com/boxes/NYA/NYA200807280.shtml",
-		'article' => "http://www.jimmysawczuk.com/2008/07/the-stadiums-in-new-york.html",
+		'article' => "http://jimmysawczuk.com/2008/07/the-stadiums-in-new-york.html",
 		'img' => "yankee_stadium.jpg",
 		'latlong' => array(40.826944, -73.928056),
 	);
@@ -94,7 +94,7 @@ function get_ballparks()
 		'num_visits' => '1',
 		'visit' => "2009-05-12",
 		'game' => "http://www.baseball-reference.com/boxes/BAL/BAL200905120.shtml",
-		'article' => "http://www.jimmysawczuk.com/2009/05/the-park-that-started-it-all.html",
+		'article' => "http://jimmysawczuk.com/2009/05/the-park-that-started-it-all.html",
 		'img' => "camden_yards.jpg",
 		'latlong' => array(39.283889, -76.621667),
 	);
@@ -107,7 +107,7 @@ function get_ballparks()
 		'num_visits' => '1',
 		'visit' => "2010-05-31",
 		'game' => "http://www.baseball-reference.com/boxes/PIT/PIT201005310.shtml",
-		'article' => "http://www.jimmysawczuk.com/2010/06/the-best-ballpark-in-america.html",
+		'article' => "http://jimmysawczuk.com/2010/06/the-best-ballpark-in-america.html",
 		'img' => "pnc_park.jpg",
 		'latlong' => array(40.446944, -80.005833),
 	);
@@ -120,7 +120,7 @@ function get_ballparks()
 		'num_visits' => "1",
 		'visit' => "2011-07-03",
 		'game' => "http://www.baseball-reference.com/boxes/WAS/WAS201107030.shtml",
-		'article' => "http://www.jimmysawczuk.com/2011/07/oer-the-land-of-the-free-and-the-home-of-the-brave.html",
+		'article' => "http://jimmysawczuk.com/2011/07/oer-the-land-of-the-free-and-the-home-of-the-brave.html",
 		'img' => "nationals_park.jpg",
 		'latlong' => array(38.872778, -77.0075),
 	);
@@ -133,7 +133,7 @@ function get_ballparks()
 		'num_visits' => "3",
 		'visit' => "2011-09-16",
 		'game' => "http://www.baseball-reference.com/boxes/MIN/MIN201109160.shtml",
-		'article' => "http://www.jimmysawczuk.com/2011/09/baseball-in-the-twin-cities.html",
+		'article' => "http://jimmysawczuk.com/2011/09/baseball-in-the-twin-cities.html",
 		'img' => "target_field.jpg",
 		'latlong' => array(44.981667, -93.278333),
 	);
@@ -146,7 +146,7 @@ function get_ballparks()
 		'num_visits' => "1",
 		'visit' => "2012-05-18",
 		'game' => "http://www.baseball-reference.com/boxes/DET/DET201205180.shtml",
-		'article' => "http://www.jimmysawczuk.com/2012/05/two-outs-away.html",
+		'article' => "http://jimmysawczuk.com/2012/05/two-outs-away.html",
 		'img' => "comerica_park.jpg",
 		'latlong' => array(42.339167, -83.048611),
 	);
@@ -160,7 +160,7 @@ function get_ballparks()
 		'num_visits' => "1",
 		'visit' => "2012-05-19",
 		'game' => "http://www.baseball-reference.com/boxes/TOR/TOR201205190.shtml",
-		'article' => "http://www.jimmysawczuk.com/2012/05/northern-exposure.html",
+		'article' => "http://jimmysawczuk.com/2012/05/northern-exposure.html",
 		'img' => "rogers_centre.jpg",
 		'latlong' => array(43.641389, -79.389167),
 	);
@@ -173,7 +173,7 @@ function get_ballparks()
 		'num_visits' => "2",
 		'visit' => "2013-08-09",
 		'game' => "http://www.baseball-reference.com/boxes/ATL/ATL201308090.shtml",
-		'article' => "http://www.jimmysawczuk.com/2013/08/wait-theres-a-waffle-house-here.html",
+		'article' => "http://jimmysawczuk.com/2013/08/wait-theres-a-waffle-house-here.html",
 		'img' => "turner_field.jpg",
 		'latlong' => array(33.735278, -84.389444),
 	);
@@ -186,9 +186,22 @@ function get_ballparks()
 		'num_visits' => "1",
 		'visit' => "2014-08-05",
 		'game' => "http://www.baseball-reference.com/boxes/PHI/PHI201408050.shtml",
-		'article' => "http://www.jimmysawczuk.com/2014/08/the-mecca-of-cheesesteaks.html",
+		'article' => "http://jimmysawczuk.com/2014/08/the-mecca-of-cheesesteaks.html",
 		'img' => "citizens_bank_park.jpg",
 		'latlong' => array(39.905833, -75.166389),
+	);
+
+	$ballparks []= array(
+		'name' => "Coors Field",
+		'team' => "Colorado Rockies",
+		'location' => "Denver, CO",
+		'rating' => '7',
+		'num_visits' => "1",
+		'visit' => "2015-07-10",
+		'game' => "http://www.baseball-reference.com/boxes/COL/COL201507100.shtml",
+		'article' => "http://jimmysawczuk.com/2015/07/mile-high-baseball.html",
+		'img' => "coors_field.jpg",
+		'latlong' => array(39.756111, -104.994167),
 	);
 
 	//////////////////////////////////////
