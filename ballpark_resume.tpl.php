@@ -11,7 +11,7 @@ $ballparks = get_ballparks();
 
 <h1 class="headline">Ballpark Resum&eacute;</h1>
 
-<p class="section-description"><big>I'm on a mission.</big><br />My mission is to see every Major League Baseball stadium on the planet. Since August 2, 1995, I've been to fourteen stadiums (eleven of which are currently active) and I've written about and taken pictures of each visit (except Fenway Park and Wrigley Field, which I plan to return to). Below are the stadiums I've been to. Click the picture to show more information.</p>
+<p class="section-description"><big>I'm on a mission.</big><br />My mission is to see every Major League Baseball stadium on the planet. Since August 2, 1995, I've been to fifteen stadiums (thirteen of which are currently active) and I've written about and taken pictures of each visit (except Fenway Park and Wrigley Field, which I plan to return to). Below are the stadiums I've been to. Click the picture to show more information.</p>
 
 <div id="ballparks">
 	<? foreach ($ballparks as $ballpark): ?>
