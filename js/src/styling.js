@@ -110,7 +110,25 @@
 		$('#nav .switch a').click(function()
 		{
 			$('#nav').toggleClass('active');
-		})
+		});
+
+		$('.widget_archive .years .year').click(function()
+		{
+			var $this = $(this);
+			var $months = $this.next('.months');
+
+			var active = $this.hasClass('active');
+
+			if (!active)
+			{
+				$('.widget_archive').find('.active').toggleClass('active', false);
+			}
+
+			$this.toggleClass('active', !active);
+			$months.toggleClass('active', !active);
+		});
+
+		$('.widget_archive .years .year:first').click();
 	}
 
 	$(document).ready(function()

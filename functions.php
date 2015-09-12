@@ -16,6 +16,7 @@ require('includes/ballpark_widget.php');
 require('includes/bitbucket_widget.php');
 require('includes/github_widget.php');
 require('includes/goodreads_widget.php');
+require('includes/archive_widget.php');
 
 require('includes/bitbucket.php');
 require('includes/github.php');

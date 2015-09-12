@@ -4,6 +4,7 @@
   "description": "This is a repository for the theme that runs my blog, which is located at [jimmysawczuk.com][1].",
   "dependencies": {},
   "devDependencies": {
+    "bower": "^1.5.2",
     "grunt": "^0.4.5",
     "grunt-contrib-concat": "^0.5.1",
     "grunt-contrib-cssmin": "^0.12.2",

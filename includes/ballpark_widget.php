@@ -7,29 +7,18 @@ class BallparkWidget extends WP_Widget
 	function BallparkWidget()
 	{
 		// Instantiate the parent object
-		parent::WP_Widget( false, 'Ballpark Widget' );
+		parent::WP_Widget(false, 'Ballpark Widget');
 
 		$ballparks = get_ballparks();
 
-		usort($ballparks, "BallparkWidget::sortBallparksByName");
+		usort($ballparks, function($a1, $a2)
+		{
+			if ($a1['name'] > $a2['name']) return +1;
+			elseif ($a1['name'] < $a2['name']) return -1;
+			return 0;
+		});
 
 		$this->ballparks = $ballparks;
-	}
-
-	private static function sortBallparksByName($a1, $a2)
-	{
-		if ($a1['name'] > $a2['name'])
-		{
-			return 1;
-		}
-		elseif ($a2['name'] > $a1['name'])
-		{
-			return -1;
-		}
-		else
-		{
-			return 0;
-		}
 	}
 
 	function widget( $args, $instance )
@@ -39,7 +28,7 @@ class BallparkWidget extends WP_Widget
 		<?=$args['before_title'] ?>Ballparks<?=$args['after_title'] ?>
 		<ul id="ballpark_resume">
 			<? $even = false; foreach ($this->ballparks as $ballpark): ?>
-				<li class="<?=$even? 'even' : 'odd' ?>">
+				<li>
 					<div class="rating">
 						<?=$ballpark['rating'] ?>
 					</div>

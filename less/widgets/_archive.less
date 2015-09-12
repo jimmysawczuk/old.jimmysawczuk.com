@@ -1,0 +1,51 @@
+#sidebar .widget_archive {
+	.years {
+		.year {
+			font-family: "Arvo";
+			font-weight: bold;
+			font-size: 16px;
+			background: #f9f9f9;
+			margin: 10px 0px;
+			padding: 10px;
+			position: relative;
+			.unselectable();
+			cursor: pointer;
+
+			&:after {
+				.icon(@chevron-right);
+				position: absolute;
+				right: 0px;
+				padding-right: 10px;
+			}
+
+			&.active {
+				&:after {
+					.icon(@chevron-down);
+				}
+			}
+		}
+
+		ul {
+			display: none;
+
+			padding-left: 7px;
+			margin: 0.5em 0px 1.5em;
+			background: transparent;
+
+			li.month {
+				&:before {
+					.icon(@angle-right);
+					margin-right: 7px;
+				}
+
+				a {
+					// font-weight: bold;
+				}
+			}
+
+			&.active {
+				display: block;
+			}
+		}
+	}
+}
