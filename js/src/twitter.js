@@ -41,6 +41,18 @@ var Twitter = (function($)
 			var text = tweet.text;
 			var replacements = [], matches;
 
+			var $media = $('<div />').addClass("media");
+			if (tweet.entities && tweet.entities.media)
+			{
+				$.each(tweet.entities.media, function(i, media)
+				{
+					$media.append($('<a />', {href: media.expanded_url, target: "_blank"})
+							.append($('<img />', {src: media.media_url_https}))
+						);
+					text = text.replace(media.url, "");
+				});
+			}
+
 			matches = text.match(url_regexp);
 			for (var m in matches)
 			{
@@ -97,6 +109,7 @@ var Twitter = (function($)
 				.append($('<span />').addClass("content")
 					.html(text)
 				)
+				.append($media)
 				.append($meta);
 
 			var $content = $li.find('.content');
