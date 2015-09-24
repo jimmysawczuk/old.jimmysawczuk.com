@@ -13,7 +13,7 @@ function get_ballparks()
 		'num_visits' => '50+',
 		'visit' => "1995-08-02",
 		'game' => "http://www.baseball-reference.com/boxes/CLE/CLE199508020.shtml",
-		'article' => "http://jimmysawczuk.com/2008/04/my-inaugural-visit-to-progressive-field.html",
+		'article' => "http://jimmysawczuk.com/2015/09/progressive-field-renovated.html",
 		'img' => 'progressive_field.jpg',
 		'latlong' => array(41.495833, -81.685278),
 	);
