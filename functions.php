@@ -79,6 +79,7 @@ function fb_og_tags()
 		$meta_tags []= '<meta property="og:url" content="'.get_permalink().'"/>';
 		$meta_tags []= '<meta property="og:site_name" content="'.get_bloginfo().'"/>';
 		$meta_tags []= '<meta property="article:author" content="https://www.facebook.com/JimmySawczuk" />';
+		$meta_tags []= '<meta property="og:description" content="'.extract_excerpt(500).'" />';
 	}
 	else
 	{
@@ -171,6 +172,8 @@ function extract_excerpt($limit = 200)
 
 		$excerpt = str_replace("<!--more-->", "[[[more]]]", $excerpt);
 		$excerpt = str_replace("<!-- more -->", "[[[more]]]", $excerpt);
+
+		$excerpt = preg_replace('#\[caption(.*?)\](.*?)\[/caption\]#i', '', $excerpt);
 
 		$excerpt = trim(htmlentities(strip_tags($excerpt)));
 
