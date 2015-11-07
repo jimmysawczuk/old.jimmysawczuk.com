@@ -9,6 +9,7 @@
 		<? fb_og_tags(); ?>
 		<? twitter_card_tags(); ?>
 		<link rel="apple-touch-icon" href="<? bloginfo('stylesheet_directory'); ?>/images/apple-touch-icon.png" />
+		<meta name="apple-mobile-web-app-title" content="CC&CS" />
 		<? wp_head(); ?>
 		<script type="text/javascript">
 			var Config = <?=json_encode(array(
