@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
 	<head>
+		<meta charset="utf-8" />
 		<title><?=MODE == "live"? "" : "[" . MODE . "] "; ?><? page_title(); ?></title>
 		<? load_stylesheet('style'); ?>
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
@@ -10,6 +11,7 @@
 		<? twitter_card_tags(); ?>
 		<link rel="apple-touch-icon" href="<? bloginfo('stylesheet_directory'); ?>/images/apple-touch-icon.png" />
 		<meta name="apple-mobile-web-app-title" content="CC&CS" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700,700italic,300italic,300|Mako|Roboto+Slab:400,700" rel="stylesheet" type="text/css" />
 		<? wp_head(); ?>
 		<script type="text/javascript">
 			var Config = <?=json_encode(array(

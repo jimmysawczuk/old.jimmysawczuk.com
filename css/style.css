@@ -134,30 +134,6 @@ tt {
   white-space: nowrap;
 }
 @font-face {
-  font-family: 'Mako';
-  src: local('Mako');
-  src: url('../type/mako-webfont.eot');
-  src: url('../type/mako-webfont.eot?#iefix') format('embedded-opentype'), url('../type/mako-webfont.woff') format('woff'), url('../type/mako-webfont.ttf') format('truetype'), url('type/mako-webfont.svg#Mako') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Arvo';
-  src: local('Arvo');
-  src: url('../type/arvo-regular-webfont.eot');
-  src: url('../type/arvo-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../type/arvo-regular-webfont.woff') format('woff'), url('../type/arvo-regular-webfont.ttf') format('truetype'), url('type/arvo-regular-webfont.svg#Arvo') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Arvo';
-  src: local('Arvo');
-  src: url('../type/arvo-bold-webfont.eot');
-  src: url('../type/arvo-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../type/arvo-bold-webfont.woff') format('woff'), url('../type/arvo-bold-webfont.ttf') format('truetype'), url('type/arvo-bold-webfont.svg#Arvo') format('svg');
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
   font-family: 'FontAwesome';
   src: url('../type/fontawesome-webfont.eot?v=3.2.1');
   src: url('../type/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('../type/fontawesome-webfont.woff?v=3.2.1') format('woff'), url('../type/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), url('../type/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
@@ -1624,10 +1600,10 @@ html.ie8 {
   clear: both;
 }
 #header h1 {
-  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
-  font-weight: bold;
+  font-family: 'Roboto Slab', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
-  font-size: 244%;
+  font-size: 34px;
   padding: 1em 0px 30px;
   text-align: center;
 }
@@ -1646,6 +1622,7 @@ html.ie8 {
   width: 920px;
   position: relative;
   left: -30px;
+  font-size: 15.4px;
 }
 #nav:after {
   content: ".";
@@ -1700,7 +1677,7 @@ html.ie8 {
 #nav ul li a {
   font-weight: bold;
   color: #eee;
-  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
+  font-family: 'Roboto Condensed', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
   text-decoration: none;
 }
 #nav ul li a {
@@ -1748,7 +1725,7 @@ html.ie8 {
   font-size: 14px;
   line-height: 16px;
   padding: 0px;
-  font-family: 'Mako', 'Arial', 'Helvetica', sans-serif;
+  font-family: 'Roboto Condensed', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
 }
 #search #search_submit {
   float: left;
@@ -1767,9 +1744,6 @@ html.ie8 {
 #search.empty:hover #search_text_wrapper,
 #search.empty:hover #search_submit {
   background-color: #999;
-}
-#search.empty #search_text {
-  font-style: italic;
 }
 #search input:focus {
   outline: none;
@@ -1799,7 +1773,7 @@ html.ie #search #search_text {
   min-height: 300px;
 }
 .post h2 {
-  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
+  font-family: 'Roboto Condensed', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
   font-size: 166%;
   text-decoration: none;
 }
@@ -1818,7 +1792,7 @@ html.ie #search #search_text {
   margin: 3px 0px;
 }
 .post .post_header h3.subtitle {
-  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
+  font-family: 'Roboto Condensed', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
   font-size: 120%;
   text-decoration: none;
   margin: 3px 0px;
@@ -2108,7 +2082,7 @@ html.ie #search #search_text {
 .post .content h2,
 .post .content h3,
 .post .content h4 {
-  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
+  font-family: 'Roboto Condensed', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
   margin: 1em 0px;
 }
 .post .content h2 {
@@ -2290,7 +2264,7 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   margin: 0px 0px 2em;
 }
 #sidebar h2.widgettitle {
-  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
+  font-family: 'Roboto Condensed', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
   font-size: 166%;
   font-weight: bold;
   border-bottom: 1px solid #aaa;
@@ -2637,7 +2611,7 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   content: "\f05a";
 }
 #sidebar .widget_archive .years .year {
-  font-family: "Arvo";
+  font-family: 'Roboto Condensed', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
   font-weight: bold;
   font-size: 16px;
   background: #f9f9f9;
@@ -2818,7 +2792,7 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   color: #d9d9d9;
 }
 #content.contact .bio h2 {
-  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif !important;
+  font-family: 'Roboto Condensed', 'Arial Black', 'Arial', 'Helvetica', sans-serif !important;
   font-size: 150%;
   text-decoration: none;
   font-weight: bold;
@@ -2826,7 +2800,7 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
 #content.projects h1.headline {
   font-size: 26px;
   font-weight: bold;
-  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
+  font-family: 'Roboto Slab', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
   text-transform: uppercase;
   border-bottom: 1px solid #747474;
   padding-bottom: 0.25em;
@@ -2840,7 +2814,7 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
 }
 #content.projects p.section-description big {
   font-size: 24px;
-  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
+  font-family: 'Roboto Condensed', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
 }
 #content.projects #projects {
   position: relative;
@@ -2879,7 +2853,7 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   overflow: hidden;
 }
 #content.projects #projects .project .container h2 {
-  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
+  font-family: 'Roboto Condensed', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
   font-size: 150%;
   text-decoration: none;
   font-weight: bold;
@@ -2966,7 +2940,7 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
 #content.ballpark_resume h1.headline {
   font-size: 26px;
   font-weight: bold;
-  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
+  font-family: 'Roboto Slab', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
   text-transform: uppercase;
   border-bottom: 1px solid #747474;
   padding-bottom: 0.25em;
@@ -2980,7 +2954,7 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
 }
 #content.ballpark_resume p.section-description big {
   font-size: 24px;
-  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
+  font-family: 'Roboto Condensed', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
 }
 #ballparks {
   display: inline-block;
@@ -3034,7 +3008,7 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
 }
 #ballparks .ballpark .header h1 {
   color: #fff;
-  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
+  font-family: 'Roboto Condensed', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
   font-size: 113%;
   font-weight: bold;
 }
@@ -3047,7 +3021,7 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
 }
 #ballparks .ballpark .header h2 {
   color: #fff;
-  font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
+  font-family: 'Roboto Condensed', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
   font-size: 100%;
 }
 #ballparks .ballpark .header .rating {
