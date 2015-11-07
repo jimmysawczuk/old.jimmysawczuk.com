@@ -70,7 +70,7 @@ function fb_og_tags()
 		}
 		else
 		{
-			$meta_tags []= '<meta property="og:image" content="'.get_bloginfo('stylesheet_directory').'/images/about_jimmy.jpg" />';
+			$meta_tags []= '<meta property="og:image" content="'.get_bloginfo('stylesheet_directory').'/images/about_jimmy_coffee.jpg" />';
 		}
 
 
@@ -88,7 +88,7 @@ function fb_og_tags()
 		$meta_tags []= '<meta property="og:title" content="Cleveland, Curveballs and Common Sense"/>';
 		$meta_tags []= '<meta property="og:type" content="website"/>';
 		$meta_tags []= '<meta property="og:url" content="'.get_bloginfo('url').'"/>';
-		$meta_tags []= '<meta property="og:image" content="'.get_bloginfo('stylesheet_directory').'/images/about_jimmy.jpg" />';
+		$meta_tags []= '<meta property="og:image" content="'.get_bloginfo('stylesheet_directory').'/images/about_jimmy_coffee.jpg" />';
 		$meta_tags []= '<meta property="og:description" content="'.$description.'" />';
 	}
 
@@ -112,7 +112,7 @@ function twitter_card_tags()
 		}
 		else
 		{
-			$meta_tags []= '<meta property="twitter:image" content="'.get_bloginfo('stylesheet_directory').'/images/about_jimmy.jpg" />';
+			$meta_tags []= '<meta property="twitter:image" content="'.get_bloginfo('stylesheet_directory').'/images/about_jimmy_coffee.jpg" />';
 		}
 
 		$description = extract_excerpt(500);
@@ -131,7 +131,7 @@ function twitter_card_tags()
 		$meta_tags []= '<meta property="twitter:title" content="Cleveland, Curveballs and Common Sense"/>';
 		$meta_tags []= '<meta property="twitter:type" content="website"/>';
 		$meta_tags []= '<meta property="twitter:url" content="'.get_bloginfo('url').'"/>';
-		$meta_tags []= '<meta property="twitter:image" content="'.get_bloginfo('stylesheet_directory').'/images/about_jimmy.jpg" />';
+		$meta_tags []= '<meta property="twitter:image" content="'.get_bloginfo('stylesheet_directory').'/images/about_jimmy_coffee.jpg" />';
 		$meta_tags []= '<meta property="twitter:description" content="'.$description.'" />';
 	}
 
