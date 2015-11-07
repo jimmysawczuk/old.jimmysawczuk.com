@@ -2483,6 +2483,7 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   margin: 10px 0px;
   position: relative;
   background: #444;
+  font-family: 'Roboto Condensed', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
 }
 #sidebar .widget_aboutmewidget ul.more li a {
   display: block;
