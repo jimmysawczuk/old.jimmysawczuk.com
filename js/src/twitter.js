@@ -96,7 +96,7 @@ var Twitter = (function($)
 			{
 				if (tweet.favorite_count > 0)
 				{
-					$meta.append(' &middot; <i class="icon-star"></i> ' + tweet.favorite_count);
+					$meta.append(' &middot; <i class="icon-heart"></i> ' + tweet.favorite_count);
 				}
 
 				if (tweet.retweet_count > 0)
