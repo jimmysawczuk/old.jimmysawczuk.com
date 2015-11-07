@@ -2187,9 +2187,6 @@ html.ie #search #search_text {
 .post .content .recommendations .mobile-container {
   display: none;
 }
-.post_first {
-  margin-bottom: 1.5em;
-}
 .page .post_info {
   display: none;
 }
