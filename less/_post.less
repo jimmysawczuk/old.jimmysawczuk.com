@@ -19,15 +19,18 @@
 		vertical-align: middle;
 		margin-bottom: 1em;
 
+		border-bottom: 1px solid #c0c0c0;
+
 		h2 {
-			border-bottom: 1px solid #aaa;
+			margin: 3px 0px;
 		}
 
 		h3.subtitle {
 			font-family: @headerFont;
 			font-size: 120%;
 			text-decoration: none;
-			margin: 0.25em 0px;
+			margin: 3px 0px;
+			color: #888;
 		}
 	}
 
@@ -148,59 +151,58 @@
 	.post_info_inline {
 		display: none;
 		margin-bottom: 1em;
+		font-size: 13px;
+		line-height: 20px;
+		color: #888;
 
-		.post_date, .post_hearts, .post_comments {
-			.clearfix;
-			display: inline-block;
-			font-size: 120%;
-			margin-right: 10px;
-			float: left;
+		.info {
+			margin: 0px 5px;
+			padding: 2px 3px;
 
-			a:active, a:hover {
-				color: #333;
+			a, a:active, a:hover {
+				text-decoration: none;
+				color: #888;
 			}
 
-			.big {
-				background: #ddd;
-				float: left;
-				padding: 7px 15px;
-				.border-radius(5px, 0px, 0px, 5px);
+			&:first-child {
+				margin-left: 0px;
+				padding-left: 0px;
 			}
 
-			.small {
-				background: #444;
-				color: #f9f9f9;
-				float: right;
-				padding: 7px;
-				.border-radius(0px, 5px, 5px, 0px);
-			}
+			&.info-boxed {
+				background: #ccc;
+				color: #555;
+				.border-radius(3px);
+				padding: 2px 5px;
 
-			&:hover {
-				.big {
-					background: #e5e5e5;
+				a, a:active, a:hover {
+					color: #555;
 				}
 			}
+		}
+
+		.post_hearts, .post_comments {
+			font-size: 15px;
 		}
 
 		.post_hearts {
 			&.hearted {
-				.small {
-					background-color: #fc3;
+				.icon-star {
+					color: #fc3;
 				}
 			}
 
-			a {
-				display: block;
-				text-decoration: none;
-				color: #333;
-			}
-		}
+			&.info-boxed.hearted {
+				background: #fc3;
+				color: #fff;
 
-		.post_comments {
-			a {
-				display: block;
-				text-decoration: none;
-				color: #333;
+				.count {
+					color: #fff;
+				}
+
+				.icon-star {
+					color: #fff;
+				}
 			}
 		}
 	}

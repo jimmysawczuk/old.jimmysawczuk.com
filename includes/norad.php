@@ -45,9 +45,10 @@ class Norad
 	private function applyCookie($ch)
 	{
 		global $_COOKIE;
-		if (isset($_COOKIE['norad_identifier']))
+		// var_dump($_COOKIE['norad_id']);
+		if (isset($_COOKIE['norad_id']))
 		{
-			curl_setopt($ch, CURLOPT_COOKIE, 'norad_identifier=' . $_COOKIE['norad_identifier']);
+			curl_setopt($ch, CURLOPT_COOKIE, 'norad_id=' . $_COOKIE['norad_id']);
 		}
 	}
 
@@ -97,7 +98,7 @@ class Norad
 
 		if ($identifier != "")
 		{
-			setcookie("norad_identifier", $identifier, $expires, "/", COOKIE_DOMAIN);
+			setcookie("norad_id", $identifier, $expires, "/", COOKIE_DOMAIN);
 			$response['cookie_set'] = true;
 		}
 

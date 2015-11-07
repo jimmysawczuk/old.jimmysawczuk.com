@@ -1812,15 +1812,17 @@ html.ie #search #search_text {
   clear: both;
   vertical-align: middle;
   margin-bottom: 1em;
+  border-bottom: 1px solid #c0c0c0;
 }
 .post .post_header h2 {
-  border-bottom: 1px solid #aaa;
+  margin: 3px 0px;
 }
 .post .post_header h3.subtitle {
   font-family: 'Arvo', 'Arial Black', 'Arial', 'Helvetica', sans-serif;
   font-size: 120%;
   text-decoration: none;
-  margin: 0.25em 0px;
+  margin: 3px 0px;
+  color: #888;
 }
 .post .post_info {
   box-sizing: border-box;
@@ -1939,71 +1941,56 @@ html.ie #search #search_text {
 .post .post_info_inline {
   display: none;
   margin-bottom: 1em;
+  font-size: 13px;
+  line-height: 20px;
+  color: #888;
 }
-.post .post_info_inline .post_date,
+.post .post_info_inline .info {
+  margin: 0px 5px;
+  padding: 2px 3px;
+}
+.post .post_info_inline .info a,
+.post .post_info_inline .info a:active,
+.post .post_info_inline .info a:hover {
+  text-decoration: none;
+  color: #888;
+}
+.post .post_info_inline .info:first-child {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+.post .post_info_inline .info.info-boxed {
+  background: #ccc;
+  color: #555;
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 2px 5px;
+}
+.post .post_info_inline .info.info-boxed a,
+.post .post_info_inline .info.info-boxed a:active,
+.post .post_info_inline .info.info-boxed a:hover {
+  color: #555;
+}
 .post .post_info_inline .post_hearts,
 .post .post_info_inline .post_comments {
-  display: block;
-  display: inline-block;
-  font-size: 120%;
-  margin-right: 10px;
-  float: left;
+  font-size: 15px;
 }
-.post .post_info_inline .post_date:after,
-.post .post_info_inline .post_hearts:after,
-.post .post_info_inline .post_comments:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
+.post .post_info_inline .post_hearts.hearted .icon-star {
+  color: #fc3;
 }
-.post .post_info_inline .post_date a:active,
-.post .post_info_inline .post_hearts a:active,
-.post .post_info_inline .post_comments a:active,
-.post .post_info_inline .post_date a:hover,
-.post .post_info_inline .post_hearts a:hover,
-.post .post_info_inline .post_comments a:hover {
-  color: #333;
+.post .post_info_inline .post_hearts.info-boxed.hearted {
+  background: #fc3;
+  color: #fff;
 }
-.post .post_info_inline .post_date .big,
-.post .post_info_inline .post_hearts .big,
-.post .post_info_inline .post_comments .big {
-  background: #ddd;
-  float: left;
-  padding: 7px 15px;
-  border-radius: 5px 0px 0px 5px;
-  -moz-border-radius: 5px 0px 0px 5px;
-  -webkit-border-radius: 5px 0px 0px 5px;
+.post .post_info_inline .post_hearts.info-boxed.hearted .count {
+  color: #fff;
 }
-.post .post_info_inline .post_date .small,
-.post .post_info_inline .post_hearts .small,
-.post .post_info_inline .post_comments .small {
-  background: #444;
-  color: #f9f9f9;
-  float: right;
-  padding: 7px;
-  border-radius: 0px 5px 5px 0px;
-  -moz-border-radius: 0px 5px 5px 0px;
-  -webkit-border-radius: 0px 5px 5px 0px;
-}
-.post .post_info_inline .post_date:hover .big,
-.post .post_info_inline .post_hearts:hover .big,
-.post .post_info_inline .post_comments:hover .big {
-  background: #e5e5e5;
-}
-.post .post_info_inline .post_hearts.hearted .small {
-  background-color: #fc3;
-}
-.post .post_info_inline .post_hearts a {
-  display: block;
-  text-decoration: none;
-  color: #333;
-}
-.post .post_info_inline .post_comments a {
-  display: block;
-  text-decoration: none;
-  color: #333;
+.post .post_info_inline .post_hearts.info-boxed.hearted .icon-star {
+  color: #fff;
 }
 .post .content {
   clear: both;
@@ -3386,6 +3373,9 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
   }
   .post .post-info {
     display: none;
+  }
+  .post .post_header {
+    margin-bottom: 0.5em;
   }
   .post .post_info_inline {
     display: inline-block;

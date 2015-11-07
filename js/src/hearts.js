@@ -21,7 +21,7 @@
 				if (response.success)
 				{
 					var payload = response.payload;
-					$post.find('.post_hearts .big').html(payload.lifetime.unique);
+					$post.find('.post_hearts .count').html(payload.lifetime.unique);
 				}
 				else
 				{
@@ -66,7 +66,7 @@
 						var $post = $(post);
 						if ($post.data('permalink') == row.url)
 						{
-							$post.find('.post_hearts .big').html(row.unique);
+							$post.find('.post_hearts .count').html(row.unique);
 							if (row.is_member)
 							{
 								$post.find('.post_hearts').toggleClass('hearted', true);

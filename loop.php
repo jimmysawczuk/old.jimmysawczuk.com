@@ -12,7 +12,7 @@
 				</div>
 				<div class="post_hearts">
 					<a href="javascript: void(0);" class="toggle_heart">
-						<div class="big">&mdash;</div>
+						<div class="big"><span class="count">&mdash;</span></div>
 						<div class="small"><i class="icon-star"></i></div>
 					</a>
 				</div>
@@ -33,36 +33,39 @@
 		</div>
 
 		<div class="post_info_inline">
-			<div class="post_hearts">
+			<span class="info post_date">
+				Published <?=date("F jS, Y", strtotime(get_the_date())); ?>
+			</span>
+			<span class="info post_hearts">
 				<a href="javascript: void(0);" class="toggle_heart">
-					<div class="big">&mdash;</div>
-					<div class="small"><i class="icon-star"></i></div>
+					<i class="icon-star"></i>
+					<span class="count">&mdash;</span>
 				</a>
-			</div>
-			<div class="post_comments">
+			</span>
+			<span class="info post_comments">
 				<a href="<? the_permalink(); ?>#comments">
-					<div class="big"><span class="fb-comments-count" data-href="<? comments_permalink(); ?>">&mdash;</span></div>
-					<div class="small"><i class="icon-comment"></i></div>
+					<i class="icon-comment"></i>
+					<span class="count fb-comments-count" data-href="<? comments_permalink(); ?>">&mdash;</span>
 				</a>
-			</div>
+			</span>
 		</div>
 
 		<div class="content">
 			<? the_content(''); ?>
 			<? if (is_single()): ?>
 				<div class="post_info_inline">
-					<div class="post_hearts">
+					<span class="info info-boxed post_hearts">
 						<a href="javascript: void(0);" class="toggle_heart">
-							<div class="big">&mdash;</div>
-							<div class="small"><i class="icon-star"></i></div>
+							<i class="icon-star"></i>
+							<span class="count">&mdash;</span>
 						</a>
-					</div>
-					<div class="post_comments">
+					</span>
+					<span class="info info-boxed post_comments">
 						<a href="<? the_permalink(); ?>#comments">
-							<div class="big"><span class="fb-comments-count" data-href="<? comments_permalink(); ?>">&mdash;</span></div>
-							<div class="small"><i class="icon-comment"></i></div>
+							<i class="icon-comment"></i>
+							<span class="count fb-comments-count" data-href="<? comments_permalink(); ?>">&mdash;</span>
 						</a>
-					</div>
+					</span>
 				</div>
 				<hr class="recommendation-divider" />
 				<div class="original">
