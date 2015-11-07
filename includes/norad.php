@@ -9,7 +9,7 @@ class Norad
 
 	public function getLifetimeStatsForURLs(array $urls = array(), array $events = array())
 	{
-		$endpoint = $this->endpoint . "/v1?lifetime=1&" .
+		$endpoint = $this->endpoint . "/v2?" .
 			implode("&", array_map(function($s) { return 'event=' . urlencode($s); }, $events)) . '&' .
 			implode("&", array_map(function($s) { return 'url=' . urlencode($s); }, $urls));
 
@@ -25,7 +25,7 @@ class Norad
 
 	public function postEvent($url, $event)
 	{
-		$endpoint = $this->endpoint . "/v1";
+		$endpoint = $this->endpoint . "/v2/event";
 
 		$ch = curl_init($endpoint);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
