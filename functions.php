@@ -1,6 +1,20 @@
 <?php
 
-register_sidebars(1, array('name' => 'Right sidebar'));
+define('PARTIAL_DIR', realpath(__DIR__ . '/partials'));
+
+$sidebar_id = register_sidebar([
+	'name' => "Front page interstitial",
+	'id' => "sidebar-front",
+	'description' => "This sidebar appears horizontally underneath the first post on the home page.",
+]);
+define('SIDEBAR_FRONT_INTERSTITIAL', $sidebar_id);
+
+$sidebar_id = register_sidebar([
+	'name' => "Right column",
+	'id' => "sidebar-right",
+	'description' => "This sidebar appears as a column on the right side of the content underneath the featured post if present.",
+]);
+define('SIDEBAR_RIGHT', $sidebar_id);
 
 require('includes/scm_status.php');
 require('includes/utility.php');

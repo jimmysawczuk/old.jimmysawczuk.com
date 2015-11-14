@@ -83,3 +83,9 @@ function git_revision()
 {
 	return GitRevision::format("%r &middot; %b &middot; <time datetime=\"%d\"></time>");
 }
+
+function require_partial($name, array $data = [])
+{
+	extract($data);
+	require PARTIAL_DIR . '/' . $name . '.tpl.php';
+}
