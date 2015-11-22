@@ -2049,23 +2049,15 @@ html.ie #search #search_text {
   margin: 10px;
   overflow: hidden;
   font-size: 93%;
-  border: 1px solid #ccc;
-  border-radius: 2px 2px 2px 2px;
-  -moz-border-radius: 2px 2px 2px 2px;
-  -webkit-border-radius: 2px 2px 2px 2px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
+  border-left: 3px solid #ccc;
 }
 .post .content blockquote p {
   padding: 0px 10px;
 }
 .post .content blockquote .citation {
-  border-top: 1px dashed #aaa;
   padding: 5px 10px;
   font-size: 85%;
-  text-align: right;
-  background-color: #eee;
+  background-color: #dfdfdf;
 }
 .post .content blockquote .citation a {
   color: #676767;
