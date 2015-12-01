@@ -46,10 +46,8 @@
 
 					<div id="search" class="empty">
 						<form method="get" action="<? bloginfo('url'); ?>">
-							<div id="search_text_wrapper" class="input_wrapper">
-								<input type="text" name="s" id="search_text" data-description="Search" />
-							</div>
-							<input type="image" src="<? bloginfo('stylesheet_directory'); ?>/images/search.png" value="" id="search_submit" />
+							<input type="text" name="s" id="search_text" data-description="Search" />
+							<button type="submit" id="search_submit"><img src="<? bloginfo('stylesheet_directory'); ?>/images/search.png"></button>
 						</form>
 					</div>
 				</div>
