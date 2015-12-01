@@ -1662,13 +1662,13 @@ html.ie8 {
   float: left;
   line-height: 20px;
   padding: 0px;
-  margin: 0px 7px;
+  margin: 0px;
 }
 #nav ul li.switch {
   display: none;
 }
 #nav ul li.first {
-  margin-left: 0px;
+  margin-left: -14px;
 }
 #nav ul li.last {
   margin-right: 0px;
@@ -1681,7 +1681,7 @@ html.ie8 {
   text-decoration: none;
 }
 #nav ul li a {
-  padding: 10px 5px;
+  padding: 10px 15px;
   display: block;
   border-radius: 1px 1px 1px 1px;
   -moz-border-radius: 1px 1px 1px 1px;
