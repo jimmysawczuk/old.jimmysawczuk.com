@@ -81,6 +81,14 @@ module.exports = function(grunt)
 			}
 		},
 
+		copy: {
+			fontawesome: {
+				files: [
+					{expand: true, cwd: 'bower_components/font-awesome/fonts/', src: '**', dest: 'fonts/', flatten: true, filter: 'isFile'}
+				]
+			}
+		},
+
 		watch: {
 			js: {
 				tasks: ['concat'],
@@ -99,6 +107,7 @@ module.exports = function(grunt)
 	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-copy');
 
-	grunt.registerTask('default', ['less', 'cssmin', 'concat', 'uglify']);
+	grunt.registerTask('default', ['less', 'cssmin', 'concat', 'uglify', 'copy']);
 };

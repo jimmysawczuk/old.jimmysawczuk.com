@@ -6,4 +6,4 @@ default:
 	@grunt
 
 clean:
-	@rm -rf js/bin css node_modules bower_components
+	@rm -rf js/bin css node_modules bower_components fonts

@@ -2,7 +2,9 @@
   "name": "jimmysawczuk.com",
   "version": "1.0.0",
   "description": "This is a repository for the theme that runs my blog, which is located at [jimmysawczuk.com][1].",
-  "dependencies": {},
+  "dependencies": {
+    "grunt-contrib-copy": "^0.8.2"
+  },
   "devDependencies": {
     "bower": "^1.5.2",
     "grunt": "^0.4.5",
