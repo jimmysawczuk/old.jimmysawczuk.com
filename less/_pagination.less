@@ -1,11 +1,9 @@
 @import "_include.less";
-@import "font-awesome/variables.less";
 
 #pagination {
 	@textColor: #333;
 
 	.chevron() {
-		font-family: FontAwesome;
 		font-size: 80%;
 		margin: 5px 0px 0px;
 	}
@@ -15,7 +13,7 @@
 		position: relative;
 
 		&:before {
-			content: @chevron-left;
+			.icon(@fa-var-chevron-left);
 			.chevron();
 			margin-right: 7px;
 		}
@@ -26,7 +24,7 @@
 		position: relative;
 
 		&:after {
-			content: @chevron-right;
+			.icon(@fa-var-chevron-right);
 			.chevron();
 			margin-left: 7px;
 		}

@@ -250,12 +250,12 @@ var Twitter = (function($)
 			{
 				if (tweet.favorite_count > 0)
 				{
-					$meta.append(' &middot; <i class="icon-heart"></i> ' + tweet.favorite_count);
+					$meta.append(' &middot; <i class="fa fa-heart"></i> ' + tweet.favorite_count);
 				}
 
 				if (tweet.retweet_count > 0)
 				{
-					$meta.append(' &middot; <i class="icon-retweet"></i> ' + tweet.retweet_count);
+					$meta.append(' &middot; <i class="fa fa-retweet"></i> ' + tweet.retweet_count);
 				}
 			}
 

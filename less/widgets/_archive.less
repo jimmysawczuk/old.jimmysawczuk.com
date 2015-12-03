@@ -12,7 +12,8 @@
 			cursor: pointer;
 
 			&:after {
-				.icon(@chevron-right);
+				.fa-icon();
+				content: @fa-var-chevron-right;
 				position: absolute;
 				right: 0px;
 				padding-right: 10px;
@@ -20,7 +21,8 @@
 
 			&.active {
 				&:after {
-					.icon(@chevron-down);
+					.fa-icon();
+					content: @fa-var-chevron-down;
 				}
 			}
 		}
@@ -34,7 +36,8 @@
 
 			li.month {
 				&:before {
-					.icon(@angle-right);
+					.fa-icon();
+					content: @fa-var-angle-right;
 					margin-right: 7px;
 				}
 

@@ -13,13 +13,13 @@
 				<div class="post_hearts">
 					<a href="javascript: void(0);" class="toggle_heart">
 						<div class="big"><span class="count">&mdash;</span></div>
-						<div class="small"><i class="icon-star"></i></div>
+						<div class="small"><i class="fa fa-star"></i></div>
 					</a>
 				</div>
 				<div class="post_comments">
 					<a href="<? the_permalink(); ?>#comments">
 						<div class="big"><span class="fb-comments-count" data-href="<? comments_permalink(); ?>">&mdash;</span></div>
-						<div class="small"><i class="icon-comment"></i></div>
+						<div class="small"><i class="fa fa-comment"></i></div>
 					</a>
 				</div>
 				<div class="top_link">
@@ -38,13 +38,13 @@
 			</span>
 			<span class="info post_hearts">
 				<a href="javascript: void(0);" class="toggle_heart">
-					<i class="icon-star"></i>
+					<i class="fa fa-star"></i>
 					<span class="count">&mdash;</span>
 				</a>
 			</span>
 			<span class="info post_comments">
 				<a href="<? the_permalink(); ?>#comments">
-					<i class="icon-comment"></i>
+					<i class="fa fa-comment"></i>
 					<span class="count fb-comments-count" data-href="<? comments_permalink(); ?>">&mdash;</span>
 				</a>
 			</span>
@@ -56,13 +56,13 @@
 				<div class="post_info_inline">
 					<span class="info info-boxed post_hearts">
 						<a href="javascript: void(0);" class="toggle_heart">
-							<i class="icon-star"></i>
+							<i class="fa fa-star"></i>
 							<span class="count">&mdash;</span>
 						</a>
 					</span>
 					<span class="info info-boxed post_comments">
 						<a href="<? the_permalink(); ?>#comments">
-							<i class="icon-comment"></i>
+							<i class="fa fa-comment"></i>
 							<span class="count fb-comments-count" data-href="<? comments_permalink(); ?>">&mdash;</span>
 						</a>
 					</span>

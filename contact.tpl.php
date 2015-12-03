@@ -23,48 +23,48 @@ get_header();
 		<div class="contact_info">
 			<ul>
 				<li class="first">
-					<i class="icon-envelope icon-fixed-width"></i>
+					<i class="fa fa-envelope-o fa-fw"></i>
 					hello@jimmysawczuk.com
 				</li>
 				<li>
-					<i class="icon-phone icon-fixed-width"></i>
+					<i class="fa fa-phone fa-fw"></i>
 					(440) 796-7806
 				</li>
 				<li>
-					<i class="icon-comment-alt icon-fixed-width"></i>
+					<i class="fa fa-comment-o fa-fw"></i>
 					XMPP: me@jimmysawczuk.com
 				</li>
 				<li>&nbsp;</li>
 				<li>
-					<i class="icon-facebook-sign icon-fixed-width"></i>
+					<i class="fa fa-facebook fa-fw"></i>
 					<a href="http://www.facebook.com/JimmySawczuk" target="_blank">Facebook</a>
 				</li>
 				<li>
-					<i class="icon-twitter-sign icon-fixed-width"></i>
+					<i class="fa fa-twitter fa-fw"></i>
 					<a href="http://www.twitter.com/JimmySawczuk" target="_blank">Twitter</a>
 				</li>
 				<li>
-					<i class="icon-instagram icon-fixed-width"></i>
+					<i class="fa fa-instagram fa-fw"></i>
 					<a href="http://www.instagram.com/jimmysawczuk" target="_blank">Instagram</a>
 				</li>
 				<li>
-					<i class="icon-linkedin-sign icon-fixed-width"></i>
+					<i class="fa fa-linkedin fa-fw"></i>
 					<a href="http://www.linkedin.com/in/jimmysawczuk" target="_blank">LinkedIn</a>
 				</li>
 				<li>
-					<i class="icon-google-plus-sign icon-fixed-width"></i>
+					<i class="fa fa-google-plus-square fa-fw"></i>
 					<a href="https://plus.google.com/+JimmySawczuk" target="_blank">Google+</a>
 				</li>
 				<li>
-					<i class="icon-github-sign icon-fixed-width"></i>
+					<i class="fa fa-github fa-fw"></i>
 					<a href="http://www.github.com/JimmySawczuk" target="_blank">GitHub</a>
 				</li>
 				<li>
-					<i class="icon-bitbucket-sign icon-fixed-width"></i>
+					<i class="fa fa-bitbucket fa-fw"></i>
 					<a href="http://bitbucket.org/JimmySawczuk" target="_blank">Bitbucket</a>
 				</li>
 				<li>
-					<i class="icon-stackexchange icon-fixed-width"></i>
+					<i class="fa fa-stack-overflow fa-fw"></i>
 					<a href="http://stackoverflow.com/users/350278" target="_blank">Stack Overflow</a>
 				</li>
 			</ul>

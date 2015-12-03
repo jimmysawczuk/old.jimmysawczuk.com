@@ -57,7 +57,7 @@ $ballparks = get_ballparks();
 				</div>
 
 				<div class="show_location">
-					<div class="toggle icon-map-marker"></div>
+					<div class="toggle fa fa-map-marker"></div>
 				</div>
 
 				<? if (isset($ballpark['img_credit'])): ?>
