@@ -218,6 +218,19 @@ function get_ballparks()
 		'latlong' => array(37.751667, -122.200556),
 	);
 
+	// $ballparks []= array(
+	// 	'name' => "AT&amp;T Park",
+	// 	'team' => "San Francisco Giants",
+	// 	'location' => "San Francisco, CA",
+	// 	'rating' => 'haha, not yet',
+	// 	'num_visits' => "1",
+	// 	'visit' => "2016-04-19",
+	// 	'game' => "http://www.baseball-reference.com/boxes/SFN/SFN201604190.shtml",
+	// 	'article' => "#",
+	// 	'img' => "att_park.jpg",
+	// 	'latlong' => array(37.778611, -122.389167),
+	// );
+
 	//////////////////////////////////////
 
 	$i = 0;
