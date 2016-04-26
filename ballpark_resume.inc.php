@@ -156,7 +156,7 @@ function get_ballparks()
 		'alt_name' => "SkyDome",
 		'team' => "Toronto Blue Jays",
 		'location' => "Toronto, ON",
-		'rating' => '5',
+		'rating' => '3',
 		'num_visits' => "1",
 		'visit' => "2012-05-19",
 		'game' => "http://www.baseball-reference.com/boxes/TOR/TOR201205190.shtml",
@@ -202,6 +202,20 @@ function get_ballparks()
 		'article' => "http://jimmysawczuk.com/2015/07/mile-high-baseball.html",
 		'img' => "coors_field.jpg",
 		'latlong' => array(39.756111, -104.994167),
+	);
+
+	$ballparks []= array(
+		'name' => "Oakland Coliseum",
+		'alt_name' => "Oakland-Alameda County Coliseum",
+		'team' => "Oakland Athletics",
+		'location' => "Oakland, CA",
+		'rating' => '4',
+		'num_visits' => "1",
+		'visit' => "2016-04-17",
+		'game' => "http://www.baseball-reference.com/boxes/OAK/OAK201604170.shtml",
+		'article' => "https://jimmysawczuk.com/2016/04/baseball-across-the-bay.html",
+		'img' => "oakland_coliseum.jpg",
+		'latlong' => array(37.751667, -122.200556),
 	);
 
 	//////////////////////////////////////
