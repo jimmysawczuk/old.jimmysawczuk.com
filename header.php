@@ -23,9 +23,10 @@
 		</script>
 		<!--[if IE 7]><script type="text/javascript">$('html').addClass('ie7');</script><![endif]-->
 		<!--[if IE 8]><script type="text/javascript">$('html').addClass('ie8');</script><![endif]-->
+		<? if (MODE === "live") require(dirname(__FILE__) . '/includes/ga.php'); ?>
+		<? if (MODE === "live") require(dirname(__FILE__) . '/includes/fb_pixel.php'); ?>
 	</head>
 	<body>
-		<? if (MODE === "live") require(dirname(__FILE__) . '/includes/ga.php'); ?>
 		<div id="bg"></div>
 		<div id="tab_container">
 			<div id="container">
