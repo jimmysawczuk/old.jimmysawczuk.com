@@ -2,9 +2,8 @@
 
 class LikeBoxWidget extends WP_Widget {
 
-	function LikeBoxWidget() {
-		// Instantiate the parent object
-		parent::WP_Widget( false, 'Facebook Like Box' );
+	function __construct() {
+		parent::__construct( false, 'Facebook Like Box' );
 	}
 
 	function widget( $args, $instance ) {
@@ -14,7 +13,7 @@ class LikeBoxWidget extends WP_Widget {
 		<div id="fanbox_container">
 			<fb:like-box href="http://www.facebook.com/clevelandcurveballsandcommonsense" width="250" height="450" show_faces="true" border_color="#eee" stream="false" header="false"></fb:like-box>
 		</div>
-			
+
 	<?=$args['after_widget']; ?>
 <?
 	}

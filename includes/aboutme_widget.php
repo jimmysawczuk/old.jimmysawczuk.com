@@ -4,7 +4,7 @@ class AboutMeWidget extends WP_Widget {
 
 	function AboutMeWidget() {
 		// Instantiate the parent object
-		parent::WP_Widget( false, 'About Me' );
+		parent::__construct( false, 'About Me' );
 	}
 
 	function widget( $args, $instance ) {

@@ -2,15 +2,14 @@
 
 class BitBucketWidget extends WP_Widget {
 
-	function BitBucketWidget() {
-		// Instantiate the parent object
-		parent::WP_Widget( false, 'BitBucket Widget' );
+	function __construct() {
+		parent::__construct( false, 'BitBucket Widget' );
 	}
 
-	function widget( $args, $instance ) 
+	function widget( $args, $instance )
 	{
 ?>
-	
+
 	<?=$args['before_widget']; ?>
 		<?=$args['before_title'] ?>On BitBucket<?=$args['after_title'] ?>
 		<ul id="bitbucket_events"></ul>

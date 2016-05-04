@@ -2,15 +2,14 @@
 
 class GithubWidget extends WP_Widget {
 
-	function GithubWidget() {
+	function __construct() {
 		// Instantiate the parent object
-		parent::WP_Widget( false, 'Github Widget' );
+		parent::__construct( false, 'Github Widget' );
 	}
 
-	function widget( $args, $instance ) 
+	function widget( $args, $instance )
 	{
 ?>
-	
 	<?=$args['before_widget']; ?>
 		<?=$args['before_title'] ?>On Github<?=$args['after_title'] ?>
 		<ul id="github_events"></ul>

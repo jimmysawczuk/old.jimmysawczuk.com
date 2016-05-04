@@ -4,10 +4,10 @@ class BallparkWidget extends WP_Widget
 {
 	private $ballparks;
 
-	function BallparkWidget()
+	function __construct()
 	{
 		// Instantiate the parent object
-		parent::WP_Widget(false, 'Ballpark Widget');
+		parent::__construct(false, 'Ballpark Widget');
 
 		$ballparks = get_ballparks();
 

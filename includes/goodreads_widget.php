@@ -2,9 +2,8 @@
 
 class GoodreadsWidget extends WP_Widget {
 
-	function __construct()
-	{
-		parent::__construct("goodreads", "Goodreads");
+	function __construct() {
+		parent::__construct(false, "Goodreads");
 	}
 
 	function widget($args, $instance)

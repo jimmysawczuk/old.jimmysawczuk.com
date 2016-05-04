@@ -2,9 +2,8 @@
 
 class TwitterWidget extends WP_Widget {
 
-	function TwitterWidget() {
-		// Instantiate the parent object
-		parent::WP_Widget( false, 'Twitter Feed' );
+	function __construct() {
+		parent::__construct( false, 'Twitter Feed' );
 	}
 
 	function widget( $args, $instance ) {
