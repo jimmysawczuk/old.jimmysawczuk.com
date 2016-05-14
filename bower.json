@@ -16,6 +16,6 @@
   "dependencies": {
     "jquery": "~1.9",
     "jquery-timeago": "~1.4.1",
-    "font-awesome": "fontawesome#~4.5.0"
+    "font-awesome": "fontawesome#^4.6.3"
   }
 }
