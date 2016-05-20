@@ -231,6 +231,19 @@ function get_ballparks()
 		'latlong' => array(37.778611, -122.389167),
 	);
 
+	$ballparks []= array(
+		'name' => "Tropicana Field",
+		'team' => "Tampa Bay Rays",
+		'location' => "St. Petersburg, FL",
+		'rating' => '6',
+		'num_visits' => "1",
+		'visit' => "2016-05-14",
+		'game' => "http://www.baseball-reference.com/boxes/TBA/TBA201605140.shtml",
+		'article' => "https://jimmysawczuk.com/2016/05/indoor-baseball.html",
+		'img' => "tropicana_field.jpg",
+		'latlong' => array(27.768333, -82.653333),
+	);
+
 	//////////////////////////////////////
 
 	$i = 0;
