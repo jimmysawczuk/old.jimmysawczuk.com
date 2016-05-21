@@ -62,7 +62,7 @@ function fb_og_tags()
 		global $post;
 
 		$matches = array();
-		$matched = preg_match_all('#<img(?:.*)src\=\"(.+?)\"(?:.*)\/\>#i', $post->post_content, $matches);
+		$matched = preg_match_all('#<img(?:.*)src\=\"(.+?)\"(?:.*)\/?\>#i', $post->post_content, $matches);
 
 		if ($matched)
 		{
@@ -104,7 +104,7 @@ function twitter_card_tags()
 		global $post;
 
 		$matches = array();
-		$matched = preg_match_all('#<img(?:.*)src\=\"(.+?)\"(?:.*)\/\>#i', $post->post_content, $matches);
+		$matched = preg_match_all('#<img(?:.*)src\=\"(.+?)\"(?:.*)\/?\>#i', $post->post_content, $matches);
 
 		if ($matched)
 		{
