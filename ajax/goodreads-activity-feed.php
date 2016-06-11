@@ -4,10 +4,9 @@ require '../includes/config.php';
 
 require realpath('../../../../wp-load.php');
 
-$widget = new WP_Widget("goodreads", "Goodreads");
+$widget = new GoodreadsWidget;
 $settings = $widget->get_settings();
 $settings = $settings[$_GET['widgetId']];
-
 
 $gr = new Goodreads($settings['api_key']);
 $books = $gr->getShelf($settings['user_id'], $settings['shelf']);
