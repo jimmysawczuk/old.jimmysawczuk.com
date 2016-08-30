@@ -117,7 +117,7 @@ function get_ballparks()
 		'team' => "Washington Nationals",
 		'location' => "Washington, DC",
 		'rating' => '8',
-		'num_visits' => "1",
+		'num_visits' => "2",
 		'visit' => "2011-07-03",
 		'game' => "http://www.baseball-reference.com/boxes/WAS/WAS201107030.shtml",
 		'article' => "http://jimmysawczuk.com/2011/07/oer-the-land-of-the-free-and-the-home-of-the-brave.html",
