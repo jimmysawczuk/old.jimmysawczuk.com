@@ -3,7 +3,7 @@
 require '../includes/norad.php';
 require '../includes/mode.php';
 
-if (!defined("NORAD_URL"))
+if (true) // (!defined("NORAD_URL"))
 {
 	$payload = array(
 		'success' => false,
