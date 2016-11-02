@@ -2375,6 +2375,7 @@ html.ie8 {
   visibility: hidden;
 }
 #section411-banner {
+  z-index: 105;
   box-sizing: border-box;
   background: #1e5f4b;
   color: #fff;
@@ -4039,7 +4040,6 @@ html.ie7 .post .post_info .post_social div.aligncenter .share-button span.icon {
     background-size: 100%;
   }
   #section411-banner {
-    z-index: 105;
     font-size: 14px;
     line-height: 21px;
     box-shadow: none;
