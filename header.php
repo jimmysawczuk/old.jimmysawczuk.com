@@ -11,7 +11,7 @@
 		<? twitter_card_tags(); ?>
 		<link rel="apple-touch-icon" href="<? bloginfo('stylesheet_directory'); ?>/images/apple-touch-icon.png" />
 		<meta name="apple-mobile-web-app-title" content="CC&CS" />
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700,700italic,300italic,300|Mako|Roboto+Slab:400,700" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700,700italic,300italic,300|Mako|Roboto+Slab:400,700|Lato" rel="stylesheet" type="text/css" />
 		<? wp_head(); ?>
 		<script type="text/javascript">
 			var Config = <?=json_encode(array(
@@ -28,6 +28,11 @@
 	</head>
 	<body>
 		<div id="bg"></div>
+		<div id="section411-banner">
+			<a href="https://section411.com/?utm_source=jimmysawczuk.com">
+				Hey! My new website is <b>Section 411</b>. It's a lot like this site, except it's about 100% newer. Click here to check it out!
+			</a>
+		</div>
 		<div id="tab_container">
 			<div id="container">
 				<div id="header">
