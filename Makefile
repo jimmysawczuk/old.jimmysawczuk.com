@@ -1,9 +1,7 @@
 export PATH := $(shell npm bin):$(PATH)
 
 default:
-	@bower install
-	@npm install
-	@grunt
+	npm run build
 
 clean:
-	@rm -rf js/bin css node_modules bower_components fonts
+	@rm -rf js/bin css bower_components fonts
